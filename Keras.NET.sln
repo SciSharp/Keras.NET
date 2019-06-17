@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Keras", "Keras\Keras.csproj", "{22A74FED-A779-4412-9F6C-E22F9D252C0C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Numpy", "..\Numpy.NET\src\Numpy\Numpy.csproj", "{AC544B84-E011-4F86-B705-C11291DDDF9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keras.UnitTest", "Keras.UnitTest\Keras.UnitTest.csproj", "{0B402B43-29A2-4564-BC20-20BBBE7C2C51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22A74FED-A779-4412-9F6C-E22F9D252C0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A74FED-A779-4412-9F6C-E22F9D252C0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A74FED-A779-4412-9F6C-E22F9D252C0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A74FED-A779-4412-9F6C-E22F9D252C0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC544B84-E011-4F86-B705-C11291DDDF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC544B84-E011-4F86-B705-C11291DDDF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC544B84-E011-4F86-B705-C11291DDDF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC544B84-E011-4F86-B705-C11291DDDF9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B402B43-29A2-4564-BC20-20BBBE7C2C51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B402B43-29A2-4564-BC20-20BBBE7C2C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B402B43-29A2-4564-BC20-20BBBE7C2C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B402B43-29A2-4564-BC20-20BBBE7C2C51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE90F72D-AF3C-47FD-A5C8-297A1CB0434B}
+	EndGlobalSection
+EndGlobal
