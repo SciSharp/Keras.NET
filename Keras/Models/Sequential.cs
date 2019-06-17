@@ -22,7 +22,7 @@ namespace Keras.Models
 
         public void Add(BaseLayer layer)
         {
-            __self__.add(layer: layer.GetPythonObject());
+            __self__.add(layer: layer.ToPython());
         }
     }
 }

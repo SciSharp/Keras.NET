@@ -13,7 +13,7 @@ namespace Keras
 
         public object None = null;
 
-        public virtual PyObject GetPythonObject()
+        public virtual PyObject ToPython()
         {
             var pyargs = ToTuple(new object[]
             {

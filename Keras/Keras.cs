@@ -77,7 +77,7 @@ namespace Keras
                 case Shape o: return ToTuple(o.Dimensions);
                 case Slice o: return o.ToPython();
                 case PythonObject o: return o.PyObject;
-                case Base o: return o.GetPythonObject();
+                case Base o: return o.ToPython();
                 default: throw new NotImplementedException($"Type is not yet supported: { obj.GetType().Name}. Add it to 'ToPythonConversions'");
             }
         }

@@ -10,7 +10,7 @@ namespace Keras.UnitTest
         public void Constant()
         {
             Constant constant = new Constant(1);
-            var obj = constant.GetPythonObject();
+            var obj = constant.ToPython();
         }
     }
 }

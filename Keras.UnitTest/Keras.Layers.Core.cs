@@ -11,14 +11,14 @@ namespace Keras.UnitTest
         public void DenseTest()
         {
             Dense dense = new Dense(10, "relu");
-            var obj = dense.GetPythonObject();
+            var obj = dense.ToPython();
         }
 
         [TestMethod]
         public void ActivationTest()
         {
             Activation act = new Activation("relu");
-            var obj = act.GetPythonObject();
+            var obj = act.ToPython();
 
             var act1 = Activations.Softmax(np.array<float>(1, 2, 3, 4).reshape(2, 2));
         }

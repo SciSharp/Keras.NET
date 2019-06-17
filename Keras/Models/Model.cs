@@ -16,12 +16,12 @@ namespace Keras.Models
 
             foreach (var item in inputs)
             {
-                inputList.Add(item.GetPythonObject());
+                inputList.Add(item.ToPython());
             }
 
             foreach (var item in outputs)
             {
-                outputList.Add(item.GetPythonObject());
+                outputList.Add(item.ToPython());
             }
 
             __self__ = Instance.self.models.Model(inputs: inputs, outputs: outputs);
