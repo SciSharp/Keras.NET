@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Keras.Layers
 {
-    public partial class Activation : Base
+    public partial class Activation : BaseLayer
     {
         public Activation(string act)
         {

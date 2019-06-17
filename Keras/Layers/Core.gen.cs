@@ -1,11 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Numpy.Models;
 using Python.Runtime;
 
 namespace Keras.Layers
 {
-    public class Dense : Base
+    public class Input : BaseLayer
+    {
+        public Input(Shape shape)
+        {
+            this["shape"] = shape;
+            __self__ = Instance.self.layers.Input;
+        }
+    }
+
+    public class Dense : BaseLayer
     {
         public Dense(int units, string activation= "", bool use_bias= true, string kernel_initializer= "glorot_uniform", 
                     string bias_initializer= "zeros", string kernel_regularizer= "", string bias_regularizer= "", 

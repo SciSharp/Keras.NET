@@ -10,17 +10,17 @@ namespace Keras
     {
         public static NDarray Softmax(NDarray x, int axis = -1)
         {
-            return new NDarray(InvokeStatic(caller, "softmax", x, axis));
+            return new NDarray(InvokeStaticMethod(caller, "softmax", x, axis));
         }
 
-        public static NDarray Relu (NDarray x, float alpha= 0.0f, float? max_value= null, float threshold= 0.0f)
+        public static NDarray Relu(NDarray x, float alpha = 0.0f, float? max_value = null, float threshold = 0.0f)
         {
-            return new NDarray(InvokeStatic(caller, "relu", x, alpha, max_value, threshold));
+            return new NDarray(InvokeStaticMethod(caller, "relu", x, alpha, max_value, threshold));
         }
-        
+
         public static NDarray Sigmoid(NDarray x)
         {
-            return new NDarray(InvokeStatic(caller, "sigmoid", x));
+            return new NDarray(InvokeStaticMethod(caller, "sigmoid", x));
         }
     }
 }
