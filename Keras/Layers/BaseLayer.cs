@@ -6,5 +6,6 @@ namespace Keras.Layers
 {
     public class BaseLayer : Base
     {
+
     }
 }

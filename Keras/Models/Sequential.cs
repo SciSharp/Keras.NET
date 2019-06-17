@@ -9,7 +9,7 @@ namespace Keras.Models
     {
         public Sequential()
         {
-            __self__ = Instance.self.models.Sequential;
+            __self__ = Instance.self.models.Sequential();
         }
 
         public Sequential(BaseLayer[] layers) : this()
@@ -22,7 +22,7 @@ namespace Keras.Models
 
         public void Add(BaseLayer layer)
         {
-            InvokeMethod("add", new Dictionary<string, object>() { { "layer", layer.GetPythonObject() } });
+            __self__.add(layer: layer.GetPythonObject());
         }
     }
 }

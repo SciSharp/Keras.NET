@@ -11,6 +11,8 @@ namespace Keras
         internal dynamic __self__;
         public Dictionary<string, object> Parameters = new Dictionary<string, object>();
 
+        public object None = null;
+
         public virtual PyObject GetPythonObject()
         {
             var pyargs = ToTuple(new object[]

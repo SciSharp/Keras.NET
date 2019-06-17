@@ -14,11 +14,11 @@ namespace Keras.Models
             var args = new Dictionary<string, object>();
             args["optimizer"] = optimizer;
             args["loss"] = loss;
-            args["metrics"] = metrics != null ? metrics.ToList() : null;
-            args["loss_weights"] = loss_weights != null ? loss_weights.ToList() : null;
+            args["metrics"] = metrics != null ? metrics : null;
+            args["loss_weights"] = loss_weights != null ? loss_weights : null;
             args["sample_weight_mode"] = sample_weight_mode != null ? sample_weight_mode : null;
-            args["weighted_metrics"] = weighted_metrics != null ? weighted_metrics.ToList() : null;
-            args["target_tensors"] = target_tensors != null ? target_tensors.ToList() : null;
+            args["weighted_metrics"] = weighted_metrics != null ? weighted_metrics : null;
+            args["target_tensors"] = target_tensors != null ? target_tensors : null;
 
             InvokeMethod("compile", args);
         }
@@ -33,7 +33,7 @@ namespace Keras.Models
             args["batch_size"] = batch_size;
             args["epochs"] = epochs;
             args["verbose"] = verbose;
-            args["callbacks"] = callbacks != null ? callbacks.ToList() : null;
+            args["callbacks"] = callbacks != null ? callbacks : null;
             args["validation_split"] = validation_split;
             if (validation_data != null)
             {
@@ -63,7 +63,7 @@ namespace Keras.Models
             args["verbose"] = verbose;
             args["sample_weight"] = sample_weight;
             args["steps"] = steps;
-            args["callbacks"] = callbacks != null ? callbacks.ToList() : null;
+            args["callbacks"] = callbacks != null ? callbacks : null;
 
             InvokeMethod("evaluate", args);
         }
@@ -75,7 +75,7 @@ namespace Keras.Models
             args["y"] = y;
             args["verbose"] = verbose;
             args["steps"] = steps;
-            args["callbacks"] = callbacks != null ? callbacks.ToList() : null;
+            args["callbacks"] = callbacks != null ? callbacks : null;
 
             InvokeMethod("predict", args);
         }

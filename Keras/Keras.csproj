@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Python.Included" Version="3.7.3" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\Numpy.NET\src\Numpy\Numpy.csproj" />
   </ItemGroup>
 

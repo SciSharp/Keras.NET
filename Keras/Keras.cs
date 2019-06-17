@@ -72,10 +72,12 @@ namespace Keras
 
                 // sequence types
                 case Array o: return ToTuple(o);
+                case List<string> o: return ToTuple(o.ToArray());
                 // special types from 'ToPythonConversions'
                 case Shape o: return ToTuple(o.Dimensions);
                 case Slice o: return o.ToPython();
                 case PythonObject o: return o.PyObject;
+                case Base o: return o.GetPythonObject();
                 default: throw new NotImplementedException($"Type is not yet supported: { obj.GetType().Name}. Add it to 'ToPythonConversions'");
             }
         }

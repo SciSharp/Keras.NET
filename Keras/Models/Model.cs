@@ -24,9 +24,7 @@ namespace Keras.Models
                 outputList.Add(item.GetPythonObject());
             }
 
-            Parameters["inputs"] = inputList;
-            Parameters["outputs"] = outputList;
-            __self__ = Instance.self.models.Model;
+            __self__ = Instance.self.models.Model(inputs: inputs, outputs: outputs);
         }
     }
 }
