@@ -9,4 +9,10 @@
     <ProjectReference Include="..\..\Keras\Keras.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="pima-indians-diabetes.data.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

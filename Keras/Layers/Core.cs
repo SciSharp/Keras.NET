@@ -24,11 +24,12 @@ namespace Keras.Layers
 
     public class Dense : BaseLayer
     {
-        public Dense(int units, string activation= "", bool use_bias= true, string kernel_initializer= "glorot_uniform", 
+        public Dense(int units, int? input_dim = null, string activation= "", bool use_bias= true, string kernel_initializer= "glorot_uniform", 
                     string bias_initializer= "zeros", string kernel_regularizer= "", string bias_regularizer= "", 
                     string activity_regularizer= "", string kernel_constraint= "", string bias_constraint= "", Shape input_shape = null)
         {
             this["units"] = units;
+            this["input_dim"] = input_dim;
             this["activation"] = activation;
             this["use_bias"] = use_bias;
             this["kernel_initializer"] = kernel_initializer;
