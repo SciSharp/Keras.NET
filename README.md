@@ -28,7 +28,7 @@ model.Add(new Dense(1, activation: "sigmoid"));
 
 //Compile and train
 model.Compile(optimizer:"sgd", loss:"binary_crossentropy", metrics: new string[] { "accuracy" });
-model.Fit(x, y, batch_size: 2, epochs: 1000, verbose: 2);
+model.Fit(x, y, batch_size: 2, epochs: 1000, verbose: 1);
 
 //Save model and weights
 string json = model.ToJson();
@@ -39,3 +39,8 @@ model.SaveWeight("model.h5");
 var loaded_model = Sequential.ModelFromJson(File.ReadAllText("model.json"));
 loaded_model.LoadWeight("model.h5");
 ```
+
+**Output:**
+
+![](images/XOR_Output.PNG)
+
