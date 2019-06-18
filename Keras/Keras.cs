@@ -33,11 +33,7 @@ namespace Keras
 
         private static PyObject InstallAndImport(bool force = false)
         {
-            //var installer = new Installer();
-            //installer.SetupPython(force).Wait();
-            //installer.InstallWheel(typeof(Keras).Assembly, "keras").Wait();
             PythonEngine.Initialize();
-            //state = Py.GIL();
             var mod = Py.Import("keras");
             return mod;
         }
