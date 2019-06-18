@@ -13,6 +13,10 @@ Runs seamlessly on CPU and GPU.
 * [Numpy.NET](https://github.com/SciSharp/Numpy.NET)
 * [Python.Included](https://github.com/henon/Python.Included)
 
+## Prerequisite
+* Python 3.7
+* Install keras and numpy
+
 ## Example with XOR sample
 
 ```csharp
