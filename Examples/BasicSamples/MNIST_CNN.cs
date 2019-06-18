@@ -73,8 +73,8 @@ namespace BasicSamples
                       verbose: 1,
                       validation_data: new NDarray[] { x_test, y_test });
             var score = model.Evaluate(x_test, y_test, verbose: 0);
-            Console.WriteLine("Test loss:", score[0]);
-            Console.WriteLine("Test accuracy:", score[1]);
+            Console.WriteLine("Test loss:" + score[0]);
+            Console.WriteLine("Test accuracy:" + score[1]);
         }
     }
 }
