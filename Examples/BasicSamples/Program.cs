@@ -6,12 +6,11 @@ namespace BasicSamples
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("XOR Example");
             //XOR.Run();
 
-            PrimaIndiansDiabetics.Run();
-            //Console.WriteLine("MNIST CNN Example");
-            //MNIST_CNN.Run();
+            //PrimaIndiansDiabetics.Run();
+            
+            MNIST_CNN.Run();
 
             Console.ReadLine();
         }

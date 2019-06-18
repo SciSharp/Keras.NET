@@ -20,7 +20,7 @@ namespace Keras.Layers
     {
         public MaxPooling2D(Tuple<int,int> pool_size = null, Tuple<int, int> strides = null, string padding = "valid", string data_format = "channels_last")
         {
-            Parameters["pool_size"] = pool_size == null ? (2, 2) : pool_size.ToValueTuple();
+            Parameters["pool_size"] = pool_size == null ? new Shape(2, 2) : new Shape(pool_size.Item1, pool_size.Item2);
             if (strides != null)
                 Parameters["strides"] = strides.ToValueTuple();
 
@@ -34,7 +34,7 @@ namespace Keras.Layers
     {
         public MaxPooling3D(Tuple<int, int, int> pool_size = null, Tuple<int, int, int> strides = null, string padding = "valid", string data_format = "channels_last")
         {
-            Parameters["pool_size"] = pool_size == null ? (2, 2, 2) : pool_size.ToValueTuple();
+            Parameters["pool_size"] = pool_size == null ? new Shape(2, 2, 2) : new Shape(pool_size.Item1, pool_size.Item2, pool_size.Item3);
             if (strides != null)
                 Parameters["strides"] = strides.ToValueTuple();
 
@@ -60,7 +60,7 @@ namespace Keras.Layers
     {
         public AveragePooling2D(Tuple<int, int> pool_size = null, Tuple<int, int> strides = null, string padding = "valid", string data_format = "channels_last")
         {
-            Parameters["pool_size"] = pool_size == null ? (2, 2) : pool_size.ToValueTuple();
+            Parameters["pool_size"] = pool_size == null ? new Shape(2, 2) : new Shape(pool_size.Item1, pool_size.Item2);
             if (strides != null)
                 Parameters["strides"] = strides.ToValueTuple();
 
@@ -74,7 +74,7 @@ namespace Keras.Layers
     {
         public AveragePooling3D(Tuple<int, int, int> pool_size = null, Tuple<int, int, int> strides = null, string padding = "valid", string data_format = "channels_last")
         {
-            Parameters["pool_size"] = pool_size == null ? (2, 2, 2) : pool_size.ToValueTuple();
+            Parameters["pool_size"] = pool_size == null ? new Shape(2, 2, 2) : new Shape(pool_size.Item1, pool_size.Item2, pool_size.Item3);
             if (strides != null)
                 Parameters["strides"] = strides.ToValueTuple();
 

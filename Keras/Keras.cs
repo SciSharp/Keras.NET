@@ -99,5 +99,6 @@ namespace Keras
 
             return new PyList(array);
         }
+
     }
 }

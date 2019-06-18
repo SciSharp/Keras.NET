@@ -51,7 +51,7 @@ namespace Keras
             Parameters["epsilon"] = epsilon;
             Parameters["decay"] = decay;
 
-            __self__ = Instance.self.optimizers.Adagrad;
+            __self__ = Instance.self.optimizers.Adadelta;
         }
     }
 

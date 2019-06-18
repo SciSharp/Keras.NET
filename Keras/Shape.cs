@@ -46,6 +46,31 @@ namespace Keras
             return $"({string.Join(", ", Dimensions ?? new int[0])})";
         }
 
+        public static implicit operator Shape(ValueTuple<int> shape)
+        {
+            return new Shape(shape.Item1);
+        }
+
+        public static implicit operator Shape(ValueTuple<int, int> shape)
+        {
+            return new Shape(shape.Item1, shape.Item2);
+        }
+
+        public static implicit operator Shape(ValueTuple<int, int, int> shape)
+        {
+            return new Shape(shape.Item1, shape.Item2, shape.Item3);
+        }
+
+        public static implicit operator Shape(ValueTuple<int, int, int, int> shape)
+        {
+            return new Shape(shape.Item1, shape.Item2, shape.Item3, shape.Item4);
+        }
+
+        public static implicit operator Shape(ValueTuple<int, int, int, int, int> shape)
+        {
+            return new Shape(shape.Item1, shape.Item2, shape.Item3, shape.Item4, shape.Item5);
+        }
+
         #endregion
     }
 }

@@ -42,9 +42,9 @@ namespace Keras.Models
             if (validation_data != null)
             {
                 if (validation_data.Length == 2)
-                    args["validation_data"] = (validation_data[0], validation_data[1]);
+                    args["validation_data"] = new NDarray[] { validation_data[0], validation_data[1] };
                 else if (validation_data.Length == 3)
-                    args["validation_data"] = (validation_data[0], validation_data[1], validation_data[2]);
+                    args["validation_data"] = new NDarray[] { validation_data[0], validation_data[1], validation_data[2] };
             }
 
             args["shuffle"] = shuffle;

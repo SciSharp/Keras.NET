@@ -41,11 +41,11 @@ namespace Keras.Layers
                     string activity_regularizer = "", string kernel_constraint = "", string bias_constraint = "", Shape input_shape = null)
         {
             Parameters["filters"] = filters;
-            Parameters["kernel_size"] = (kernel_size.Item1, kernel_size.Item2); 
-            Parameters["strides"] = strides == null ? (1, 1) : (strides.Item1, strides.Item2);
+            Parameters["kernel_size"] = new Shape(kernel_size.Item1, kernel_size.Item2); 
+            Parameters["strides"] = strides == null ? new Shape(1, 1) : new Shape(strides.Item1, strides.Item2);
             Parameters["padding"] = padding;
             Parameters["data_format"] = data_format;
-            Parameters["dilation_rate"] = dilation_rate == null ? (1, 1) : (dilation_rate.Item1, dilation_rate.Item2); ;
+            Parameters["dilation_rate"] = dilation_rate == null ? new Shape(1, 1) : new Shape(dilation_rate.Item1, dilation_rate.Item2);
             Parameters["activation"] = activation;
             Parameters["use_bias"] = use_bias;
             Parameters["kernel_initializer"] = kernel_initializer;
@@ -69,11 +69,11 @@ namespace Keras.Layers
                     string activity_regularizer = "", string kernel_constraint = "", string bias_constraint = "", Shape input_shape = null)
         {
             Parameters["filters"] = filters;
-            Parameters["kernel_size"] = (kernel_size.Item1, kernel_size.Item2, kernel_size.Item3);
-            Parameters["strides"] = strides == null ? (1, 1, 1) : (strides.Item1, strides.Item2, strides.Item3);
+            Parameters["kernel_size"] = new Shape(kernel_size.Item1, kernel_size.Item2, kernel_size.Item3);
+            Parameters["strides"] = strides == null ? new Shape(1, 1, 1) : new Shape(strides.Item1, strides.Item2, strides.Item3);
             Parameters["padding"] = padding;
             Parameters["data_format"] = data_format;
-            Parameters["dilation_rate"] = dilation_rate == null ? (1, 1, 1) : (dilation_rate.Item1, dilation_rate.Item2, dilation_rate.Item3); ;
+            Parameters["dilation_rate"] = dilation_rate == null ? new Shape(1, 1, 1) : new Shape(dilation_rate.Item1, dilation_rate.Item2, dilation_rate.Item3); ;
             Parameters["activation"] = activation;
             Parameters["use_bias"] = use_bias;
             Parameters["kernel_initializer"] = kernel_initializer;
@@ -132,11 +132,11 @@ namespace Keras.Layers
                     string pointwise_constraint = "", string bias_constraint = "", Shape input_shape = null)
         {
             Parameters["filters"] = filters;
-            Parameters["kernel_size"] = (kernel_size.Item1, kernel_size.Item2);
-            Parameters["strides"] = strides == null ? (1, 1) : (strides.Item1, strides.Item2);
+            Parameters["kernel_size"] = new Shape(kernel_size.Item1, kernel_size.Item2);
+            Parameters["strides"] = strides == null ? new Shape(1, 1) : new Shape(strides.Item1, strides.Item2);
             Parameters["padding"] = padding;
             Parameters["data_format"] = data_format;
-            Parameters["dilation_rate"] = dilation_rate == null ? (1, 1) : (dilation_rate.Item1, dilation_rate.Item2); ;
+            Parameters["dilation_rate"] = dilation_rate == null ? new Shape(1, 1) : new Shape(dilation_rate.Item1, dilation_rate.Item2); ;
             Parameters["depth_multiplier"] = depth_multiplier;
             Parameters["activation"] = activation;
             Parameters["use_bias"] = use_bias;
@@ -164,8 +164,8 @@ namespace Keras.Layers
                     string bias_initializer = "zeros", string depthwise_regularizer = "", string bias_regularizer = "", string activity_regularizer = "", 
                     string depthwise_constraint = "", string bias_constraint = "", Shape input_shape = null)
         {
-            Parameters["kernel_size"] = (kernel_size.Item1, kernel_size.Item2);
-            Parameters["strides"] = strides == null ? (1, 1) : (strides.Item1, strides.Item2);
+            Parameters["kernel_size"] = new Shape(kernel_size.Item1, kernel_size.Item2);
+            Parameters["strides"] = strides == null ? new Shape(1, 1) : new Shape(strides.Item1, strides.Item2);
             Parameters["padding"] = padding;
             Parameters["depth_multiplier"] = depth_multiplier;
             Parameters["data_format"] = data_format;
@@ -193,12 +193,12 @@ namespace Keras.Layers
                     string activity_regularizer = "", string kernel_constraint = "", string bias_constraint = "", Shape input_shape = null)
         {
             Parameters["filters"] = filters;
-            Parameters["kernel_size"] = (kernel_size.Item1, kernel_size.Item2);
-            Parameters["strides"] = strides == null ? (1, 1) : (strides.Item1, strides.Item2);
+            Parameters["kernel_size"] = new Shape(kernel_size.Item1, kernel_size.Item2);
+            Parameters["strides"] = strides == null ? new Shape(1, 1) : new Shape(strides.Item1, strides.Item2);
             Parameters["padding"] = padding;
             Parameters["output_padding"] = output_padding;
             Parameters["data_format"] = data_format;
-            Parameters["dilation_rate"] = dilation_rate == null ? (1, 1) : (dilation_rate.Item1, dilation_rate.Item2); ;
+            Parameters["dilation_rate"] = dilation_rate == null ? new Shape(1, 1) : new Shape(dilation_rate.Item1, dilation_rate.Item2); ;
             Parameters["activation"] = activation;
             Parameters["use_bias"] = use_bias;
             Parameters["kernel_initializer"] = kernel_initializer;
@@ -223,12 +223,12 @@ namespace Keras.Layers
                     string activity_regularizer = "", string kernel_constraint = "", string bias_constraint = "", Shape input_shape = null)
         {
             Parameters["filters"] = filters;
-            Parameters["kernel_size"] = (kernel_size.Item1, kernel_size.Item2, kernel_size.Item3);
-            Parameters["strides"] = strides == null ? (1, 1, 1) : (strides.Item1, strides.Item2, strides.Item3);
+            Parameters["kernel_size"] = new Shape(kernel_size.Item1, kernel_size.Item2, kernel_size.Item3);
+            Parameters["strides"] = strides == null ? new Shape(1, 1, 1) : (strides.Item1, strides.Item2, strides.Item3);
             Parameters["padding"] = padding;
             Parameters["output_padding"] = output_padding;
             Parameters["data_format"] = data_format;
-            Parameters["dilation_rate"] = dilation_rate == null ? (1, 1, 1) : (dilation_rate.Item1, dilation_rate.Item2, dilation_rate.Item3); ;
+            Parameters["dilation_rate"] = dilation_rate == null ? new Shape(1, 1, 1) : new Shape(dilation_rate.Item1, dilation_rate.Item2, dilation_rate.Item3); ;
             Parameters["activation"] = activation;
             Parameters["use_bias"] = use_bias;
             Parameters["kernel_initializer"] = kernel_initializer;
@@ -248,7 +248,7 @@ namespace Keras.Layers
     {
         public Cropping1D(Tuple<int,int> cropping, Shape input_shape = null)
         {
-            Parameters["cropping"] = cropping == null ? (1, 1) : (cropping.Item1, cropping.Item2);
+            Parameters["cropping"] = cropping == null ? new Shape(1, 1) : new Shape(cropping.Item1, cropping.Item2);
             Parameters["input_shape"] = input_shape;
             __self__ = Instance.self.layers.Cropping1D;
         }
@@ -258,8 +258,8 @@ namespace Keras.Layers
     {
         public Cropping2D(Tuple<Tuple<int,int>,Tuple<int, int>> cropping, string data_format = "", Shape input_shape = null)
         {
-            Parameters["cropping"] = cropping == null ? ((1, 1), (1, 1)) 
-                                : ((cropping.Item1.Item1, cropping.Item1.Item2), (cropping.Item2.Item1, cropping.Item2.Item2));
+            Parameters["cropping"] = cropping == null ? new Shape[] { new Shape(1, 1), new Shape(1, 1) }
+                                : new Shape[] { new Shape(cropping.Item1.Item1, cropping.Item1.Item2), new Shape(cropping.Item2.Item1, cropping.Item2.Item2) };
             Parameters["data_format"] = data_format;
             Parameters["input_shape"] = input_shape;
             __self__ = Instance.self.layers.Cropping2D;
@@ -270,8 +270,8 @@ namespace Keras.Layers
     {
         public Cropping3D(Tuple<Tuple<int, int>, Tuple<int, int>, Tuple<int, int>> cropping, string data_format = "", Shape input_shape = null)
         {
-            Parameters["cropping"] = cropping == null ? ((1, 1), (1, 1), (1, 1))
-                                : ((cropping.Item1.Item1, cropping.Item1.Item2), (cropping.Item2.Item1, cropping.Item2.Item2), (cropping.Item3.Item1, cropping.Item3.Item2));
+            Parameters["cropping"] = cropping == null ? new Shape[] { new Shape(1, 1), new Shape(1, 1), new Shape(1, 1) }
+                                : new Shape[] { new Shape(cropping.Item1.Item1, cropping.Item1.Item2), new Shape(cropping.Item2.Item1, cropping.Item2.Item2), new Shape(cropping.Item3.Item1, cropping.Item3.Item2) };
             Parameters["data_format"] = data_format;
             Parameters["input_shape"] = input_shape;
             __self__ = Instance.self.layers.Cropping3D;
@@ -292,7 +292,7 @@ namespace Keras.Layers
     {
         public UpSampling2D(Tuple<int, int> size = null, string data_format = "", string interpolation = "nearest", Shape input_shape = null)
         {
-            Parameters["size"] = size == null ? (2, 2) : (size.Item1, size.Item2);
+            Parameters["size"] = size == null ? new Shape(2, 2) : new Shape(size.Item1, size.Item2);
             Parameters["data_format"] = data_format;
             Parameters["interpolation"] = interpolation;
             Parameters["input_shape"] = input_shape;
@@ -304,7 +304,7 @@ namespace Keras.Layers
     {
         public UpSampling3D(Tuple<int, int, int> size = null, string data_format = "", Shape input_shape = null)
         {
-            Parameters["size"] = size == null ? (2, 2, 2) : (size.Item1, size.Item2, size.Item3);
+            Parameters["size"] = size == null ? new Shape(2, 2, 2) : new Shape(size.Item1, size.Item2, size.Item3);
             Parameters["data_format"] = data_format;
             Parameters["input_shape"] = input_shape;
             __self__ = Instance.self.layers.UpSampling3D;
@@ -325,7 +325,7 @@ namespace Keras.Layers
     {
         public ZeroPadding2D(Tuple<int, int> padding = null, string data_format = "", Shape input_shape = null)
         {
-            Parameters["padding"] = padding == null ? (2, 2) : (padding.Item1, padding.Item2);
+            Parameters["padding"] = padding == null ? new Shape(2, 2) : new Shape(padding.Item1, padding.Item2);
             Parameters["data_format"] = data_format;
             Parameters["input_shape"] = input_shape;
             __self__ = Instance.self.layers.ZeroPadding2D;
@@ -336,7 +336,7 @@ namespace Keras.Layers
     {
         public ZeroPadding3D(Tuple<int, int, int> padding = null, string data_format = "", Shape input_shape = null)
         {
-            Parameters["padding"] = padding == null ? (2, 2, 2) : (padding.Item1, padding.Item2, padding.Item3);
+            Parameters["padding"] = padding == null ? new Shape(2, 2, 2) : new Shape(padding.Item1, padding.Item2, padding.Item3);
             Parameters["data_format"] = data_format;
             Parameters["input_shape"] = input_shape;
             __self__ = Instance.self.layers.ZeroPadding3D;

@@ -57,7 +57,7 @@ namespace Keras.Layers
 
     public class Dropout : BaseLayer
     {
-        public Dropout(float rate, Shape noise_shape = null, int? seed = null)
+        public Dropout(double rate, Shape noise_shape = null, int? seed = null)
         {
             Parameters["rate"] = rate;
             Parameters["noise_shape"] = noise_shape;
