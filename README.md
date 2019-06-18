@@ -17,6 +17,19 @@ Runs seamlessly on CPU and GPU.
 * Python 3.7
 * Install keras and numpy
 
+## Nuget
+
+Install from nuget: https://www.nuget.org/packages/Keras.NET
+
+```
+Install-Package Keras.NET
+```
+
+```
+dotnet add package Keras.NET
+```
+
+
 ## Example with XOR sample
 
 ```csharp
