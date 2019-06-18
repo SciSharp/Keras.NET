@@ -42,5 +42,5 @@ loaded_model.LoadWeight("model.h5");
 
 **Output:**
 
-![](images/XOR_Output.PNG)
+![](https://raw.githubusercontent.com/SciSharp/Keras.NET/master/Images/XOR_Output.PNG)
 
