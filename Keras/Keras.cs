@@ -1,4 +1,5 @@
-﻿using Numpy;
+﻿using Keras.Layers;
+using Numpy;
 using Numpy.Models;
 using Python.Included;
 using Python.Runtime;
@@ -35,15 +36,15 @@ namespace Keras
         {
             //var installer = new Installer();
             //installer.SetupPython(force).Wait();
-            //Environment.SetEnvironmentVariable("Path", installer.EmbeddedPythonHome);
             //installer.InstallWheel(typeof(Keras).Assembly, "keras").Wait();
-            //PythonEngine.Initialize();
-            state = Py.GIL();
+            PythonEngine.Initialize();
+            //state = Py.GIL();
             var mod = Py.Import("keras");
             return mod;
         }
 
         public dynamic self => _pyobj;
+
         private bool IsInitialized => _pyobj != null;
 
         internal Keras() { }
@@ -71,12 +72,12 @@ namespace Keras
                         return new PyObject(Runtime.PyFalse);
 
                 // sequence types
-                case Array o: return ToTuple(o);
-                case List<string> o: return ToTuple(o.ToArray());
+                case Array o: return ToList(o);
                 // special types from 'ToPythonConversions'
                 case Shape o: return ToTuple(o.Dimensions);
                 case Slice o: return o.ToPython();
                 case PythonObject o: return o.PyObject;
+                case PyObject o: return o;
                 case Base o: return o.ToPython();
                 default: throw new NotImplementedException($"Type is not yet supported: { obj.GetType().Name}. Add it to 'ToPythonConversions'");
             }
@@ -91,6 +92,17 @@ namespace Keras
             }
 
             return new PyTuple(array);
+        }
+
+        protected static PyList ToList(Array input)
+        {
+            var array = new PyObject[input.Length];
+            for (int i = 0; i < input.Length; i++)
+            {
+                array[i] = ToPython(input.GetValue(i));
+            }
+
+            return new PyList(array);
         }
     }
 }

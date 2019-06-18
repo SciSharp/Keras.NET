@@ -9,6 +9,9 @@ namespace BasicSamples
             Console.WriteLine("XOR Example");
             XOR.Run();
 
+            //Console.WriteLine("MNIST CNN Example");
+            //MNIST_CNN.Run();
+
             Console.ReadLine();
         }
     }

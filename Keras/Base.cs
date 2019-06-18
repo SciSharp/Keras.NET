@@ -78,9 +78,9 @@ namespace Keras
             }
 
             if (args.Count > 0)
-                return __self__.Invoke(pyargs, kwargs);
+                return __self__.InvokeMethod(method, pyargs, kwargs);
             else
-                return __self__.Invoke(null, null);
+                return __self__.InvokeMethod(method, null, null);
         }
 
         public object this[string name]
