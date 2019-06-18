@@ -13,6 +13,23 @@ Runs seamlessly on CPU and GPU.
 * [Numpy.NET](https://github.com/SciSharp/Numpy.NET)
 * [Python.Included](https://github.com/henon/Python.Included)
 
+## Prerequisite
+* Python 3.7
+* Install keras and numpy
+
+## Nuget
+
+Install from nuget: https://www.nuget.org/packages/Keras.NET
+
+```
+Install-Package Keras.NET
+```
+
+```
+dotnet add package Keras.NET
+```
+
+
 ## Example with XOR sample
 
 ```csharp
