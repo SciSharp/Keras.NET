@@ -1,7 +1,6 @@
 ﻿using Keras.Layers;
 using Numpy;
 using Numpy.Models;
-using Python.Included;
 using Python.Runtime;
 using System;
 using System.Collections.Generic;

@@ -10,7 +10,7 @@ namespace Keras.UnitTest
         [TestMethod]
         public void DenseTest()
         {
-            Dense dense = new Dense(10, "relu");
+            Dense dense = new Dense(10, activation: "relu");
             var obj = dense.ToPython();
         }
 
