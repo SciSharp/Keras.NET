@@ -24,8 +24,8 @@ namespace BasicSamples
             model.Add(new Dense(1, activation: "sigmoid"));
 
             //Compile and train
-            model.Compile("sgd", "binary_crossentropy", new string[] { "accuracy" });
-            model.Fit(x, y, 2, 1000, 2);
+            model.Compile(optimizer:"sgd", loss:"binary_crossentropy", metrics: new string[] { "accuracy" });
+            model.Fit(x, y, batch_size: 2, epochs: 1000, verbose: 2);
 
             //Save model and weights
             string json = model.ToJson();
