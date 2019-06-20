@@ -15,13 +15,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Numpy.Bare" Version="1.1.0" />
+    <PackageReference Include="Numpy.Bare" Version="3.6.1.1" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="..\LICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Python.Runtime.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

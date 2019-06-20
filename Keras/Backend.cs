@@ -8,7 +8,7 @@ namespace Keras
     {
         public static string ImageDataFormat()
         {
-            return Instance.self.backend.image_data_format().ToString();
+            return Instance.keras.backend.image_data_format().ToString();
         }
     }
 }

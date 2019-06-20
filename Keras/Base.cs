@@ -43,11 +43,41 @@ namespace Keras
                 return __self__.Invoke(null, null);
         }
 
-        public static PyObject InvokeStaticMethod(dynamic caller, string method, params object[] parameters)
+        //public static PyObject InvokeStaticMethod(dynamic caller, string method, params object[] parameters)
+        //{
+        //    var pyargs = ToTuple(parameters);
+        //    var kwargs = new PyDict();
+        //    if (parameters.Length > 0)
+        //        return caller.InvokeMethod(method, pyargs, kwargs);
+        //    else
+        //        return caller.InvokeMethod(method, null, null);
+        //}
+
+        public static PyObject InvokeStaticMethod(dynamic caller, string method, Dictionary<string, object> args)
         {
-            var pyargs = ToTuple(parameters);
+            var pyargs = ToTuple(new object[]
+            {
+                args.FirstOrDefault().Value
+            });
+
             var kwargs = new PyDict();
-            if (parameters.Length > 0)
+
+            bool skip = true;
+            foreach (var item in args)
+            {
+                if (skip)
+                {
+                    skip = false;
+                    continue;
+                }
+
+                if (item.Value != null && !string.IsNullOrWhiteSpace(item.Value.ToString()))
+                {
+                    kwargs[item.Key] = ToPython(item.Value);
+                }
+            }
+
+            if (args.Count > 0)
                 return caller.InvokeMethod(method, pyargs, kwargs);
             else
                 return caller.InvokeMethod(method, null, null);
@@ -55,7 +85,7 @@ namespace Keras
 
         public PyObject InvokeMethod(string method, Dictionary<string, object> args)
         {
-            var pyargs = ToTuple(new object[]
+           var pyargs = ToTuple(new object[]
            {
                 args.FirstOrDefault().Value
            });

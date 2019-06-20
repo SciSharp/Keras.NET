@@ -38,7 +38,7 @@ namespace Keras
             return mod;
         }
 
-        public dynamic self => _pyobj;
+        public dynamic keras => _pyobj;
 
         private bool IsInitialized => _pyobj != null;
 
@@ -46,7 +46,7 @@ namespace Keras
 
         public void Dispose()
         {
-            self?.Dispose();
+            keras?.Dispose();
             state.Dispose();
         }
 

@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
-namespace Keras
+namespace Keras.Callbacks
 {
     public class Callback : Base
     {
         public Callback()
         {
-            __self__ = self.callbacks.Callback;
+            __self__ = keras.callbacks.Callback;
         }
     }
 
@@ -19,7 +19,7 @@ namespace Keras
         public BaseLogger(params string[] stateful_metrics)
         {
             Parameters["stateful_metrics"] = stateful_metrics!=null ? stateful_metrics.ToList() : null;
-            __self__ = self.callbacks.BaseLogger;
+            __self__ = keras.callbacks.BaseLogger;
         }
     }
 
@@ -27,7 +27,7 @@ namespace Keras
     {
         public TerminateOnNaN()
         {
-            __self__ = self.callbacks.TerminateOnNaN;
+            __self__ = keras.callbacks.TerminateOnNaN;
         }
     }
 
@@ -37,7 +37,7 @@ namespace Keras
         {
             Parameters["count_mode"] = count_mode;
             Parameters["stateful_metrics"] = stateful_metrics != null ? stateful_metrics.ToList() : null;
-            __self__ = self.callbacks.ProgbarLogger;
+            __self__ = keras.callbacks.ProgbarLogger;
         }
     }
 
@@ -45,7 +45,7 @@ namespace Keras
     {
         public History()
         {
-            __self__ = self.callbacks.History;
+            __self__ = keras.callbacks.History;
         }
     }
 
@@ -62,7 +62,7 @@ namespace Keras
             Parameters["mode"] = mode;
             Parameters["period"] = period;
 
-            __self__ = self.callbacks.ModelCheckpoint;
+            __self__ = keras.callbacks.ModelCheckpoint;
         }
     }
 
@@ -78,7 +78,7 @@ namespace Keras
             Parameters["baseline"] = baseline;
             Parameters["restore_best_weights"] = restore_best_weights;
 
-            __self__ = self.callbacks.EarlyStopping;
+            __self__ = keras.callbacks.EarlyStopping;
         }
     }
 
@@ -92,7 +92,7 @@ namespace Keras
             Parameters["headers"] = headers;
             Parameters["send_as_json"] = send_as_json;
 
-            __self__ = self.callbacks.RemoteMonitor;
+            __self__ = keras.callbacks.RemoteMonitor;
         }
     }
 
@@ -103,7 +103,7 @@ namespace Keras
             Parameters["schedule"] = schedule;
             Parameters["verbose"] = verbose;
 
-            __self__ = self.callbacks.LearningRateScheduler;
+            __self__ = keras.callbacks.LearningRateScheduler;
         }
     }
 }

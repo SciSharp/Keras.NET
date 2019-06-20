@@ -8,7 +8,7 @@ namespace Keras.Initializer
     {
         public Zeros()
         {
-            __self__ = Instance.self.initializers.Zeros;
+            __self__ = Instance.keras.initializers.Zeros;
         }
     }
 
@@ -16,7 +16,7 @@ namespace Keras.Initializer
     {
         public Ones()
         {
-            __self__ = Instance.self.initializers.Zeros;
+            __self__ = Instance.keras.initializers.Zeros;
         }
     }
 
@@ -25,7 +25,7 @@ namespace Keras.Initializer
         public Constant(float value = 0)
         {
             Parameters["value"] = value;
-            __self__ = Instance.self.initializers.Constant;
+            __self__ = Instance.keras.initializers.Constant;
         }
     }
 
@@ -36,7 +36,7 @@ namespace Keras.Initializer
             Parameters["mean"] = mean;
             Parameters["stddev"] = stddev;
             Parameters["seed"] = seed;
-            __self__ = Instance.self.initializers.RandomNormal;
+            __self__ = Instance.keras.initializers.RandomNormal;
         }
     }
 
@@ -47,7 +47,7 @@ namespace Keras.Initializer
             Parameters["minval"] = minval;
             Parameters["maxval"] = maxval;
             Parameters["seed"] = seed;
-            __self__ = Instance.self.initializers.RandomUniform;
+            __self__ = Instance.keras.initializers.RandomUniform;
         }
     }
 
@@ -58,7 +58,7 @@ namespace Keras.Initializer
             Parameters["mean"] = mean;
             Parameters["stddev"] = stddev;
             Parameters["seed"] = seed;
-            __self__ = Instance.self.initializers.TruncatedNormal;
+            __self__ = Instance.keras.initializers.TruncatedNormal;
         }
     }
 
@@ -70,7 +70,7 @@ namespace Keras.Initializer
             Parameters["mode"] = mode;
             Parameters["distribution"] = distribution;
             Parameters["seed"] = seed;
-            __self__ = Instance.self.initializers.VarianceScaling;
+            __self__ = Instance.keras.initializers.VarianceScaling;
         }
     }
 
@@ -80,7 +80,7 @@ namespace Keras.Initializer
         {
             Parameters["gain"] = gain;
             Parameters["seed"] = seed;
-            __self__ = Instance.self.initializers.Orthogonal;
+            __self__ = Instance.keras.initializers.Orthogonal;
         }
     }
 
@@ -89,7 +89,7 @@ namespace Keras.Initializer
         public Identity(float gain = 1.0f)
         {
             Parameters["gain"] = gain;
-            __self__ = Instance.self.initializers.Identity;
+            __self__ = Instance.keras.initializers.Identity;
         }
     }
 
@@ -98,7 +98,7 @@ namespace Keras.Initializer
         public LecunUniform(int? seed = null)
         {
             Parameters["seed"] = seed;
-            __self__ = Instance.self.initializers.lecun_uniform;
+            __self__ = Instance.keras.initializers.lecun_uniform;
         }
     }
 
@@ -107,7 +107,7 @@ namespace Keras.Initializer
         public GlorotNormal(int? seed = null)
         {
             Parameters["seed"] = seed;
-            __self__ = Instance.self.initializers.glorot_normal;
+            __self__ = Instance.keras.initializers.glorot_normal;
         }
     }
 
@@ -116,7 +116,7 @@ namespace Keras.Initializer
         public GlorotUniform(int? seed = null)
         {
             Parameters["seed"] = seed;
-            __self__ = Instance.self.initializers.glorot_uniform;
+            __self__ = Instance.keras.initializers.glorot_uniform;
         }
     }
 
@@ -125,7 +125,7 @@ namespace Keras.Initializer
         public HeUniform(int? seed = null)
         {
             Parameters["seed"] = seed;
-            __self__ = Instance.self.initializers.he_uniform;
+            __self__ = Instance.keras.initializers.he_uniform;
         }
     }
 
@@ -134,7 +134,7 @@ namespace Keras.Initializer
         public HeNormal(int? seed = null)
         {
             Parameters["seed"] = seed;
-            __self__ = Instance.self.initializers.he_normal;
+            __self__ = Instance.keras.initializers.he_normal;
         }
     }
 
@@ -143,7 +143,7 @@ namespace Keras.Initializer
         public LecunNormal(int? seed = null)
         {
             Parameters["seed"] = seed;
-            __self__ = Instance.self.initializers.lecun_normal;
+            __self__ = Instance.keras.initializers.lecun_normal;
         }
     }
 }
