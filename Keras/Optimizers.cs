@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Keras
+namespace Keras.Optimizers
 {
     /// <summary>
     /// Stochastic gradient descent optimizer.    Includes support for momentum, learning rate decay, and Nesterov momentum.

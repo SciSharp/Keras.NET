@@ -6,7 +6,7 @@
           "files": [
             "/Keras/**.csproj"
           ],
-          "src": "../src"
+          "src": "../"
         }
       ],
       "dest": "api",

@@ -1,0 +1,936 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BaseModel
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BaseModel
+   ">
+    <meta name="generator" content="docfx 2.42.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer="" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Keras.Models.BaseModel">
+  
+  
+  <h1 id="Keras_Models_BaseModel" data-uid="Keras.Models.BaseModel" class="text-break">Class BaseModel
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Keras.Keras.html">Keras</a></div>
+    <div class="level2"><a class="xref" href="Keras.Base.html">Base</a></div>
+    <div class="level3"><span class="xref">BaseModel</span></div>
+      <div class="level4"><a class="xref" href="Keras.Models.Model.html">Model</a></div>
+      <div class="level4"><a class="xref" href="Keras.Models.Sequential.html">Sequential</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_Parameters">Base.Parameters</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_None">Base.None</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_Init">Base.Init()</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_ToPython">Base.ToPython()</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_InvokeStaticMethod_System_Object_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__">Base.InvokeStaticMethod(Object, String, Dictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_InvokeMethod_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__">Base.InvokeMethod(String, Dictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_Item_System_String_">Base.Item[String]</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_Instance">Keras.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_keras">Keras.keras</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_Dispose">Keras.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_ToTuple_System_Array_">Keras.ToTuple(Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_ToList_System_Array_">Keras.ToList(Array)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Keras.Models.html">Keras.Models</a></h6>
+  <h6><strong>Assembly</strong>: Keras.dll</h6>
+  <h5 id="Keras_Models_BaseModel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BaseModel : Base, IDisposable</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Models_BaseModel_Compile_Keras_StringOrInstance_System_String_System_String___System_Single___System_String_System_String___Numpy_NDarray___.md&amp;value=---%0Auid%3A%20Keras.Models.BaseModel.Compile(Keras.StringOrInstance%2CSystem.String%2CSystem.String%5B%5D%2CSystem.Single%5B%5D%2CSystem.String%2CSystem.String%5B%5D%2CNumpy.NDarray%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Models/BaseModel.cs/#L23">View Source</a>
+  </span>
+  <a id="Keras_Models_BaseModel_Compile_" data-uid="Keras.Models.BaseModel.Compile*"></a>
+  <h4 id="Keras_Models_BaseModel_Compile_Keras_StringOrInstance_System_String_System_String___System_Single___System_String_System_String___Numpy_NDarray___" data-uid="Keras.Models.BaseModel.Compile(Keras.StringOrInstance,System.String,System.String[],System.Single[],System.String,System.String[],Numpy.NDarray[])">Compile(StringOrInstance, String, String[], Single[], String, String[], NDarray[])</h4>
+  <div class="markdown level1 summary"><p>Configures the model for training.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Compile(StringOrInstance optimizer, string loss, string[] metrics = null, float[] loss_weights = null, string sample_weight_mode = &quot;None&quot;, string[] weighted_metrics = null, NDarray[] target_tensors = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Keras.StringOrInstance.html">StringOrInstance</a></td>
+        <td><span class="parametername">optimizer</span></td>
+        <td><p>String (name of optimizer) or optimizer instance. See optimizers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">loss</span></td>
+        <td><p>String (name of objective function) or objective function. See losses. If the model has multiple outputs, you can use a different loss on each output by passing a dictionary or a list of losses. The loss value that will be minimized by the model will then be the sum of all individual losses.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">metrics</span></td>
+        <td><p>List of metrics to be evaluated by the model during training and testing. Typically you will use metrics=['accuracy']. To specify different metrics for different outputs of a multi-output model, you could also pass a dictionary, such as metrics={'output_a': 'accuracy'}.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><span class="parametername">loss_weights</span></td>
+        <td><p>Optional list or dictionary specifying scalar coefficients (Python floats) to weight the loss contributions of different model outputs. The loss value that will be minimized by the model will then be the weighted sum of all individual losses, weighted by the loss_weightscoefficients. If a list, it is expected to have a 1:1 mapping to the model's outputs. If a tensor, it is expected to map output names (strings) to scalar coefficients.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sample_weight_mode</span></td>
+        <td><p>If you need to do timestep-wise sample weighting (2D weights), set this to &quot;temporal&quot;. None defaults to sample-wise weights (1D). If the model has multiple outputs, you can use a different sample_weight_mode on each output by passing a dictionary or a list of modes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">weighted_metrics</span></td>
+        <td><p>List of metrics to be evaluated and weighted by sample_weight or class_weight during training and testing.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span>[]</td>
+        <td><span class="parametername">target_tensors</span></td>
+        <td><p>By default, Keras will create placeholders for the model's target, which will be fed with the target data during training. If instead you would like to use your own target tensors (in turn, Keras will not expect external Numpy data for these targets at training time), you can specify them via the target_tensors argument. It can be a single tensor (for a single-output model), a list of tensors, or a dict mapping output names to target tensors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Models_BaseModel_Evaluate_Numpy_NDarray_Numpy_NDarray_System_Nullable_System_Int32__System_Int32_Numpy_NDarray_System_Nullable_System_Int32__Keras_Callbacks_Callback___.md&amp;value=---%0Auid%3A%20Keras.Models.BaseModel.Evaluate(Numpy.NDarray%2CNumpy.NDarray%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Int32%2CNumpy.NDarray%2CSystem.Nullable%7BSystem.Int32%7D%2CKeras.Callbacks.Callback%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Models/BaseModel.cs/#L99">View Source</a>
+  </span>
+  <a id="Keras_Models_BaseModel_Evaluate_" data-uid="Keras.Models.BaseModel.Evaluate*"></a>
+  <h4 id="Keras_Models_BaseModel_Evaluate_Numpy_NDarray_Numpy_NDarray_System_Nullable_System_Int32__System_Int32_Numpy_NDarray_System_Nullable_System_Int32__Keras_Callbacks_Callback___" data-uid="Keras.Models.BaseModel.Evaluate(Numpy.NDarray,Numpy.NDarray,System.Nullable{System.Int32},System.Int32,Numpy.NDarray,System.Nullable{System.Int32},Keras.Callbacks.Callback[])">Evaluate(NDarray, NDarray, Nullable&lt;Int32&gt;, Int32, NDarray, Nullable&lt;Int32&gt;, Callback[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double[] Evaluate(NDarray x, NDarray y, int? batch_size = default(int? ), int verbose = 1, NDarray sample_weight = null, int? steps = default(int? ), Callback[] callbacks = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">batch_size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">verbose</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">sample_weight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">steps</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Keras.Callbacks.Callback.html">Callback</a>[]</td>
+        <td><span class="parametername">callbacks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Models_BaseModel_Fit_Numpy_NDarray_Numpy_NDarray_System_Nullable_System_Int32__System_Int32_System_Int32_Keras_Callbacks_Callback___System_Single_Numpy_NDarray___System_Boolean_System_Collections_Generic_Dictionary_System_Int32_System_Single__Numpy_NDarray_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Keras.Models.BaseModel.Fit(Numpy.NDarray%2CNumpy.NDarray%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Int32%2CSystem.Int32%2CKeras.Callbacks.Callback%5B%5D%2CSystem.Single%2CNumpy.NDarray%5B%5D%2CSystem.Boolean%2CSystem.Collections.Generic.Dictionary%7BSystem.Int32%2CSystem.Single%7D%2CNumpy.NDarray%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Models/BaseModel.cs/#L56">View Source</a>
+  </span>
+  <a id="Keras_Models_BaseModel_Fit_" data-uid="Keras.Models.BaseModel.Fit*"></a>
+  <h4 id="Keras_Models_BaseModel_Fit_Numpy_NDarray_Numpy_NDarray_System_Nullable_System_Int32__System_Int32_System_Int32_Keras_Callbacks_Callback___System_Single_Numpy_NDarray___System_Boolean_System_Collections_Generic_Dictionary_System_Int32_System_Single__Numpy_NDarray_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="Keras.Models.BaseModel.Fit(Numpy.NDarray,Numpy.NDarray,System.Nullable{System.Int32},System.Int32,System.Int32,Keras.Callbacks.Callback[],System.Single,Numpy.NDarray[],System.Boolean,System.Collections.Generic.Dictionary{System.Int32,System.Single},Numpy.NDarray,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32})">Fit(NDarray, NDarray, Nullable&lt;Int32&gt;, Int32, Int32, Callback[], Single, NDarray[], Boolean, Dictionary&lt;Int32, Single&gt;, NDarray, Int32, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Trains the model for a given number of epochs (iterations on a dataset).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public History Fit(NDarray x, NDarray y, int? batch_size = default(int? ), int epochs = 1, int verbose = 1, Callback[] callbacks = null, float validation_split = 0F, NDarray[] validation_data = null, bool shuffle = true, Dictionary&lt;int, float&gt; class_weight = null, NDarray sample_weight = null, int initial_epoch = 0, int? steps_per_epoch = default(int? ), int? validation_steps = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>Numpy array of training data (if the model has a single input), or list of Numpy arrays (if the model has multiple inputs). If input layers in the model are named, you can also pass a dictionary mapping input names to Numpy arrays. x can be None (default) if feeding from framework-native tensors (e.g. TensorFlow data tensors).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Numpy array of target (label) data (if the model has a single output), or list of Numpy arrays (if the model has multiple outputs). If output layers in the model are named, you can also pass a dictionary mapping output names to Numpy arrays. y can be None (default) if feeding from framework-native tensors (e.g. TensorFlow data tensors).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">batch_size</span></td>
+        <td><p>Integer or None. Number of samples per gradient update. If unspecified, batch_sizewill default to 32.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">epochs</span></td>
+        <td><p>Integer. Number of epochs to train the model. An epoch is an iteration over the entire x and y data provided. Note that in conjunction with initial_epoch, epochs is to be understood as &quot;final epoch&quot;. The model is not trained for a number of iterations given by epochs, but merely until the epoch of index epochs is reached.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">verbose</span></td>
+        <td><p>Integer. 0, 1, or 2. Verbosity mode. 0 = silent, 1 = progress bar, 2 = one line per epoch.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Keras.Callbacks.Callback.html">Callback</a>[]</td>
+        <td><span class="parametername">callbacks</span></td>
+        <td><p>List of keras.callbacks.Callback instances. List of callbacks to apply during training and validation (if ). See callbacks.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">validation_split</span></td>
+        <td><p>Float between 0 and 1. Fraction of the training data to be used as validation data. The model will set apart this fraction of the training data, will not train on it, and will evaluate the loss and any model metrics on this data at the end of each epoch. The validation data is selected from the last samples in the x and y data provided, before shuffling.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span>[]</td>
+        <td><span class="parametername">validation_data</span></td>
+        <td><p>tuple (x_val, y_val) or tuple (x_val, y_val, val_sample_weights) on which to evaluate the loss and any model metrics at the end of each epoch. The model will not be trained on this data. validation_data will override validation_split.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">shuffle</span></td>
+        <td><p>Boolean (whether to shuffle the training data before each epoch) or str (for 'batch'). 'batch' is a special option for dealing with the limitations of HDF5 data; it shuffles in batch-sized chunks. Has no effect when steps_per_epoch is not None.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">class_weight</span></td>
+        <td><p>Optional dictionary mapping class indices (integers) to a weight (float) value, used for weighting the loss function (during training only). This can be useful to tell the model to &quot;pay more attention&quot; to samples from an under-represented class.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">sample_weight</span></td>
+        <td><p>Optional Numpy array of weights for the training samples, used for weighting the loss function (during training only). You can either pass a flat (1D) Numpy array with the same length as the input samples (1:1 mapping between weights and samples), or in the case of temporal data, you can pass a 2D array with shape (samples, sequence_length), to apply a different weight to every timestep of every sample. In this case you should make sure to specifysample_weight_mode=&quot;temporal&quot; in compile().</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">initial_epoch</span></td>
+        <td><p>Integer. Epoch at which to start training (useful for resuming a previous training run).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">steps_per_epoch</span></td>
+        <td><p>Integer or None. Total number of steps (batches of samples) before declaring one epoch finished and starting the next epoch. When training with input tensors such as TensorFlow data tensors, the default None is equal to the number of samples in your dataset divided by the batch size, or 1 if that cannot be determined.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">validation_steps</span></td>
+        <td><p>Only relevant if steps_per_epoch is specified. Total number of steps (batches of samples) to validate before stopping.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Keras.Callbacks.History.html">History</a></td>
+        <td><p>A History object. Its History.history attribute is a record of training loss values and metrics values at successive epochs, as well as validation loss values and validation metrics values (if applicable).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Models_BaseModel_LoadWeight_System_String_.md&amp;value=---%0Auid%3A%20Keras.Models.BaseModel.LoadWeight(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Models/BaseModel.cs/#L209">View Source</a>
+  </span>
+  <a id="Keras_Models_BaseModel_LoadWeight_" data-uid="Keras.Models.BaseModel.LoadWeight*"></a>
+  <h4 id="Keras_Models_BaseModel_LoadWeight_System_String_" data-uid="Keras.Models.BaseModel.LoadWeight(System.String)">LoadWeight(String)</h4>
+  <div class="markdown level1 summary"><p>Loads the weight to the model from a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadWeight(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path of of the weight file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Models_BaseModel_ModelFromJson_System_String_.md&amp;value=---%0Auid%3A%20Keras.Models.BaseModel.ModelFromJson(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Models/BaseModel.cs/#L219">View Source</a>
+  </span>
+  <a id="Keras_Models_BaseModel_ModelFromJson_" data-uid="Keras.Models.BaseModel.ModelFromJson*"></a>
+  <h4 id="Keras_Models_BaseModel_ModelFromJson_System_String_" data-uid="Keras.Models.BaseModel.ModelFromJson(System.String)">ModelFromJson(String)</h4>
+  <div class="markdown level1 summary"><p>Load the model from json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BaseModel ModelFromJson(string json_string)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">json_string</span></td>
+        <td><p>The json string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Keras.Models.BaseModel.html">BaseModel</a></td>
+        <td><p>The model</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Models_BaseModel_ModelFromYaml_System_String_.md&amp;value=---%0Auid%3A%20Keras.Models.BaseModel.ModelFromYaml(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Models/BaseModel.cs/#L232">View Source</a>
+  </span>
+  <a id="Keras_Models_BaseModel_ModelFromYaml_" data-uid="Keras.Models.BaseModel.ModelFromYaml*"></a>
+  <h4 id="Keras_Models_BaseModel_ModelFromYaml_System_String_" data-uid="Keras.Models.BaseModel.ModelFromYaml(System.String)">ModelFromYaml(String)</h4>
+  <div class="markdown level1 summary"><p>Load the model from yaml.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BaseModel ModelFromYaml(string json_string)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">json_string</span></td>
+        <td><p>The json string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Keras.Models.BaseModel.html">BaseModel</a></td>
+        <td><p>The model</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Models_BaseModel_Predict_Numpy_NDarray_Numpy_NDarray_System_Int32_System_Nullable_System_Int32__Keras_Callbacks_Callback___.md&amp;value=---%0Auid%3A%20Keras.Models.BaseModel.Predict(Numpy.NDarray%2CNumpy.NDarray%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int32%7D%2CKeras.Callbacks.Callback%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Models/BaseModel.cs/#L123">View Source</a>
+  </span>
+  <a id="Keras_Models_BaseModel_Predict_" data-uid="Keras.Models.BaseModel.Predict*"></a>
+  <h4 id="Keras_Models_BaseModel_Predict_Numpy_NDarray_Numpy_NDarray_System_Int32_System_Nullable_System_Int32__Keras_Callbacks_Callback___" data-uid="Keras.Models.BaseModel.Predict(Numpy.NDarray,Numpy.NDarray,System.Int32,System.Nullable{System.Int32},Keras.Callbacks.Callback[])">Predict(NDarray, NDarray, Int32, Nullable&lt;Int32&gt;, Callback[])</h4>
+  <div class="markdown level1 summary"><p>Generates output predictions for the input samples.
+Computation is done in batches.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NDarray Predict(NDarray x, NDarray y, int verbose = 1, int? steps = default(int? ), Callback[] callbacks = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The input data, as a Numpy array (or list of Numpy arrays if the model has multiple inputs).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Integer. If unspecified, it will default to 32.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">verbose</span></td>
+        <td><p>Verbosity mode, 0 or 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">steps</span></td>
+        <td><p>Total number of steps (batches of samples) before declaring the prediction round finished. Ignored with the default value of None.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Keras.Callbacks.Callback.html">Callback</a>[]</td>
+        <td><span class="parametername">callbacks</span></td>
+        <td><p>List of keras.callbacks.Callback instances. List of callbacks to apply during prediction. See callbacks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><p>Numpy array(s) of predictions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Models_BaseModel_PredictOnBatch_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Models.BaseModel.PredictOnBatch(Numpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Models/BaseModel.cs/#L177">View Source</a>
+  </span>
+  <a id="Keras_Models_BaseModel_PredictOnBatch_" data-uid="Keras.Models.BaseModel.PredictOnBatch*"></a>
+  <h4 id="Keras_Models_BaseModel_PredictOnBatch_Numpy_NDarray_" data-uid="Keras.Models.BaseModel.PredictOnBatch(Numpy.NDarray)">PredictOnBatch(NDarray)</h4>
+  <div class="markdown level1 summary"><p>Returns predictions for a single batch of samples.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NDarray PredictOnBatch(NDarray x)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>Input samples, as a Numpy array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><p>Numpy array(s) of predictions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Models_BaseModel_SaveWeight_System_String_.md&amp;value=---%0Auid%3A%20Keras.Models.BaseModel.SaveWeight(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Models/BaseModel.cs/#L200">View Source</a>
+  </span>
+  <a id="Keras_Models_BaseModel_SaveWeight_" data-uid="Keras.Models.BaseModel.SaveWeight*"></a>
+  <h4 id="Keras_Models_BaseModel_SaveWeight_System_String_" data-uid="Keras.Models.BaseModel.SaveWeight(System.String)">SaveWeight(String)</h4>
+  <div class="markdown level1 summary"><p>Saves the weight of the trained model to a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveWeight(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path of the weight to save.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Models_BaseModel_TestOnBatch_Numpy_NDarray_Numpy_NDarray_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Models.BaseModel.TestOnBatch(Numpy.NDarray%2CNumpy.NDarray%2CNumpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Models/BaseModel.cs/#L162">View Source</a>
+  </span>
+  <a id="Keras_Models_BaseModel_TestOnBatch_" data-uid="Keras.Models.BaseModel.TestOnBatch*"></a>
+  <h4 id="Keras_Models_BaseModel_TestOnBatch_Numpy_NDarray_Numpy_NDarray_Numpy_NDarray_" data-uid="Keras.Models.BaseModel.TestOnBatch(Numpy.NDarray,Numpy.NDarray,Numpy.NDarray)">TestOnBatch(NDarray, NDarray, NDarray)</h4>
+  <div class="markdown level1 summary"><p>Tests the on batch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double[] TestOnBatch(NDarray x, NDarray y, NDarray sample_weight = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>Numpy array of test data, or list of Numpy arrays if the model has multiple inputs. If all inputs in the model are named, you can also pass a dictionary mapping input names to Numpy arrays.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Numpy array of target data, or list of Numpy arrays if the model has multiple outputs. If all outputs in the model are named, you can also pass a dictionary mapping output names to Numpy arrays.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">sample_weight</span></td>
+        <td><p>Optional array of the same length as x, containing weights to apply to the model's loss for each sample. In the case of temporal data, you can pass a 2D array with shape (samples, sequence_length), to apply a different weight to every timestep of every sample. In this case you should make sure to specify sample_weight_mode=&quot;temporal&quot; in compile().</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><p>Scalar test loss (if the model has a single output and no metrics) or list of scalars (if the model has multiple outputs and/or metrics). The attribute model.metrics_names will give you the display labels for the scalar outputs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Models_BaseModel_ToJson.md&amp;value=---%0Auid%3A%20Keras.Models.BaseModel.ToJson%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Models/BaseModel.cs/#L191">View Source</a>
+  </span>
+  <a id="Keras_Models_BaseModel_ToJson_" data-uid="Keras.Models.BaseModel.ToJson*"></a>
+  <h4 id="Keras_Models_BaseModel_ToJson" data-uid="Keras.Models.BaseModel.ToJson">ToJson()</h4>
+  <div class="markdown level1 summary"><p>Converts the model to json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToJson()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Models_BaseModel_TrainOnBatch_Numpy_NDarray_Numpy_NDarray_Numpy_NDarray_System_Collections_Generic_Dictionary_System_Int32_System_Single__.md&amp;value=---%0Auid%3A%20Keras.Models.BaseModel.TrainOnBatch(Numpy.NDarray%2CNumpy.NDarray%2CNumpy.NDarray%2CSystem.Collections.Generic.Dictionary%7BSystem.Int32%2CSystem.Single%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Models/BaseModel.cs/#L144">View Source</a>
+  </span>
+  <a id="Keras_Models_BaseModel_TrainOnBatch_" data-uid="Keras.Models.BaseModel.TrainOnBatch*"></a>
+  <h4 id="Keras_Models_BaseModel_TrainOnBatch_Numpy_NDarray_Numpy_NDarray_Numpy_NDarray_System_Collections_Generic_Dictionary_System_Int32_System_Single__" data-uid="Keras.Models.BaseModel.TrainOnBatch(Numpy.NDarray,Numpy.NDarray,Numpy.NDarray,System.Collections.Generic.Dictionary{System.Int32,System.Single})">TrainOnBatch(NDarray, NDarray, NDarray, Dictionary&lt;Int32, Single&gt;)</h4>
+  <div class="markdown level1 summary"><p>Runs a single gradient update on a single batch of data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double[] TrainOnBatch(NDarray x, NDarray y, NDarray sample_weight = null, Dictionary&lt;int, float&gt; class_weight = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>Numpy array of training data, or list of Numpy arrays if the model has multiple inputs. If all inputs in the model are named, you can also pass a dictionary mapping input names to Numpy arrays.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Numpy array of target data, or list of Numpy arrays if the model has multiple outputs. If all outputs in the model are named, you can also pass a dictionary mapping output names to Numpy arrays.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">sample_weight</span></td>
+        <td><p>Optional array of the same length as x, containing weights to apply to the model's loss for each sample. In the case of temporal data, you can pass a 2D array with shape (samples, sequence_length), to apply a different weight to every timestep of every sample. In this case you should make sure to specify sample_weight_mode=&quot;temporal&quot; in compile().</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">class_weight</span></td>
+        <td><p>Optional dictionary mapping class indices (integers) to a weight (float) to apply to the model's loss for the samples from this class during training. This can be useful to tell the model to &quot;pay more attention&quot; to samples from an under-represented class.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><p>Scalar training loss (if the model has a single output and no metrics) or list of scalars (if the model has multiple outputs and/or metrics). The attribute model.metrics_names will give you the display labels for the scalar outputs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Models_BaseModel.md&amp;value=---%0Auid%3A%20Keras.Models.BaseModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Models/BaseModel.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

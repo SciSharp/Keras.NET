@@ -1,0 +1,671 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Backend
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Backend
+   ">
+    <meta name="generator" content="docfx 2.42.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer="" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Keras.Backend">
+  
+  
+  <h1 id="Keras_Backend" data-uid="Keras.Backend" class="text-break">Class Backend
+  </h1>
+  <div class="markdown level0 summary"><p>Keras is a model-level library, providing high-level building blocks for developing deep learning models.
+It does not handle low-level operations such as tensor products, convolutions and so on itself. Instead, it relies on a specialized,
+well optimized tensor manipulation library to do so, serving as the &quot;backend engine&quot; of Keras.
+Rather than picking one single tensor library and making the implementation of Keras tied to that library, Keras handles the problem in a modular way,
+and several different backend engines can be plugged seamlessly into Keras.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Keras.Keras.html">Keras</a></div>
+    <div class="level2"><a class="xref" href="Keras.Base.html">Base</a></div>
+    <div class="level3"><span class="xref">Backend</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_Parameters">Base.Parameters</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_None">Base.None</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_Init">Base.Init()</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_ToPython">Base.ToPython()</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_InvokeStaticMethod_System_Object_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__">Base.InvokeStaticMethod(Object, String, Dictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_InvokeMethod_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__">Base.InvokeMethod(String, Dictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_Item_System_String_">Base.Item[String]</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_Instance">Keras.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_keras">Keras.keras</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_Dispose">Keras.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_ToTuple_System_Array_">Keras.ToTuple(Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_ToList_System_Array_">Keras.ToList(Array)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Keras.html">Keras</a></h6>
+  <h6><strong>Assembly</strong>: Keras.dll</h6>
+  <h5 id="Keras_Backend_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Backend : Base, IDisposable</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Backend_CastToFloatX_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Backend.CastToFloatX(Numpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Backend.cs/#L71">View Source</a>
+  </span>
+  <a id="Keras_Backend_CastToFloatX_" data-uid="Keras.Backend.CastToFloatX*"></a>
+  <h4 id="Keras_Backend_CastToFloatX_Numpy_NDarray_" data-uid="Keras.Backend.CastToFloatX(Numpy.NDarray)">CastToFloatX(NDarray)</h4>
+  <div class="markdown level1 summary"><p>Cast a Numpy array to the default Keras float type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NDarray CastToFloatX(NDarray x)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The x, Numpy array..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><p>The same Numpy array, cast to its new type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Backend_ClearSession.md&amp;value=---%0Auid%3A%20Keras.Backend.ClearSession%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Backend.cs/#L115">View Source</a>
+  </span>
+  <a id="Keras_Backend_ClearSession_" data-uid="Keras.Backend.ClearSession*"></a>
+  <h4 id="Keras_Backend_ClearSession" data-uid="Keras.Backend.ClearSession">ClearSession()</h4>
+  <div class="markdown level1 summary"><p>Destroys the current TF graph and creates a new one.Useful to avoid clutter from old models / layers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearSession()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Backend_Epsilon.md&amp;value=---%0Auid%3A%20Keras.Backend.Epsilon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Backend.cs/#L34">View Source</a>
+  </span>
+  <a id="Keras_Backend_Epsilon_" data-uid="Keras.Backend.Epsilon*"></a>
+  <h4 id="Keras_Backend_Epsilon" data-uid="Keras.Backend.Epsilon">Epsilon()</h4>
+  <div class="markdown level1 summary"><p>Returns the value of the fuzz factor used in numeric expressions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Epsilon()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Backend_FloatX.md&amp;value=---%0Auid%3A%20Keras.Backend.FloatX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Backend.cs/#L52">View Source</a>
+  </span>
+  <a id="Keras_Backend_FloatX_" data-uid="Keras.Backend.FloatX*"></a>
+  <h4 id="Keras_Backend_FloatX" data-uid="Keras.Backend.FloatX">FloatX()</h4>
+  <div class="markdown level1 summary"><p>Returns the default float type, as a string. (e.g. 'float16', 'float32', 'float64').</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FloatX()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>String, the current default float type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Backend_GetBackend.md&amp;value=---%0Auid%3A%20Keras.Backend.GetBackend%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Backend.cs/#L25">View Source</a>
+  </span>
+  <a id="Keras_Backend_GetBackend_" data-uid="Keras.Backend.GetBackend*"></a>
+  <h4 id="Keras_Backend_GetBackend" data-uid="Keras.Backend.GetBackend">GetBackend()</h4>
+  <div class="markdown level1 summary"><p>Publicly accessible method for determining the current backend.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetBackend()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>String, the name of the backend Keras is currently using.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Backend_GetUid_System_String_.md&amp;value=---%0Auid%3A%20Keras.Backend.GetUid(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Backend.cs/#L99">View Source</a>
+  </span>
+  <a id="Keras_Backend_GetUid_" data-uid="Keras.Backend.GetUid*"></a>
+  <h4 id="Keras_Backend_GetUid_System_String_" data-uid="Keras.Backend.GetUid(System.String)">GetUid(String)</h4>
+  <div class="markdown level1 summary"><p>Get the uid for the default graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetUid(string prefix = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">prefix</span></td>
+        <td><p>An optional prefix of the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A unique identifier for the graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Backend_ImageDataFormat.md&amp;value=---%0Auid%3A%20Keras.Backend.ImageDataFormat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Backend.cs/#L80">View Source</a>
+  </span>
+  <a id="Keras_Backend_ImageDataFormat_" data-uid="Keras.Backend.ImageDataFormat*"></a>
+  <h4 id="Keras_Backend_ImageDataFormat" data-uid="Keras.Backend.ImageDataFormat">ImageDataFormat()</h4>
+  <div class="markdown level1 summary"><p>Returns the default image data format convention.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ImageDataFormat()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string, either 'channels_first' or 'channels_last'</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Backend_IsSparse_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Backend.IsSparse(Numpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Backend.cs/#L127">View Source</a>
+  </span>
+  <a id="Keras_Backend_IsSparse_" data-uid="Keras.Backend.IsSparse*"></a>
+  <h4 id="Keras_Backend_IsSparse_Numpy_NDarray_" data-uid="Keras.Backend.IsSparse(Numpy.NDarray)">IsSparse(NDarray)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified tensor is sparse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSparse(NDarray tensor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">tensor</span></td>
+        <td><p>The tensor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the specified tensor is sparse; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Backend_ResetUids.md&amp;value=---%0Auid%3A%20Keras.Backend.ResetUids%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Backend.cs/#L107">View Source</a>
+  </span>
+  <a id="Keras_Backend_ResetUids_" data-uid="Keras.Backend.ResetUids*"></a>
+  <h4 id="Keras_Backend_ResetUids" data-uid="Keras.Backend.ResetUids">ResetUids()</h4>
+  <div class="markdown level1 summary"><p>Resets graph identifiers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ResetUids()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Backend_SetEpsilon_System_Single_.md&amp;value=---%0Auid%3A%20Keras.Backend.SetEpsilon(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Backend.cs/#L43">View Source</a>
+  </span>
+  <a id="Keras_Backend_SetEpsilon_" data-uid="Keras.Backend.SetEpsilon*"></a>
+  <h4 id="Keras_Backend_SetEpsilon_System_Single_" data-uid="Keras.Backend.SetEpsilon(System.Single)">SetEpsilon(Single)</h4>
+  <div class="markdown level1 summary"><p>Sets the value of the fuzz factor used in numeric expressions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEpsilon(float e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>float. New value of epsilon.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Backend_SetFloatX_System_String_.md&amp;value=---%0Auid%3A%20Keras.Backend.SetFloatX(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Backend.cs/#L61">View Source</a>
+  </span>
+  <a id="Keras_Backend_SetFloatX_" data-uid="Keras.Backend.SetFloatX*"></a>
+  <h4 id="Keras_Backend_SetFloatX_System_String_" data-uid="Keras.Backend.SetFloatX(System.String)">SetFloatX(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the default float type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFloatX(string floatx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">floatx</span></td>
+        <td><p>String, 'float16', 'float32', or 'float64'.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Backend_SetImageDataFormat_System_String_.md&amp;value=---%0Auid%3A%20Keras.Backend.SetImageDataFormat(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Backend.cs/#L89">View Source</a>
+  </span>
+  <a id="Keras_Backend_SetImageDataFormat_" data-uid="Keras.Backend.SetImageDataFormat*"></a>
+  <h4 id="Keras_Backend_SetImageDataFormat_System_String_" data-uid="Keras.Backend.SetImageDataFormat(System.String)">SetImageDataFormat(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the image data format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetImageDataFormat(string data_format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">data_format</span></td>
+        <td><p>data_format: string. 'channels_first' or 'channels_last'.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Backend_ToDense_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Backend.ToDense(Numpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Backend.cs/#L137">View Source</a>
+  </span>
+  <a id="Keras_Backend_ToDense_" data-uid="Keras.Backend.ToDense*"></a>
+  <h4 id="Keras_Backend_ToDense_Numpy_NDarray_" data-uid="Keras.Backend.ToDense(Numpy.NDarray)">ToDense(NDarray)</h4>
+  <div class="markdown level1 summary"><p>Converts a sparse tensor into a dense tensor and returns it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NDarray ToDense(NDarray tensor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">tensor</span></td>
+        <td><p>The tensor potentially sparse.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><p>A dense tensor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Backend.md&amp;value=---%0Auid%3A%20Keras.Backend%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Backend.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

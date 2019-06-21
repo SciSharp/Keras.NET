@@ -1,0 +1,2193 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/git/Keras.NET/doc-gen",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Activations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Activations.html",
+          "hash": "llJ7MPzeKH/4bl0CWtcR0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Applications.DenseNet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Applications.DenseNet.html",
+          "hash": "b8IKWHpeuC8ShP4X7mCbwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Applications.ImageNetPrediction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Applications.ImageNetPrediction.html",
+          "hash": "1Mh+whq3mZ9qAYYddtEQWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Applications.InceptionResNetV2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Applications.InceptionResNetV2.html",
+          "hash": "kzMarQLWLlTdQWiA1bXDLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Applications.InceptionV3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Applications.InceptionV3.html",
+          "hash": "NpMO4ncobp/A2jl4ll6OBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Applications.MobileNet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Applications.MobileNet.html",
+          "hash": "/o/oYVm7P9QdoyRKPJzsiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Applications.MobileNetV2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Applications.MobileNetV2.html",
+          "hash": "5EYwGv8+FKTyisVrCHrwGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Applications.NASNet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Applications.NASNet.html",
+          "hash": "7Kj3K/K+A67HlWjGGiqStg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Applications.ResNet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Applications.ResNet.html",
+          "hash": "cRUnWE+H5/skTsR6bYntRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Applications.ResNetNext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Applications.ResNetNext.html",
+          "hash": "pMkjpsPPVH9mN8A/VHNi2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Applications.ResNetV2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Applications.ResNetV2.html",
+          "hash": "IeAEuPRAmCL2k1tfPiJI/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Applications.VGG16.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Applications.VGG16.html",
+          "hash": "ppO0IRIjpGq8fFaVPOm8+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Applications.VGG19.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Applications.VGG19.html",
+          "hash": "udNkGw7cJ9DFpi8tIgogxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Applications.Xception.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Applications.Xception.html",
+          "hash": "ZSx3zHSJxnQqmRfwcdtAKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Applications.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Applications.html",
+          "hash": "gGhuMwBD3exC8/vUj9MB5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Backend.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Backend.html",
+          "hash": "GA+IXz6njzrHG4KOH9nTmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Base.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Base.html",
+          "hash": "1IWof3GEUNLsVEQ1MuUB1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Callbacks.BaseLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Callbacks.BaseLogger.html",
+          "hash": "pmroqAkrsa0RKu7R6lnoYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Callbacks.CSVLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Callbacks.CSVLogger.html",
+          "hash": "8xwMjgpx7eiyFbUu7vxFFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Callbacks.Callback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Callbacks.Callback.html",
+          "hash": "q2k7cals/IXcwIe+3CrS2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Callbacks.EarlyStopping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Callbacks.EarlyStopping.html",
+          "hash": "9nLQJ15e0UnFi6Uq7RauLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Callbacks.History.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Callbacks.History.html",
+          "hash": "QRamFp6CDfmcEeCLQ2NY4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Callbacks.LearningRateScheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Callbacks.LearningRateScheduler.html",
+          "hash": "ttLlix7lUOo7x5qH4OUu6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Callbacks.ModelCheckpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Callbacks.ModelCheckpoint.html",
+          "hash": "/BsB+yYFRBr20032OLwkPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Callbacks.ProgbarLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Callbacks.ProgbarLogger.html",
+          "hash": "qOFoWJ/11e9YAYa+m+Kj/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Callbacks.ReduceLROnPlateau.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Callbacks.ReduceLROnPlateau.html",
+          "hash": "rPKendFPYWeK8h2EAqeuSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Callbacks.RemoteMonitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Callbacks.RemoteMonitor.html",
+          "hash": "2KyaaMZw8qXBrn2veBvQZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Callbacks.TensorBoard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Callbacks.TensorBoard.html",
+          "hash": "lVdTbG+wM6g26x9jDNs38Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Callbacks.TerminateOnNaN.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Callbacks.TerminateOnNaN.html",
+          "hash": "4foI3rJkOGpcJjEHU/8BHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Callbacks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Callbacks.html",
+          "hash": "YJnKEH/FbqdU5UZB2bl84Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Constraints.MaxNorm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Constraints.MaxNorm.html",
+          "hash": "pKcFGZLZpctLunAP98aiMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Constraints.MinMaxNorm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Constraints.MinMaxNorm.html",
+          "hash": "yWma3e4jHZiQJ2ZL5Vq+Fg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Constraints.NonNeg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Constraints.NonNeg.html",
+          "hash": "mB1XzVS1R6/Xfe/aO+iWCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Constraints.UnitNorm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Constraints.UnitNorm.html",
+          "hash": "p/heF99XKP3xiu5N/6V7UA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Constraints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Constraints.html",
+          "hash": "2y4Ti+d6/QBFXJdV3Yg1/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Datasets.BostonHousing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Datasets.BostonHousing.html",
+          "hash": "6iILieNA4rm6Ztohey+6tw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Datasets.Cifar10.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Datasets.Cifar10.html",
+          "hash": "Ny0TrnYRsaaCri5DhpBmIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Datasets.Cifar100.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Datasets.Cifar100.html",
+          "hash": "JIWjGhy2x7tYwMTm3p77fQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Datasets.FashionMNIST.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Datasets.FashionMNIST.html",
+          "hash": "3nPFsxUL2rTJo/AxN2n2Lw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Datasets.IMDB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Datasets.IMDB.html",
+          "hash": "lVV4PeuJ0R9dw3vGoUWAdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Datasets.MNIST.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Datasets.MNIST.html",
+          "hash": "5KZDloWVnTV+qPTnYFyQjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Datasets.Reuters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Datasets.Reuters.html",
+          "hash": "of0xpnIktDjaSnquPVLzGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Datasets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Datasets.html",
+          "hash": "tAszyX05Yup0hOkMh4Y7fg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Helper.TupleSolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Helper.TupleSolver.html",
+          "hash": "PQcSoo/s1rERXSAOmV4FmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Helper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Helper.html",
+          "hash": "Huu/zWJs30M1krfl32zl9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Initializer.Constant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Initializer.Constant.html",
+          "hash": "Qi7PheO4kmVivdwaEaAKLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Initializer.GlorotNormal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Initializer.GlorotNormal.html",
+          "hash": "Y2FD6BygCRYZHAxBm0a2iw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Initializer.GlorotUniform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Initializer.GlorotUniform.html",
+          "hash": "46Rebj8tw/9Mj4qzNl9opw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Initializer.HeNormal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Initializer.HeNormal.html",
+          "hash": "S9I+HN9yBp+E1kqGp1/G2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Initializer.HeUniform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Initializer.HeUniform.html",
+          "hash": "nuERjOWtiLNAnjWkoj05YQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Initializer.Identity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Initializer.Identity.html",
+          "hash": "2jcCRsJInplsaxl9Qn55dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Initializer.LecunNormal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Initializer.LecunNormal.html",
+          "hash": "BCq2plLfPBu64/medMZM8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Initializer.LecunUniform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Initializer.LecunUniform.html",
+          "hash": "JoRwzV99ZEZ8wswwxgzi5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Initializer.Ones.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Initializer.Ones.html",
+          "hash": "DxEm+pUQ0x310+sfnZfoJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Initializer.Orthogonal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Initializer.Orthogonal.html",
+          "hash": "XYyX/FdYymNItfLjV/S2uw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Initializer.RandomNormal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Initializer.RandomNormal.html",
+          "hash": "R87dn+0DCrfXE406yOo/Ww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Initializer.RandomUniform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Initializer.RandomUniform.html",
+          "hash": "O0cymoJtyCse134H21gzww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Initializer.TruncatedNormal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Initializer.TruncatedNormal.html",
+          "hash": "yySRB7tetX8aGc84P8VtOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Initializer.VarianceScaling.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Initializer.VarianceScaling.html",
+          "hash": "zKKNamDNtJ+EtpXl26eu0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Initializer.Zeros.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Initializer.Zeros.html",
+          "hash": "Rb9yCrX/qythf2j/xNU4Cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Initializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Initializer.html",
+          "hash": "4z0UwW4a/sd8wIMnhdD29Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Keras.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Keras.html",
+          "hash": "/ZGcT23saCmxiTj6U/72Ig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.KerasFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.KerasFunction.html",
+          "hash": "3kKQoS5FQZm+z0kR94kXlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.KerasIterator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.KerasIterator.html",
+          "hash": "Qs3Au5md+5YFWGhQcM0PVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Activation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Activation.html",
+          "hash": "o+lYIl91Sb+wZoz8lNAbSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.ActivityRegularization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.ActivityRegularization.html",
+          "hash": "lsbcSAwFa12VSqaH79FW6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Add.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Add.html",
+          "hash": "oS9Mc+PSm5I3IDF5z5MC7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.AlphaDropout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.AlphaDropout.html",
+          "hash": "QuScFK9CKLV30PrR2WsGjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.AveragePooling1D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.AveragePooling1D.html",
+          "hash": "jtmhbf6azWTsnlnF8olwbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.AveragePooling2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.AveragePooling2D.html",
+          "hash": "SBbB1JxPqDUv3WA03EButQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.AveragePooling3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.AveragePooling3D.html",
+          "hash": "bSrFSrwwlSFYMs18ZB0uQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.BaseLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.BaseLayer.html",
+          "hash": "BG+jW25uizRE5hQdqkku5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.BatchNormalization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.BatchNormalization.html",
+          "hash": "zOrC/wTgN95f/RWHt/GiPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Bidirectional.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Bidirectional.html",
+          "hash": "bc3jaF2RPk4X40o5ms/PFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Conv1D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Conv1D.html",
+          "hash": "iuTgC+wA6jqUM9BF7iH+lA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Conv2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Conv2D.html",
+          "hash": "4A9B+33NXEHxIJcoS8PHkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Conv2DTranspose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Conv2DTranspose.html",
+          "hash": "xSX7kUnU17I2hAJuvjvc6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Conv3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Conv3D.html",
+          "hash": "XsPTpKIRvfSbho9HDD8FeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Conv3DTranspose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Conv3DTranspose.html",
+          "hash": "jifYbvajaeHiqvkhK0m5Jg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.ConvLSTM2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.ConvLSTM2D.html",
+          "hash": "5wK8Tf25Fu+jxSxtp//TtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.ConvLSTM2DCell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.ConvLSTM2DCell.html",
+          "hash": "KHVQD0UE+yImoRef2jcPRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Cropping1D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Cropping1D.html",
+          "hash": "xquWEA+9v+teFBO8WlINpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Cropping2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Cropping2D.html",
+          "hash": "oMGtoFVZ5oqns4VRusgTKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Cropping3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Cropping3D.html",
+          "hash": "D3d6jOTbmbl7oHjQySXScA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.CuDNNGRU.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.CuDNNGRU.html",
+          "hash": "gC4c/eHBEgYJyXA8I+E2tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.CuDNNLSTM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.CuDNNLSTM.html",
+          "hash": "/gr/6N+MMhOKYCTrRSew7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Dense.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Dense.html",
+          "hash": "coFOH8i851AK4361nZSA7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.DepthwiseConv2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.DepthwiseConv2D.html",
+          "hash": "3NCjPp1EsyfDenzUqLf0SQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Dropout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Dropout.html",
+          "hash": "syXD3Sui00hZH0L5VUs4eQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.ELU.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.ELU.html",
+          "hash": "spi2EPaReBSq+NcrJwn/OQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Embedding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Embedding.html",
+          "hash": "H+JZx1mNOJO+MuBvQsvBzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Flatten.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Flatten.html",
+          "hash": "J04XnAtcyjq47xdoC9o0fQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.GRU.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.GRU.html",
+          "hash": "ahla1FKtULUlMLEV/3S/+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.GRUCell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.GRUCell.html",
+          "hash": "9syGjoHc0AjEqAFgtssUdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.GaussianDropout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.GaussianDropout.html",
+          "hash": "tT1iHSk9HfgD/FVCnGErSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.GaussianNoise.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.GaussianNoise.html",
+          "hash": "JSMqb+ymJhHLY/rvHrBMrg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.GlobalAveragePooling1D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.GlobalAveragePooling1D.html",
+          "hash": "Z4V/eqF3gmVC50u7rtffCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.GlobalAveragePooling2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.GlobalAveragePooling2D.html",
+          "hash": "2GZ8oDnpUSQZdRVgAM6Img=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.GlobalAveragePooling3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.GlobalAveragePooling3D.html",
+          "hash": "lJfiWgCVVb20qNunv3IqhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.GlobalMaxPooling1D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.GlobalMaxPooling1D.html",
+          "hash": "fqxNuoYJxicISGcnD65Geg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.GlobalMaxPooling2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.GlobalMaxPooling2D.html",
+          "hash": "dueirxI6gAiKh6rNZS8xLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.GlobalMaxPooling3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.GlobalMaxPooling3D.html",
+          "hash": "t2jAXa1rUdxvjFqINg9MXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Input.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Input.html",
+          "hash": "qLcxb+AiWugQ6QCrKhP0zQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.LSTM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.LSTM.html",
+          "hash": "gQ1FcnrWRZL5CXXmm7rlQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.LSTMCell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.LSTMCell.html",
+          "hash": "D4qPjKDBF/PgY8DM8f9jow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Lambda.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Lambda.html",
+          "hash": "y58TUMywLYWTXx4nxaAS2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.LeakyReLU.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.LeakyReLU.html",
+          "hash": "z4gvjH18L3z4diFGsEP+QQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.LocallyConnected1D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.LocallyConnected1D.html",
+          "hash": "AfioCBGGqUkiqq7uo2Ndwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.LocallyConnected2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.LocallyConnected2D.html",
+          "hash": "cBRh5utgjuywRt193tYkFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Masking.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Masking.html",
+          "hash": "G3AwNER3IcI4XT985zAI3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.MaxPooling1D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.MaxPooling1D.html",
+          "hash": "BgchoJCfwUYDby/Jjpe7oQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.MaxPooling2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.MaxPooling2D.html",
+          "hash": "1BccJw/mrGY8I6u/ojUUgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.MaxPooling3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.MaxPooling3D.html",
+          "hash": "60VxP2blvFeNBgz2tiOgZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Merge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Merge.html",
+          "hash": "3c6Xa+4D7z7cgpOrxJBrdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.PReLU.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.PReLU.html",
+          "hash": "5e2SYAnseyOJlW/Db7M/5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Permute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Permute.html",
+          "hash": "psOMUf/ql52RrIgA1Qz7NQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.RNN.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.RNN.html",
+          "hash": "B8S6W3or9icfpIuGE8KEag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.ReLU.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.ReLU.html",
+          "hash": "uFSpNugYnqHYl62otuFpZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.RepeatVector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.RepeatVector.html",
+          "hash": "JUYzudUOofO5C7rwM/F+Gg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Reshape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Reshape.html",
+          "hash": "pG7RwHLc65l8ili82wIjJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.SeparableConv1D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.SeparableConv1D.html",
+          "hash": "nErxlH4cG4MMcugWh4o3LQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.SeparableConv2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.SeparableConv2D.html",
+          "hash": "tr9fDsifCXA2Gv+vLdivNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.SimpleRNN.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.SimpleRNN.html",
+          "hash": "/sFTycUIMXx3kgLO6MmP6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.SimpleRNNCell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.SimpleRNNCell.html",
+          "hash": "apC5Fh4B+eIojrBxkCbS+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.Softmax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.Softmax.html",
+          "hash": "D9ZM6V6C6Kz/GyqopSP7vg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.SpatialDropout1D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.SpatialDropout1D.html",
+          "hash": "oe4BDcFmIVYTUBQcmYp11Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.SpatialDropout2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.SpatialDropout2D.html",
+          "hash": "2jVORKk0wOmRhsOfHWvgag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.SpatialDropout3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.SpatialDropout3D.html",
+          "hash": "3OdB5UfNOd/Xemj8nLerlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.ThresholdedReLU.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.ThresholdedReLU.html",
+          "hash": "vZnXrm95V6qGZ2KJHOd6qA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.TimeDistributed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.TimeDistributed.html",
+          "hash": "MpplZiQbcISWCr8rFp2CTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.UpSampling1D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.UpSampling1D.html",
+          "hash": "FtfgMl87CElYbWJRlXUfPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.UpSampling2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.UpSampling2D.html",
+          "hash": "t7wXeT7ROb6gYe87iRmZLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.UpSampling3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.UpSampling3D.html",
+          "hash": "BXFnjaai05Pvt2F3eWMbog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.ZeroPadding1D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.ZeroPadding1D.html",
+          "hash": "eBjVaGoCTzgJ7gum1FmBUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.ZeroPadding2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.ZeroPadding2D.html",
+          "hash": "kojuXsPbOGjv4nPqZPh1dQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.ZeroPadding3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.ZeroPadding3D.html",
+          "hash": "cwrGASL+O2YY3ufqPR1bgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Layers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Layers.html",
+          "hash": "HbPKGGkTsgFuRbTuAPBVog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Losses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Losses.html",
+          "hash": "vPCsSPbXY2ewfam0/JpkZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Metrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Metrics.html",
+          "hash": "3lE7Z+pmHPN6VQTAO27fPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Models.BaseModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Models.BaseModel.html",
+          "hash": "G+VlquyhPmntFSYfw1Lc7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Models.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Models.Model.html",
+          "hash": "2XHUsnpGJ5IcYoommn1/KA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Models.Sequential.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Models.Sequential.html",
+          "hash": "eIrNGYGuQ/kin5b3gQQchA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Models.html",
+          "hash": "2Yo8rcPgSX7m1460Zf27cA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.NumpyExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.NumpyExtension.html",
+          "hash": "kEsDlec5yuDBrqn21TQ4tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Optimizers.Adadelta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Optimizers.Adadelta.html",
+          "hash": "+6mpq9RrXqqv80xLAUVDOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Optimizers.Adagrad.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Optimizers.Adagrad.html",
+          "hash": "Z9+9sF8wrtagPTgbfxeYBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Optimizers.Adam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Optimizers.Adam.html",
+          "hash": "9rLmaXTNLsLwYoNE/08ytQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Optimizers.Adamax.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Optimizers.Adamax.html",
+          "hash": "no3bQPNa1of7DjpVmrl+hA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Optimizers.Nadam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Optimizers.Nadam.html",
+          "hash": "PLVVpkQW/zddTQmOvPEt5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Optimizers.RMSprop.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Optimizers.RMSprop.html",
+          "hash": "EbP/510WJHr0wMutfb1eFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Optimizers.SGD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Optimizers.SGD.html",
+          "hash": "PqEwxOUtDXi8UM9NruvWPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Optimizers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Optimizers.html",
+          "hash": "8f5rHJiyMztQyv2CGLPHYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.PreProcessing.Image.ImageDataGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.PreProcessing.Image.ImageDataGenerator.html",
+          "hash": "yG0oBr3/hB7ptGygQUMFkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.PreProcessing.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.PreProcessing.Image.html",
+          "hash": "gmsYegOjyN9GQkFC6v/9Dg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.PreProcessing.sequence.Sequence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.PreProcessing.sequence.Sequence.html",
+          "hash": "kCQr8XzVQ06VsazOcYkw6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.PreProcessing.sequence.TimeseriesGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.PreProcessing.sequence.TimeseriesGenerator.html",
+          "hash": "0R9M21EsYwF410Pybqnukg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.PreProcessing.sequence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.PreProcessing.sequence.html",
+          "hash": "IkJEcaFVZTg/rVtvuF3dqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.PreProcessing.text.Text.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.PreProcessing.text.Text.html",
+          "hash": "9uCHL4IEyJ9Irj42K1vHcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.PreProcessing.text.Tokenizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.PreProcessing.text.Tokenizer.html",
+          "hash": "eX+lKqwLurB5t313lr4hpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.PreProcessing.text.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.PreProcessing.text.html",
+          "hash": "smh3jZMSC92Zk3EkqPqHkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Regularizers.L1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Regularizers.L1.html",
+          "hash": "5mC9GltTaDGu73UiTkfLqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Regularizers.L1L2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Regularizers.L1L2.html",
+          "hash": "n+phrflzMQqEN15s9awxPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Regularizers.L2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Regularizers.L2.html",
+          "hash": "O/rk1XhABQ3ZKEryriRipQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Regularizers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Regularizers.html",
+          "hash": "lHwn1dU+myw5eLbBUQfHNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "ReferencedXrefPropertyNotString"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Shape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Shape.html",
+          "hash": "sQ2lcHskDallPOZzMJTUfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.StringOrInstance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.StringOrInstance.html",
+          "hash": "1dLWDp3oE/NGaZsb5YYyjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Utils.CustomObjectScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Utils.CustomObjectScope.html",
+          "hash": "Z0HWhOJP7Yf+VBQZn2CaeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Utils.HDF5Matrix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Utils.HDF5Matrix.html",
+          "hash": "Z3iaBgtNAVupB2U9FQ8iAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Utils.Sequence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Utils.Sequence.html",
+          "hash": "5qpVnVLrmsb55U8lv4a4nw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Utils.Util.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Utils.Util.html",
+          "hash": "z2M/tcLEB9NgZZqC+Eq4/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.Utils.html",
+          "hash": "dXhUFswl/xqHh/jA8NMYoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Keras.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Keras.html",
+          "hash": "OWo0A6VmEDbUk022Aryxqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "tsi0HCdzKNPA9Wlfy0d6TQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "AQ0bgGUz2g8mzbz9DLhXwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "p6+8egBfzdoDeEKht1Q8DA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "/m2Xh4nHqStdU0m/KWSh/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "k+/dkjFuwAVS32HduMpmBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 172,
+          "skipped_file_count": 19
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

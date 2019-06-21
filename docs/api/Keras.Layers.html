@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Keras.Layers
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Keras.Layers
+   ">
+    <meta name="generator" content="docfx 2.42.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer="" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Keras.Layers">
+  
+  <h1 id="Keras_Layers" data-uid="Keras.Layers" class="text-break">Namespace Keras.Layers
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Keras.Layers.Activation.html">Activation</a></h4>
+      <section><p>Applies an activation function to an output.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.ActivityRegularization.html">ActivityRegularization</a></h4>
+      <section><p>Layer that applies an update to the cost function based input activity.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Add.html">Add</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Keras.Layers.AlphaDropout.html">AlphaDropout</a></h4>
+      <section><p>Applies Alpha Dropout to the input.
+Alpha Dropout is a Dropout that keeps mean and variance of inputs to their original values, in order to ensure the self-normalizing property even after this dropout.
+Alpha Dropout fits well to Scaled Exponential Linear Units by randomly setting activations to the negative saturation value.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.AveragePooling1D.html">AveragePooling1D</a></h4>
+      <section><p>Average pooling for temporal data.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.AveragePooling2D.html">AveragePooling2D</a></h4>
+      <section><p>Average pooling operation for spatial data.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.AveragePooling3D.html">AveragePooling3D</a></h4>
+      <section><p>Average pooling operation for 3D data (spatial or spatio-temporal).</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.BaseLayer.html">BaseLayer</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Keras.Layers.BatchNormalization.html">BatchNormalization</a></h4>
+      <section><p>Batch normalization layer (Ioffe and Szegedy, 2014).
+Normalize the activations of the previous layer at each batch, i.e.applies a transformation that maintains the mean activation close to 0 and the activation standard deviation close to 1.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Bidirectional.html">Bidirectional</a></h4>
+      <section><p>Bidirectional wrapper for RNNs.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Conv1D.html">Conv1D</a></h4>
+      <section><p>1D convolution layer (e.g. temporal convolution).
+This layer creates a convolution kernel that is convolved with the layer input over a single spatial(or temporal) dimension to produce a tensor of outputs.If use_bias is True, a bias vector is created and added to the outputs.Finally, if activation is not None, it is applied to the outputs as well.
+When using this layer as the first layer in a model, provide an input_shape argument (tuple of integers or None, does not include the batch axis), e.g. input_shape=(10, 128) for time series sequences of 10 time steps with 128 features per step in data_format=&quot;channels_last&quot;, or (None, 128) for variable-length sequences with 128 features per step.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Conv2D.html">Conv2D</a></h4>
+      <section><p>2D convolution layer (e.g. spatial convolution over images).
+This layer creates a convolution kernel that is convolved with the layer input to produce a tensor of outputs.If use_bias is True, a bias vector is created and added to the outputs.Finally, if activation is not None, it is applied to the outputs as well.
+When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers, does not include the batch axis), e.g. input_shape=(128, 128, 3) for 128x128 RGB pictures in data_format=&quot;channels_last&quot;.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Conv2DTranspose.html">Conv2DTranspose</a></h4>
+      <section><p>Transposed convolution layer (sometimes called Deconvolution).
+The need for transposed convolutions generally arises from the desire to use a transformation going in the opposite direction of a normal convolution, i.e., from something that has the shape of the output of some convolution to something that has the shape of its input while maintaining a connectivity pattern that is compatible with said convolution.
+When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers, does not include the batch axis), e.g. input_shape=(128, 128, 3) for 128x128 RGB pictures in data_format=&quot;channels_last&quot;.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Conv3D.html">Conv3D</a></h4>
+      <section><p>3D convolution layer (e.g. spatial convolution over volumes).
+This layer creates a convolution kernel that is convolved with the layer input to produce a tensor of outputs.If use_bias is True, a bias vector is created and added to the outputs.Finally, if activation is not None, it is applied to the outputs as well.
+When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers, does not include the batch axis), e.g. input_shape=(128, 128, 128, 1) for 128x128x128 volumes with a single channel, in data_format=&quot;channels_last&quot;.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Conv3DTranspose.html">Conv3DTranspose</a></h4>
+      <section><p>Transposed convolution layer (sometimes called Deconvolution).
+The need for transposed convolutions generally arises from the desire to use a transformation going in the opposite direction of a normal convolution, i.e., from something that has the shape of the output of some convolution to something that has the shape of its input while maintaining a connectivity pattern that is compatible with said convolution.
+When using this layer as the first layer in a model, provide the keyword argument input_shape (tuple of integers, does not include the batch axis), e.g. input_shape=(128, 128, 128, 3) for a 128x128x128 volume with 3 channels if data_format=&quot;channels_last&quot;.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.ConvLSTM2D.html">ConvLSTM2D</a></h4>
+      <section><p>Convolutional LSTM. It is similar to an LSTM layer, but the input transformations and recurrent transformations are both convolutional.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.ConvLSTM2DCell.html">ConvLSTM2DCell</a></h4>
+      <section><p>Cell class for the ConvLSTM2D layer.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Cropping1D.html">Cropping1D</a></h4>
+      <section><p>Cropping layer for 1D input (e.g. temporal sequence).    It crops along the time dimension(axis 1).</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Cropping2D.html">Cropping2D</a></h4>
+      <section><p>Cropping layer for 2D input (e.g. picture).    It crops along spatial dimensions, i.e.height and width.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Cropping3D.html">Cropping3D</a></h4>
+      <section><p>Cropping layer for 3D data (e.g. spatial or spatio-temporal).</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.CuDNNGRU.html">CuDNNGRU</a></h4>
+      <section><p>Fast GRU implementation backed by CuDNN. Can only be run on GPU, with the TensorFlow backend.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.CuDNNLSTM.html">CuDNNLSTM</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Keras.Layers.Dense.html">Dense</a></h4>
+      <section><p>Just your regular densely-connected NN layer.
+Dense implements the operation: output = activation(dot(input, kernel) + bias) where activation is the element-wise activation function passed as the activation argument, kernel is a weights matrix created by the layer, and bias is a bias vector created by the layer(only applicable if use_bias is True).
+Note: if the input to the layer has a rank greater than 2, then it is flattened prior to the initial dot product with kernel.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.DepthwiseConv2D.html">DepthwiseConv2D</a></h4>
+      <section><p>Depthwise separable 2D convolution.<br>
+Depthwise Separable convolutions consists in performing just the first step in a depthwise spatial convolution(which acts on each input channel separately). The depth_multiplier argument controls how many output channels are generated per input channel in the depthwise step.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Dropout.html">Dropout</a></h4>
+      <section><p>Applies Dropout to the input.
+Dropout consists in randomly setting a fraction rate of input units to 0 at each update during training time, which helps prevent overfitting.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.ELU.html">ELU</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Keras.Layers.Embedding.html">Embedding</a></h4>
+      <section><p>Turns positive integers (indexes) into dense vectors of fixed size. eg. [[4], [20]] -&gt; [[0.25, 0.1], [0.6, -0.2]]
+This layer can only be used as the first layer in a model.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Flatten.html">Flatten</a></h4>
+      <section><p>Flattens the input. Does not affect the batch size.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.GaussianDropout.html">GaussianDropout</a></h4>
+      <section><p>Apply multiplicative 1-centered Gaussian noise.
+As it is a regularization layer, it is only active at training time.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.GaussianNoise.html">GaussianNoise</a></h4>
+      <section><p>Apply additive zero-centered Gaussian noise.
+This is useful to mitigate overfitting(you could see it as a form of random data augmentation).
+Gaussian Noise(GS) is a natural choice as corruption process for real valued inputs.
+As it is a regularization layer, it is only active at training time.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.GlobalAveragePooling1D.html">GlobalAveragePooling1D</a></h4>
+      <section><p>Global average pooling operation for temporal data.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.GlobalAveragePooling2D.html">GlobalAveragePooling2D</a></h4>
+      <section><p>Global average pooling operation for spatial data.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.GlobalAveragePooling3D.html">GlobalAveragePooling3D</a></h4>
+      <section><p>Global Average pooling operation for 3D data.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.GlobalMaxPooling1D.html">GlobalMaxPooling1D</a></h4>
+      <section><p>Global max pooling operation for temporal data.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.GlobalMaxPooling2D.html">GlobalMaxPooling2D</a></h4>
+      <section><p>Global max pooling operation for spatial data.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.GlobalMaxPooling3D.html">GlobalMaxPooling3D</a></h4>
+      <section><p>Global Max pooling operation for 3D data.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.GRU.html">GRU</a></h4>
+      <section><p>Gated Recurrent Unit - Cho et al. 2014.
+There are two variants.The default one is based on 1406.1078v3 and has reset gate applied to hidden state before matrix multiplication. The other one is based on original 1406.1078v1 and has the order reversed.
+The second variant is compatible with CuDNNGRU (GPU-only) and allows inference on CPU.Thus it has separate biases for kernel and recurrent_kernel.Use 'reset_after'=True and recurrent_activation='sigmoid'.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.GRUCell.html">GRUCell</a></h4>
+      <section><p>Cell class for the GRU layer.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Input.html">Input</a></h4>
+      <section><p>Input() is used to instantiate a Keras tensor.   A Keras tensor is a tensor object from the underlying backend(Theano, TensorFlow or CNTK), which we augment with certain attributes that allow us to build a Keras model just by knowing the inputs and outputs of the model.
+For instance, if a, b and c are Keras tensors, it becomes possible to do: model = Model(input =[a, b], output = c)
+The added Keras attributes are: _keras_shape: Integer shape tuple propagated via Keras-side shape inference._keras_history: Last layer applied to the tensor. the entire layer graph is retrievable from that layer, recursively.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Lambda.html">Lambda</a></h4>
+      <section><p>Wraps arbitrary expression as a Layer object.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.LeakyReLU.html">LeakyReLU</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Keras.Layers.LocallyConnected1D.html">LocallyConnected1D</a></h4>
+      <section><p>Locally-connected layer for 1D inputs.
+The LocallyConnected1D layer works similarly to the Conv1D layer, except that weights are unshared, that is, a different set of filters is applied at each different patch of the input.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.LocallyConnected2D.html">LocallyConnected2D</a></h4>
+      <section><p>Locally-connected layer for 2D inputs.
+The LocallyConnected2D layer works similarly to the Conv2D layer, except that weights are unshared, that is, a different set of filters is applied at each different patch of the input.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.LSTM.html">LSTM</a></h4>
+      <section><p>Long Short-Term Memory layer - Hochreiter 1997.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.LSTMCell.html">LSTMCell</a></h4>
+      <section><p>Cell class for the LSTM layer.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Masking.html">Masking</a></h4>
+      <section><p>Masks a sequence by using a mask value to skip timesteps.
+If all features for a given sample timestep are equal to mask_value, then the sample timestep will be masked(skipped) in all downstream layers(as long as they support masking).
+If any downstream layer does not support masking yet receives such an input mask, an exception will be raised.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.MaxPooling1D.html">MaxPooling1D</a></h4>
+      <section><p>Max pooling operation for temporal data.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.MaxPooling2D.html">MaxPooling2D</a></h4>
+      <section><p>Max pooling operation for spatial data.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.MaxPooling3D.html">MaxPooling3D</a></h4>
+      <section><p>Max pooling operation for 3D data (spatial or spatio-temporal).</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Merge.html">Merge</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Keras.Layers.Permute.html">Permute</a></h4>
+      <section><p>Permutes the dimensions of the input according to a given pattern.    Useful for e.g.connecting RNNs and convnets together.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.PReLU.html">PReLU</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Keras.Layers.ReLU.html">ReLU</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Keras.Layers.RepeatVector.html">RepeatVector</a></h4>
+      <section><p>Repeats the input n times.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Reshape.html">Reshape</a></h4>
+      <section><p>Reshapes an output to a certain shape.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.RNN.html">RNN</a></h4>
+      <section><p>Base class for recurrent layers.
+This layer supports masking for input data with a variable number of timesteps. To introduce masks to your data, use an Embedding layer with the mask_zero parameter set to True.</p>
+<p>
+You can set RNN layers to be &apos;stateful&apos;, which means that the states computed for the samples in one batch will be reused as initial states for the samples in the next batch. This assumes a one-to-one mapping between samples in different successive batches.
+To enable statefulness: - specify stateful = True in the layer constructor. - specify a fixed batch size for your model, by passing if sequential model: batch_input_shape = (...) to the first layer in your model. else for functional model with 1 or more Input layers: batch_shape = (...) to all the first layers in your model.This is the expected shape of your inputs including the batch size.It should be a tuple of integers, e.g. (32, 10, 100). - specify shuffle = False when calling fit().
+To reset the states of your model, call.reset_states() on either a specific layer, or on your entire model.
+</p>
+<p>
+You can specify the initial state of RNN layers symbolically by calling them with the keyword argument initial_state. 
+The value of initial_state should be a tensor or list of tensors representing the initial state of the RNN layer.
+You can specify the initial state of RNN layers numerically by calling reset_states with the keyword argument states.The value of states should be a numpy array or list of numpy arrays representing the initial state of the RNN layer.
+</p>
+<p>
+You can pass &quot;external&quot; constants to the cell using the constants keyword argument of RNN.__call__ (as well as RNN.call) method. This requires that the cell. 
+Call method accepts the same keyword argument constants. Such constants can be used to condition the cell transformation on additional static inputs (not changing over time), a.k.a. an attention mechanism.
+</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.SeparableConv1D.html">SeparableConv1D</a></h4>
+      <section><p>Depthwise separable 1D convolution.
+Separable convolutions consist in first performing a depthwise spatial convolution(which acts on each input channel separately) followed by a pointwise convolution which mixes together the resulting output channels.The depth_multiplier argument controls how many output channels are generated per input channel in the depthwise step.
+Intuitively, separable convolutions can be understood as a way to factorize a convolution kernel into two smaller kernels, or as an extreme version of an Inception block.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.SeparableConv2D.html">SeparableConv2D</a></h4>
+      <section><p>Depthwise separable 2D convolution.
+Separable convolutions consist in first performing a depthwise spatial convolution(which acts on each input channel separately) followed by a pointwise convolution which mixes together the resulting output channels.The depth_multiplier argument controls how many output channels are generated per input channel in the depthwise step.
+Intuitively, separable convolutions can be understood as a way to factorize a convolution kernel into two smaller kernels, or as an extreme version of an Inception block.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.SimpleRNN.html">SimpleRNN</a></h4>
+      <section><p>Fully-connected RNN where the output is to be fed back to input.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.SimpleRNNCell.html">SimpleRNNCell</a></h4>
+      <section><p>Cell class for SimpleRNN.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.Softmax.html">Softmax</a></h4>
+      <section><p>Softmax activation function.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.SpatialDropout1D.html">SpatialDropout1D</a></h4>
+      <section><p>Spatial 1D version of Dropout.
+This version performs the same function as Dropout, however it drops entire 1D feature maps instead of individual elements.If adjacent frames within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective learning rate decrease.In this case, SpatialDropout1D will help promote independence between feature maps and should be used instead.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.SpatialDropout2D.html">SpatialDropout2D</a></h4>
+      <section><p>Spatial 2D version of Dropout.
+This version performs the same function as Dropout, however it drops entire 2D feature maps instead of individual elements.If adjacent pixels within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective learning rate decrease.In this case, SpatialDropout2D will help promote independence between feature maps and should be used instead.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.SpatialDropout3D.html">SpatialDropout3D</a></h4>
+      <section><p>Spatial 3D version of Dropout.
+This version performs the same function as Dropout, however it drops entire 3D feature maps instead of individual elements.If adjacent voxels within feature maps are strongly correlated (as is normally the case in early convolution layers) then regular dropout will not regularize the activations and will otherwise just result in an effective learning rate decrease.In this case, SpatialDropout3D will help promote independence between feature maps and should be used instead.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.ThresholdedReLU.html">ThresholdedReLU</a></h4>
+      <section><p>Thresholded Rectified Linear Unit.
+It follows: f(x) = x for x &gt; theta, f(x) = 0 otherwise.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.TimeDistributed.html">TimeDistributed</a></h4>
+      <section><p>This wrapper applies a layer to every temporal slice of an input.
+The input should be at least 3D, and the dimension of index one will be considered to be the temporal dimension.
+Consider a batch of 32 samples, where each sample is a sequence of 10 vectors of 16 dimensions.
+The batch input shape of the layer is then (32, 10, 16), and the input_shape, not including the samples dimension, is (10, 16).
+You can then use TimeDistributed to apply a Dense layer to each of the 10 timesteps, independently:</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.UpSampling1D.html">UpSampling1D</a></h4>
+      <section><p>Upsampling layer for 1D inputs.    Repeats each temporal step size times along the time axis.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.UpSampling2D.html">UpSampling2D</a></h4>
+      <section><p>Upsampling layer for 2D inputs.    Repeats the rows and columns of the data by size[0] and size[1] respectively.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.UpSampling3D.html">UpSampling3D</a></h4>
+      <section><p>Upsampling layer for 3D inputs.    Repeats the 1st, 2nd and 3rd dimensions of the data by size[0], size[1] and size[2] respectively.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.ZeroPadding1D.html">ZeroPadding1D</a></h4>
+      <section><p>Zero-padding layer for 1D input (e.g. temporal sequence).</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.ZeroPadding2D.html">ZeroPadding2D</a></h4>
+      <section><p>Zero-padding layer for 2D input (e.g. picture).    This layer can add rows and columns of zeros at the top, bottom, left and right side of an image tensor.</p>
+</section>
+      <h4><a class="xref" href="Keras.Layers.ZeroPadding3D.html">ZeroPadding3D</a></h4>
+      <section><p>Zero-padding layer for 3D data (spatial or spatio-temporal).</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

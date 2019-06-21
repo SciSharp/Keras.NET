@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Keras.NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Keras.NET ">
+    <meta name="generator" content="docfx 2.42.3.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer="" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="kerasnet">Keras.NET</h1>
+
+<p>Keras.NET is a high-level neural networks API, written in C# with Python Binding and capable of running on top of TensorFlow, CNTK, or Theano. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result with the least possible delay is key to doing good research.</p>
+<p>Use Keras if you need a deep learning library that:</p>
+<p>Allows for easy and fast prototyping (through user friendliness, modularity, and extensibility).
+Supports both convolutional networks and recurrent networks, as well as combinations of the two.
+Runs seamlessly on CPU and GPU.</p>
+<h2 id="kerasnet-is-using">Keras.NET is using:</h2>
+<ul>
+<li><a href="https://github.com/SciSharp/Numpy.NET">Numpy.NET</a></li>
+<li><a href="https://github.com/henon/Python.Included">Python.Included</a></li>
+</ul>
+<h2 id="prerequisite">Prerequisite</h2>
+<ul>
+<li>Python 3.6, Link: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></li>
+<li>Install keras, numpy and one of the backend (Tensorflow/CNTK/Theano). Please see on how to configure: <a href="https://keras.io/backend/">https://keras.io/backend/</a></li>
+</ul>
+<h2 id="nuget">Nuget</h2>
+<p>Install from nuget: <a href="https://www.nuget.org/packages/Keras.NET">https://www.nuget.org/packages/Keras.NET</a></p>
+<pre><code>Install-Package Keras.NET
+</code></pre>
+<pre><code>dotnet add package Keras.NET
+</code></pre>
+<h2 id="example-with-xor-sample">Example with XOR sample</h2>
+<pre><code class="lang-csharp">//Load train data
+NDarray x = np.array(new float[,] { { 0, 0 }, { 0, 1 }, { 1, 0 }, { 1, 1 } });
+NDarray y = np.array(new float[] { 0, 1, 1, 0 });
+
+//Build sequential model
+var model = new Sequential();
+model.Add(new Dense(32, activation: &quot;relu&quot;, input_shape: new Shape(2)));
+model.Add(new Dense(64, activation: &quot;relu&quot;));
+model.Add(new Dense(1, activation: &quot;sigmoid&quot;));
+
+//Compile and train
+model.Compile(optimizer:&quot;sgd&quot;, loss:&quot;binary_crossentropy&quot;, metrics: new string[] { &quot;accuracy&quot; });
+model.Fit(x, y, batch_size: 2, epochs: 1000, verbose: 1);
+
+//Save model and weights
+string json = model.ToJson();
+File.WriteAllText(&quot;model.json&quot;, json);
+model.SaveWeight(&quot;model.h5&quot;);
+
+//Load model and weight
+var loaded_model = Sequential.ModelFromJson(File.ReadAllText(&quot;model.json&quot;));
+loaded_model.LoadWeight(&quot;model.h5&quot;);
+</code></pre>
+<p><strong>Output:</strong></p>
+<p><img src="https://raw.githubusercontent.com/SciSharp/Keras.NET/master/Images/XOR_Output.PNG" alt=""></p>
+<h2 id="mnist-cnn-example">MNIST CNN Example</h2>
+<p>Python example taken from: <a href="https://keras.io/examples/mnist_cnn/">https://keras.io/examples/mnist_cnn/</a></p>
+<pre><code class="lang-csharp">int batch_size = 128;
+int num_classes = 10;
+int epochs = 12;
+
+// input image dimensions
+int img_rows = 28, img_cols = 28;
+
+Shape input_shape = null;
+
+// the data, split between train and test sets
+var ((x_train, y_train), (x_test, y_test)) = MNIST.LoadData();
+
+if(K.ImageDataFormat() == &quot;channels_first&quot;)
+{
+    x_train = x_train.reshape(x_train.shape[0], 1, img_rows, img_cols);
+    x_test = x_test.reshape(x_test.shape[0], 1, img_rows, img_cols);
+    input_shape = (1, img_rows, img_cols);
+}
+else
+{
+    x_train = x_train.reshape(x_train.shape[0], img_rows, img_cols, 1);
+    x_test = x_test.reshape(x_test.shape[0], img_rows, img_cols, 1);
+    input_shape = (img_rows, img_cols, 1);
+}
+
+x_train = x_train.astype(np.float32);
+x_test = x_test.astype(np.float32);
+x_train /= 255;
+x_test /= 255;
+Console.WriteLine(&quot;x_train shape: &quot; + x_train.shape);
+Console.WriteLine(x_train.shape[0] + &quot; train samples&quot;);
+Console.WriteLine(x_test.shape[0] + &quot; test samples&quot;);
+
+// convert class vectors to binary class matrices
+y_train = Utils.ToCategorical(y_train, num_classes);
+y_test = Utils.ToCategorical(y_test, num_classes);
+
+// Build CNN model
+var model = new Sequential();
+model.Add(new Conv2D(32, kernel_size: (3, 3).ToTuple(),
+                        activation: &quot;relu&quot;,
+                        input_shape: input_shape));
+model.Add(new Conv2D(64, (3, 3).ToTuple(), activation: &quot;relu&quot;));
+model.Add(new MaxPooling2D(pool_size: (2, 2).ToTuple()));
+model.Add(new Dropout(0.25));
+model.Add(new Flatten());
+model.Add(new Dense(128, activation: &quot;relu&quot;));
+model.Add(new Dropout(0.5));
+model.Add(new Dense(num_classes, activation: &quot;softmax&quot;));
+
+model.Compile(loss: &quot;categorical_crossentropy&quot;,
+    optimizer: new Adadelta(), metrics: new string[] { &quot;accuracy&quot; });
+
+model.Fit(x_train, y_train,
+            batch_size: batch_size,
+            epochs: epochs,
+            verbose: 1,
+            validation_data: new NDarray[] { x_test, y_test });
+var score = model.Evaluate(x_test, y_test, verbose: 0);
+Console.WriteLine(&quot;Test loss:&quot;, score[0]);
+Console.WriteLine(&quot;Test accuracy:&quot;, score[1]);
+</code></pre>
+<p><strong>Output</strong></p>
+<p>Reached 98% accuracy within 3 epoches.</p>
+<p><img src="https://raw.githubusercontent.com/SciSharp/Keras.NET/master/Images/MNIST_Output.PNG" alt=""></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/SciSharp/Keras.NET/blob/master/doc-gen/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

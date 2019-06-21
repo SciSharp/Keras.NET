@@ -1,0 +1,977 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Losses
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Losses
+   ">
+    <meta name="generator" content="docfx 2.42.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer="" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Keras.Losses">
+  
+  
+  <h1 id="Keras_Losses" data-uid="Keras.Losses" class="text-break">Class Losses
+  </h1>
+  <div class="markdown level0 summary"><p>A loss function (or objective function, or optimization score function) is one of the two parameters required to compile a model</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Keras.Keras.html">Keras</a></div>
+    <div class="level2"><a class="xref" href="Keras.Base.html">Base</a></div>
+    <div class="level3"><span class="xref">Losses</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_Parameters">Base.Parameters</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_None">Base.None</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_Init">Base.Init()</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_ToPython">Base.ToPython()</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_InvokeStaticMethod_System_Object_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__">Base.InvokeStaticMethod(Object, String, Dictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_InvokeMethod_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__">Base.InvokeMethod(String, Dictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_Item_System_String_">Base.Item[String]</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_Instance">Keras.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_keras">Keras.keras</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_Dispose">Keras.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_ToTuple_System_Array_">Keras.ToTuple(Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_ToList_System_Array_">Keras.ToList(Array)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Keras.html">Keras</a></h6>
+  <h6><strong>Assembly</strong>: Keras.dll</h6>
+  <h5 id="Keras_Losses_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Losses : Base, IDisposable</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Losses_BinaryCrossentropy_Numpy_NDarray_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Losses.BinaryCrossentropy(Numpy.NDarray%2CNumpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Losses.cs/#L165">View Source</a>
+  </span>
+  <a id="Keras_Losses_BinaryCrossentropy_" data-uid="Keras.Losses.BinaryCrossentropy*"></a>
+  <h4 id="Keras_Losses_BinaryCrossentropy_Numpy_NDarray_Numpy_NDarray_" data-uid="Keras.Losses.BinaryCrossentropy(Numpy.NDarray,Numpy.NDarray)">BinaryCrossentropy(NDarray, NDarray)</h4>
+  <div class="markdown level1 summary"><p>Binaries the crossentropy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NDarray BinaryCrossentropy(NDarray y_true, NDarray y_pred)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_true</span></td>
+        <td><p>tensor of true targets.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_pred</span></td>
+        <td><p>tensor of predicted targets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Losses_CategoricalCrossentropy_Numpy_NDarray_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Losses.CategoricalCrossentropy(Numpy.NDarray%2CNumpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Losses.cs/#L137">View Source</a>
+  </span>
+  <a id="Keras_Losses_CategoricalCrossentropy_" data-uid="Keras.Losses.CategoricalCrossentropy*"></a>
+  <h4 id="Keras_Losses_CategoricalCrossentropy_Numpy_NDarray_Numpy_NDarray_" data-uid="Keras.Losses.CategoricalCrossentropy(Numpy.NDarray,Numpy.NDarray)">CategoricalCrossentropy(NDarray, NDarray)</h4>
+  <div class="markdown level1 summary"><p>Categoricals the crossentropy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NDarray CategoricalCrossentropy(NDarray y_true, NDarray y_pred)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_true</span></td>
+        <td><p>tensor of true targets.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_pred</span></td>
+        <td><p>tensor of predicted targets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Losses_CategoricalHinge_Numpy_NDarray_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Losses.CategoricalHinge(Numpy.NDarray%2CNumpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Losses.cs/#L108">View Source</a>
+  </span>
+  <a id="Keras_Losses_CategoricalHinge_" data-uid="Keras.Losses.CategoricalHinge*"></a>
+  <h4 id="Keras_Losses_CategoricalHinge_Numpy_NDarray_Numpy_NDarray_" data-uid="Keras.Losses.CategoricalHinge(Numpy.NDarray,Numpy.NDarray)">CategoricalHinge(NDarray, NDarray)</h4>
+  <div class="markdown level1 summary"><p>Calculates the categorial hinge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NDarray CategoricalHinge(NDarray y_true, NDarray y_pred)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_true</span></td>
+        <td><p>tensor of true targets.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_pred</span></td>
+        <td><p>tensor of predicted targets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Losses_CosineProximity_Numpy_NDarray_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Losses.CosineProximity(Numpy.NDarray%2CNumpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Losses.cs/#L207">View Source</a>
+  </span>
+  <a id="Keras_Losses_CosineProximity_" data-uid="Keras.Losses.CosineProximity*"></a>
+  <h4 id="Keras_Losses_CosineProximity_Numpy_NDarray_Numpy_NDarray_" data-uid="Keras.Losses.CosineProximity(Numpy.NDarray,Numpy.NDarray)">CosineProximity(NDarray, NDarray)</h4>
+  <div class="markdown level1 summary"><p>Cosines the proximity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NDarray CosineProximity(NDarray y_true, NDarray y_pred)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_true</span></td>
+        <td><p>tensor of true targets.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_pred</span></td>
+        <td><p>tensor of predicted targets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Losses_Hinge_Numpy_NDarray_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Losses.Hinge(Numpy.NDarray%2CNumpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Losses.cs/#L94">View Source</a>
+  </span>
+  <a id="Keras_Losses_Hinge_" data-uid="Keras.Losses.Hinge*"></a>
+  <h4 id="Keras_Losses_Hinge_Numpy_NDarray_Numpy_NDarray_" data-uid="Keras.Losses.Hinge(Numpy.NDarray,Numpy.NDarray)">Hinge(NDarray, NDarray)</h4>
+  <div class="markdown level1 summary"><p>Calculates the Hinge error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NDarray Hinge(NDarray y_true, NDarray y_pred)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_true</span></td>
+        <td><p>tensor of true targets.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_pred</span></td>
+        <td><p>tensor of predicted targets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Losses_KullbackLeiblerDivergence_Numpy_NDarray_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Losses.KullbackLeiblerDivergence(Numpy.NDarray%2CNumpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Losses.cs/#L179">View Source</a>
+  </span>
+  <a id="Keras_Losses_KullbackLeiblerDivergence_" data-uid="Keras.Losses.KullbackLeiblerDivergence*"></a>
+  <h4 id="Keras_Losses_KullbackLeiblerDivergence_Numpy_NDarray_Numpy_NDarray_" data-uid="Keras.Losses.KullbackLeiblerDivergence(Numpy.NDarray,Numpy.NDarray)">KullbackLeiblerDivergence(NDarray, NDarray)</h4>
+  <div class="markdown level1 summary"><p>Kullbacks the leibler divergence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NDarray KullbackLeiblerDivergence(NDarray y_true, NDarray y_pred)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_true</span></td>
+        <td><p>tensor of true targets.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_pred</span></td>
+        <td><p>tensor of predicted targets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Losses_LogCosh_Numpy_NDarray_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Losses.LogCosh(Numpy.NDarray%2CNumpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Losses.cs/#L123">View Source</a>
+  </span>
+  <a id="Keras_Losses_LogCosh_" data-uid="Keras.Losses.LogCosh*"></a>
+  <h4 id="Keras_Losses_LogCosh_Numpy_NDarray_Numpy_NDarray_" data-uid="Keras.Losses.LogCosh(Numpy.NDarray,Numpy.NDarray)">LogCosh(NDarray, NDarray)</h4>
+  <div class="markdown level1 summary"><p>Logarithm of the hyperbolic cosine of the prediction error.
+log(cosh(x)) is approximately equal to(x** 2) / 2 for small x and to abs(x) - log(2) for large x.This means that 'logcosh' works mostly like the mean squared error, but will not be so strongly affected by the occasional wildly incorrect prediction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NDarray LogCosh(NDarray y_true, NDarray y_pred)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_true</span></td>
+        <td><p>tensor of true targets.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_pred</span></td>
+        <td><p>tensor of predicted targets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Losses_MeanAbsoluteError_Numpy_NDarray_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Losses.MeanAbsoluteError(Numpy.NDarray%2CNumpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Losses.cs/#L37">View Source</a>
+  </span>
+  <a id="Keras_Losses_MeanAbsoluteError_" data-uid="Keras.Losses.MeanAbsoluteError*"></a>
+  <h4 id="Keras_Losses_MeanAbsoluteError_Numpy_NDarray_Numpy_NDarray_" data-uid="Keras.Losses.MeanAbsoluteError(Numpy.NDarray,Numpy.NDarray)">MeanAbsoluteError(NDarray, NDarray)</h4>
+  <div class="markdown level1 summary"><p>Calculates the mean absolute error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NDarray MeanAbsoluteError(NDarray y_true, NDarray y_pred)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_true</span></td>
+        <td><p>tensor of true targets.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_pred</span></td>
+        <td><p>tensor of predicted targets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Losses_MeanAbsolutePercentageError_Numpy_NDarray_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Losses.MeanAbsolutePercentageError(Numpy.NDarray%2CNumpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Losses.cs/#L52">View Source</a>
+  </span>
+  <a id="Keras_Losses_MeanAbsolutePercentageError_" data-uid="Keras.Losses.MeanAbsolutePercentageError*"></a>
+  <h4 id="Keras_Losses_MeanAbsolutePercentageError_Numpy_NDarray_Numpy_NDarray_" data-uid="Keras.Losses.MeanAbsolutePercentageError(Numpy.NDarray,Numpy.NDarray)">MeanAbsolutePercentageError(NDarray, NDarray)</h4>
+  <div class="markdown level1 summary"><p>Calculates the mean absolute percentage error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NDarray MeanAbsolutePercentageError(NDarray y_true, NDarray y_pred)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_true</span></td>
+        <td><p>tensor of true targets.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_pred</span></td>
+        <td><p>tensor of predicted targets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Losses_MeanSquaredError_Numpy_NDarray_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Losses.MeanSquaredError(Numpy.NDarray%2CNumpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Losses.cs/#L22">View Source</a>
+  </span>
+  <a id="Keras_Losses_MeanSquaredError_" data-uid="Keras.Losses.MeanSquaredError*"></a>
+  <h4 id="Keras_Losses_MeanSquaredError_Numpy_NDarray_Numpy_NDarray_" data-uid="Keras.Losses.MeanSquaredError(Numpy.NDarray,Numpy.NDarray)">MeanSquaredError(NDarray, NDarray)</h4>
+  <div class="markdown level1 summary"><p>Calculates the mean squared error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NDarray MeanSquaredError(NDarray y_true, NDarray y_pred)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_true</span></td>
+        <td><p>tensor of true targets.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_pred</span></td>
+        <td><p>tensor of predicted targets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Losses_MeanSquaredLogarithmicError_Numpy_NDarray_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Losses.MeanSquaredLogarithmicError(Numpy.NDarray%2CNumpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Losses.cs/#L66">View Source</a>
+  </span>
+  <a id="Keras_Losses_MeanSquaredLogarithmicError_" data-uid="Keras.Losses.MeanSquaredLogarithmicError*"></a>
+  <h4 id="Keras_Losses_MeanSquaredLogarithmicError_Numpy_NDarray_Numpy_NDarray_" data-uid="Keras.Losses.MeanSquaredLogarithmicError(Numpy.NDarray,Numpy.NDarray)">MeanSquaredLogarithmicError(NDarray, NDarray)</h4>
+  <div class="markdown level1 summary"><p>Calculates the mean squared log error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NDarray MeanSquaredLogarithmicError(NDarray y_true, NDarray y_pred)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_true</span></td>
+        <td><p>tensor of true targets.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_pred</span></td>
+        <td><p>tensor of predicted targets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Losses_Poisson_Numpy_NDarray_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Losses.Poisson(Numpy.NDarray%2CNumpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Losses.cs/#L193">View Source</a>
+  </span>
+  <a id="Keras_Losses_Poisson_" data-uid="Keras.Losses.Poisson*"></a>
+  <h4 id="Keras_Losses_Poisson_Numpy_NDarray_Numpy_NDarray_" data-uid="Keras.Losses.Poisson(Numpy.NDarray,Numpy.NDarray)">Poisson(NDarray, NDarray)</h4>
+  <div class="markdown level1 summary"><p>Poissons the specified y true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NDarray Poisson(NDarray y_true, NDarray y_pred)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_true</span></td>
+        <td><p>tensor of true targets.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_pred</span></td>
+        <td><p>tensor of predicted targets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Losses_SparseCategoricalCrossentropy_Numpy_NDarray_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Losses.SparseCategoricalCrossentropy(Numpy.NDarray%2CNumpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Losses.cs/#L151">View Source</a>
+  </span>
+  <a id="Keras_Losses_SparseCategoricalCrossentropy_" data-uid="Keras.Losses.SparseCategoricalCrossentropy*"></a>
+  <h4 id="Keras_Losses_SparseCategoricalCrossentropy_Numpy_NDarray_Numpy_NDarray_" data-uid="Keras.Losses.SparseCategoricalCrossentropy(Numpy.NDarray,Numpy.NDarray)">SparseCategoricalCrossentropy(NDarray, NDarray)</h4>
+  <div class="markdown level1 summary"><p>Sparses the categorical crossentropy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NDarray SparseCategoricalCrossentropy(NDarray y_true, NDarray y_pred)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_true</span></td>
+        <td><p>tensor of true targets.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_pred</span></td>
+        <td><p>tensor of predicted targets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Losses_SquaredHinge_Numpy_NDarray_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Losses.SquaredHinge(Numpy.NDarray%2CNumpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Losses.cs/#L80">View Source</a>
+  </span>
+  <a id="Keras_Losses_SquaredHinge_" data-uid="Keras.Losses.SquaredHinge*"></a>
+  <h4 id="Keras_Losses_SquaredHinge_Numpy_NDarray_Numpy_NDarray_" data-uid="Keras.Losses.SquaredHinge(Numpy.NDarray,Numpy.NDarray)">SquaredHinge(NDarray, NDarray)</h4>
+  <div class="markdown level1 summary"><p>Calculates the Square Hinge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NDarray SquaredHinge(NDarray y_true, NDarray y_pred)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_true</span></td>
+        <td><p>tensor of true targets.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y_pred</span></td>
+        <td><p>tensor of predicted targets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Losses.md&amp;value=---%0Auid%3A%20Keras.Losses%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Losses.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

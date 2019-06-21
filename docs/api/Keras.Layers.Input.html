@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Input
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Input
+   ">
+    <meta name="generator" content="docfx 2.42.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer="" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Keras.Layers.Input">
+  
+  
+  <h1 id="Keras_Layers_Input" data-uid="Keras.Layers.Input" class="text-break">Class Input
+  </h1>
+  <div class="markdown level0 summary"><p>Input() is used to instantiate a Keras tensor.   A Keras tensor is a tensor object from the underlying backend(Theano, TensorFlow or CNTK), which we augment with certain attributes that allow us to build a Keras model just by knowing the inputs and outputs of the model.
+For instance, if a, b and c are Keras tensors, it becomes possible to do: model = Model(input =[a, b], output = c)
+The added Keras attributes are: _keras_shape: Integer shape tuple propagated via Keras-side shape inference._keras_history: Last layer applied to the tensor. the entire layer graph is retrievable from that layer, recursively.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Keras.Keras.html">Keras</a></div>
+    <div class="level2"><a class="xref" href="Keras.Base.html">Base</a></div>
+    <div class="level3"><a class="xref" href="Keras.Layers.BaseLayer.html">BaseLayer</a></div>
+    <div class="level4"><span class="xref">Input</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Keras.Layers.BaseLayer.html#Keras_Layers_BaseLayer_Set_Keras_Layers_BaseLayer___">BaseLayer.Set(BaseLayer[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_Parameters">Base.Parameters</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_None">Base.None</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_Init">Base.Init()</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_ToPython">Base.ToPython()</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_InvokeStaticMethod_System_Object_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__">Base.InvokeStaticMethod(Object, String, Dictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_InvokeMethod_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__">Base.InvokeMethod(String, Dictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_Item_System_String_">Base.Item[String]</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_Instance">Keras.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_keras">Keras.keras</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_Dispose">Keras.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_ToTuple_System_Array_">Keras.ToTuple(Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_ToList_System_Array_">Keras.ToList(Array)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Keras.Layers.html">Keras.Layers</a></h6>
+  <h6><strong>Assembly</strong>: Keras.dll</h6>
+  <h5 id="Keras_Layers_Input_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Input : BaseLayer, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Layers_Input__ctor_Keras_Shape_Keras_Shape_System_String_System_String_System_Boolean_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Layers.Input.%23ctor(Keras.Shape%2CKeras.Shape%2CSystem.String%2CSystem.String%2CSystem.Boolean%2CNumpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Layers/Core.cs/#L23">View Source</a>
+  </span>
+  <a id="Keras_Layers_Input__ctor_" data-uid="Keras.Layers.Input.#ctor*"></a>
+  <h4 id="Keras_Layers_Input__ctor_Keras_Shape_Keras_Shape_System_String_System_String_System_Boolean_Numpy_NDarray_" data-uid="Keras.Layers.Input.#ctor(Keras.Shape,Keras.Shape,System.String,System.String,System.Boolean,Numpy.NDarray)">Input(Shape, Shape, String, String, Boolean, NDarray)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Keras.Layers.Input.html">Input</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Input(Shape shape, Shape batch_shape = null, string name = &quot;&quot;, string dtype = &quot;float32&quot;, bool sparse = false, NDarray tensor = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Keras.Shape.html">Shape</a></td>
+        <td><span class="parametername">shape</span></td>
+        <td><p>A shape tuple (integer), not including the batch size. For instance, shape=(32,) indicates that the expected input will be batches of 32-dimensional vectors.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Keras.Shape.html">Shape</a></td>
+        <td><span class="parametername">batch_shape</span></td>
+        <td><p>A shape tuple (integer), including the batch size. For instance, batch_shape=(10, 32) indicates that the expected input will be batches of 10 32-dimensional vectors.  batch_shape=(None, 32) indicates batches of an arbitrary number of 32-dimensional vectors.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>An optional name string for the layer. Should be unique in a model (do not reuse the same name twice). It will be autogenerated if it isn't provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dtype</span></td>
+        <td><p>The data type expected by the input, as a string (float32, float64, int32...)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">sparse</span></td>
+        <td><p>A boolean specifying whether the placeholder to be created is sparse.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">tensor</span></td>
+        <td><p>Optional existing tensor to wrap into the Input layer. If set, the layer will not create a placeholder tensor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Layers_Input.md&amp;value=---%0Auid%3A%20Keras.Layers.Input%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Layers/Core.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -8,6 +8,7 @@ using Keras;
 using Keras.Models;
 using Keras.Layers;
 using Keras.Utils;
+using Keras.Optimizers;
 
 namespace BasicSamples
 {

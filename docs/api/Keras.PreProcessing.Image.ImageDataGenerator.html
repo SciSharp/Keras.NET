@@ -1,0 +1,711 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ImageDataGenerator
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ImageDataGenerator
+   ">
+    <meta name="generator" content="docfx 2.42.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer="" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Keras.PreProcessing.Image.ImageDataGenerator">
+  
+  
+  <h1 id="Keras_PreProcessing_Image_ImageDataGenerator" data-uid="Keras.PreProcessing.Image.ImageDataGenerator" class="text-break">Class ImageDataGenerator
+  </h1>
+  <div class="markdown level0 summary"><p>Generate batches of tensor image data with real-time data augmentation. The data will be looped over (in batches).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Keras.Keras.html">Keras</a></div>
+    <div class="level2"><a class="xref" href="Keras.Base.html">Base</a></div>
+    <div class="level3"><span class="xref">ImageDataGenerator</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_Parameters">Base.Parameters</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_None">Base.None</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_Init">Base.Init()</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_ToPython">Base.ToPython()</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_InvokeStaticMethod_System_Object_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__">Base.InvokeStaticMethod(Object, String, Dictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_InvokeMethod_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__">Base.InvokeMethod(String, Dictionary&lt;String, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Base.html#Keras_Base_Item_System_String_">Base.Item[String]</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_Instance">Keras.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_keras">Keras.keras</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_Dispose">Keras.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_ToTuple_System_Array_">Keras.ToTuple(Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_ToList_System_Array_">Keras.ToList(Array)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Keras.PreProcessing.Image.html">Keras.PreProcessing.Image</a></h6>
+  <h6><strong>Assembly</strong>: Keras.dll</h6>
+  <h5 id="Keras_PreProcessing_Image_ImageDataGenerator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ImageDataGenerator : Base, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_PreProcessing_Image_ImageDataGenerator__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Single_System_Int32_System_Single_System_Single_System_Single___System_Single_System_Single_System_Single_System_String_System_Single_System_Boolean_System_Boolean_System_Nullable_System_Single__Python_Runtime_PyObject_System_String_System_Single_System_String_.md&amp;value=---%0Auid%3A%20Keras.PreProcessing.Image.ImageDataGenerator.%23ctor(System.Boolean%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Single%2CSystem.Int32%2CSystem.Single%2CSystem.Single%2CSystem.Single%5B%5D%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.String%2CSystem.Single%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Nullable%7BSystem.Single%7D%2CPython.Runtime.PyObject%2CSystem.String%2CSystem.Single%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/PreProcessing/ImageDataGenerator.cs/#L39">View Source</a>
+  </span>
+  <a id="Keras_PreProcessing_Image_ImageDataGenerator__ctor_" data-uid="Keras.PreProcessing.Image.ImageDataGenerator.#ctor*"></a>
+  <h4 id="Keras_PreProcessing_Image_ImageDataGenerator__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Single_System_Int32_System_Single_System_Single_System_Single___System_Single_System_Single_System_Single_System_String_System_Single_System_Boolean_System_Boolean_System_Nullable_System_Single__Python_Runtime_PyObject_System_String_System_Single_System_String_" data-uid="Keras.PreProcessing.Image.ImageDataGenerator.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Single,System.Int32,System.Single,System.Single,System.Single[],System.Single,System.Single,System.Single,System.String,System.Single,System.Boolean,System.Boolean,System.Nullable{System.Single},Python.Runtime.PyObject,System.String,System.Single,System.String)">ImageDataGenerator(Boolean, Boolean, Boolean, Boolean, Boolean, Single, Int32, Single, Single, Single[], Single, Single, Single, String, Single, Boolean, Boolean, Nullable&lt;Single&gt;, PyObject, String, Single, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Keras.PreProcessing.Image.ImageDataGenerator.html">ImageDataGenerator</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageDataGenerator(bool featurewise_center = false, bool samplewise_center = false, bool featurewise_std_normalization = false, bool samplewise_std_normalization = false, bool zca_whitening = false, float zca_epsilon = 1E-06F, int rotation_range = 0, float width_shift_range = 0F, float height_shift_range = 0F, float[] brightness_range = null, float shear_range = 0F, float zoom_range = 0F, float channel_shift_range = 0F, string fill_mode = &quot;nearest&quot;, float cval = 0F, bool horizontal_flip = false, bool vertical_flip = false, float? rescale = default(float? ), PyObject preprocessing_function = null, string data_format = &quot;&quot;, float validation_split = 0F, string dtype = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">featurewise_center</span></td>
+        <td><p>Boolean. Set input mean to 0 over the dataset, feature-wise.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">samplewise_center</span></td>
+        <td><p>Boolean. Set each sample mean to 0.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">featurewise_std_normalization</span></td>
+        <td><p>Boolean. Divide inputs by std of the dataset, feature-wise.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">samplewise_std_normalization</span></td>
+        <td><p>Boolean. Divide each input by its std.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">zca_whitening</span></td>
+        <td><p>Boolean. Apply ZCA whitening.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">zca_epsilon</span></td>
+        <td><p>epsilon for ZCA whitening. Default is 1e-6.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rotation_range</span></td>
+        <td><p>Int. Degree range for random rotations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">width_shift_range</span></td>
+        <td><p>Float, 1-D array-like or int</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">height_shift_range</span></td>
+        <td><p>Float, 1-D array-like or int</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><span class="parametername">brightness_range</span></td>
+        <td><p>Tuple or list of two floats. Range for picking a brightness shift value from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">shear_range</span></td>
+        <td><p>Float. Shear Intensity (Shear angle in counter-clockwise direction in degrees)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">zoom_range</span></td>
+        <td><p>Float or [lower, upper]. Range for random zoom. If a float, [lower, upper] = [1-zoom_range, 1+zoom_range].</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">channel_shift_range</span></td>
+        <td><p>Float. Range for random channel shifts.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fill_mode</span></td>
+        <td><p>One of {&quot;constant&quot;, &quot;nearest&quot;, &quot;reflect&quot; or &quot;wrap&quot;}. Default is 'nearest'. Points outside the boundaries of the input are filled according to the given mode, 'constant'-&gt; kkkkkkkk|abcd|kkkkkkkk (cval=k), 'nearest'-&gt; aaaaaaaa|abcd|dddddddd, 'reflect'-&gt; abcddcba|abcd|dcbaabcd, 'wrap'-&gt; abcdabcd|abcd|abcdabcd</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">cval</span></td>
+        <td><p>Float or Int. Value used for points outside the boundaries when fill_mode = &quot;constant&quot;.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">horizontal_flip</span></td>
+        <td><p>Boolean. Randomly flip inputs horizontally.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">vertical_flip</span></td>
+        <td><p>Boolean. Randomly flip inputs vertically.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">rescale</span></td>
+        <td><p>rescaling factor. Defaults to None. If None or 0, no rescaling is applied, otherwise we multiply the data by the value provided (after applying all other transformations).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Python.Runtime.PyObject</span></td>
+        <td><span class="parametername">preprocessing_function</span></td>
+        <td><p>function that will be implied on each input. The function will run after the image is resized and augmented. The function should take one argument: one image (Numpy tensor with rank 3), and should output a Numpy tensor with the same shape.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">data_format</span></td>
+        <td><p>Image data format, either &quot;channels_first&quot; or &quot;channels_last&quot;. &quot;channels_last&quot; mode means that the images should have shape  (samples, height, width, channels), &quot;channels_first&quot; mode means that the images should have shape  (samples, channels, height, width). It defaults to the image_data_format value found in your Keras config file at ~/.keras/keras.json. If you never set it, then it will be &quot;channels_last&quot;.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">validation_split</span></td>
+        <td><p>Float. Fraction of images reserved for validation (strictly between 0 and 1).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dtype</span></td>
+        <td><p>Dtype to use for the generated arrays.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_PreProcessing_Image_ImageDataGenerator_ApplyTransform_Numpy_NDarray_System_Collections_Generic_Dictionary_System_String_System_Object__.md&amp;value=---%0Auid%3A%20Keras.PreProcessing.Image.ImageDataGenerator.ApplyTransform(Numpy.NDarray%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/PreProcessing/ImageDataGenerator.cs/#L79">View Source</a>
+  </span>
+  <a id="Keras_PreProcessing_Image_ImageDataGenerator_ApplyTransform_" data-uid="Keras.PreProcessing.Image.ImageDataGenerator.ApplyTransform*"></a>
+  <h4 id="Keras_PreProcessing_Image_ImageDataGenerator_ApplyTransform_Numpy_NDarray_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="Keras.PreProcessing.Image.ImageDataGenerator.ApplyTransform(Numpy.NDarray,System.Collections.Generic.Dictionary{System.String,System.Object})">ApplyTransform(NDarray, Dictionary&lt;String, Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Applies the transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NDarray ApplyTransform(NDarray x, Dictionary&lt;string, object&gt; transform_parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>3D tensor, single image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">transform_parameters</span></td>
+        <td><p>Dictionary with string - parameter pairs describing the transformation. Currently, the following parameters from the dictionary are used:</p>
+<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><p>A transformed version of the input (same shape).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_PreProcessing_Image_ImageDataGenerator_Fit_Numpy_NDarray_System_Boolean_System_Int32_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Keras.PreProcessing.Image.ImageDataGenerator.Fit(Numpy.NDarray%2CSystem.Boolean%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/PreProcessing/ImageDataGenerator.cs/#L97">View Source</a>
+  </span>
+  <a id="Keras_PreProcessing_Image_ImageDataGenerator_Fit_" data-uid="Keras.PreProcessing.Image.ImageDataGenerator.Fit*"></a>
+  <h4 id="Keras_PreProcessing_Image_ImageDataGenerator_Fit_Numpy_NDarray_System_Boolean_System_Int32_System_Nullable_System_Int32__" data-uid="Keras.PreProcessing.Image.ImageDataGenerator.Fit(Numpy.NDarray,System.Boolean,System.Int32,System.Nullable{System.Int32})">Fit(NDarray, Boolean, Int32, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Fits the data generator to some sample data.
+This computes the internal data stats related to the data-dependent transformations, based on an array of sample data.
+Only required if featurewise_center or featurewise_std_normalization or zca_whitening are set to True.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Fit(NDarray x, bool augment = false, int rounds = 1, int? seed = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The x.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">augment</span></td>
+        <td><p>if set to <code>true</code> [augment].</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rounds</span></td>
+        <td><p>The rounds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">seed</span></td>
+        <td><p>The seed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_PreProcessing_Image_ImageDataGenerator_Flow_Numpy_NDarray_Numpy_NDarray_System_Int32_System_Boolean_Numpy_NDarray_System_Nullable_System_Int32__System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Keras.PreProcessing.Image.ImageDataGenerator.Flow(Numpy.NDarray%2CNumpy.NDarray%2CSystem.Int32%2CSystem.Boolean%2CNumpy.NDarray%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/PreProcessing/ImageDataGenerator.cs/#L122">View Source</a>
+  </span>
+  <a id="Keras_PreProcessing_Image_ImageDataGenerator_Flow_" data-uid="Keras.PreProcessing.Image.ImageDataGenerator.Flow*"></a>
+  <h4 id="Keras_PreProcessing_Image_ImageDataGenerator_Flow_Numpy_NDarray_Numpy_NDarray_System_Int32_System_Boolean_Numpy_NDarray_System_Nullable_System_Int32__System_String_System_String_System_String_System_String_" data-uid="Keras.PreProcessing.Image.ImageDataGenerator.Flow(Numpy.NDarray,Numpy.NDarray,System.Int32,System.Boolean,Numpy.NDarray,System.Nullable{System.Int32},System.String,System.String,System.String,System.String)">Flow(NDarray, NDarray, Int32, Boolean, NDarray, Nullable&lt;Int32&gt;, String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Flows the specified x.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KerasIterator Flow(NDarray x, NDarray y = null, int batch_size = 32, bool shuffle = true, NDarray sample_weight = null, int? seed = default(int? ), string save_to_dir = &quot;&quot;, string save_prefix = &quot;&quot;, string save_format = &quot;png&quot;, string subset = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>Input data. Numpy array of rank 4 or a tuple. If tuple, the first element should contain the images and the second element another numpy array or a list of numpy arrays that gets passed to the output without any modifications. Can be used to feed the model miscellaneous data along with the images. In case of grayscale data, the channels axis of the image array should have value 1, in case of RGB data, it should have value 3, and in case of RGBA data, it should have value 4.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Labels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">batch_size</span></td>
+        <td><p>Int (default: 32).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">shuffle</span></td>
+        <td><p>Boolean (default: True).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Numpy.NDarray</span></td>
+        <td><span class="parametername">sample_weight</span></td>
+        <td><p>Sample weights.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">seed</span></td>
+        <td><p>Int (default: None).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">save_to_dir</span></td>
+        <td><p>None or str (default: None). This allows you to optionally specify a directory to which to save the augmented pictures being generated (useful for visualizing what you are doing).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">save_prefix</span></td>
+        <td><p>Str (default: ''). Prefix to use for filenames of saved pictures (only relevant if save_to_dir is set).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">save_format</span></td>
+        <td><p>one of &quot;png&quot;, &quot;jpeg&quot; (only relevant if save_to_dir is set). Default: &quot;png&quot;.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">subset</span></td>
+        <td><p>Subset of data (&quot;training&quot; or &quot;validation&quot;) if validation_split is set in ImageDataGenerator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Keras.KerasIterator.html">KerasIterator</a></td>
+        <td><p>An Iterator yielding tuples of (x, y) where x is a numpy array of image data (in the case of a single image input) or a list of numpy arrays (in the case with additional inputs) and y is a numpy array of corresponding labels. If 'sample_weight' is not None, the yielded tuples are of the form (x, y, sample_weight). If y is None, only the numpy array x is returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_PreProcessing_Image_ImageDataGenerator_FlowFromDataframe_System_String_System_Tuple_System_Int32_System_Int32__System_String_System_String___System_String_System_Int32_System_Boolean_System_Nullable_System_Int32__System_String_System_String_System_String_System_Boolean_System_String_System_String_.md&amp;value=---%0Auid%3A%20Keras.PreProcessing.Image.ImageDataGenerator.FlowFromDataframe(System.String%2CSystem.Tuple%7BSystem.Int32%2CSystem.Int32%7D%2CSystem.String%2CSystem.String%5B%5D%2CSystem.String%2CSystem.Int32%2CSystem.Boolean%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Boolean%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/PreProcessing/ImageDataGenerator.cs/#L159">View Source</a>
+  </span>
+  <a id="Keras_PreProcessing_Image_ImageDataGenerator_FlowFromDataframe_" data-uid="Keras.PreProcessing.Image.ImageDataGenerator.FlowFromDataframe*"></a>
+  <h4 id="Keras_PreProcessing_Image_ImageDataGenerator_FlowFromDataframe_System_String_System_Tuple_System_Int32_System_Int32__System_String_System_String___System_String_System_Int32_System_Boolean_System_Nullable_System_Int32__System_String_System_String_System_String_System_Boolean_System_String_System_String_" data-uid="Keras.PreProcessing.Image.ImageDataGenerator.FlowFromDataframe(System.String,System.Tuple{System.Int32,System.Int32},System.String,System.String[],System.String,System.Int32,System.Boolean,System.Nullable{System.Int32},System.String,System.String,System.String,System.Boolean,System.String,System.String)">FlowFromDataframe(String, Tuple&lt;Int32, Int32&gt;, String, String[], String, Int32, Boolean, Nullable&lt;Int32&gt;, String, String, String, Boolean, String, String)</h4>
+  <div class="markdown level1 summary"><p>Flows from dataframe.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KerasIterator FlowFromDataframe(string directory, Tuple&lt;int, int&gt; target_size = null, string color_mode = &quot;rgb&quot;, string[] classes = null, string class_mode = &quot;categorical&quot;, int batch_size = 32, bool shuffle = true, int? seed = default(int? ), string save_to_dir = &quot;&quot;, string save_prefix = &quot;&quot;, string save_format = &quot;png&quot;, bool follow_links = false, string subset = &quot;&quot;, string interpolation = &quot;nearest&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">directory</span></td>
+        <td><p>string, path to the target directory. It should contain one subdirectory per class. Any PNG, JPG, BMP, PPM or TIF images inside each of the subdirectories directory tree will be included in the generator. See this script for more details.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Tuple</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">target_size</span></td>
+        <td><p>Tuple of integers (height, width), default: (256, 256). The dimensions to which all images found will be resized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">color_mode</span></td>
+        <td><p>One of &quot;grayscale&quot;, &quot;rgb&quot;, &quot;rgba&quot;. Default: &quot;rgb&quot;. Whether the images will be converted to have 1, 3, or 4 channels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">classes</span></td>
+        <td><p>Optional list of class subdirectories (e.g. ['dogs', 'cats']). Default: None. If not provided, the list of classes will be automatically inferred from the subdirectory names/structure under directory, where each subdirectory will be treated as a different class (and the order of the classes, which will map to the label indices, will be alphanumeric). The dictionary containing the mapping from class names to class indices can be obtained via the attribute class_indices.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">class_mode</span></td>
+        <td><p>One of &quot;categorical&quot;, &quot;binary&quot;, &quot;sparse&quot;, &quot;input&quot;, or None. Default: &quot;categorical&quot;. Determines the type of label arrays that are returned:</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">batch_size</span></td>
+        <td><p>Size of the batches of data (default: 32).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">shuffle</span></td>
+        <td><p>Whether to shuffle the data (default: True) If set to False, sorts the data in alphanumeric order.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">seed</span></td>
+        <td><p>Optional random seed for shuffling and transformations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">save_to_dir</span></td>
+        <td><p>None or str (default: None). This allows you to optionally specify a directory to which to save the augmented pictures being generated (useful for visualizing what you are doing).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">save_prefix</span></td>
+        <td><p>Str. Prefix to use for filenames of saved pictures (only relevant if save_to_dir is set).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">save_format</span></td>
+        <td><p>One of &quot;png&quot;, &quot;jpeg&quot; (only relevant if save_to_dir is set). Default: &quot;png&quot;.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">follow_links</span></td>
+        <td><p>Whether to follow symlinks inside class subdirectories (default: False).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">subset</span></td>
+        <td><p>Subset of data (&quot;training&quot; or &quot;validation&quot;) if validation_split is set in ImageDataGenerator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">interpolation</span></td>
+        <td><p>Interpolation method used to resample the image if the target size is different from that of the loaded image. Supported methods are &quot;nearest&quot;, &quot;bilinear&quot;, and &quot;bicubic&quot;. If PIL version 1.1.3 or newer is installed, &quot;lanczos&quot; is also supported. If PIL version 3.4.0 or newer is installed, &quot;box&quot; and &quot;hamming&quot; are also supported. By default, &quot;nearest&quot; is used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Keras.KerasIterator.html">KerasIterator</a></td>
+        <td><p>A DirectoryIterator yielding tuples of (x, y) where x is a numpy array containing a batch of images with shape (batch_size, *target_size, channels) and y is a numpy array of corresponding labels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_PreProcessing_Image_ImageDataGenerator.md&amp;value=---%0Auid%3A%20Keras.PreProcessing.Image.ImageDataGenerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/PreProcessing/ImageDataGenerator.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
