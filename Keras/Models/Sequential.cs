@@ -1,4 +1,5 @@
 ﻿using Keras.Layers;
+using Python.Runtime;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,6 +12,14 @@ namespace Keras.Models
     /// <seealso cref="Keras.Models.BaseModel" />
     public class Sequential : BaseModel
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Sequential"/> class.
+        /// </summary>
+        internal Sequential(PyObject obj)
+        {
+            __self__ = obj;
+        }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="Sequential"/> class.
         /// </summary>

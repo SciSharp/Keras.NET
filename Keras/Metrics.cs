@@ -6,17 +6,12 @@ using System.Text;
 namespace Keras
 {
     /// <summary>
-    /// 
+    /// A metric is a function that is used to judge the performance of your model. Metric functions are to be supplied in the metrics parameter when a model is compiled
     /// </summary>
     /// <seealso cref="Keras.Base" />
     public class Metrics : Base
     {
         static dynamic caller = Instance.keras.metrics;
-
-        public Metrics()
-        {
-            __self__ = caller;
-        }
 
         public static NDarray MSE(NDarray y_true, NDarray y_pred)
         {

@@ -107,9 +107,9 @@ namespace Keras
         /// <returns>
         /// The result of the conversion.
         /// </returns>
-        public static implicit operator Shape(ValueTuple<int> shape)
+        public static implicit operator Shape(int shape)
         {
-            return new Shape(shape.Item1);
+            return new Shape(shape);
         }
 
         /// <summary>

@@ -25,10 +25,4 @@
     </None>
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="Python.Runtime.dll.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>

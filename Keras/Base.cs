@@ -13,6 +13,11 @@ namespace Keras
 
         public object None = null;
 
+        public void Init()
+        {
+            __self__ = ToPython();
+        }
+
         public virtual PyObject ToPython()
         {
             var pyargs = ToTuple(new object[]
@@ -78,9 +83,9 @@ namespace Keras
             }
 
             if (args.Count > 0)
-                return caller.InvokeMethod(method, pyargs, kwargs);
+                return caller.InvokeMember(method, pyargs, kwargs);
             else
-                return caller.InvokeMethod(method, null, null);
+                return caller.InvokeMember(method, null, null);
         }
 
         public PyObject InvokeMethod(string method, Dictionary<string, object> args)

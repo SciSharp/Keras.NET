@@ -20,7 +20,7 @@
         /// <param name="dtype">The data type expected by the input, as a string (float32, float64, int32...)</param>
         /// <param name="sparse"> A boolean specifying whether the placeholder to be created is sparse.</param>
         /// <param name="tensor">Optional existing tensor to wrap into the Input layer. If set, the layer will not create a placeholder tensor.</param>
-        public Input(Shape shape, Shape batch_shape, string name = "", string dtype = "float32", bool sparse = false, NDarray tensor = null)
+        public Input(Shape shape, Shape batch_shape = null, string name = "", string dtype = "float32", bool sparse = false, NDarray tensor = null)
         {
             this["shape"] = shape;
             this["batch_shape"] = batch_shape;

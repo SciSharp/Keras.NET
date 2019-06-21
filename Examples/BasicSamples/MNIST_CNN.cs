@@ -7,6 +7,7 @@ using K = Keras.Backend;
 using Keras;
 using Keras.Models;
 using Keras.Layers;
+using Keras.Utils;
 
 namespace BasicSamples
 {
@@ -48,8 +49,8 @@ namespace BasicSamples
             Console.WriteLine(x_test.shape[0] + " test samples");
 
             // convert class vectors to binary class matrices
-            y_train = Utils.ToCategorical(y_train, num_classes);
-            y_test = Utils.ToCategorical(y_test, num_classes);
+            y_train = Util.ToCategorical(y_train, num_classes);
+            y_test = Util.ToCategorical(y_test, num_classes);
 
             // Build CNN model
             var model = new Sequential();

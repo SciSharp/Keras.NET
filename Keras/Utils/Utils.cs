@@ -1,11 +1,11 @@
-﻿namespace Keras
+﻿namespace Keras.Utils
 {
     using global::Keras.Models;
     using Numpy;
     using Python.Runtime;
     using System.Linq;
 
-    public class Utils : Base
+    public class Util : Base
     {
         /// <summary>
         /// Replicates a model on different GPUs.    Specifically, this function implements single-machine multi-GPU data parallelism.It works in the following way:
@@ -57,7 +57,7 @@
         /// <param name="to_file"> File name of the plot image.</param>
         /// <param name="show_shapes"> whether to display shape information.</param>
         /// <param name="show_layer_names"> whether to display layer names.</param>
-        /// <param name="rankdir: rankdir argument passed to PyDot, a string specifying the format of the plot"> 'TB' creates a vertical plot; 'LR' creates a horizontal plot.</param>
+        /// <param name="rankdir: rankdir argument passed to PyDot, a string specifying the format of the plot"> 'TB' creates a vertical plot; 'LR' creates a horizontal plot.</param>
         /// <param name="expand_nested"> whether to expand nested models into clusters.</param>
         /// <param name="dpi"> dot DPI.</param>
 

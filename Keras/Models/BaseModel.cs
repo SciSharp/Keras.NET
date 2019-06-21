@@ -24,7 +24,7 @@ namespace Keras.Models
                        string sample_weight_mode = "None", string[] weighted_metrics = null, NDarray[] target_tensors = null)
         {
             var args = new Dictionary<string, object>();
-            args["optimizer"] = optimizer.PyObject;
+            args["optimizer"] = optimizer;
             args["loss"] = loss;
             args["metrics"] = metrics;
             args["loss_weights"] = loss_weights;

@@ -1,6 +1,7 @@
 ﻿namespace Keras.Models
 {
     using global::Keras.Layers;
+    using Python.Runtime;
     using System.Collections.Generic;
 
     /// <summary>
@@ -10,6 +11,15 @@
     /// <seealso cref="Keras.Models.BaseModel" />
     public class Model : BaseModel
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Model" /> class.
+        /// </summary>
+        /// <param name="obj">The object.</param>
+        internal Model(PyObject obj)
+        {
+            __self__ = obj;
+        }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="Model"/> class.
         /// </summary>
