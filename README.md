@@ -134,3 +134,6 @@ Console.WriteLine("Test accuracy:", score[1]);
 Reached 98% accuracy within 3 epoches.
 
 ![](https://raw.githubusercontent.com/SciSharp/Keras.NET/master/Images/MNIST_Output.PNG)
+
+# Documentation
+https://scisharp.github.io/Keras.NET/
