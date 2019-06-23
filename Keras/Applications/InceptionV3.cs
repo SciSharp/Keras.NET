@@ -9,7 +9,7 @@ namespace Keras.Applications
 {
     public class InceptionV3 : Base
     {
-        private static dynamic caller = Instance.keras.applications.inception_v3;
+        private static dynamic caller = Instance.keras.applications;
 
         /// <summary>
         /// Gets the model.
@@ -36,32 +36,6 @@ namespace Keras.Applications
             parameters["classes"] = classes;
 
             return new Model(InvokeStaticMethod(caller, "InceptionV3", parameters));
-        }
-
-        /// <summary>
-        /// Decodes the predictions.
-        /// </summary>
-        /// <param name="preds">The preds.</param>
-        /// <param name="top">The top.</param>
-        /// <returns></returns>
-        public ImageNetPrediction[] DecodePredictions(NDarray preds, int top = 3)
-        {
-            Dictionary<string, object> parameters = new Dictionary<string, object>();
-            parameters["preds"] = preds;
-            parameters["top"] = top;
-            return ((PyObject)InvokeStaticMethod(caller, "decode_predictions", parameters)).As<ImageNetPrediction[]>();
-        }
-
-        /// <summary>
-        /// Preprocesses the input.
-        /// </summary>
-        /// <param name="x">The input tensor.</param>
-        /// <returns></returns>
-        public NDarray PreprocessInput(NDarray x)
-        {
-            Dictionary<string, object> parameters = new Dictionary<string, object>();
-            parameters["x"] = x;
-            return new NDarray((PyObject)InvokeStaticMethod(caller, "preprocess_input", parameters));
         }
     }
 }

@@ -12,6 +12,14 @@
     public class Model : BaseModel
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="Model"/> class.
+        /// </summary>
+        internal Model()
+        {
+
+        }
+
+        /// <summary>
         /// Initializes a new instance of the <see cref="Model" /> class.
         /// </summary>
         /// <param name="obj">The object.</param>

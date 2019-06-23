@@ -115,16 +115,16 @@ namespace Keras.Models
         /// Computation is done in batches.
         /// </summary>
         /// <param name="x">The input data, as a Numpy array (or list of Numpy arrays if the model has multiple inputs).</param>
-        /// <param name="y">Integer. If unspecified, it will default to 32.</param>
+        /// <param name="batch_size">Integer. If unspecified, it will default to 32.</param>
         /// <param name="verbose">Verbosity mode, 0 or 1.</param>
         /// <param name="steps">Total number of steps (batches of samples) before declaring the prediction round finished. Ignored with the default value of None.</param>
         /// <param name="callbacks">List of keras.callbacks.Callback instances. List of callbacks to apply during prediction. See callbacks.</param>
         /// <returns>Numpy array(s) of predictions.</returns>
-        public NDarray Predict(NDarray x, NDarray y, int verbose = 1, int? steps = null, Callback[] callbacks = null)
+        public NDarray Predict(NDarray x, int? batch_size = null, int verbose = 1, int? steps = null, Callback[] callbacks = null)
         {
             var args = new Dictionary<string, object>();
             args["x"] = x;
-            args["y"] = y;
+            args["batch_size"] = batch_size;
             args["verbose"] = verbose;
             args["steps"] = steps;
             args["callbacks"] = callbacks != null ? callbacks : null;

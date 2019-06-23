@@ -11,43 +11,39 @@ namespace Keras
 {
     public class Keras : IDisposable
     {
-        private PyObject _pyobj = null;
-        private static GILState state = null;
         public static Keras Instance => _instance.Value;
 
         private static Lazy<Keras> _instance = new Lazy<Keras>(() =>
         {
             var instance = new Keras();
-            try
-            {
-                instance._pyobj = InstallAndImport();
-            }
-            catch (Exception)
-            {
-                // retry to fix the installation by forcing a repair.
-                instance._pyobj = InstallAndImport(force: true);
-            }
+            instance.keras = InstallAndImport("keras");
+            instance.keras_applications = InstallAndImport("keras_applications");
+            instance.keras_processing = InstallAndImport("keras.preprocessing");
             return instance;
         }
         );
 
-        private static PyObject InstallAndImport(bool force = false)
+        private static PyObject InstallAndImport(string module)
         {
             PythonEngine.Initialize();
-            var mod = Py.Import("keras");
+            var mod = Py.Import(module);
             return mod;
         }
 
-        public dynamic keras => _pyobj;
+        public dynamic keras = null;
 
-        private bool IsInitialized => _pyobj != null;
+        public dynamic keras_applications = null;
+
+        public dynamic keras_processing = null;
+
+        private bool IsInitialized => keras != null;
 
         internal Keras() { }
 
         public void Dispose()
         {
             keras?.Dispose();
-            state.Dispose();
+            PythonEngine.Shutdown();
         }
 
         internal static PyObject ToPython(object obj)

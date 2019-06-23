@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Keras.PreProcessing.text
+namespace Keras.PreProcessing.Text
 {
     public class Tokenizer : Base
     {
@@ -32,7 +32,7 @@ namespace Keras.PreProcessing.text
         }
     }
 
-    public class Text : Base
+    public class TextUtil : Base
     {
         static dynamic caller = Instance.keras.preprocessing.text;
 

@@ -10,6 +10,6 @@ namespace Keras.Applications
 
         public string Word { get; set; }
 
-        public float Prection { get; set; }
+        public double PredictedValue { get; set; }
     }
 }

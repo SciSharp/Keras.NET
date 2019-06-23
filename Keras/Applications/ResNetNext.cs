@@ -15,7 +15,7 @@ namespace Keras.Applications
     /// <seealso cref="Keras.Base" />
     public class ResNetNext : Base
     {
-        private static dynamic caller = Instance.keras.applications.resnext;
+        private static dynamic caller = Instance.keras.applications;
 
         /// <summary>
         /// Gets the ResNeXt50 model.
@@ -69,32 +69,6 @@ namespace Keras.Applications
             parameters["classes"] = classes;
 
             return new Model(InvokeStaticMethod(caller, "ResNeXt101", parameters));
-        }
-
-        /// <summary>
-        /// Decodes the predictions.
-        /// </summary>
-        /// <param name="preds">The preds.</param>
-        /// <param name="top">The top.</param>
-        /// <returns></returns>
-        public ImageNetPrediction[] DecodePredictions(NDarray preds, int top = 3)
-        {
-            Dictionary<string, object> parameters = new Dictionary<string, object>();
-            parameters["preds"] = preds;
-            parameters["top"] = top;
-            return ((PyObject)InvokeStaticMethod(caller, "decode_predictions", parameters)).As<ImageNetPrediction[]>();
-        }
-
-        /// <summary>
-        /// Preprocesses the input.
-        /// </summary>
-        /// <param name="x">The input tensor.</param>
-        /// <returns></returns>
-        public NDarray PreprocessInput(NDarray x)
-        {
-            Dictionary<string, object> parameters = new Dictionary<string, object>();
-            parameters["x"] = x;
-            return new NDarray((PyObject)InvokeStaticMethod(caller, "preprocess_input", parameters));
         }
     }
 }

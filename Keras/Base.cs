@@ -83,9 +83,9 @@ namespace Keras
             }
 
             if (args.Count > 0)
-                return caller.InvokeMember(method, pyargs, kwargs);
+                return caller.InvokeMethod(method, pyargs, kwargs);
             else
-                return caller.InvokeMember(method, null, null);
+                return caller.InvokeMethod(method, null, null);
         }
 
         public PyObject InvokeMethod(string method, Dictionary<string, object> args)

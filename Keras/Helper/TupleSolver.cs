@@ -25,7 +25,7 @@ namespace Keras.Helper
                 var r = iter.Current.ToPython();
                 if (PyTuple.IsTupleType(r))
                 {
-                    TupleToList<T>(r);
+                    GetTTupleList<T>(r, ref result);
                     continue;
                 }
 
@@ -38,6 +38,8 @@ namespace Keras.Helper
                     case "UInt32":
                     case "UInt64":
                     case "Byte":
+                    case "Object":
+                    case "String":
                     case "SByte":
                         result.Add(r.As<T>());
                         break;
