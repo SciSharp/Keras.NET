@@ -1,4 +1,5 @@
 # Keras.NET
+![Logo](Images/keras.net_long.svg)
 
 Keras.NET is a high-level neural networks API, written in C# with Python Binding and capable of running on top of TensorFlow, CNTK, or Theano. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result with the least possible delay is key to doing good research.
 
@@ -137,3 +138,5 @@ Reached 98% accuracy within 3 epoches.
 
 # Documentation
 https://scisharp.github.io/Keras.NET/
+
+![SciSharp](https://avatars3.githubusercontent.com/u/44989469)
