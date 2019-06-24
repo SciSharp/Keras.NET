@@ -63,12 +63,12 @@ namespace Keras.Applications
         /// </summary>
         /// <param name="x">The input tensor.</param>
         /// <returns></returns>
-        public NDarray PreprocessInput(NDarray x, string data_format = "channels_last", string mode = "caffe")
+        public NDarray PreprocessInput(NDarray x, string data_format = "channels_last")
         {
             Dictionary<string, object> parameters = new Dictionary<string, object>();
             parameters["x"] = x;
             parameters["data_format"] = data_format;
-            parameters["mode"] = mode;
+            //Parameters["mode"] = mode;
             return new NDarray((PyObject)InvokeStaticMethod(caller, "preprocess_input", parameters));
         }
     }

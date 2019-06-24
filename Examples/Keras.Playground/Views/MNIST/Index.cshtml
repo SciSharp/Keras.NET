@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewData["Title"] = "MNIST";
+}
+
+<h1>MNIST Playground</h1>
+
+<h2>Draw a digit and click "recognize" below:</h2>
+<br />
+<br />
+<form method="post">
+    <div class="row col-12">
+        <div class="col-4 text-center">
+            <div class="canvas-container col-6" style="width: 280px; height: 280px; position: relative; -webkit-user-select: none;">
+                <canvas id="c" width="280" height="280" style="border: 1px solid rgb(170, 170, 170); position: absolute; width: 280px; height: 280px; left: 0px; top: 0px; -webkit-user-select: none;" class="lower-canvas"></canvas>
+            </div>
+            <hr />
+            <input type="hidden" id="mnist_input" name="mnist_input" />
+            <button id="recognize" class="btn btn-info" type="button">Recognize</button>&nbsp;
+            <button id="clear-canvas" class="btn btn-info">Clear</button>
+        </div>
+        <div class="col-8">
+            @if (ViewBag.Result != null)
+            {
+                <p>
+                    Prediction: @ViewBag.Result.ToString()
+                </p>
+                <p>
+                    Accuracy: @ViewBag.Accuracy.ToString()
+                </p>
+            }
+        </div>
+    </div>
+</form>
+
+@section Scripts
+    {
+    <script src="~/js/fabric.min.js"></script>
+    <script src="~/js/mnist-canvas.js"></script>
+}
+
+
+

@@ -3,6 +3,7 @@ using Numpy;
 using Python.Runtime;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -235,6 +236,16 @@ namespace Keras.Models
             model.__self__ = Instance.keras.models.model_from_yaml(json_string: json_string);
 
             return model;
+        }
+
+        /// <summary>
+        /// Saves keras model to onnx.
+        /// </summary>
+        /// <param name="filePath">The file path.</param>
+        public void SaveOnnx(string filePath)
+        {
+            var onnx_model = Instance.keras2onnx.convert_keras(model: (PyObject)this.__self__);
+            File.WriteAllText(filePath, onnx_model.ToString());
         }
     }
 }

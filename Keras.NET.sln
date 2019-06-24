@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29009.5
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Keras", "Keras\Keras.csproj", "{22A74FED-A779-4412-9F6C-E22F9D252C0C}"
 EndProject
@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicSamples", "Examples\Ba
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "doc-gen", "doc-gen\doc-gen.csproj", "{EF31BB8C-9D10-496C-AF91-3E6C3641F469}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageExamples", "Examples\ImageExamples\ImageExamples.csproj", "{EC18ED5C-A9EC-414F-948C-DD1BC052D312}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageExamples", "Examples\ImageExamples\ImageExamples.csproj", "{EC18ED5C-A9EC-414F-948C-DD1BC052D312}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keras.Playground", "Examples\Keras.Playground\Keras.Playground.csproj", "{FE785E8B-0DA8-4E42-8A8A-E5B2C4FCC2E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{EC18ED5C-A9EC-414F-948C-DD1BC052D312}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC18ED5C-A9EC-414F-948C-DD1BC052D312}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC18ED5C-A9EC-414F-948C-DD1BC052D312}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE785E8B-0DA8-4E42-8A8A-E5B2C4FCC2E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE785E8B-0DA8-4E42-8A8A-E5B2C4FCC2E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE785E8B-0DA8-4E42-8A8A-E5B2C4FCC2E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE785E8B-0DA8-4E42-8A8A-E5B2C4FCC2E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A0786763-88EC-41DB-9E4F-6DDACA1A1162} = {96B07D94-46E0-4A1C-9484-E842B47FFE04}
 		{EC18ED5C-A9EC-414F-948C-DD1BC052D312} = {96B07D94-46E0-4A1C-9484-E842B47FFE04}
+		{FE785E8B-0DA8-4E42-8A8A-E5B2C4FCC2E4} = {96B07D94-46E0-4A1C-9484-E842B47FFE04}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE90F72D-AF3C-47FD-A5C8-297A1CB0434B}

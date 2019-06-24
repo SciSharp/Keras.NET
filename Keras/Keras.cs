@@ -17,24 +17,22 @@ namespace Keras
         {
             var instance = new Keras();
             instance.keras = InstallAndImport("keras");
-            instance.keras_applications = InstallAndImport("keras_applications");
-            instance.keras_processing = InstallAndImport("keras.preprocessing");
+            instance.keras2onnx = InstallAndImport("onnxmltools");
             return instance;
         }
         );
 
         private static PyObject InstallAndImport(string module)
         {
-            PythonEngine.Initialize();
+            if(!PythonEngine.IsInitialized)
+                PythonEngine.Initialize();
             var mod = Py.Import(module);
             return mod;
         }
 
         public dynamic keras = null;
 
-        public dynamic keras_applications = null;
-
-        public dynamic keras_processing = null;
+        public dynamic keras2onnx = null;
 
         private bool IsInitialized => keras != null;
 
