@@ -204,12 +204,34 @@ namespace Keras.Models
         }
 
         /// <summary>
+        /// Save the model to h5 file
+        /// </summary>
+        /// <param name="path">The path with filename eg: model.h5.</param>
+        public void Save(string path)
+        {
+            __self__.save(path);
+        }
+
+        /// <summary>
         /// Loads the weight to the model from a file.
         /// </summary>
         /// <param name="path">The path of of the weight file.</param>
         public void LoadWeight(string path)
         {
             __self__.load_weights(path);
+        }
+
+        /// <summary>
+        /// Loads the model.
+        /// </summary>
+        /// <param name="path">The path.</param>
+        /// <returns></returns>
+        public static BaseModel LoadModel(string path)
+        {
+            var model = new BaseModel();
+            model.__self__ = Instance.keras.models.load_model(path);
+
+            return model;
         }
 
         /// <summary>
@@ -246,6 +268,11 @@ namespace Keras.Models
         {
             var onnx_model = Instance.keras2onnx.convert_keras(model: (PyObject)this.__self__);
             File.WriteAllText(filePath, onnx_model.ToString());
+        }
+
+        public void SaveTensorflowJSFormat(string artifacts_dir, bool quantize = false)
+        {
+            Instance.tfjs.converters.save_keras_model(model: this.__self__, artifacts_dir: artifacts_dir);
         }
     }
 }

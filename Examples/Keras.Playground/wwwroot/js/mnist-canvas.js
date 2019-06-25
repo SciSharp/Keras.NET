@@ -1,4 +1,5 @@
-﻿(function () {
+﻿
+(function () {
     var canvas = this.__canvas = new fabric.Canvas('c', {
         isDrawingMode: true
     });
@@ -6,6 +7,7 @@
 
     fabric.Object.prototype.transparentCorners = false;
 
+    
     var recognizeEl = $('#recognize')[0],
         clearEl = $('#clear-canvas')[0];
 
@@ -132,10 +134,18 @@
         return Array.prototype.slice.call(mnistdat);
     };
 
-    recognizeEl.onclick = function () {
-        debugger;
+    recognizeEl.onclick = async function () {
+        const model = await tf.loadLayersModel('/MNIST/model.json');
         var mnistdat = getMnistData();
-        document.getElementById("mnist_input").value = mnistdat;
-        document.forms[0].submit();
+        let x = tf.tensor(mnistdat);
+        x = tf.reshape(x, [1, 28, 28, 1]);
+        let y = model.predict(x);
+        var acc = y.max();
+        y = y.argMax(1);
+        var pred = y.dataSync()[0];
+        acc = acc.dataSync()[0] * 100;
+
+        document.getElementById("predValue").innerText = pred;
+        document.getElementById("predAcc").innerText = acc;
     };
 })();

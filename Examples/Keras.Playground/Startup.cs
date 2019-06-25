@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Python.Runtime;
 
 namespace Keras.Playground
 {
@@ -60,11 +59,6 @@ namespace Keras.Playground
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-
-            //   KerasModel.LoadModels();
-            //PythonEngine.Initialize();
-            //PythonEngine.BeginAllowThreads();
-            //var pylock = PythonEngine.AcquireLock();
         }
     }
 }

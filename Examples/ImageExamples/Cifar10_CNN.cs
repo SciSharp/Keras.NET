@@ -19,7 +19,7 @@ namespace ImageExamples
         private static string[] labels = new string[] { "airplane", "automobile", "bird", "cat", "deer", "dog", "frog", "horse", "ship", "truck" };
         public static void Run()
         {
-            int batch_size = 200;
+            int batch_size = 128;
             int num_classes = 10;
             int epochs = 100;
 
@@ -46,8 +46,7 @@ namespace ImageExamples
             model.Add(new Dropout(0.25));
 
             model.Add(new Conv2D(64, kernel_size: (3, 3).ToTuple(),
-                                padding: "same",
-                                input_shape: new Shape(32, 32, 3)));
+                                padding: "same"));
             model.Add(new Activation("relu"));
             model.Add(new Conv2D(64, (3, 3).ToTuple()));
             model.Add(new Activation("relu"));
@@ -77,11 +76,13 @@ namespace ImageExamples
                           shuffle: true);
 
             //Save model and weights
-            string model_path = "./model.json";
-            string weight_path = "./weights.h5";
-            string json = model.ToJson();
-            File.WriteAllText(model_path, json);
-            model.SaveWeight(weight_path);
+            //string model_path = "./model.json";
+            //string weight_path = "./weights.h5";
+            //string json = model.ToJson();
+            //File.WriteAllText(model_path, json);
+            //model.SaveWeight(weight_path);
+            model.Save("model.h5");
+            model.SaveTensorflowJSFormat("./");
 
             //Score trained model.
             var score = model.Evaluate(x_test, y_test, verbose: 0);
@@ -94,7 +95,7 @@ namespace ImageExamples
             var img = ImageUtil.LoadImg(imagePath, target_size: new Shape(32, 32));
             NDarray x = ImageUtil.ImageToArray(img);
             x = x.reshape(1, x.shape[0], x.shape[1], x.shape[2]);
-            var model = Sequential.ModelFromJson(File.ReadAllText("model.json"));
+            var model = Sequential.LoadModel("model.h5");
             model.LoadWeight("weights.h5");
             var y = model.Predict(x);
             y = y.argmax();

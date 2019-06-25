@@ -17,9 +17,9 @@ namespace ImageExamples
     {
         public static void Run()
         {
-            int batch_size = 128;
+            int batch_size = 200;
             int num_classes = 10;
-            int epochs = 1;
+            int epochs = 10;
 
             // input image dimensions
             int img_rows = 28, img_cols = 28;
@@ -76,13 +76,8 @@ namespace ImageExamples
                       verbose: 1,
                       validation_data: new NDarray[] { x_test, y_test });
 
-            string model_path = "./model.json";
-            string weight_path = "./weights.h5";
-            string json = model.ToJson();
-            File.WriteAllText(model_path, json);
-            model.SaveWeight(weight_path);
-
-            model.SaveOnnx("model.onnx");
+            model.Save("model.h5");
+            model.SaveTensorflowJSFormat("./");
 
             var score = model.Evaluate(x_test, y_test, verbose: 0);
             Console.WriteLine("Test loss:" + score[0]);

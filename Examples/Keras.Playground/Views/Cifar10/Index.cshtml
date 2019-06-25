@@ -3,5 +3,33 @@
     ViewData["Title"] = "Cifar 10";
 }
 
-<h1>Cifar 10</h1>
+<h1>Cifar 10 Playground</h1>
+
+<br />
+<br />
+<div class="col-12 row">
+    <div class="col-6 text-center">
+        <input type="text" class="form-control" id="input_image" onchange="document.getElementById('imgShow').src = this.value; document.getElementById('imgShow').style.display=''" /><br />
+        <img src="" id="imgShow" style="width: 200px; height: 200px; display: none;" />
+        <br />
+        <hr />
+        <button id="btnpredict" class="btn btn-info" type="button">Predict</button>&nbsp;
+    </div>
+    <div class="col-6">
+        <p>
+            Prediction: <strong id="predValue"></strong>
+        </p>
+        <p>
+            Accuracy: <strong id="predAcc"></strong>
+        </p>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="~/js/fabric.min.js"></script>
+    <script src="~/js/cifar10.js"></script>
+}
+
+
 

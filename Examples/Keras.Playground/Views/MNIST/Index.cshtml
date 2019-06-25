@@ -8,7 +8,6 @@
 <h2>Draw a digit and click "recognize" below:</h2>
 <br />
 <br />
-<form method="post">
     <div class="row col-12">
         <div class="col-4 text-center">
             <div class="canvas-container col-6" style="width: 280px; height: 280px; position: relative; -webkit-user-select: none;">
@@ -20,18 +19,14 @@
             <button id="clear-canvas" class="btn btn-info">Clear</button>
         </div>
         <div class="col-8">
-            @if (ViewBag.Result != null)
-            {
-                <p>
-                    Prediction: @ViewBag.Result.ToString()
-                </p>
-                <p>
-                    Accuracy: @ViewBag.Accuracy.ToString()
-                </p>
-            }
+            <p>
+                Prediction: <strong id="predValue"></strong>
+            </p>
+            <p>
+                Accuracy: <strong id="predAcc"></strong>
+            </p>
         </div>
     </div>
-</form>
 
 @section Scripts
     {
