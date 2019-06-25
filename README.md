@@ -12,7 +12,7 @@ Runs seamlessly on CPU and GPU.
 ## Keras.NET is using:
 
 * [Numpy.NET](https://github.com/SciSharp/Numpy.NET)
-* [Python.Included](https://github.com/henon/Python.Included)
+* [pythonnet_netstandard](https://github.com/henon/pythonnet_netstandard)
 
 ## Prerequisite
 * Python 3.6, Link: https://www.python.org/downloads/
