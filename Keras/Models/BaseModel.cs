@@ -270,6 +270,21 @@ namespace Keras.Models
             File.WriteAllText(filePath, onnx_model.ToString());
         }
 
+        /// <summary>
+        /// Summaries the specified line length.
+        /// </summary>
+        /// <param name="line_length">Length of the line.</param>
+        /// <param name="positions">The positions.</param>
+        public void Summary(int? line_length = null, float[] positions = null)
+        {
+            __self__.summary(line_length: line_length, positions: positions);
+        }
+
+        /// <summary>
+        /// Saves the tensorflow js format.
+        /// </summary>
+        /// <param name="artifacts_dir">The artifacts dir.</param>
+        /// <param name="quantize">if set to <c>true</c> [quantize].</param>
         public void SaveTensorflowJSFormat(string artifacts_dir, bool quantize = false)
         {
             Instance.tfjs.converters.save_keras_model(model: this.__self__, artifacts_dir: artifacts_dir);

@@ -125,6 +125,25 @@ namespace Keras.Datasets
                                                 oov_char: oov_char, index_from: index_from));
             return ((dlist[0], dlist[1]), (dlist[2], dlist[3]));
         }
+
+        /// <summary>
+        /// Gets the index of the word.
+        /// </summary>
+        /// <param name="path">The path.</param>
+        /// <returns></returns>
+        public static Dictionary<string, int> GetWordIndex(string path= "imdb_word_index.json")
+        {
+            Dictionary<string, int> result = new Dictionary<string, int>();
+            PyDict py = new PyDict((PyObject)Instance.keras.datasets.imdb.get_word_index(path: path));
+            string[] keys = py.Keys().As<string[]>();
+
+            foreach (var item in keys)
+            {
+                result[item] = py[item].As<int>();
+            }
+
+            return result;
+        }
     }
 
     /// <summary>

@@ -1,4 +1,5 @@
-﻿using Python.Runtime;
+﻿using Numpy;
+using Python.Runtime;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,7 +19,7 @@ namespace Keras.Utils
         /// </summary>
         public CustomObjectScope()
         {
-            __self__ = Instance.keras.utils.CustomObjectScope();
+            __self__ = Instance.keras.utils.CustomObjectScope;
         }
 
         /// <summary>
@@ -61,7 +62,7 @@ namespace Keras.Utils
         /// <param name="normalizer">function to be called on data when retrieved</param>
         public HDF5Matrix(string datapath, string dataset, int start = 0, int? end = null, EventHandler normalizer = null)
         {
-            __self__ = Instance.keras.utils.CustomObjectScope();
+            __self__ = Instance.keras.utils.HDF5Matrix;
         }
 
         /// <summary>
@@ -92,7 +93,12 @@ namespace Keras.Utils
         /// </summary>
         public Sequence()
         {
-            __self__ = Instance.keras.utils.Sequence();
+            __self__ = Instance.keras.utils.Sequence;
+        }
+
+        private Sequence(PyObject py)
+        {
+            __self__ = py;
         }
 
         /// <summary>
@@ -108,6 +114,11 @@ namespace Keras.Utils
             obj.__self__ = py;
 
             return obj;
+        }
+
+        public static implicit operator Sequence(NDarray x)
+        {
+            return new Sequence(x.PyObject);
         }
     }
 }

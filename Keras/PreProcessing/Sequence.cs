@@ -1,15 +1,17 @@
-﻿using Numpy;
+﻿using Keras.Utils;
+using Numpy;
 using Python.Runtime;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace Keras.PreProcessing.sequence
 {
     /// <summary>
     /// Sequence class
     /// </summary>
-    public partial class Sequence : Base
+    public class SequenceUtil : Base
     {
         static dynamic caller = Instance.keras.preprocessing.sequence;
 
@@ -27,7 +29,7 @@ namespace Keras.PreProcessing.sequence
         /// <param name="truncating">The truncating.</param>
         /// <param name="value">The value.</param>
         /// <returns>Numpy array with shape (len(sequences), maxlen)</returns>
-        public static NDarray PadEequences(Sequence[] sequences, int? maxlen = null, string dtype = "int32", string padding = "pre", string truncating = "pre", float value = 0)
+        public static NDarray PadSequences(NDarray sequences, int? maxlen = null, string dtype = "int32", string padding = "pre", string truncating = "pre", float value = 0)
         {
             Dictionary<string, object> parameters = new Dictionary<string, object>();
             parameters["sequences"] = sequences;
@@ -36,8 +38,8 @@ namespace Keras.PreProcessing.sequence
             parameters["padding"] = padding;
             parameters["truncating"] = truncating;
             parameters["value"] = value;
-
-            return new NDarray((PyObject)InvokeStaticMethod(caller, "pad_sequences", parameters));
+            var py = InvokeStaticMethod(caller, "pad_sequences", parameters);
+            return new NDarray((PyObject)py);
         }
 
         /// <summary>
@@ -52,7 +54,7 @@ namespace Keras.PreProcessing.sequence
         /// <param name="sampling_table"> 1D array of size vocabulary_size where the entry i encodes the probability to sample a word of rank i.</param>
         /// <param name="seed"> Random seed.</param>
         /// <returns>couples, labels: where couples are int pairs and  labels are either 0 or 1.</returns>
-        public static NDarray SkipGrams(Sequence sequence, int vocabulary_size, int window_size= 4, float negative_samples= 1.0f, bool shuffle= true,
+        public static NDarray SkipGrams(NDarray sequence, int vocabulary_size, int window_size= 4, float negative_samples= 1.0f, bool shuffle= true,
                                         bool categorical= false, NDarray sampling_table= null, int? seed= null)
         {
             Dictionary<string, object> parameters = new Dictionary<string, object>();

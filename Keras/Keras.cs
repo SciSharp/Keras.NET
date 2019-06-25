@@ -1,4 +1,5 @@
 ﻿using Keras.Layers;
+using Keras.Utils;
 using Numpy;
 using Numpy.Models;
 using Python.Runtime;
@@ -86,6 +87,7 @@ namespace Keras
                 case Slice o: return o.ToPython();
                 case PythonObject o: return o.PyObject;
                 case PyObject o: return o;
+                case Sequence o: return o.ToPython();
                 case StringOrInstance o: return o.PyObject;
                 case KerasFunction o: return o.PyObject;
                 case Base o: return o.ToPython();
