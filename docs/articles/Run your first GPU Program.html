@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Run your first GPU Program </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Run your first GPU Program ">
+    <meta name="generator" content="docfx 2.42.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer="" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="run-your-first-gpu-program">Run your first GPU Program</h1>
+
+<p>Let's try to run our first kernel SAXPY. If you see the method clealy, there are 3 parameters: float array of &quot;x&quot;, float array of &quot;y&quot; and scalar float &quot;a&quot;</p>
+<ol>
+<li>So lets define our 3 parameter using .NET standard declaration:</li>
+</ol>
+<pre><code class="lang-csharp">//Create variable a, b and r
+Array x = new float[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+Array Y = new float[] { 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+float a = 0.5f;
+</code></pre>
+<ol start="2">
+<li>Create an instance of OpenCL compiler. You can see all the available devices supported by Open CL</li>
+</ol>
+<pre><code class="lang-csharp">//Create instance of OpenCL compiler
+var compiler = new OpenCLCompiler();
+
+//Get the available device list
+Console.WriteLine(&quot;\nList Devices----&quot;);
+foreach (var item in compiler.Devices)
+{
+    Console.WriteLine(item);
+}
+</code></pre>
+<p>If more than one device is found, then the system supports OpenCL. Now a days almost all the hardware and GPU cards supports OpenCL. You can go through the link for the list of supported hardwar list: <a href="https://www.khronos.org/conformance/adopters/conformant-products/opencl">https://www.khronos.org/conformance/adopters/conformant-products/opencl</a></p>
+<ol start="3">
+<li>For now lets select one device which can be done by specifiying the device id like below:</li>
+</ol>
+<pre><code class="lang-csharp">//Select a default device
+compiler.UseDevice(0);
+</code></pre>
+<ol start="4">
+<li>Compile the kernel class with the selected device.  You can invoke the Compile method for other kernel class as well. With the Kernels property you can see all the defined functions</li>
+</ol>
+<pre><code class="lang-csharp">//Compile the sample kernel
+compiler.CompileKernel(typeof(SampleKernels));
+
+//See all the kernel methods
+Console.WriteLine(&quot;\nList Kernels----&quot;);
+foreach (var item in compiler.Kernels)
+{
+    Console.WriteLine(item);
+}
+</code></pre>
+<ol start="5">
+<li>Get the execution engine for the compiler and invoke the function.</li>
+</ol>
+<pre><code class="lang-csharp">//Get the execution engine
+var exec = compiler.GetExec&lt;float&gt;();
+
+//Execuete SAXPY kernel method
+exec.SAXPY(x, y, a);
+
+//Print the result
+Console.WriteLine(&quot;\nResult----&quot;);
+for (int i = 0; i &lt; y.Length; i++)
+{
+    Console.Write(y.GetValue(i) + &quot; &quot;);
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/tech-quantum/Amplifier.NET/blob/master/doc-gen/articles/Run your first GPU Program.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

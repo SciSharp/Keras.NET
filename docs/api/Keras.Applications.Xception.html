@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Xception
    ">
-    <meta name="generator" content="docfx 2.42.3.0">
+    <meta name="generator" content="docfx 2.42.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -87,7 +87,10 @@ The default input size for this model is 299x299.</p>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="Keras.Keras.html">Keras</a></div>
     <div class="level2"><a class="xref" href="Keras.Base.html">Base</a></div>
-    <div class="level3"><span class="xref">Xception</span></div>
+    <div class="level3"><a class="xref" href="Keras.Models.BaseModel.html">BaseModel</a></div>
+    <div class="level4"><a class="xref" href="Keras.Models.Model.html">Model</a></div>
+    <div class="level5"><a class="xref" href="Keras.Applications.AppModelBase.html">AppModelBase</a></div>
+    <div class="level6"><span class="xref">Xception</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -95,6 +98,63 @@ The default input size for this model is 299x299.</p>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Keras.Applications.AppModelBase.html#Keras_Applications_AppModelBase_DecodePredictions_Numpy_NDarray_System_Int32_">AppModelBase.DecodePredictions(NDarray, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Applications.AppModelBase.html#Keras_Applications_AppModelBase_PreprocessInput_Numpy_NDarray_System_String_">AppModelBase.PreprocessInput(NDarray, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_Compile_Keras_StringOrInstance_System_String_System_String___System_Single___System_String_System_String___Numpy_NDarray___">BaseModel.Compile(StringOrInstance, String, String[], Single[], String, String[], NDarray[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_Fit_Numpy_NDarray_Numpy_NDarray_System_Nullable_System_Int32__System_Int32_System_Int32_Keras_Callbacks_Callback___System_Single_Numpy_NDarray___System_Boolean_System_Collections_Generic_Dictionary_System_Int32_System_Single__Numpy_NDarray_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__">BaseModel.Fit(NDarray, NDarray, Nullable&lt;Int32&gt;, Int32, Int32, Callback[], Single, NDarray[], Boolean, Dictionary&lt;Int32, Single&gt;, NDarray, Int32, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_Evaluate_Numpy_NDarray_Numpy_NDarray_System_Nullable_System_Int32__System_Int32_Numpy_NDarray_System_Nullable_System_Int32__Keras_Callbacks_Callback___">BaseModel.Evaluate(NDarray, NDarray, Nullable&lt;Int32&gt;, Int32, NDarray, Nullable&lt;Int32&gt;, Callback[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_Predict_Numpy_NDarray_System_Nullable_System_Int32__System_Int32_System_Nullable_System_Int32__Keras_Callbacks_Callback___">BaseModel.Predict(NDarray, Nullable&lt;Int32&gt;, Int32, Nullable&lt;Int32&gt;, Callback[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_TrainOnBatch_Numpy_NDarray_Numpy_NDarray_Numpy_NDarray_System_Collections_Generic_Dictionary_System_Int32_System_Single__">BaseModel.TrainOnBatch(NDarray, NDarray, NDarray, Dictionary&lt;Int32, Single&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_TestOnBatch_Numpy_NDarray_Numpy_NDarray_Numpy_NDarray_">BaseModel.TestOnBatch(NDarray, NDarray, NDarray)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_PredictOnBatch_Numpy_NDarray_">BaseModel.PredictOnBatch(NDarray)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_ToJson">BaseModel.ToJson()</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_SaveWeight_System_String_">BaseModel.SaveWeight(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_Save_System_String_">BaseModel.Save(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_LoadWeight_System_String_">BaseModel.LoadWeight(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_LoadModel_System_String_">BaseModel.LoadModel(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_ModelFromJson_System_String_">BaseModel.ModelFromJson(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_ModelFromYaml_System_String_">BaseModel.ModelFromYaml(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_SaveOnnx_System_String_">BaseModel.SaveOnnx(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_Summary_System_Nullable_System_Int32__System_Single___">BaseModel.Summary(Nullable&lt;Int32&gt;, Single[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_SaveTensorflowJSFormat_System_String_System_Boolean_">BaseModel.SaveTensorflowJSFormat(String, Boolean)</a>
+    </div>
     <div>
       <a class="xref" href="Keras.Base.html#Keras_Base_Parameters">Base.Parameters</a>
     </div>
@@ -121,6 +181,12 @@ The default input size for this model is 299x299.</p>
     </div>
     <div>
       <a class="xref" href="Keras.Keras.html#Keras_Keras_keras">Keras.keras</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_keras2onnx">Keras.keras2onnx</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_tfjs">Keras.tfjs</a>
     </div>
     <div>
       <a class="xref" href="Keras.Keras.html#Keras_Keras_Dispose">Keras.Dispose()</a>
@@ -157,80 +223,25 @@ The default input size for this model is 299x299.</p>
   <h6><strong>Assembly</strong>: Keras.dll</h6>
   <h5 id="Keras_Applications_Xception_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Xception : Base, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class Xception : AppModelBase, IDisposable</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Applications_Xception_DecodePredictions_Numpy_NDarray_System_Int32_.md&amp;value=---%0Auid%3A%20Keras.Applications.Xception.DecodePredictions(Numpy.NDarray%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Applications_Xception__ctor_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Keras.Applications.Xception.%23ctor(System.Boolean%2CSystem.String%2CNumpy.NDarray%2CKeras.Shape%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Applications/Xception.cs/#L54">View Source</a>
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Applications/Xception.cs/#L39">View Source</a>
   </span>
-  <a id="Keras_Applications_Xception_DecodePredictions_" data-uid="Keras.Applications.Xception.DecodePredictions*"></a>
-  <h4 id="Keras_Applications_Xception_DecodePredictions_Numpy_NDarray_System_Int32_" data-uid="Keras.Applications.Xception.DecodePredictions(Numpy.NDarray,System.Int32)">DecodePredictions(NDarray, Int32)</h4>
-  <div class="markdown level1 summary"><p>Decodes the predictions.</p>
+  <a id="Keras_Applications_Xception__ctor_" data-uid="Keras.Applications.Xception.#ctor*"></a>
+  <h4 id="Keras_Applications_Xception__ctor_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_" data-uid="Keras.Applications.Xception.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)">Xception(Boolean, String, NDarray, Shape, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Keras.Applications.Xception.html">Xception</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ImageNetPrediction[] DecodePredictions(NDarray preds, int top = 3)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Numpy.NDarray</span></td>
-        <td><span class="parametername">preds</span></td>
-        <td><p>The preds.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">top</span></td>
-        <td><p>The top.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Keras.Applications.ImageNetPrediction.html">ImageNetPrediction</a>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Applications_Xception_GetModel_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Keras.Applications.Xception.GetModel(System.Boolean%2CSystem.String%2CNumpy.NDarray%2CKeras.Shape%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Applications/Xception.cs/#L34">View Source</a>
-  </span>
-  <a id="Keras_Applications_Xception_GetModel_" data-uid="Keras.Applications.Xception.GetModel*"></a>
-  <h4 id="Keras_Applications_Xception_GetModel_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_" data-uid="Keras.Applications.Xception.GetModel(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)">GetModel(Boolean, String, NDarray, Shape, String, Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets the model.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Model GetModel(bool include_top = true, string weights = &quot;imagenet&quot;, NDarray input_tensor = null, Shape input_shape = null, string pooling = &quot;None&quot;, int classes = 1000)</code></pre>
+    <pre><code class="lang-csharp hljs">public Xception(bool include_top = true, string weights = &quot;imagenet&quot;, NDarray input_tensor = null, Shape input_shape = null, string pooling = &quot;None&quot;, int classes = 1000)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -280,71 +291,6 @@ max means that global max pooling will be applied.</p>
         <td><span class="parametername">classes</span></td>
         <td><p>optional number of classes to classify images into, only to be specified if include_top is True, and if no weights argument is specified.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Keras.Models.Model.html">Model</a></td>
-        <td><p>A Keras model instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Applications_Xception_PreprocessInput_Numpy_NDarray_.md&amp;value=---%0Auid%3A%20Keras.Applications.Xception.PreprocessInput(Numpy.NDarray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Applications/Xception.cs/#L67">View Source</a>
-  </span>
-  <a id="Keras_Applications_Xception_PreprocessInput_" data-uid="Keras.Applications.Xception.PreprocessInput*"></a>
-  <h4 id="Keras_Applications_Xception_PreprocessInput_Numpy_NDarray_" data-uid="Keras.Applications.Xception.PreprocessInput(Numpy.NDarray)">PreprocessInput(NDarray)</h4>
-  <div class="markdown level1 summary"><p>Preprocesses the input.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NDarray PreprocessInput(NDarray x)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Numpy.NDarray</span></td>
-        <td><span class="parametername">x</span></td>
-        <td><p>The input tensor.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Numpy.NDarray</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Model
    ">
-    <meta name="generator" content="docfx 2.42.3.0">
+    <meta name="generator" content="docfx 2.42.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -87,6 +87,7 @@ This model will include all layers required in the computation of b given a.</p>
     <div class="level2"><a class="xref" href="Keras.Base.html">Base</a></div>
     <div class="level3"><a class="xref" href="Keras.Models.BaseModel.html">BaseModel</a></div>
     <div class="level4"><span class="xref">Model</span></div>
+      <div class="level5"><a class="xref" href="Keras.Applications.AppModelBase.html">AppModelBase</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -104,7 +105,7 @@ This model will include all layers required in the computation of b given a.</p>
       <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_Evaluate_Numpy_NDarray_Numpy_NDarray_System_Nullable_System_Int32__System_Int32_Numpy_NDarray_System_Nullable_System_Int32__Keras_Callbacks_Callback___">BaseModel.Evaluate(NDarray, NDarray, Nullable&lt;Int32&gt;, Int32, NDarray, Nullable&lt;Int32&gt;, Callback[])</a>
     </div>
     <div>
-      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_Predict_Numpy_NDarray_Numpy_NDarray_System_Int32_System_Nullable_System_Int32__Keras_Callbacks_Callback___">BaseModel.Predict(NDarray, NDarray, Int32, Nullable&lt;Int32&gt;, Callback[])</a>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_Predict_Numpy_NDarray_System_Nullable_System_Int32__System_Int32_System_Nullable_System_Int32__Keras_Callbacks_Callback___">BaseModel.Predict(NDarray, Nullable&lt;Int32&gt;, Int32, Nullable&lt;Int32&gt;, Callback[])</a>
     </div>
     <div>
       <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_TrainOnBatch_Numpy_NDarray_Numpy_NDarray_Numpy_NDarray_System_Collections_Generic_Dictionary_System_Int32_System_Single__">BaseModel.TrainOnBatch(NDarray, NDarray, NDarray, Dictionary&lt;Int32, Single&gt;)</a>
@@ -122,13 +123,28 @@ This model will include all layers required in the computation of b given a.</p>
       <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_SaveWeight_System_String_">BaseModel.SaveWeight(String)</a>
     </div>
     <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_Save_System_String_">BaseModel.Save(String)</a>
+    </div>
+    <div>
       <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_LoadWeight_System_String_">BaseModel.LoadWeight(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_LoadModel_System_String_">BaseModel.LoadModel(String)</a>
     </div>
     <div>
       <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_ModelFromJson_System_String_">BaseModel.ModelFromJson(String)</a>
     </div>
     <div>
       <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_ModelFromYaml_System_String_">BaseModel.ModelFromYaml(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_SaveOnnx_System_String_">BaseModel.SaveOnnx(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_Summary_System_Nullable_System_Int32__System_Single___">BaseModel.Summary(Nullable&lt;Int32&gt;, Single[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Models.BaseModel.html#Keras_Models_BaseModel_SaveTensorflowJSFormat_System_String_System_Boolean_">BaseModel.SaveTensorflowJSFormat(String, Boolean)</a>
     </div>
     <div>
       <a class="xref" href="Keras.Base.html#Keras_Base_Parameters">Base.Parameters</a>
@@ -156,6 +172,12 @@ This model will include all layers required in the computation of b given a.</p>
     </div>
     <div>
       <a class="xref" href="Keras.Keras.html#Keras_Keras_keras">Keras.keras</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_keras2onnx">Keras.keras2onnx</a>
+    </div>
+    <div>
+      <a class="xref" href="Keras.Keras.html#Keras_Keras_tfjs">Keras.tfjs</a>
     </div>
     <div>
       <a class="xref" href="Keras.Keras.html#Keras_Keras_Dispose">Keras.Dispose()</a>
@@ -201,7 +223,7 @@ This model will include all layers required in the computation of b given a.</p>
     <a href="https://github.com/SciSharp/Keras.NET/new/master/apiSpec/new?filename=Keras_Models_Model__ctor_Keras_Layers_BaseLayer___Keras_Layers_BaseLayer___.md&amp;value=---%0Auid%3A%20Keras.Models.Model.%23ctor(Keras.Layers.BaseLayer%5B%5D%2CKeras.Layers.BaseLayer%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Models/Model.cs/#L28">View Source</a>
+    <a href="https://github.com/SciSharp/Keras.NET/blob/master/Keras/Models/Model.cs/#L36">View Source</a>
   </span>
   <a id="Keras_Models_Model__ctor_" data-uid="Keras.Models.Model.#ctor*"></a>
   <h4 id="Keras_Models_Model__ctor_Keras_Layers_BaseLayer___Keras_Layers_BaseLayer___" data-uid="Keras.Models.Model.#ctor(Keras.Layers.BaseLayer[],Keras.Layers.BaseLayer[])">Model(BaseLayer[], BaseLayer[])</h4>

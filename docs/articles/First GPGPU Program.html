@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>First GPGPU Program </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="First GPGPU Program ">
+    <meta name="generator" content="docfx 2.42.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer="" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="first-gpgpu-program">First GPGPU Program</h1>
+
+<p>GPU Programing is not that scary, only if you understood the basic term called kernel and know how to modularize your code to simple funtions.</p>
+<h2 id="what-is-a-kernel">What is a kernel?</h2>
+<p>Code that gets executed on a device is called a kernel in OpenCL.
+The kernels are written in a C dialect, which is mostly straightforward C with a lot of built-in functions and additional data types.
+For instance, 4-component vectors are a built-in type just as integers. For example, we’ll be implementing a simple SAXPY kernel.</p>
+<p>SAXPY stands for “Single-Precision A·X Plus Y”.  It is a function in the standard Basic Linear Algebra Subroutines (BLAS)library.
+SAXPY is a combination of scalar multiplication and vector addition, and it’s very simple: it takes as input two vectors of 32-bit floats X and Y with N elements each, and a scalar value A.
+It multiplies each element X[i] by A and adds the result to Y[i]</p>
+<ul>
+<li>Create a new C# .NET Console project.</li>
+<li>Go to Nuget and add reference of Amplifier.NET</li>
+<li>Create a new class file &quot;SampleKernel.cs&quot; which will hold the kernel function. You can create as many class files.</li>
+<li>Edit SampleKernel.cs and inherit the class with OpenCLFunctions</li>
+</ul>
+<pre><code class="lang-csharp">class SimpleKernels : OpenCLFunctions
+</code></pre>
+<ul>
+<li>Now in the class body add your first kernel SAXPY.</li>
+</ul>
+<pre><code class="lang-csharp">[OpenCLKernel]
+void SAXPY([Global]float[] x, [Global] float[] y, float a)
+{
+    int i = get_global_id(0);
+
+    y[i] += a * x[i];
+}
+</code></pre>
+<p>The <strong>[OpenCLKernel]</strong> tells the compiler that its a OpenCL kernel and need to convert this to C99 format which will be executed in the CPU/GPU hardware.</p>
+<p>The <strong>[Global]</strong> indicates that this is global memory or simply memory allocated on the device. OpenCL supports different address spaces; in this sample, we’ll be using only global memory. You wonder probably where the SAXPY loop went; this is one of the key design decisions behind OpenCL, so let’s understand first how the code is executed.</p>
+<p>In order to identify the kernel instance, the runtime environment provides an id. Inside the kernel, we use
+<strong>get_global_id</strong> which returns the id of the current work item in the first dimension. We will start as many instances as there are elements in our vector, and each work item will process exactly one entry.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/tech-quantum/Amplifier.NET/blob/master/doc-gen/articles/First GPGPU Program.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -165,96 +165,133 @@ references:
   commentId: N:Keras.Applications
   fullName: Keras.Applications
   nameWithType: Keras.Applications
-- uid: Keras.Applications.DenseNet
-  name: DenseNet
-  href: api/Keras.Applications.DenseNet.html
-  commentId: T:Keras.Applications.DenseNet
-  fullName: Keras.Applications.DenseNet
-  nameWithType: DenseNet
-- uid: Keras.Applications.DenseNet.DecodePredictions(Numpy.NDarray,System.Int32)
+- uid: Keras.Applications.AppModelBase
+  name: AppModelBase
+  href: api/Keras.Applications.AppModelBase.html
+  commentId: T:Keras.Applications.AppModelBase
+  fullName: Keras.Applications.AppModelBase
+  nameWithType: AppModelBase
+- uid: Keras.Applications.AppModelBase.#ctor(System.Object)
+  name: AppModelBase(Object)
+  href: api/Keras.Applications.AppModelBase.html#Keras_Applications_AppModelBase__ctor_System_Object_
+  commentId: M:Keras.Applications.AppModelBase.#ctor(System.Object)
+  fullName: Keras.Applications.AppModelBase.AppModelBase(System.Object)
+  nameWithType: AppModelBase.AppModelBase(Object)
+- uid: Keras.Applications.AppModelBase.#ctor*
+  name: AppModelBase
+  href: api/Keras.Applications.AppModelBase.html#Keras_Applications_AppModelBase__ctor_
+  commentId: Overload:Keras.Applications.AppModelBase.#ctor
+  isSpec: "True"
+  fullName: Keras.Applications.AppModelBase.AppModelBase
+  nameWithType: AppModelBase.AppModelBase
+- uid: Keras.Applications.AppModelBase.DecodePredictions(Numpy.NDarray,System.Int32)
   name: DecodePredictions(NDarray, Int32)
-  href: api/Keras.Applications.DenseNet.html#Keras_Applications_DenseNet_DecodePredictions_Numpy_NDarray_System_Int32_
-  commentId: M:Keras.Applications.DenseNet.DecodePredictions(Numpy.NDarray,System.Int32)
-  fullName: Keras.Applications.DenseNet.DecodePredictions(Numpy.NDarray, System.Int32)
-  nameWithType: DenseNet.DecodePredictions(NDarray, Int32)
-- uid: Keras.Applications.DenseNet.DecodePredictions*
+  href: api/Keras.Applications.AppModelBase.html#Keras_Applications_AppModelBase_DecodePredictions_Numpy_NDarray_System_Int32_
+  commentId: M:Keras.Applications.AppModelBase.DecodePredictions(Numpy.NDarray,System.Int32)
+  fullName: Keras.Applications.AppModelBase.DecodePredictions(Numpy.NDarray, System.Int32)
+  nameWithType: AppModelBase.DecodePredictions(NDarray, Int32)
+- uid: Keras.Applications.AppModelBase.DecodePredictions*
   name: DecodePredictions
-  href: api/Keras.Applications.DenseNet.html#Keras_Applications_DenseNet_DecodePredictions_
-  commentId: Overload:Keras.Applications.DenseNet.DecodePredictions
+  href: api/Keras.Applications.AppModelBase.html#Keras_Applications_AppModelBase_DecodePredictions_
+  commentId: Overload:Keras.Applications.AppModelBase.DecodePredictions
   isSpec: "True"
-  fullName: Keras.Applications.DenseNet.DecodePredictions
-  nameWithType: DenseNet.DecodePredictions
-- uid: Keras.Applications.DenseNet.DenseNet121(System.Int32,System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  name: DenseNet121(Int32, Boolean, String, NDarray, Shape, String, Int32)
-  href: api/Keras.Applications.DenseNet.html#Keras_Applications_DenseNet_DenseNet121_System_Int32_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
-  commentId: M:Keras.Applications.DenseNet.DenseNet121(System.Int32,System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  fullName: Keras.Applications.DenseNet.DenseNet121(System.Int32, System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
-  nameWithType: DenseNet.DenseNet121(Int32, Boolean, String, NDarray, Shape, String, Int32)
-- uid: Keras.Applications.DenseNet.DenseNet121*
-  name: DenseNet121
-  href: api/Keras.Applications.DenseNet.html#Keras_Applications_DenseNet_DenseNet121_
-  commentId: Overload:Keras.Applications.DenseNet.DenseNet121
-  isSpec: "True"
-  fullName: Keras.Applications.DenseNet.DenseNet121
-  nameWithType: DenseNet.DenseNet121
-- uid: Keras.Applications.DenseNet.DenseNet169(System.Int32,System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  name: DenseNet169(Int32, Boolean, String, NDarray, Shape, String, Int32)
-  href: api/Keras.Applications.DenseNet.html#Keras_Applications_DenseNet_DenseNet169_System_Int32_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
-  commentId: M:Keras.Applications.DenseNet.DenseNet169(System.Int32,System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  fullName: Keras.Applications.DenseNet.DenseNet169(System.Int32, System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
-  nameWithType: DenseNet.DenseNet169(Int32, Boolean, String, NDarray, Shape, String, Int32)
-- uid: Keras.Applications.DenseNet.DenseNet169*
-  name: DenseNet169
-  href: api/Keras.Applications.DenseNet.html#Keras_Applications_DenseNet_DenseNet169_
-  commentId: Overload:Keras.Applications.DenseNet.DenseNet169
-  isSpec: "True"
-  fullName: Keras.Applications.DenseNet.DenseNet169
-  nameWithType: DenseNet.DenseNet169
-- uid: Keras.Applications.DenseNet.DenseNet201(System.Int32,System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  name: DenseNet201(Int32, Boolean, String, NDarray, Shape, String, Int32)
-  href: api/Keras.Applications.DenseNet.html#Keras_Applications_DenseNet_DenseNet201_System_Int32_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
-  commentId: M:Keras.Applications.DenseNet.DenseNet201(System.Int32,System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  fullName: Keras.Applications.DenseNet.DenseNet201(System.Int32, System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
-  nameWithType: DenseNet.DenseNet201(Int32, Boolean, String, NDarray, Shape, String, Int32)
-- uid: Keras.Applications.DenseNet.DenseNet201*
-  name: DenseNet201
-  href: api/Keras.Applications.DenseNet.html#Keras_Applications_DenseNet_DenseNet201_
-  commentId: Overload:Keras.Applications.DenseNet.DenseNet201
-  isSpec: "True"
-  fullName: Keras.Applications.DenseNet.DenseNet201
-  nameWithType: DenseNet.DenseNet201
-- uid: Keras.Applications.DenseNet.PreprocessInput(Numpy.NDarray)
-  name: PreprocessInput(NDarray)
-  href: api/Keras.Applications.DenseNet.html#Keras_Applications_DenseNet_PreprocessInput_Numpy_NDarray_
-  commentId: M:Keras.Applications.DenseNet.PreprocessInput(Numpy.NDarray)
-  fullName: Keras.Applications.DenseNet.PreprocessInput(Numpy.NDarray)
-  nameWithType: DenseNet.PreprocessInput(NDarray)
-- uid: Keras.Applications.DenseNet.PreprocessInput*
+  fullName: Keras.Applications.AppModelBase.DecodePredictions
+  nameWithType: AppModelBase.DecodePredictions
+- uid: Keras.Applications.AppModelBase.PreprocessInput(Numpy.NDarray,System.String)
+  name: PreprocessInput(NDarray, String)
+  href: api/Keras.Applications.AppModelBase.html#Keras_Applications_AppModelBase_PreprocessInput_Numpy_NDarray_System_String_
+  commentId: M:Keras.Applications.AppModelBase.PreprocessInput(Numpy.NDarray,System.String)
+  fullName: Keras.Applications.AppModelBase.PreprocessInput(Numpy.NDarray, System.String)
+  nameWithType: AppModelBase.PreprocessInput(NDarray, String)
+- uid: Keras.Applications.AppModelBase.PreprocessInput*
   name: PreprocessInput
-  href: api/Keras.Applications.DenseNet.html#Keras_Applications_DenseNet_PreprocessInput_
-  commentId: Overload:Keras.Applications.DenseNet.PreprocessInput
+  href: api/Keras.Applications.AppModelBase.html#Keras_Applications_AppModelBase_PreprocessInput_
+  commentId: Overload:Keras.Applications.AppModelBase.PreprocessInput
   isSpec: "True"
-  fullName: Keras.Applications.DenseNet.PreprocessInput
-  nameWithType: DenseNet.PreprocessInput
+  fullName: Keras.Applications.AppModelBase.PreprocessInput
+  nameWithType: AppModelBase.PreprocessInput
+- uid: Keras.Applications.DenseNet
+  name: Keras.Applications.DenseNet
+  href: api/Keras.Applications.DenseNet.html
+  commentId: N:Keras.Applications.DenseNet
+  fullName: Keras.Applications.DenseNet
+  nameWithType: Keras.Applications.DenseNet
+- uid: Keras.Applications.DenseNet.DenseNet121
+  name: DenseNet121
+  href: api/Keras.Applications.DenseNet.DenseNet121.html
+  commentId: T:Keras.Applications.DenseNet.DenseNet121
+  fullName: Keras.Applications.DenseNet.DenseNet121
+  nameWithType: DenseNet121
+- uid: Keras.Applications.DenseNet.DenseNet121.#ctor(System.Int32,System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  name: DenseNet121(Int32, Boolean, String, NDarray, Shape, String, Int32)
+  href: api/Keras.Applications.DenseNet.DenseNet121.html#Keras_Applications_DenseNet_DenseNet121__ctor_System_Int32_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
+  commentId: M:Keras.Applications.DenseNet.DenseNet121.#ctor(System.Int32,System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  fullName: Keras.Applications.DenseNet.DenseNet121.DenseNet121(System.Int32, System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
+  nameWithType: DenseNet121.DenseNet121(Int32, Boolean, String, NDarray, Shape, String, Int32)
+- uid: Keras.Applications.DenseNet.DenseNet121.#ctor*
+  name: DenseNet121
+  href: api/Keras.Applications.DenseNet.DenseNet121.html#Keras_Applications_DenseNet_DenseNet121__ctor_
+  commentId: Overload:Keras.Applications.DenseNet.DenseNet121.#ctor
+  isSpec: "True"
+  fullName: Keras.Applications.DenseNet.DenseNet121.DenseNet121
+  nameWithType: DenseNet121.DenseNet121
+- uid: Keras.Applications.DenseNet.DenseNet169
+  name: DenseNet169
+  href: api/Keras.Applications.DenseNet.DenseNet169.html
+  commentId: T:Keras.Applications.DenseNet.DenseNet169
+  fullName: Keras.Applications.DenseNet.DenseNet169
+  nameWithType: DenseNet169
+- uid: Keras.Applications.DenseNet.DenseNet169.#ctor(System.Int32,System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  name: DenseNet169(Int32, Boolean, String, NDarray, Shape, String, Int32)
+  href: api/Keras.Applications.DenseNet.DenseNet169.html#Keras_Applications_DenseNet_DenseNet169__ctor_System_Int32_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
+  commentId: M:Keras.Applications.DenseNet.DenseNet169.#ctor(System.Int32,System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  fullName: Keras.Applications.DenseNet.DenseNet169.DenseNet169(System.Int32, System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
+  nameWithType: DenseNet169.DenseNet169(Int32, Boolean, String, NDarray, Shape, String, Int32)
+- uid: Keras.Applications.DenseNet.DenseNet169.#ctor*
+  name: DenseNet169
+  href: api/Keras.Applications.DenseNet.DenseNet169.html#Keras_Applications_DenseNet_DenseNet169__ctor_
+  commentId: Overload:Keras.Applications.DenseNet.DenseNet169.#ctor
+  isSpec: "True"
+  fullName: Keras.Applications.DenseNet.DenseNet169.DenseNet169
+  nameWithType: DenseNet169.DenseNet169
+- uid: Keras.Applications.DenseNet.DenseNet201
+  name: DenseNet201
+  href: api/Keras.Applications.DenseNet.DenseNet201.html
+  commentId: T:Keras.Applications.DenseNet.DenseNet201
+  fullName: Keras.Applications.DenseNet.DenseNet201
+  nameWithType: DenseNet201
+- uid: Keras.Applications.DenseNet.DenseNet201.#ctor(System.Int32,System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  name: DenseNet201(Int32, Boolean, String, NDarray, Shape, String, Int32)
+  href: api/Keras.Applications.DenseNet.DenseNet201.html#Keras_Applications_DenseNet_DenseNet201__ctor_System_Int32_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
+  commentId: M:Keras.Applications.DenseNet.DenseNet201.#ctor(System.Int32,System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  fullName: Keras.Applications.DenseNet.DenseNet201.DenseNet201(System.Int32, System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
+  nameWithType: DenseNet201.DenseNet201(Int32, Boolean, String, NDarray, Shape, String, Int32)
+- uid: Keras.Applications.DenseNet.DenseNet201.#ctor*
+  name: DenseNet201
+  href: api/Keras.Applications.DenseNet.DenseNet201.html#Keras_Applications_DenseNet_DenseNet201__ctor_
+  commentId: Overload:Keras.Applications.DenseNet.DenseNet201.#ctor
+  isSpec: "True"
+  fullName: Keras.Applications.DenseNet.DenseNet201.DenseNet201
+  nameWithType: DenseNet201.DenseNet201
 - uid: Keras.Applications.ImageNetPrediction
   name: ImageNetPrediction
   href: api/Keras.Applications.ImageNetPrediction.html
   commentId: T:Keras.Applications.ImageNetPrediction
   fullName: Keras.Applications.ImageNetPrediction
   nameWithType: ImageNetPrediction
-- uid: Keras.Applications.ImageNetPrediction.Prection
-  name: Prection
-  href: api/Keras.Applications.ImageNetPrediction.html#Keras_Applications_ImageNetPrediction_Prection
-  commentId: P:Keras.Applications.ImageNetPrediction.Prection
-  fullName: Keras.Applications.ImageNetPrediction.Prection
-  nameWithType: ImageNetPrediction.Prection
-- uid: Keras.Applications.ImageNetPrediction.Prection*
-  name: Prection
-  href: api/Keras.Applications.ImageNetPrediction.html#Keras_Applications_ImageNetPrediction_Prection_
-  commentId: Overload:Keras.Applications.ImageNetPrediction.Prection
+- uid: Keras.Applications.ImageNetPrediction.PredictedValue
+  name: PredictedValue
+  href: api/Keras.Applications.ImageNetPrediction.html#Keras_Applications_ImageNetPrediction_PredictedValue
+  commentId: P:Keras.Applications.ImageNetPrediction.PredictedValue
+  fullName: Keras.Applications.ImageNetPrediction.PredictedValue
+  nameWithType: ImageNetPrediction.PredictedValue
+- uid: Keras.Applications.ImageNetPrediction.PredictedValue*
+  name: PredictedValue
+  href: api/Keras.Applications.ImageNetPrediction.html#Keras_Applications_ImageNetPrediction_PredictedValue_
+  commentId: Overload:Keras.Applications.ImageNetPrediction.PredictedValue
   isSpec: "True"
-  fullName: Keras.Applications.ImageNetPrediction.Prection
-  nameWithType: ImageNetPrediction.Prection
+  fullName: Keras.Applications.ImageNetPrediction.PredictedValue
+  nameWithType: ImageNetPrediction.PredictedValue
 - uid: Keras.Applications.ImageNetPrediction.Word
   name: Word
   href: api/Keras.Applications.ImageNetPrediction.html#Keras_Applications_ImageNetPrediction_Word
@@ -281,579 +318,407 @@ references:
   isSpec: "True"
   fullName: Keras.Applications.ImageNetPrediction.WordID
   nameWithType: ImageNetPrediction.WordID
-- uid: Keras.Applications.InceptionResNetV2
+- uid: Keras.Applications.Inception
+  name: Keras.Applications.Inception
+  href: api/Keras.Applications.Inception.html
+  commentId: N:Keras.Applications.Inception
+  fullName: Keras.Applications.Inception
+  nameWithType: Keras.Applications.Inception
+- uid: Keras.Applications.Inception.InceptionResNetV2
   name: InceptionResNetV2
-  href: api/Keras.Applications.InceptionResNetV2.html
-  commentId: T:Keras.Applications.InceptionResNetV2
-  fullName: Keras.Applications.InceptionResNetV2
+  href: api/Keras.Applications.Inception.InceptionResNetV2.html
+  commentId: T:Keras.Applications.Inception.InceptionResNetV2
+  fullName: Keras.Applications.Inception.InceptionResNetV2
   nameWithType: InceptionResNetV2
-- uid: Keras.Applications.InceptionResNetV2.DecodePredictions(Numpy.NDarray,System.Int32)
-  name: DecodePredictions(NDarray, Int32)
-  href: api/Keras.Applications.InceptionResNetV2.html#Keras_Applications_InceptionResNetV2_DecodePredictions_Numpy_NDarray_System_Int32_
-  commentId: M:Keras.Applications.InceptionResNetV2.DecodePredictions(Numpy.NDarray,System.Int32)
-  fullName: Keras.Applications.InceptionResNetV2.DecodePredictions(Numpy.NDarray, System.Int32)
-  nameWithType: InceptionResNetV2.DecodePredictions(NDarray, Int32)
-- uid: Keras.Applications.InceptionResNetV2.DecodePredictions*
-  name: DecodePredictions
-  href: api/Keras.Applications.InceptionResNetV2.html#Keras_Applications_InceptionResNetV2_DecodePredictions_
-  commentId: Overload:Keras.Applications.InceptionResNetV2.DecodePredictions
+- uid: Keras.Applications.Inception.InceptionResNetV2.#ctor
+  name: InceptionResNetV2()
+  href: api/Keras.Applications.Inception.InceptionResNetV2.html#Keras_Applications_Inception_InceptionResNetV2__ctor
+  commentId: M:Keras.Applications.Inception.InceptionResNetV2.#ctor
+  fullName: Keras.Applications.Inception.InceptionResNetV2.InceptionResNetV2()
+  nameWithType: InceptionResNetV2.InceptionResNetV2()
+- uid: Keras.Applications.Inception.InceptionResNetV2.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  name: InceptionResNetV2(Boolean, String, NDarray, Shape, String, Int32)
+  href: api/Keras.Applications.Inception.InceptionResNetV2.html#Keras_Applications_Inception_InceptionResNetV2__ctor_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
+  commentId: M:Keras.Applications.Inception.InceptionResNetV2.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  fullName: Keras.Applications.Inception.InceptionResNetV2.InceptionResNetV2(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
+  nameWithType: InceptionResNetV2.InceptionResNetV2(Boolean, String, NDarray, Shape, String, Int32)
+- uid: Keras.Applications.Inception.InceptionResNetV2.#ctor*
+  name: InceptionResNetV2
+  href: api/Keras.Applications.Inception.InceptionResNetV2.html#Keras_Applications_Inception_InceptionResNetV2__ctor_
+  commentId: Overload:Keras.Applications.Inception.InceptionResNetV2.#ctor
   isSpec: "True"
-  fullName: Keras.Applications.InceptionResNetV2.DecodePredictions
-  nameWithType: InceptionResNetV2.DecodePredictions
-- uid: Keras.Applications.InceptionResNetV2.GetModel(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  name: GetModel(Boolean, String, NDarray, Shape, String, Int32)
-  href: api/Keras.Applications.InceptionResNetV2.html#Keras_Applications_InceptionResNetV2_GetModel_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
-  commentId: M:Keras.Applications.InceptionResNetV2.GetModel(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  fullName: Keras.Applications.InceptionResNetV2.GetModel(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
-  nameWithType: InceptionResNetV2.GetModel(Boolean, String, NDarray, Shape, String, Int32)
-- uid: Keras.Applications.InceptionResNetV2.GetModel*
-  name: GetModel
-  href: api/Keras.Applications.InceptionResNetV2.html#Keras_Applications_InceptionResNetV2_GetModel_
-  commentId: Overload:Keras.Applications.InceptionResNetV2.GetModel
-  isSpec: "True"
-  fullName: Keras.Applications.InceptionResNetV2.GetModel
-  nameWithType: InceptionResNetV2.GetModel
-- uid: Keras.Applications.InceptionResNetV2.PreprocessInput(Numpy.NDarray)
-  name: PreprocessInput(NDarray)
-  href: api/Keras.Applications.InceptionResNetV2.html#Keras_Applications_InceptionResNetV2_PreprocessInput_Numpy_NDarray_
-  commentId: M:Keras.Applications.InceptionResNetV2.PreprocessInput(Numpy.NDarray)
-  fullName: Keras.Applications.InceptionResNetV2.PreprocessInput(Numpy.NDarray)
-  nameWithType: InceptionResNetV2.PreprocessInput(NDarray)
-- uid: Keras.Applications.InceptionResNetV2.PreprocessInput*
-  name: PreprocessInput
-  href: api/Keras.Applications.InceptionResNetV2.html#Keras_Applications_InceptionResNetV2_PreprocessInput_
-  commentId: Overload:Keras.Applications.InceptionResNetV2.PreprocessInput
-  isSpec: "True"
-  fullName: Keras.Applications.InceptionResNetV2.PreprocessInput
-  nameWithType: InceptionResNetV2.PreprocessInput
-- uid: Keras.Applications.InceptionV3
+  fullName: Keras.Applications.Inception.InceptionResNetV2.InceptionResNetV2
+  nameWithType: InceptionResNetV2.InceptionResNetV2
+- uid: Keras.Applications.Inception.InceptionV3
   name: InceptionV3
-  href: api/Keras.Applications.InceptionV3.html
-  commentId: T:Keras.Applications.InceptionV3
-  fullName: Keras.Applications.InceptionV3
+  href: api/Keras.Applications.Inception.InceptionV3.html
+  commentId: T:Keras.Applications.Inception.InceptionV3
+  fullName: Keras.Applications.Inception.InceptionV3
   nameWithType: InceptionV3
-- uid: Keras.Applications.InceptionV3.DecodePredictions(Numpy.NDarray,System.Int32)
-  name: DecodePredictions(NDarray, Int32)
-  href: api/Keras.Applications.InceptionV3.html#Keras_Applications_InceptionV3_DecodePredictions_Numpy_NDarray_System_Int32_
-  commentId: M:Keras.Applications.InceptionV3.DecodePredictions(Numpy.NDarray,System.Int32)
-  fullName: Keras.Applications.InceptionV3.DecodePredictions(Numpy.NDarray, System.Int32)
-  nameWithType: InceptionV3.DecodePredictions(NDarray, Int32)
-- uid: Keras.Applications.InceptionV3.DecodePredictions*
-  name: DecodePredictions
-  href: api/Keras.Applications.InceptionV3.html#Keras_Applications_InceptionV3_DecodePredictions_
-  commentId: Overload:Keras.Applications.InceptionV3.DecodePredictions
+- uid: Keras.Applications.Inception.InceptionV3.#ctor
+  name: InceptionV3()
+  href: api/Keras.Applications.Inception.InceptionV3.html#Keras_Applications_Inception_InceptionV3__ctor
+  commentId: M:Keras.Applications.Inception.InceptionV3.#ctor
+  fullName: Keras.Applications.Inception.InceptionV3.InceptionV3()
+  nameWithType: InceptionV3.InceptionV3()
+- uid: Keras.Applications.Inception.InceptionV3.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  name: InceptionV3(Boolean, String, NDarray, Shape, String, Int32)
+  href: api/Keras.Applications.Inception.InceptionV3.html#Keras_Applications_Inception_InceptionV3__ctor_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
+  commentId: M:Keras.Applications.Inception.InceptionV3.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  fullName: Keras.Applications.Inception.InceptionV3.InceptionV3(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
+  nameWithType: InceptionV3.InceptionV3(Boolean, String, NDarray, Shape, String, Int32)
+- uid: Keras.Applications.Inception.InceptionV3.#ctor*
+  name: InceptionV3
+  href: api/Keras.Applications.Inception.InceptionV3.html#Keras_Applications_Inception_InceptionV3__ctor_
+  commentId: Overload:Keras.Applications.Inception.InceptionV3.#ctor
   isSpec: "True"
-  fullName: Keras.Applications.InceptionV3.DecodePredictions
-  nameWithType: InceptionV3.DecodePredictions
-- uid: Keras.Applications.InceptionV3.GetModel(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  name: GetModel(Boolean, String, NDarray, Shape, String, Int32)
-  href: api/Keras.Applications.InceptionV3.html#Keras_Applications_InceptionV3_GetModel_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
-  commentId: M:Keras.Applications.InceptionV3.GetModel(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  fullName: Keras.Applications.InceptionV3.GetModel(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
-  nameWithType: InceptionV3.GetModel(Boolean, String, NDarray, Shape, String, Int32)
-- uid: Keras.Applications.InceptionV3.GetModel*
-  name: GetModel
-  href: api/Keras.Applications.InceptionV3.html#Keras_Applications_InceptionV3_GetModel_
-  commentId: Overload:Keras.Applications.InceptionV3.GetModel
-  isSpec: "True"
-  fullName: Keras.Applications.InceptionV3.GetModel
-  nameWithType: InceptionV3.GetModel
-- uid: Keras.Applications.InceptionV3.PreprocessInput(Numpy.NDarray)
-  name: PreprocessInput(NDarray)
-  href: api/Keras.Applications.InceptionV3.html#Keras_Applications_InceptionV3_PreprocessInput_Numpy_NDarray_
-  commentId: M:Keras.Applications.InceptionV3.PreprocessInput(Numpy.NDarray)
-  fullName: Keras.Applications.InceptionV3.PreprocessInput(Numpy.NDarray)
-  nameWithType: InceptionV3.PreprocessInput(NDarray)
-- uid: Keras.Applications.InceptionV3.PreprocessInput*
-  name: PreprocessInput
-  href: api/Keras.Applications.InceptionV3.html#Keras_Applications_InceptionV3_PreprocessInput_
-  commentId: Overload:Keras.Applications.InceptionV3.PreprocessInput
-  isSpec: "True"
-  fullName: Keras.Applications.InceptionV3.PreprocessInput
-  nameWithType: InceptionV3.PreprocessInput
+  fullName: Keras.Applications.Inception.InceptionV3.InceptionV3
+  nameWithType: InceptionV3.InceptionV3
 - uid: Keras.Applications.MobileNet
-  name: MobileNet
+  name: Keras.Applications.MobileNet
   href: api/Keras.Applications.MobileNet.html
-  commentId: T:Keras.Applications.MobileNet
+  commentId: N:Keras.Applications.MobileNet
   fullName: Keras.Applications.MobileNet
-  nameWithType: MobileNet
-- uid: Keras.Applications.MobileNet.DecodePredictions(Numpy.NDarray,System.Int32)
-  name: DecodePredictions(NDarray, Int32)
-  href: api/Keras.Applications.MobileNet.html#Keras_Applications_MobileNet_DecodePredictions_Numpy_NDarray_System_Int32_
-  commentId: M:Keras.Applications.MobileNet.DecodePredictions(Numpy.NDarray,System.Int32)
-  fullName: Keras.Applications.MobileNet.DecodePredictions(Numpy.NDarray, System.Int32)
-  nameWithType: MobileNet.DecodePredictions(NDarray, Int32)
-- uid: Keras.Applications.MobileNet.DecodePredictions*
-  name: DecodePredictions
-  href: api/Keras.Applications.MobileNet.html#Keras_Applications_MobileNet_DecodePredictions_
-  commentId: Overload:Keras.Applications.MobileNet.DecodePredictions
+  nameWithType: Keras.Applications.MobileNet
+- uid: Keras.Applications.MobileNet.MobileNetV1
+  name: MobileNetV1
+  href: api/Keras.Applications.MobileNet.MobileNetV1.html
+  commentId: T:Keras.Applications.MobileNet.MobileNetV1
+  fullName: Keras.Applications.MobileNet.MobileNetV1
+  nameWithType: MobileNetV1
+- uid: Keras.Applications.MobileNet.MobileNetV1.#ctor
+  name: MobileNetV1()
+  href: api/Keras.Applications.MobileNet.MobileNetV1.html#Keras_Applications_MobileNet_MobileNetV1__ctor
+  commentId: M:Keras.Applications.MobileNet.MobileNetV1.#ctor
+  fullName: Keras.Applications.MobileNet.MobileNetV1.MobileNetV1()
+  nameWithType: MobileNetV1.MobileNetV1()
+- uid: Keras.Applications.MobileNet.MobileNetV1.#ctor(Keras.Shape,System.Single,System.Int32,System.Single,System.Boolean,System.String,Numpy.NDarray,System.String,System.Int32)
+  name: MobileNetV1(Shape, Single, Int32, Single, Boolean, String, NDarray, String, Int32)
+  href: api/Keras.Applications.MobileNet.MobileNetV1.html#Keras_Applications_MobileNet_MobileNetV1__ctor_Keras_Shape_System_Single_System_Int32_System_Single_System_Boolean_System_String_Numpy_NDarray_System_String_System_Int32_
+  commentId: M:Keras.Applications.MobileNet.MobileNetV1.#ctor(Keras.Shape,System.Single,System.Int32,System.Single,System.Boolean,System.String,Numpy.NDarray,System.String,System.Int32)
+  fullName: Keras.Applications.MobileNet.MobileNetV1.MobileNetV1(Keras.Shape, System.Single, System.Int32, System.Single, System.Boolean, System.String, Numpy.NDarray, System.String, System.Int32)
+  nameWithType: MobileNetV1.MobileNetV1(Shape, Single, Int32, Single, Boolean, String, NDarray, String, Int32)
+- uid: Keras.Applications.MobileNet.MobileNetV1.#ctor*
+  name: MobileNetV1
+  href: api/Keras.Applications.MobileNet.MobileNetV1.html#Keras_Applications_MobileNet_MobileNetV1__ctor_
+  commentId: Overload:Keras.Applications.MobileNet.MobileNetV1.#ctor
   isSpec: "True"
-  fullName: Keras.Applications.MobileNet.DecodePredictions
-  nameWithType: MobileNet.DecodePredictions
-- uid: Keras.Applications.MobileNet.GetModel(Keras.Shape,System.Single,System.Int32,System.Single,System.Boolean,System.String,Numpy.NDarray,System.String,System.Int32)
-  name: GetModel(Shape, Single, Int32, Single, Boolean, String, NDarray, String, Int32)
-  href: api/Keras.Applications.MobileNet.html#Keras_Applications_MobileNet_GetModel_Keras_Shape_System_Single_System_Int32_System_Single_System_Boolean_System_String_Numpy_NDarray_System_String_System_Int32_
-  commentId: M:Keras.Applications.MobileNet.GetModel(Keras.Shape,System.Single,System.Int32,System.Single,System.Boolean,System.String,Numpy.NDarray,System.String,System.Int32)
-  fullName: Keras.Applications.MobileNet.GetModel(Keras.Shape, System.Single, System.Int32, System.Single, System.Boolean, System.String, Numpy.NDarray, System.String, System.Int32)
-  nameWithType: MobileNet.GetModel(Shape, Single, Int32, Single, Boolean, String, NDarray, String, Int32)
-- uid: Keras.Applications.MobileNet.GetModel*
-  name: GetModel
-  href: api/Keras.Applications.MobileNet.html#Keras_Applications_MobileNet_GetModel_
-  commentId: Overload:Keras.Applications.MobileNet.GetModel
-  isSpec: "True"
-  fullName: Keras.Applications.MobileNet.GetModel
-  nameWithType: MobileNet.GetModel
-- uid: Keras.Applications.MobileNet.PreprocessInput(Numpy.NDarray)
-  name: PreprocessInput(NDarray)
-  href: api/Keras.Applications.MobileNet.html#Keras_Applications_MobileNet_PreprocessInput_Numpy_NDarray_
-  commentId: M:Keras.Applications.MobileNet.PreprocessInput(Numpy.NDarray)
-  fullName: Keras.Applications.MobileNet.PreprocessInput(Numpy.NDarray)
-  nameWithType: MobileNet.PreprocessInput(NDarray)
-- uid: Keras.Applications.MobileNet.PreprocessInput*
-  name: PreprocessInput
-  href: api/Keras.Applications.MobileNet.html#Keras_Applications_MobileNet_PreprocessInput_
-  commentId: Overload:Keras.Applications.MobileNet.PreprocessInput
-  isSpec: "True"
-  fullName: Keras.Applications.MobileNet.PreprocessInput
-  nameWithType: MobileNet.PreprocessInput
-- uid: Keras.Applications.MobileNetV2
+  fullName: Keras.Applications.MobileNet.MobileNetV1.MobileNetV1
+  nameWithType: MobileNetV1.MobileNetV1
+- uid: Keras.Applications.MobileNet.MobileNetV2
   name: MobileNetV2
-  href: api/Keras.Applications.MobileNetV2.html
-  commentId: T:Keras.Applications.MobileNetV2
-  fullName: Keras.Applications.MobileNetV2
+  href: api/Keras.Applications.MobileNet.MobileNetV2.html
+  commentId: T:Keras.Applications.MobileNet.MobileNetV2
+  fullName: Keras.Applications.MobileNet.MobileNetV2
   nameWithType: MobileNetV2
-- uid: Keras.Applications.MobileNetV2.DecodePredictions(Numpy.NDarray,System.Int32)
-  name: DecodePredictions(NDarray, Int32)
-  href: api/Keras.Applications.MobileNetV2.html#Keras_Applications_MobileNetV2_DecodePredictions_Numpy_NDarray_System_Int32_
-  commentId: M:Keras.Applications.MobileNetV2.DecodePredictions(Numpy.NDarray,System.Int32)
-  fullName: Keras.Applications.MobileNetV2.DecodePredictions(Numpy.NDarray, System.Int32)
-  nameWithType: MobileNetV2.DecodePredictions(NDarray, Int32)
-- uid: Keras.Applications.MobileNetV2.DecodePredictions*
-  name: DecodePredictions
-  href: api/Keras.Applications.MobileNetV2.html#Keras_Applications_MobileNetV2_DecodePredictions_
-  commentId: Overload:Keras.Applications.MobileNetV2.DecodePredictions
+- uid: Keras.Applications.MobileNet.MobileNetV2.#ctor
+  name: MobileNetV2()
+  href: api/Keras.Applications.MobileNet.MobileNetV2.html#Keras_Applications_MobileNet_MobileNetV2__ctor
+  commentId: M:Keras.Applications.MobileNet.MobileNetV2.#ctor
+  fullName: Keras.Applications.MobileNet.MobileNetV2.MobileNetV2()
+  nameWithType: MobileNetV2.MobileNetV2()
+- uid: Keras.Applications.MobileNet.MobileNetV2.#ctor(Keras.Shape,System.Single,System.Int32,System.Single,System.Boolean,System.String,Numpy.NDarray,System.String,System.Int32)
+  name: MobileNetV2(Shape, Single, Int32, Single, Boolean, String, NDarray, String, Int32)
+  href: api/Keras.Applications.MobileNet.MobileNetV2.html#Keras_Applications_MobileNet_MobileNetV2__ctor_Keras_Shape_System_Single_System_Int32_System_Single_System_Boolean_System_String_Numpy_NDarray_System_String_System_Int32_
+  commentId: M:Keras.Applications.MobileNet.MobileNetV2.#ctor(Keras.Shape,System.Single,System.Int32,System.Single,System.Boolean,System.String,Numpy.NDarray,System.String,System.Int32)
+  fullName: Keras.Applications.MobileNet.MobileNetV2.MobileNetV2(Keras.Shape, System.Single, System.Int32, System.Single, System.Boolean, System.String, Numpy.NDarray, System.String, System.Int32)
+  nameWithType: MobileNetV2.MobileNetV2(Shape, Single, Int32, Single, Boolean, String, NDarray, String, Int32)
+- uid: Keras.Applications.MobileNet.MobileNetV2.#ctor*
+  name: MobileNetV2
+  href: api/Keras.Applications.MobileNet.MobileNetV2.html#Keras_Applications_MobileNet_MobileNetV2__ctor_
+  commentId: Overload:Keras.Applications.MobileNet.MobileNetV2.#ctor
   isSpec: "True"
-  fullName: Keras.Applications.MobileNetV2.DecodePredictions
-  nameWithType: MobileNetV2.DecodePredictions
-- uid: Keras.Applications.MobileNetV2.GetModel(Keras.Shape,System.Single,System.Int32,System.Boolean,System.String,Numpy.NDarray,System.String,System.Int32)
-  name: GetModel(Shape, Single, Int32, Boolean, String, NDarray, String, Int32)
-  href: api/Keras.Applications.MobileNetV2.html#Keras_Applications_MobileNetV2_GetModel_Keras_Shape_System_Single_System_Int32_System_Boolean_System_String_Numpy_NDarray_System_String_System_Int32_
-  commentId: M:Keras.Applications.MobileNetV2.GetModel(Keras.Shape,System.Single,System.Int32,System.Boolean,System.String,Numpy.NDarray,System.String,System.Int32)
-  fullName: Keras.Applications.MobileNetV2.GetModel(Keras.Shape, System.Single, System.Int32, System.Boolean, System.String, Numpy.NDarray, System.String, System.Int32)
-  nameWithType: MobileNetV2.GetModel(Shape, Single, Int32, Boolean, String, NDarray, String, Int32)
-- uid: Keras.Applications.MobileNetV2.GetModel*
-  name: GetModel
-  href: api/Keras.Applications.MobileNetV2.html#Keras_Applications_MobileNetV2_GetModel_
-  commentId: Overload:Keras.Applications.MobileNetV2.GetModel
-  isSpec: "True"
-  fullName: Keras.Applications.MobileNetV2.GetModel
-  nameWithType: MobileNetV2.GetModel
-- uid: Keras.Applications.MobileNetV2.PreprocessInput(Numpy.NDarray)
-  name: PreprocessInput(NDarray)
-  href: api/Keras.Applications.MobileNetV2.html#Keras_Applications_MobileNetV2_PreprocessInput_Numpy_NDarray_
-  commentId: M:Keras.Applications.MobileNetV2.PreprocessInput(Numpy.NDarray)
-  fullName: Keras.Applications.MobileNetV2.PreprocessInput(Numpy.NDarray)
-  nameWithType: MobileNetV2.PreprocessInput(NDarray)
-- uid: Keras.Applications.MobileNetV2.PreprocessInput*
-  name: PreprocessInput
-  href: api/Keras.Applications.MobileNetV2.html#Keras_Applications_MobileNetV2_PreprocessInput_
-  commentId: Overload:Keras.Applications.MobileNetV2.PreprocessInput
-  isSpec: "True"
-  fullName: Keras.Applications.MobileNetV2.PreprocessInput
-  nameWithType: MobileNetV2.PreprocessInput
+  fullName: Keras.Applications.MobileNet.MobileNetV2.MobileNetV2
+  nameWithType: MobileNetV2.MobileNetV2
 - uid: Keras.Applications.NASNet
-  name: NASNet
+  name: Keras.Applications.NASNet
   href: api/Keras.Applications.NASNet.html
-  commentId: T:Keras.Applications.NASNet
+  commentId: N:Keras.Applications.NASNet
   fullName: Keras.Applications.NASNet
-  nameWithType: NASNet
-- uid: Keras.Applications.NASNet.DecodePredictions(Numpy.NDarray,System.Int32)
-  name: DecodePredictions(NDarray, Int32)
-  href: api/Keras.Applications.NASNet.html#Keras_Applications_NASNet_DecodePredictions_Numpy_NDarray_System_Int32_
-  commentId: M:Keras.Applications.NASNet.DecodePredictions(Numpy.NDarray,System.Int32)
-  fullName: Keras.Applications.NASNet.DecodePredictions(Numpy.NDarray, System.Int32)
-  nameWithType: NASNet.DecodePredictions(NDarray, Int32)
-- uid: Keras.Applications.NASNet.DecodePredictions*
-  name: DecodePredictions
-  href: api/Keras.Applications.NASNet.html#Keras_Applications_NASNet_DecodePredictions_
-  commentId: Overload:Keras.Applications.NASNet.DecodePredictions
-  isSpec: "True"
-  fullName: Keras.Applications.NASNet.DecodePredictions
-  nameWithType: NASNet.DecodePredictions
-- uid: Keras.Applications.NASNet.NASNetLarge(Keras.Shape,System.Boolean,System.String,Numpy.NDarray,System.String,System.Int32)
-  name: NASNetLarge(Shape, Boolean, String, NDarray, String, Int32)
-  href: api/Keras.Applications.NASNet.html#Keras_Applications_NASNet_NASNetLarge_Keras_Shape_System_Boolean_System_String_Numpy_NDarray_System_String_System_Int32_
-  commentId: M:Keras.Applications.NASNet.NASNetLarge(Keras.Shape,System.Boolean,System.String,Numpy.NDarray,System.String,System.Int32)
-  fullName: Keras.Applications.NASNet.NASNetLarge(Keras.Shape, System.Boolean, System.String, Numpy.NDarray, System.String, System.Int32)
-  nameWithType: NASNet.NASNetLarge(Shape, Boolean, String, NDarray, String, Int32)
-- uid: Keras.Applications.NASNet.NASNetLarge*
+  nameWithType: Keras.Applications.NASNet
+- uid: Keras.Applications.NASNet.NASNetLarge
   name: NASNetLarge
-  href: api/Keras.Applications.NASNet.html#Keras_Applications_NASNet_NASNetLarge_
-  commentId: Overload:Keras.Applications.NASNet.NASNetLarge
-  isSpec: "True"
+  href: api/Keras.Applications.NASNet.NASNetLarge.html
+  commentId: T:Keras.Applications.NASNet.NASNetLarge
   fullName: Keras.Applications.NASNet.NASNetLarge
-  nameWithType: NASNet.NASNetLarge
-- uid: Keras.Applications.NASNet.NASNetMobile(Keras.Shape,System.Boolean,System.String,Numpy.NDarray,System.String,System.Int32)
-  name: NASNetMobile(Shape, Boolean, String, NDarray, String, Int32)
-  href: api/Keras.Applications.NASNet.html#Keras_Applications_NASNet_NASNetMobile_Keras_Shape_System_Boolean_System_String_Numpy_NDarray_System_String_System_Int32_
-  commentId: M:Keras.Applications.NASNet.NASNetMobile(Keras.Shape,System.Boolean,System.String,Numpy.NDarray,System.String,System.Int32)
-  fullName: Keras.Applications.NASNet.NASNetMobile(Keras.Shape, System.Boolean, System.String, Numpy.NDarray, System.String, System.Int32)
-  nameWithType: NASNet.NASNetMobile(Shape, Boolean, String, NDarray, String, Int32)
-- uid: Keras.Applications.NASNet.NASNetMobile*
+  nameWithType: NASNetLarge
+- uid: Keras.Applications.NASNet.NASNetLarge.#ctor(Keras.Shape,System.Boolean,System.String,Numpy.NDarray,System.String,System.Int32)
+  name: NASNetLarge(Shape, Boolean, String, NDarray, String, Int32)
+  href: api/Keras.Applications.NASNet.NASNetLarge.html#Keras_Applications_NASNet_NASNetLarge__ctor_Keras_Shape_System_Boolean_System_String_Numpy_NDarray_System_String_System_Int32_
+  commentId: M:Keras.Applications.NASNet.NASNetLarge.#ctor(Keras.Shape,System.Boolean,System.String,Numpy.NDarray,System.String,System.Int32)
+  fullName: Keras.Applications.NASNet.NASNetLarge.NASNetLarge(Keras.Shape, System.Boolean, System.String, Numpy.NDarray, System.String, System.Int32)
+  nameWithType: NASNetLarge.NASNetLarge(Shape, Boolean, String, NDarray, String, Int32)
+- uid: Keras.Applications.NASNet.NASNetLarge.#ctor*
+  name: NASNetLarge
+  href: api/Keras.Applications.NASNet.NASNetLarge.html#Keras_Applications_NASNet_NASNetLarge__ctor_
+  commentId: Overload:Keras.Applications.NASNet.NASNetLarge.#ctor
+  isSpec: "True"
+  fullName: Keras.Applications.NASNet.NASNetLarge.NASNetLarge
+  nameWithType: NASNetLarge.NASNetLarge
+- uid: Keras.Applications.NASNet.NASNetMobile
   name: NASNetMobile
-  href: api/Keras.Applications.NASNet.html#Keras_Applications_NASNet_NASNetMobile_
-  commentId: Overload:Keras.Applications.NASNet.NASNetMobile
-  isSpec: "True"
+  href: api/Keras.Applications.NASNet.NASNetMobile.html
+  commentId: T:Keras.Applications.NASNet.NASNetMobile
   fullName: Keras.Applications.NASNet.NASNetMobile
-  nameWithType: NASNet.NASNetMobile
-- uid: Keras.Applications.NASNet.PreprocessInput(Numpy.NDarray)
-  name: PreprocessInput(NDarray)
-  href: api/Keras.Applications.NASNet.html#Keras_Applications_NASNet_PreprocessInput_Numpy_NDarray_
-  commentId: M:Keras.Applications.NASNet.PreprocessInput(Numpy.NDarray)
-  fullName: Keras.Applications.NASNet.PreprocessInput(Numpy.NDarray)
-  nameWithType: NASNet.PreprocessInput(NDarray)
-- uid: Keras.Applications.NASNet.PreprocessInput*
-  name: PreprocessInput
-  href: api/Keras.Applications.NASNet.html#Keras_Applications_NASNet_PreprocessInput_
-  commentId: Overload:Keras.Applications.NASNet.PreprocessInput
+  nameWithType: NASNetMobile
+- uid: Keras.Applications.NASNet.NASNetMobile.#ctor(Keras.Shape,System.Boolean,System.String,Numpy.NDarray,System.String,System.Int32)
+  name: NASNetMobile(Shape, Boolean, String, NDarray, String, Int32)
+  href: api/Keras.Applications.NASNet.NASNetMobile.html#Keras_Applications_NASNet_NASNetMobile__ctor_Keras_Shape_System_Boolean_System_String_Numpy_NDarray_System_String_System_Int32_
+  commentId: M:Keras.Applications.NASNet.NASNetMobile.#ctor(Keras.Shape,System.Boolean,System.String,Numpy.NDarray,System.String,System.Int32)
+  fullName: Keras.Applications.NASNet.NASNetMobile.NASNetMobile(Keras.Shape, System.Boolean, System.String, Numpy.NDarray, System.String, System.Int32)
+  nameWithType: NASNetMobile.NASNetMobile(Shape, Boolean, String, NDarray, String, Int32)
+- uid: Keras.Applications.NASNet.NASNetMobile.#ctor*
+  name: NASNetMobile
+  href: api/Keras.Applications.NASNet.NASNetMobile.html#Keras_Applications_NASNet_NASNetMobile__ctor_
+  commentId: Overload:Keras.Applications.NASNet.NASNetMobile.#ctor
   isSpec: "True"
-  fullName: Keras.Applications.NASNet.PreprocessInput
-  nameWithType: NASNet.PreprocessInput
+  fullName: Keras.Applications.NASNet.NASNetMobile.NASNetMobile
+  nameWithType: NASNetMobile.NASNetMobile
 - uid: Keras.Applications.ResNet
-  name: ResNet
+  name: Keras.Applications.ResNet
   href: api/Keras.Applications.ResNet.html
-  commentId: T:Keras.Applications.ResNet
+  commentId: N:Keras.Applications.ResNet
   fullName: Keras.Applications.ResNet
-  nameWithType: ResNet
-- uid: Keras.Applications.ResNet.DecodePredictions(Numpy.NDarray,System.Int32)
-  name: DecodePredictions(NDarray, Int32)
-  href: api/Keras.Applications.ResNet.html#Keras_Applications_ResNet_DecodePredictions_Numpy_NDarray_System_Int32_
-  commentId: M:Keras.Applications.ResNet.DecodePredictions(Numpy.NDarray,System.Int32)
-  fullName: Keras.Applications.ResNet.DecodePredictions(Numpy.NDarray, System.Int32)
-  nameWithType: ResNet.DecodePredictions(NDarray, Int32)
-- uid: Keras.Applications.ResNet.DecodePredictions*
-  name: DecodePredictions
-  href: api/Keras.Applications.ResNet.html#Keras_Applications_ResNet_DecodePredictions_
-  commentId: Overload:Keras.Applications.ResNet.DecodePredictions
-  isSpec: "True"
-  fullName: Keras.Applications.ResNet.DecodePredictions
-  nameWithType: ResNet.DecodePredictions
-- uid: Keras.Applications.ResNet.PreprocessInput(Numpy.NDarray)
-  name: PreprocessInput(NDarray)
-  href: api/Keras.Applications.ResNet.html#Keras_Applications_ResNet_PreprocessInput_Numpy_NDarray_
-  commentId: M:Keras.Applications.ResNet.PreprocessInput(Numpy.NDarray)
-  fullName: Keras.Applications.ResNet.PreprocessInput(Numpy.NDarray)
-  nameWithType: ResNet.PreprocessInput(NDarray)
-- uid: Keras.Applications.ResNet.PreprocessInput*
-  name: PreprocessInput
-  href: api/Keras.Applications.ResNet.html#Keras_Applications_ResNet_PreprocessInput_
-  commentId: Overload:Keras.Applications.ResNet.PreprocessInput
-  isSpec: "True"
-  fullName: Keras.Applications.ResNet.PreprocessInput
-  nameWithType: ResNet.PreprocessInput
-- uid: Keras.Applications.ResNet.ResNet101(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  name: ResNet101(Boolean, String, NDarray, Shape, String, Int32)
-  href: api/Keras.Applications.ResNet.html#Keras_Applications_ResNet_ResNet101_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
-  commentId: M:Keras.Applications.ResNet.ResNet101(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  fullName: Keras.Applications.ResNet.ResNet101(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
-  nameWithType: ResNet.ResNet101(Boolean, String, NDarray, Shape, String, Int32)
-- uid: Keras.Applications.ResNet.ResNet101*
+  nameWithType: Keras.Applications.ResNet
+- uid: Keras.Applications.ResNet.ResNet101
   name: ResNet101
-  href: api/Keras.Applications.ResNet.html#Keras_Applications_ResNet_ResNet101_
-  commentId: Overload:Keras.Applications.ResNet.ResNet101
-  isSpec: "True"
+  href: api/Keras.Applications.ResNet.ResNet101.html
+  commentId: T:Keras.Applications.ResNet.ResNet101
   fullName: Keras.Applications.ResNet.ResNet101
-  nameWithType: ResNet.ResNet101
-- uid: Keras.Applications.ResNet.ResNet152(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  name: ResNet152(Boolean, String, NDarray, Shape, String, Int32)
-  href: api/Keras.Applications.ResNet.html#Keras_Applications_ResNet_ResNet152_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
-  commentId: M:Keras.Applications.ResNet.ResNet152(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  fullName: Keras.Applications.ResNet.ResNet152(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
-  nameWithType: ResNet.ResNet152(Boolean, String, NDarray, Shape, String, Int32)
-- uid: Keras.Applications.ResNet.ResNet152*
+  nameWithType: ResNet101
+- uid: Keras.Applications.ResNet.ResNet101.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  name: ResNet101(Boolean, String, NDarray, Shape, String, Int32)
+  href: api/Keras.Applications.ResNet.ResNet101.html#Keras_Applications_ResNet_ResNet101__ctor_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
+  commentId: M:Keras.Applications.ResNet.ResNet101.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  fullName: Keras.Applications.ResNet.ResNet101.ResNet101(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
+  nameWithType: ResNet101.ResNet101(Boolean, String, NDarray, Shape, String, Int32)
+- uid: Keras.Applications.ResNet.ResNet101.#ctor*
+  name: ResNet101
+  href: api/Keras.Applications.ResNet.ResNet101.html#Keras_Applications_ResNet_ResNet101__ctor_
+  commentId: Overload:Keras.Applications.ResNet.ResNet101.#ctor
+  isSpec: "True"
+  fullName: Keras.Applications.ResNet.ResNet101.ResNet101
+  nameWithType: ResNet101.ResNet101
+- uid: Keras.Applications.ResNet.ResNet152
   name: ResNet152
-  href: api/Keras.Applications.ResNet.html#Keras_Applications_ResNet_ResNet152_
-  commentId: Overload:Keras.Applications.ResNet.ResNet152
-  isSpec: "True"
+  href: api/Keras.Applications.ResNet.ResNet152.html
+  commentId: T:Keras.Applications.ResNet.ResNet152
   fullName: Keras.Applications.ResNet.ResNet152
-  nameWithType: ResNet.ResNet152
-- uid: Keras.Applications.ResNet.ResNet50(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  name: ResNet50(Boolean, String, NDarray, Shape, String, Int32)
-  href: api/Keras.Applications.ResNet.html#Keras_Applications_ResNet_ResNet50_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
-  commentId: M:Keras.Applications.ResNet.ResNet50(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  fullName: Keras.Applications.ResNet.ResNet50(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
-  nameWithType: ResNet.ResNet50(Boolean, String, NDarray, Shape, String, Int32)
-- uid: Keras.Applications.ResNet.ResNet50*
+  nameWithType: ResNet152
+- uid: Keras.Applications.ResNet.ResNet152.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  name: ResNet152(Boolean, String, NDarray, Shape, String, Int32)
+  href: api/Keras.Applications.ResNet.ResNet152.html#Keras_Applications_ResNet_ResNet152__ctor_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
+  commentId: M:Keras.Applications.ResNet.ResNet152.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  fullName: Keras.Applications.ResNet.ResNet152.ResNet152(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
+  nameWithType: ResNet152.ResNet152(Boolean, String, NDarray, Shape, String, Int32)
+- uid: Keras.Applications.ResNet.ResNet152.#ctor*
+  name: ResNet152
+  href: api/Keras.Applications.ResNet.ResNet152.html#Keras_Applications_ResNet_ResNet152__ctor_
+  commentId: Overload:Keras.Applications.ResNet.ResNet152.#ctor
+  isSpec: "True"
+  fullName: Keras.Applications.ResNet.ResNet152.ResNet152
+  nameWithType: ResNet152.ResNet152
+- uid: Keras.Applications.ResNet.ResNet50
   name: ResNet50
-  href: api/Keras.Applications.ResNet.html#Keras_Applications_ResNet_ResNet50_
-  commentId: Overload:Keras.Applications.ResNet.ResNet50
-  isSpec: "True"
+  href: api/Keras.Applications.ResNet.ResNet50.html
+  commentId: T:Keras.Applications.ResNet.ResNet50
   fullName: Keras.Applications.ResNet.ResNet50
-  nameWithType: ResNet.ResNet50
-- uid: Keras.Applications.ResNetNext
-  name: ResNetNext
-  href: api/Keras.Applications.ResNetNext.html
-  commentId: T:Keras.Applications.ResNetNext
-  fullName: Keras.Applications.ResNetNext
-  nameWithType: ResNetNext
-- uid: Keras.Applications.ResNetNext.DecodePredictions(Numpy.NDarray,System.Int32)
-  name: DecodePredictions(NDarray, Int32)
-  href: api/Keras.Applications.ResNetNext.html#Keras_Applications_ResNetNext_DecodePredictions_Numpy_NDarray_System_Int32_
-  commentId: M:Keras.Applications.ResNetNext.DecodePredictions(Numpy.NDarray,System.Int32)
-  fullName: Keras.Applications.ResNetNext.DecodePredictions(Numpy.NDarray, System.Int32)
-  nameWithType: ResNetNext.DecodePredictions(NDarray, Int32)
-- uid: Keras.Applications.ResNetNext.DecodePredictions*
-  name: DecodePredictions
-  href: api/Keras.Applications.ResNetNext.html#Keras_Applications_ResNetNext_DecodePredictions_
-  commentId: Overload:Keras.Applications.ResNetNext.DecodePredictions
+  nameWithType: ResNet50
+- uid: Keras.Applications.ResNet.ResNet50.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  name: ResNet50(Boolean, String, NDarray, Shape, String, Int32)
+  href: api/Keras.Applications.ResNet.ResNet50.html#Keras_Applications_ResNet_ResNet50__ctor_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
+  commentId: M:Keras.Applications.ResNet.ResNet50.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  fullName: Keras.Applications.ResNet.ResNet50.ResNet50(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
+  nameWithType: ResNet50.ResNet50(Boolean, String, NDarray, Shape, String, Int32)
+- uid: Keras.Applications.ResNet.ResNet50.#ctor*
+  name: ResNet50
+  href: api/Keras.Applications.ResNet.ResNet50.html#Keras_Applications_ResNet_ResNet50__ctor_
+  commentId: Overload:Keras.Applications.ResNet.ResNet50.#ctor
   isSpec: "True"
-  fullName: Keras.Applications.ResNetNext.DecodePredictions
-  nameWithType: ResNetNext.DecodePredictions
-- uid: Keras.Applications.ResNetNext.PreprocessInput(Numpy.NDarray)
-  name: PreprocessInput(NDarray)
-  href: api/Keras.Applications.ResNetNext.html#Keras_Applications_ResNetNext_PreprocessInput_Numpy_NDarray_
-  commentId: M:Keras.Applications.ResNetNext.PreprocessInput(Numpy.NDarray)
-  fullName: Keras.Applications.ResNetNext.PreprocessInput(Numpy.NDarray)
-  nameWithType: ResNetNext.PreprocessInput(NDarray)
-- uid: Keras.Applications.ResNetNext.PreprocessInput*
-  name: PreprocessInput
-  href: api/Keras.Applications.ResNetNext.html#Keras_Applications_ResNetNext_PreprocessInput_
-  commentId: Overload:Keras.Applications.ResNetNext.PreprocessInput
-  isSpec: "True"
-  fullName: Keras.Applications.ResNetNext.PreprocessInput
-  nameWithType: ResNetNext.PreprocessInput
-- uid: Keras.Applications.ResNetNext.ResNeXt101(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  name: ResNeXt101(Boolean, String, NDarray, Shape, String, Int32)
-  href: api/Keras.Applications.ResNetNext.html#Keras_Applications_ResNetNext_ResNeXt101_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
-  commentId: M:Keras.Applications.ResNetNext.ResNeXt101(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  fullName: Keras.Applications.ResNetNext.ResNeXt101(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
-  nameWithType: ResNetNext.ResNeXt101(Boolean, String, NDarray, Shape, String, Int32)
-- uid: Keras.Applications.ResNetNext.ResNeXt101*
-  name: ResNeXt101
-  href: api/Keras.Applications.ResNetNext.html#Keras_Applications_ResNetNext_ResNeXt101_
-  commentId: Overload:Keras.Applications.ResNetNext.ResNeXt101
-  isSpec: "True"
-  fullName: Keras.Applications.ResNetNext.ResNeXt101
-  nameWithType: ResNetNext.ResNeXt101
-- uid: Keras.Applications.ResNetNext.ResNeXt50(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  name: ResNeXt50(Boolean, String, NDarray, Shape, String, Int32)
-  href: api/Keras.Applications.ResNetNext.html#Keras_Applications_ResNetNext_ResNeXt50_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
-  commentId: M:Keras.Applications.ResNetNext.ResNeXt50(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  fullName: Keras.Applications.ResNetNext.ResNeXt50(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
-  nameWithType: ResNetNext.ResNeXt50(Boolean, String, NDarray, Shape, String, Int32)
-- uid: Keras.Applications.ResNetNext.ResNeXt50*
-  name: ResNeXt50
-  href: api/Keras.Applications.ResNetNext.html#Keras_Applications_ResNetNext_ResNeXt50_
-  commentId: Overload:Keras.Applications.ResNetNext.ResNeXt50
-  isSpec: "True"
-  fullName: Keras.Applications.ResNetNext.ResNeXt50
-  nameWithType: ResNetNext.ResNeXt50
+  fullName: Keras.Applications.ResNet.ResNet50.ResNet50
+  nameWithType: ResNet50.ResNet50
 - uid: Keras.Applications.ResNetV2
-  name: ResNetV2
+  name: Keras.Applications.ResNetV2
   href: api/Keras.Applications.ResNetV2.html
-  commentId: T:Keras.Applications.ResNetV2
+  commentId: N:Keras.Applications.ResNetV2
   fullName: Keras.Applications.ResNetV2
-  nameWithType: ResNetV2
-- uid: Keras.Applications.ResNetV2.DecodePredictions(Numpy.NDarray,System.Int32)
-  name: DecodePredictions(NDarray, Int32)
-  href: api/Keras.Applications.ResNetV2.html#Keras_Applications_ResNetV2_DecodePredictions_Numpy_NDarray_System_Int32_
-  commentId: M:Keras.Applications.ResNetV2.DecodePredictions(Numpy.NDarray,System.Int32)
-  fullName: Keras.Applications.ResNetV2.DecodePredictions(Numpy.NDarray, System.Int32)
-  nameWithType: ResNetV2.DecodePredictions(NDarray, Int32)
-- uid: Keras.Applications.ResNetV2.DecodePredictions*
-  name: DecodePredictions
-  href: api/Keras.Applications.ResNetV2.html#Keras_Applications_ResNetV2_DecodePredictions_
-  commentId: Overload:Keras.Applications.ResNetV2.DecodePredictions
-  isSpec: "True"
-  fullName: Keras.Applications.ResNetV2.DecodePredictions
-  nameWithType: ResNetV2.DecodePredictions
-- uid: Keras.Applications.ResNetV2.PreprocessInput(Numpy.NDarray)
-  name: PreprocessInput(NDarray)
-  href: api/Keras.Applications.ResNetV2.html#Keras_Applications_ResNetV2_PreprocessInput_Numpy_NDarray_
-  commentId: M:Keras.Applications.ResNetV2.PreprocessInput(Numpy.NDarray)
-  fullName: Keras.Applications.ResNetV2.PreprocessInput(Numpy.NDarray)
-  nameWithType: ResNetV2.PreprocessInput(NDarray)
-- uid: Keras.Applications.ResNetV2.PreprocessInput*
-  name: PreprocessInput
-  href: api/Keras.Applications.ResNetV2.html#Keras_Applications_ResNetV2_PreprocessInput_
-  commentId: Overload:Keras.Applications.ResNetV2.PreprocessInput
-  isSpec: "True"
-  fullName: Keras.Applications.ResNetV2.PreprocessInput
-  nameWithType: ResNetV2.PreprocessInput
-- uid: Keras.Applications.ResNetV2.ResNet101V2(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  name: ResNet101V2(Boolean, String, NDarray, Shape, String, Int32)
-  href: api/Keras.Applications.ResNetV2.html#Keras_Applications_ResNetV2_ResNet101V2_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
-  commentId: M:Keras.Applications.ResNetV2.ResNet101V2(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  fullName: Keras.Applications.ResNetV2.ResNet101V2(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
-  nameWithType: ResNetV2.ResNet101V2(Boolean, String, NDarray, Shape, String, Int32)
-- uid: Keras.Applications.ResNetV2.ResNet101V2*
+  nameWithType: Keras.Applications.ResNetV2
+- uid: Keras.Applications.ResNetV2.ResNet101V2
   name: ResNet101V2
-  href: api/Keras.Applications.ResNetV2.html#Keras_Applications_ResNetV2_ResNet101V2_
-  commentId: Overload:Keras.Applications.ResNetV2.ResNet101V2
-  isSpec: "True"
+  href: api/Keras.Applications.ResNetV2.ResNet101V2.html
+  commentId: T:Keras.Applications.ResNetV2.ResNet101V2
   fullName: Keras.Applications.ResNetV2.ResNet101V2
-  nameWithType: ResNetV2.ResNet101V2
-- uid: Keras.Applications.ResNetV2.ResNet152V2(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  name: ResNet152V2(Boolean, String, NDarray, Shape, String, Int32)
-  href: api/Keras.Applications.ResNetV2.html#Keras_Applications_ResNetV2_ResNet152V2_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
-  commentId: M:Keras.Applications.ResNetV2.ResNet152V2(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  fullName: Keras.Applications.ResNetV2.ResNet152V2(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
-  nameWithType: ResNetV2.ResNet152V2(Boolean, String, NDarray, Shape, String, Int32)
-- uid: Keras.Applications.ResNetV2.ResNet152V2*
+  nameWithType: ResNet101V2
+- uid: Keras.Applications.ResNetV2.ResNet101V2.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  name: ResNet101V2(Boolean, String, NDarray, Shape, String, Int32)
+  href: api/Keras.Applications.ResNetV2.ResNet101V2.html#Keras_Applications_ResNetV2_ResNet101V2__ctor_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
+  commentId: M:Keras.Applications.ResNetV2.ResNet101V2.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  fullName: Keras.Applications.ResNetV2.ResNet101V2.ResNet101V2(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
+  nameWithType: ResNet101V2.ResNet101V2(Boolean, String, NDarray, Shape, String, Int32)
+- uid: Keras.Applications.ResNetV2.ResNet101V2.#ctor*
+  name: ResNet101V2
+  href: api/Keras.Applications.ResNetV2.ResNet101V2.html#Keras_Applications_ResNetV2_ResNet101V2__ctor_
+  commentId: Overload:Keras.Applications.ResNetV2.ResNet101V2.#ctor
+  isSpec: "True"
+  fullName: Keras.Applications.ResNetV2.ResNet101V2.ResNet101V2
+  nameWithType: ResNet101V2.ResNet101V2
+- uid: Keras.Applications.ResNetV2.ResNet152V2
   name: ResNet152V2
-  href: api/Keras.Applications.ResNetV2.html#Keras_Applications_ResNetV2_ResNet152V2_
-  commentId: Overload:Keras.Applications.ResNetV2.ResNet152V2
-  isSpec: "True"
+  href: api/Keras.Applications.ResNetV2.ResNet152V2.html
+  commentId: T:Keras.Applications.ResNetV2.ResNet152V2
   fullName: Keras.Applications.ResNetV2.ResNet152V2
-  nameWithType: ResNetV2.ResNet152V2
-- uid: Keras.Applications.ResNetV2.ResNet50V2(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  name: ResNet50V2(Boolean, String, NDarray, Shape, String, Int32)
-  href: api/Keras.Applications.ResNetV2.html#Keras_Applications_ResNetV2_ResNet50V2_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
-  commentId: M:Keras.Applications.ResNetV2.ResNet50V2(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  fullName: Keras.Applications.ResNetV2.ResNet50V2(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
-  nameWithType: ResNetV2.ResNet50V2(Boolean, String, NDarray, Shape, String, Int32)
-- uid: Keras.Applications.ResNetV2.ResNet50V2*
+  nameWithType: ResNet152V2
+- uid: Keras.Applications.ResNetV2.ResNet152V2.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  name: ResNet152V2(Boolean, String, NDarray, Shape, String, Int32)
+  href: api/Keras.Applications.ResNetV2.ResNet152V2.html#Keras_Applications_ResNetV2_ResNet152V2__ctor_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
+  commentId: M:Keras.Applications.ResNetV2.ResNet152V2.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  fullName: Keras.Applications.ResNetV2.ResNet152V2.ResNet152V2(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
+  nameWithType: ResNet152V2.ResNet152V2(Boolean, String, NDarray, Shape, String, Int32)
+- uid: Keras.Applications.ResNetV2.ResNet152V2.#ctor*
+  name: ResNet152V2
+  href: api/Keras.Applications.ResNetV2.ResNet152V2.html#Keras_Applications_ResNetV2_ResNet152V2__ctor_
+  commentId: Overload:Keras.Applications.ResNetV2.ResNet152V2.#ctor
+  isSpec: "True"
+  fullName: Keras.Applications.ResNetV2.ResNet152V2.ResNet152V2
+  nameWithType: ResNet152V2.ResNet152V2
+- uid: Keras.Applications.ResNetV2.ResNet50V2
   name: ResNet50V2
-  href: api/Keras.Applications.ResNetV2.html#Keras_Applications_ResNetV2_ResNet50V2_
-  commentId: Overload:Keras.Applications.ResNetV2.ResNet50V2
-  isSpec: "True"
+  href: api/Keras.Applications.ResNetV2.ResNet50V2.html
+  commentId: T:Keras.Applications.ResNetV2.ResNet50V2
   fullName: Keras.Applications.ResNetV2.ResNet50V2
-  nameWithType: ResNetV2.ResNet50V2
-- uid: Keras.Applications.VGG16
+  nameWithType: ResNet50V2
+- uid: Keras.Applications.ResNetV2.ResNet50V2.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  name: ResNet50V2(Boolean, String, NDarray, Shape, String, Int32)
+  href: api/Keras.Applications.ResNetV2.ResNet50V2.html#Keras_Applications_ResNetV2_ResNet50V2__ctor_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
+  commentId: M:Keras.Applications.ResNetV2.ResNet50V2.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  fullName: Keras.Applications.ResNetV2.ResNet50V2.ResNet50V2(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
+  nameWithType: ResNet50V2.ResNet50V2(Boolean, String, NDarray, Shape, String, Int32)
+- uid: Keras.Applications.ResNetV2.ResNet50V2.#ctor*
+  name: ResNet50V2
+  href: api/Keras.Applications.ResNetV2.ResNet50V2.html#Keras_Applications_ResNetV2_ResNet50V2__ctor_
+  commentId: Overload:Keras.Applications.ResNetV2.ResNet50V2.#ctor
+  isSpec: "True"
+  fullName: Keras.Applications.ResNetV2.ResNet50V2.ResNet50V2
+  nameWithType: ResNet50V2.ResNet50V2
+- uid: Keras.Applications.ResNext
+  name: Keras.Applications.ResNext
+  href: api/Keras.Applications.ResNext.html
+  commentId: N:Keras.Applications.ResNext
+  fullName: Keras.Applications.ResNext
+  nameWithType: Keras.Applications.ResNext
+- uid: Keras.Applications.ResNext.ResNeXt101
+  name: ResNeXt101
+  href: api/Keras.Applications.ResNext.ResNeXt101.html
+  commentId: T:Keras.Applications.ResNext.ResNeXt101
+  fullName: Keras.Applications.ResNext.ResNeXt101
+  nameWithType: ResNeXt101
+- uid: Keras.Applications.ResNext.ResNeXt101.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  name: ResNeXt101(Boolean, String, NDarray, Shape, String, Int32)
+  href: api/Keras.Applications.ResNext.ResNeXt101.html#Keras_Applications_ResNext_ResNeXt101__ctor_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
+  commentId: M:Keras.Applications.ResNext.ResNeXt101.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  fullName: Keras.Applications.ResNext.ResNeXt101.ResNeXt101(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
+  nameWithType: ResNeXt101.ResNeXt101(Boolean, String, NDarray, Shape, String, Int32)
+- uid: Keras.Applications.ResNext.ResNeXt101.#ctor*
+  name: ResNeXt101
+  href: api/Keras.Applications.ResNext.ResNeXt101.html#Keras_Applications_ResNext_ResNeXt101__ctor_
+  commentId: Overload:Keras.Applications.ResNext.ResNeXt101.#ctor
+  isSpec: "True"
+  fullName: Keras.Applications.ResNext.ResNeXt101.ResNeXt101
+  nameWithType: ResNeXt101.ResNeXt101
+- uid: Keras.Applications.ResNext.ResNeXt50
+  name: ResNeXt50
+  href: api/Keras.Applications.ResNext.ResNeXt50.html
+  commentId: T:Keras.Applications.ResNext.ResNeXt50
+  fullName: Keras.Applications.ResNext.ResNeXt50
+  nameWithType: ResNeXt50
+- uid: Keras.Applications.ResNext.ResNeXt50.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  name: ResNeXt50(Boolean, String, NDarray, Shape, String, Int32)
+  href: api/Keras.Applications.ResNext.ResNeXt50.html#Keras_Applications_ResNext_ResNeXt50__ctor_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
+  commentId: M:Keras.Applications.ResNext.ResNeXt50.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  fullName: Keras.Applications.ResNext.ResNeXt50.ResNeXt50(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
+  nameWithType: ResNeXt50.ResNeXt50(Boolean, String, NDarray, Shape, String, Int32)
+- uid: Keras.Applications.ResNext.ResNeXt50.#ctor*
+  name: ResNeXt50
+  href: api/Keras.Applications.ResNext.ResNeXt50.html#Keras_Applications_ResNext_ResNeXt50__ctor_
+  commentId: Overload:Keras.Applications.ResNext.ResNeXt50.#ctor
+  isSpec: "True"
+  fullName: Keras.Applications.ResNext.ResNeXt50.ResNeXt50
+  nameWithType: ResNeXt50.ResNeXt50
+- uid: Keras.Applications.VGG
+  name: Keras.Applications.VGG
+  href: api/Keras.Applications.VGG.html
+  commentId: N:Keras.Applications.VGG
+  fullName: Keras.Applications.VGG
+  nameWithType: Keras.Applications.VGG
+- uid: Keras.Applications.VGG.VGG16
   name: VGG16
-  href: api/Keras.Applications.VGG16.html
-  commentId: T:Keras.Applications.VGG16
-  fullName: Keras.Applications.VGG16
+  href: api/Keras.Applications.VGG.VGG16.html
+  commentId: T:Keras.Applications.VGG.VGG16
+  fullName: Keras.Applications.VGG.VGG16
   nameWithType: VGG16
-- uid: Keras.Applications.VGG16.DecodePredictions(Numpy.NDarray,System.Int32)
-  name: DecodePredictions(NDarray, Int32)
-  href: api/Keras.Applications.VGG16.html#Keras_Applications_VGG16_DecodePredictions_Numpy_NDarray_System_Int32_
-  commentId: M:Keras.Applications.VGG16.DecodePredictions(Numpy.NDarray,System.Int32)
-  fullName: Keras.Applications.VGG16.DecodePredictions(Numpy.NDarray, System.Int32)
-  nameWithType: VGG16.DecodePredictions(NDarray, Int32)
-- uid: Keras.Applications.VGG16.DecodePredictions*
-  name: DecodePredictions
-  href: api/Keras.Applications.VGG16.html#Keras_Applications_VGG16_DecodePredictions_
-  commentId: Overload:Keras.Applications.VGG16.DecodePredictions
+- uid: Keras.Applications.VGG.VGG16.#ctor
+  name: VGG16()
+  href: api/Keras.Applications.VGG.VGG16.html#Keras_Applications_VGG_VGG16__ctor
+  commentId: M:Keras.Applications.VGG.VGG16.#ctor
+  fullName: Keras.Applications.VGG.VGG16.VGG16()
+  nameWithType: VGG16.VGG16()
+- uid: Keras.Applications.VGG.VGG16.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  name: VGG16(Boolean, String, NDarray, Shape, String, Int32)
+  href: api/Keras.Applications.VGG.VGG16.html#Keras_Applications_VGG_VGG16__ctor_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
+  commentId: M:Keras.Applications.VGG.VGG16.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  fullName: Keras.Applications.VGG.VGG16.VGG16(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
+  nameWithType: VGG16.VGG16(Boolean, String, NDarray, Shape, String, Int32)
+- uid: Keras.Applications.VGG.VGG16.#ctor*
+  name: VGG16
+  href: api/Keras.Applications.VGG.VGG16.html#Keras_Applications_VGG_VGG16__ctor_
+  commentId: Overload:Keras.Applications.VGG.VGG16.#ctor
   isSpec: "True"
-  fullName: Keras.Applications.VGG16.DecodePredictions
-  nameWithType: VGG16.DecodePredictions
-- uid: Keras.Applications.VGG16.GetModel(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  name: GetModel(Boolean, String, NDarray, Shape, String, Int32)
-  href: api/Keras.Applications.VGG16.html#Keras_Applications_VGG16_GetModel_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
-  commentId: M:Keras.Applications.VGG16.GetModel(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  fullName: Keras.Applications.VGG16.GetModel(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
-  nameWithType: VGG16.GetModel(Boolean, String, NDarray, Shape, String, Int32)
-- uid: Keras.Applications.VGG16.GetModel*
-  name: GetModel
-  href: api/Keras.Applications.VGG16.html#Keras_Applications_VGG16_GetModel_
-  commentId: Overload:Keras.Applications.VGG16.GetModel
-  isSpec: "True"
-  fullName: Keras.Applications.VGG16.GetModel
-  nameWithType: VGG16.GetModel
-- uid: Keras.Applications.VGG16.PreprocessInput(Numpy.NDarray)
-  name: PreprocessInput(NDarray)
-  href: api/Keras.Applications.VGG16.html#Keras_Applications_VGG16_PreprocessInput_Numpy_NDarray_
-  commentId: M:Keras.Applications.VGG16.PreprocessInput(Numpy.NDarray)
-  fullName: Keras.Applications.VGG16.PreprocessInput(Numpy.NDarray)
-  nameWithType: VGG16.PreprocessInput(NDarray)
-- uid: Keras.Applications.VGG16.PreprocessInput*
-  name: PreprocessInput
-  href: api/Keras.Applications.VGG16.html#Keras_Applications_VGG16_PreprocessInput_
-  commentId: Overload:Keras.Applications.VGG16.PreprocessInput
-  isSpec: "True"
-  fullName: Keras.Applications.VGG16.PreprocessInput
-  nameWithType: VGG16.PreprocessInput
-- uid: Keras.Applications.VGG19
+  fullName: Keras.Applications.VGG.VGG16.VGG16
+  nameWithType: VGG16.VGG16
+- uid: Keras.Applications.VGG.VGG19
   name: VGG19
-  href: api/Keras.Applications.VGG19.html
-  commentId: T:Keras.Applications.VGG19
-  fullName: Keras.Applications.VGG19
+  href: api/Keras.Applications.VGG.VGG19.html
+  commentId: T:Keras.Applications.VGG.VGG19
+  fullName: Keras.Applications.VGG.VGG19
   nameWithType: VGG19
-- uid: Keras.Applications.VGG19.DecodePredictions(Numpy.NDarray,System.Int32)
-  name: DecodePredictions(NDarray, Int32)
-  href: api/Keras.Applications.VGG19.html#Keras_Applications_VGG19_DecodePredictions_Numpy_NDarray_System_Int32_
-  commentId: M:Keras.Applications.VGG19.DecodePredictions(Numpy.NDarray,System.Int32)
-  fullName: Keras.Applications.VGG19.DecodePredictions(Numpy.NDarray, System.Int32)
-  nameWithType: VGG19.DecodePredictions(NDarray, Int32)
-- uid: Keras.Applications.VGG19.DecodePredictions*
-  name: DecodePredictions
-  href: api/Keras.Applications.VGG19.html#Keras_Applications_VGG19_DecodePredictions_
-  commentId: Overload:Keras.Applications.VGG19.DecodePredictions
+- uid: Keras.Applications.VGG.VGG19.#ctor
+  name: VGG19()
+  href: api/Keras.Applications.VGG.VGG19.html#Keras_Applications_VGG_VGG19__ctor
+  commentId: M:Keras.Applications.VGG.VGG19.#ctor
+  fullName: Keras.Applications.VGG.VGG19.VGG19()
+  nameWithType: VGG19.VGG19()
+- uid: Keras.Applications.VGG.VGG19.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  name: VGG19(Boolean, String, NDarray, Shape, String, Int32)
+  href: api/Keras.Applications.VGG.VGG19.html#Keras_Applications_VGG_VGG19__ctor_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
+  commentId: M:Keras.Applications.VGG.VGG19.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  fullName: Keras.Applications.VGG.VGG19.VGG19(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
+  nameWithType: VGG19.VGG19(Boolean, String, NDarray, Shape, String, Int32)
+- uid: Keras.Applications.VGG.VGG19.#ctor*
+  name: VGG19
+  href: api/Keras.Applications.VGG.VGG19.html#Keras_Applications_VGG_VGG19__ctor_
+  commentId: Overload:Keras.Applications.VGG.VGG19.#ctor
   isSpec: "True"
-  fullName: Keras.Applications.VGG19.DecodePredictions
-  nameWithType: VGG19.DecodePredictions
-- uid: Keras.Applications.VGG19.GetModel(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  name: GetModel(Boolean, String, NDarray, Shape, String, Int32)
-  href: api/Keras.Applications.VGG19.html#Keras_Applications_VGG19_GetModel_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
-  commentId: M:Keras.Applications.VGG19.GetModel(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  fullName: Keras.Applications.VGG19.GetModel(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
-  nameWithType: VGG19.GetModel(Boolean, String, NDarray, Shape, String, Int32)
-- uid: Keras.Applications.VGG19.GetModel*
-  name: GetModel
-  href: api/Keras.Applications.VGG19.html#Keras_Applications_VGG19_GetModel_
-  commentId: Overload:Keras.Applications.VGG19.GetModel
-  isSpec: "True"
-  fullName: Keras.Applications.VGG19.GetModel
-  nameWithType: VGG19.GetModel
-- uid: Keras.Applications.VGG19.PreprocessInput(Numpy.NDarray)
-  name: PreprocessInput(NDarray)
-  href: api/Keras.Applications.VGG19.html#Keras_Applications_VGG19_PreprocessInput_Numpy_NDarray_
-  commentId: M:Keras.Applications.VGG19.PreprocessInput(Numpy.NDarray)
-  fullName: Keras.Applications.VGG19.PreprocessInput(Numpy.NDarray)
-  nameWithType: VGG19.PreprocessInput(NDarray)
-- uid: Keras.Applications.VGG19.PreprocessInput*
-  name: PreprocessInput
-  href: api/Keras.Applications.VGG19.html#Keras_Applications_VGG19_PreprocessInput_
-  commentId: Overload:Keras.Applications.VGG19.PreprocessInput
-  isSpec: "True"
-  fullName: Keras.Applications.VGG19.PreprocessInput
-  nameWithType: VGG19.PreprocessInput
+  fullName: Keras.Applications.VGG.VGG19.VGG19
+  nameWithType: VGG19.VGG19
 - uid: Keras.Applications.Xception
   name: Xception
   href: api/Keras.Applications.Xception.html
   commentId: T:Keras.Applications.Xception
   fullName: Keras.Applications.Xception
   nameWithType: Xception
-- uid: Keras.Applications.Xception.DecodePredictions(Numpy.NDarray,System.Int32)
-  name: DecodePredictions(NDarray, Int32)
-  href: api/Keras.Applications.Xception.html#Keras_Applications_Xception_DecodePredictions_Numpy_NDarray_System_Int32_
-  commentId: M:Keras.Applications.Xception.DecodePredictions(Numpy.NDarray,System.Int32)
-  fullName: Keras.Applications.Xception.DecodePredictions(Numpy.NDarray, System.Int32)
-  nameWithType: Xception.DecodePredictions(NDarray, Int32)
-- uid: Keras.Applications.Xception.DecodePredictions*
-  name: DecodePredictions
-  href: api/Keras.Applications.Xception.html#Keras_Applications_Xception_DecodePredictions_
-  commentId: Overload:Keras.Applications.Xception.DecodePredictions
+- uid: Keras.Applications.Xception.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  name: Xception(Boolean, String, NDarray, Shape, String, Int32)
+  href: api/Keras.Applications.Xception.html#Keras_Applications_Xception__ctor_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
+  commentId: M:Keras.Applications.Xception.#ctor(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
+  fullName: Keras.Applications.Xception.Xception(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
+  nameWithType: Xception.Xception(Boolean, String, NDarray, Shape, String, Int32)
+- uid: Keras.Applications.Xception.#ctor*
+  name: Xception
+  href: api/Keras.Applications.Xception.html#Keras_Applications_Xception__ctor_
+  commentId: Overload:Keras.Applications.Xception.#ctor
   isSpec: "True"
-  fullName: Keras.Applications.Xception.DecodePredictions
-  nameWithType: Xception.DecodePredictions
-- uid: Keras.Applications.Xception.GetModel(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  name: GetModel(Boolean, String, NDarray, Shape, String, Int32)
-  href: api/Keras.Applications.Xception.html#Keras_Applications_Xception_GetModel_System_Boolean_System_String_Numpy_NDarray_Keras_Shape_System_String_System_Int32_
-  commentId: M:Keras.Applications.Xception.GetModel(System.Boolean,System.String,Numpy.NDarray,Keras.Shape,System.String,System.Int32)
-  fullName: Keras.Applications.Xception.GetModel(System.Boolean, System.String, Numpy.NDarray, Keras.Shape, System.String, System.Int32)
-  nameWithType: Xception.GetModel(Boolean, String, NDarray, Shape, String, Int32)
-- uid: Keras.Applications.Xception.GetModel*
-  name: GetModel
-  href: api/Keras.Applications.Xception.html#Keras_Applications_Xception_GetModel_
-  commentId: Overload:Keras.Applications.Xception.GetModel
-  isSpec: "True"
-  fullName: Keras.Applications.Xception.GetModel
-  nameWithType: Xception.GetModel
-- uid: Keras.Applications.Xception.PreprocessInput(Numpy.NDarray)
-  name: PreprocessInput(NDarray)
-  href: api/Keras.Applications.Xception.html#Keras_Applications_Xception_PreprocessInput_Numpy_NDarray_
-  commentId: M:Keras.Applications.Xception.PreprocessInput(Numpy.NDarray)
-  fullName: Keras.Applications.Xception.PreprocessInput(Numpy.NDarray)
-  nameWithType: Xception.PreprocessInput(NDarray)
-- uid: Keras.Applications.Xception.PreprocessInput*
-  name: PreprocessInput
-  href: api/Keras.Applications.Xception.html#Keras_Applications_Xception_PreprocessInput_
-  commentId: Overload:Keras.Applications.Xception.PreprocessInput
-  isSpec: "True"
-  fullName: Keras.Applications.Xception.PreprocessInput
-  nameWithType: Xception.PreprocessInput
+  fullName: Keras.Applications.Xception.Xception
+  nameWithType: Xception.Xception
 - uid: Keras.Backend
   name: Backend
   href: api/Keras.Backend.html
@@ -1566,6 +1431,19 @@ references:
   commentId: T:Keras.Datasets.IMDB
   fullName: Keras.Datasets.IMDB
   nameWithType: IMDB
+- uid: Keras.Datasets.IMDB.GetWordIndex(System.String)
+  name: GetWordIndex(String)
+  href: api/Keras.Datasets.IMDB.html#Keras_Datasets_IMDB_GetWordIndex_System_String_
+  commentId: M:Keras.Datasets.IMDB.GetWordIndex(System.String)
+  fullName: Keras.Datasets.IMDB.GetWordIndex(System.String)
+  nameWithType: IMDB.GetWordIndex(String)
+- uid: Keras.Datasets.IMDB.GetWordIndex*
+  name: GetWordIndex
+  href: api/Keras.Datasets.IMDB.html#Keras_Datasets_IMDB_GetWordIndex_
+  commentId: Overload:Keras.Datasets.IMDB.GetWordIndex
+  isSpec: "True"
+  fullName: Keras.Datasets.IMDB.GetWordIndex
+  nameWithType: IMDB.GetWordIndex
 - uid: Keras.Datasets.IMDB.LoadData(System.String,System.Nullable{System.Int32},System.Int32,System.Nullable{System.Int32},System.Int32,System.Int32,System.Int32,System.Int32)
   name: LoadData(String, Nullable<Int32>, Int32, Nullable<Int32>, Int32, Int32, Int32, Int32)
   href: api/Keras.Datasets.IMDB.html#Keras_Datasets_IMDB_LoadData_System_String_System_Nullable_System_Int32__System_Int32_System_Nullable_System_Int32__System_Int32_System_Int32_System_Int32_System_Int32_
@@ -2016,16 +1894,21 @@ references:
 - uid: Keras.Keras.keras
   name: keras
   href: api/Keras.Keras.html#Keras_Keras_keras
-  commentId: P:Keras.Keras.keras
+  commentId: F:Keras.Keras.keras
   fullName: Keras.Keras.keras
   nameWithType: Keras.keras
-- uid: Keras.Keras.keras*
-  name: keras
-  href: api/Keras.Keras.html#Keras_Keras_keras_
-  commentId: Overload:Keras.Keras.keras
-  isSpec: "True"
-  fullName: Keras.Keras.keras
-  nameWithType: Keras.keras
+- uid: Keras.Keras.keras2onnx
+  name: keras2onnx
+  href: api/Keras.Keras.html#Keras_Keras_keras2onnx
+  commentId: F:Keras.Keras.keras2onnx
+  fullName: Keras.Keras.keras2onnx
+  nameWithType: Keras.keras2onnx
+- uid: Keras.Keras.tfjs
+  name: tfjs
+  href: api/Keras.Keras.html#Keras_Keras_tfjs
+  commentId: F:Keras.Keras.tfjs
+  fullName: Keras.Keras.tfjs
+  nameWithType: Keras.tfjs
 - uid: Keras.Keras.ToList(System.Array)
   name: ToList(Array)
   href: api/Keras.Keras.html#Keras_Keras_ToList_System_Array_
@@ -3962,6 +3845,19 @@ references:
   isSpec: "True"
   fullName: Keras.Models.BaseModel.Fit
   nameWithType: BaseModel.Fit
+- uid: Keras.Models.BaseModel.LoadModel(System.String)
+  name: LoadModel(String)
+  href: api/Keras.Models.BaseModel.html#Keras_Models_BaseModel_LoadModel_System_String_
+  commentId: M:Keras.Models.BaseModel.LoadModel(System.String)
+  fullName: Keras.Models.BaseModel.LoadModel(System.String)
+  nameWithType: BaseModel.LoadModel(String)
+- uid: Keras.Models.BaseModel.LoadModel*
+  name: LoadModel
+  href: api/Keras.Models.BaseModel.html#Keras_Models_BaseModel_LoadModel_
+  commentId: Overload:Keras.Models.BaseModel.LoadModel
+  isSpec: "True"
+  fullName: Keras.Models.BaseModel.LoadModel
+  nameWithType: BaseModel.LoadModel
 - uid: Keras.Models.BaseModel.LoadWeight(System.String)
   name: LoadWeight(String)
   href: api/Keras.Models.BaseModel.html#Keras_Models_BaseModel_LoadWeight_System_String_
@@ -4001,15 +3897,15 @@ references:
   isSpec: "True"
   fullName: Keras.Models.BaseModel.ModelFromYaml
   nameWithType: BaseModel.ModelFromYaml
-- uid: Keras.Models.BaseModel.Predict(Numpy.NDarray,Numpy.NDarray,System.Int32,System.Nullable{System.Int32},Keras.Callbacks.Callback[])
-  name: Predict(NDarray, NDarray, Int32, Nullable<Int32>, Callback[])
-  href: api/Keras.Models.BaseModel.html#Keras_Models_BaseModel_Predict_Numpy_NDarray_Numpy_NDarray_System_Int32_System_Nullable_System_Int32__Keras_Callbacks_Callback___
-  commentId: M:Keras.Models.BaseModel.Predict(Numpy.NDarray,Numpy.NDarray,System.Int32,System.Nullable{System.Int32},Keras.Callbacks.Callback[])
-  name.vb: Predict(NDarray, NDarray, Int32, Nullable(Of Int32), Callback())
-  fullName: Keras.Models.BaseModel.Predict(Numpy.NDarray, Numpy.NDarray, System.Int32, System.Nullable<System.Int32>, Keras.Callbacks.Callback[])
-  fullName.vb: Keras.Models.BaseModel.Predict(Numpy.NDarray, Numpy.NDarray, System.Int32, System.Nullable(Of System.Int32), Keras.Callbacks.Callback())
-  nameWithType: BaseModel.Predict(NDarray, NDarray, Int32, Nullable<Int32>, Callback[])
-  nameWithType.vb: BaseModel.Predict(NDarray, NDarray, Int32, Nullable(Of Int32), Callback())
+- uid: Keras.Models.BaseModel.Predict(Numpy.NDarray,System.Nullable{System.Int32},System.Int32,System.Nullable{System.Int32},Keras.Callbacks.Callback[])
+  name: Predict(NDarray, Nullable<Int32>, Int32, Nullable<Int32>, Callback[])
+  href: api/Keras.Models.BaseModel.html#Keras_Models_BaseModel_Predict_Numpy_NDarray_System_Nullable_System_Int32__System_Int32_System_Nullable_System_Int32__Keras_Callbacks_Callback___
+  commentId: M:Keras.Models.BaseModel.Predict(Numpy.NDarray,System.Nullable{System.Int32},System.Int32,System.Nullable{System.Int32},Keras.Callbacks.Callback[])
+  name.vb: Predict(NDarray, Nullable(Of Int32), Int32, Nullable(Of Int32), Callback())
+  fullName: Keras.Models.BaseModel.Predict(Numpy.NDarray, System.Nullable<System.Int32>, System.Int32, System.Nullable<System.Int32>, Keras.Callbacks.Callback[])
+  fullName.vb: Keras.Models.BaseModel.Predict(Numpy.NDarray, System.Nullable(Of System.Int32), System.Int32, System.Nullable(Of System.Int32), Keras.Callbacks.Callback())
+  nameWithType: BaseModel.Predict(NDarray, Nullable<Int32>, Int32, Nullable<Int32>, Callback[])
+  nameWithType.vb: BaseModel.Predict(NDarray, Nullable(Of Int32), Int32, Nullable(Of Int32), Callback())
 - uid: Keras.Models.BaseModel.Predict*
   name: Predict
   href: api/Keras.Models.BaseModel.html#Keras_Models_BaseModel_Predict_
@@ -4030,6 +3926,45 @@ references:
   isSpec: "True"
   fullName: Keras.Models.BaseModel.PredictOnBatch
   nameWithType: BaseModel.PredictOnBatch
+- uid: Keras.Models.BaseModel.Save(System.String)
+  name: Save(String)
+  href: api/Keras.Models.BaseModel.html#Keras_Models_BaseModel_Save_System_String_
+  commentId: M:Keras.Models.BaseModel.Save(System.String)
+  fullName: Keras.Models.BaseModel.Save(System.String)
+  nameWithType: BaseModel.Save(String)
+- uid: Keras.Models.BaseModel.Save*
+  name: Save
+  href: api/Keras.Models.BaseModel.html#Keras_Models_BaseModel_Save_
+  commentId: Overload:Keras.Models.BaseModel.Save
+  isSpec: "True"
+  fullName: Keras.Models.BaseModel.Save
+  nameWithType: BaseModel.Save
+- uid: Keras.Models.BaseModel.SaveOnnx(System.String)
+  name: SaveOnnx(String)
+  href: api/Keras.Models.BaseModel.html#Keras_Models_BaseModel_SaveOnnx_System_String_
+  commentId: M:Keras.Models.BaseModel.SaveOnnx(System.String)
+  fullName: Keras.Models.BaseModel.SaveOnnx(System.String)
+  nameWithType: BaseModel.SaveOnnx(String)
+- uid: Keras.Models.BaseModel.SaveOnnx*
+  name: SaveOnnx
+  href: api/Keras.Models.BaseModel.html#Keras_Models_BaseModel_SaveOnnx_
+  commentId: Overload:Keras.Models.BaseModel.SaveOnnx
+  isSpec: "True"
+  fullName: Keras.Models.BaseModel.SaveOnnx
+  nameWithType: BaseModel.SaveOnnx
+- uid: Keras.Models.BaseModel.SaveTensorflowJSFormat(System.String,System.Boolean)
+  name: SaveTensorflowJSFormat(String, Boolean)
+  href: api/Keras.Models.BaseModel.html#Keras_Models_BaseModel_SaveTensorflowJSFormat_System_String_System_Boolean_
+  commentId: M:Keras.Models.BaseModel.SaveTensorflowJSFormat(System.String,System.Boolean)
+  fullName: Keras.Models.BaseModel.SaveTensorflowJSFormat(System.String, System.Boolean)
+  nameWithType: BaseModel.SaveTensorflowJSFormat(String, Boolean)
+- uid: Keras.Models.BaseModel.SaveTensorflowJSFormat*
+  name: SaveTensorflowJSFormat
+  href: api/Keras.Models.BaseModel.html#Keras_Models_BaseModel_SaveTensorflowJSFormat_
+  commentId: Overload:Keras.Models.BaseModel.SaveTensorflowJSFormat
+  isSpec: "True"
+  fullName: Keras.Models.BaseModel.SaveTensorflowJSFormat
+  nameWithType: BaseModel.SaveTensorflowJSFormat
 - uid: Keras.Models.BaseModel.SaveWeight(System.String)
   name: SaveWeight(String)
   href: api/Keras.Models.BaseModel.html#Keras_Models_BaseModel_SaveWeight_System_String_
@@ -4043,6 +3978,22 @@ references:
   isSpec: "True"
   fullName: Keras.Models.BaseModel.SaveWeight
   nameWithType: BaseModel.SaveWeight
+- uid: Keras.Models.BaseModel.Summary(System.Nullable{System.Int32},System.Single[])
+  name: Summary(Nullable<Int32>, Single[])
+  href: api/Keras.Models.BaseModel.html#Keras_Models_BaseModel_Summary_System_Nullable_System_Int32__System_Single___
+  commentId: M:Keras.Models.BaseModel.Summary(System.Nullable{System.Int32},System.Single[])
+  name.vb: Summary(Nullable(Of Int32), Single())
+  fullName: Keras.Models.BaseModel.Summary(System.Nullable<System.Int32>, System.Single[])
+  fullName.vb: Keras.Models.BaseModel.Summary(System.Nullable(Of System.Int32), System.Single())
+  nameWithType: BaseModel.Summary(Nullable<Int32>, Single[])
+  nameWithType.vb: BaseModel.Summary(Nullable(Of Int32), Single())
+- uid: Keras.Models.BaseModel.Summary*
+  name: Summary
+  href: api/Keras.Models.BaseModel.html#Keras_Models_BaseModel_Summary_
+  commentId: Overload:Keras.Models.BaseModel.Summary
+  isSpec: "True"
+  fullName: Keras.Models.BaseModel.Summary
+  nameWithType: BaseModel.Summary
 - uid: Keras.Models.BaseModel.TestOnBatch(Numpy.NDarray,Numpy.NDarray,Numpy.NDarray)
   name: TestOnBatch(NDarray, NDarray, NDarray)
   href: api/Keras.Models.BaseModel.html#Keras_Models_BaseModel_TestOnBatch_Numpy_NDarray_Numpy_NDarray_Numpy_NDarray_
@@ -4403,63 +4354,134 @@ references:
   isSpec: "True"
   fullName: Keras.PreProcessing.Image.ImageDataGenerator.FlowFromDataframe
   nameWithType: ImageDataGenerator.FlowFromDataframe
+- uid: Keras.PreProcessing.Image.ImageUtil
+  name: ImageUtil
+  href: api/Keras.PreProcessing.Image.ImageUtil.html
+  commentId: T:Keras.PreProcessing.Image.ImageUtil
+  fullName: Keras.PreProcessing.Image.ImageUtil
+  nameWithType: ImageUtil
+- uid: Keras.PreProcessing.Image.ImageUtil.ArrayToImg(Numpy.NDarray,System.String,System.Boolean,System.String)
+  name: ArrayToImg(NDarray, String, Boolean, String)
+  href: api/Keras.PreProcessing.Image.ImageUtil.html#Keras_PreProcessing_Image_ImageUtil_ArrayToImg_Numpy_NDarray_System_String_System_Boolean_System_String_
+  commentId: M:Keras.PreProcessing.Image.ImageUtil.ArrayToImg(Numpy.NDarray,System.String,System.Boolean,System.String)
+  fullName: Keras.PreProcessing.Image.ImageUtil.ArrayToImg(Numpy.NDarray, System.String, System.Boolean, System.String)
+  nameWithType: ImageUtil.ArrayToImg(NDarray, String, Boolean, String)
+- uid: Keras.PreProcessing.Image.ImageUtil.ArrayToImg*
+  name: ArrayToImg
+  href: api/Keras.PreProcessing.Image.ImageUtil.html#Keras_PreProcessing_Image_ImageUtil_ArrayToImg_
+  commentId: Overload:Keras.PreProcessing.Image.ImageUtil.ArrayToImg
+  isSpec: "True"
+  fullName: Keras.PreProcessing.Image.ImageUtil.ArrayToImg
+  nameWithType: ImageUtil.ArrayToImg
+- uid: Keras.PreProcessing.Image.ImageUtil.DecodePredictions(Numpy.NDarray,System.Int32)
+  name: DecodePredictions(NDarray, Int32)
+  href: api/Keras.PreProcessing.Image.ImageUtil.html#Keras_PreProcessing_Image_ImageUtil_DecodePredictions_Numpy_NDarray_System_Int32_
+  commentId: M:Keras.PreProcessing.Image.ImageUtil.DecodePredictions(Numpy.NDarray,System.Int32)
+  fullName: Keras.PreProcessing.Image.ImageUtil.DecodePredictions(Numpy.NDarray, System.Int32)
+  nameWithType: ImageUtil.DecodePredictions(NDarray, Int32)
+- uid: Keras.PreProcessing.Image.ImageUtil.DecodePredictions*
+  name: DecodePredictions
+  href: api/Keras.PreProcessing.Image.ImageUtil.html#Keras_PreProcessing_Image_ImageUtil_DecodePredictions_
+  commentId: Overload:Keras.PreProcessing.Image.ImageUtil.DecodePredictions
+  isSpec: "True"
+  fullName: Keras.PreProcessing.Image.ImageUtil.DecodePredictions
+  nameWithType: ImageUtil.DecodePredictions
+- uid: Keras.PreProcessing.Image.ImageUtil.ImageToArray(System.Object,System.String,System.String)
+  name: ImageToArray(Object, String, String)
+  href: api/Keras.PreProcessing.Image.ImageUtil.html#Keras_PreProcessing_Image_ImageUtil_ImageToArray_System_Object_System_String_System_String_
+  commentId: M:Keras.PreProcessing.Image.ImageUtil.ImageToArray(System.Object,System.String,System.String)
+  fullName: Keras.PreProcessing.Image.ImageUtil.ImageToArray(System.Object, System.String, System.String)
+  nameWithType: ImageUtil.ImageToArray(Object, String, String)
+- uid: Keras.PreProcessing.Image.ImageUtil.ImageToArray*
+  name: ImageToArray
+  href: api/Keras.PreProcessing.Image.ImageUtil.html#Keras_PreProcessing_Image_ImageUtil_ImageToArray_
+  commentId: Overload:Keras.PreProcessing.Image.ImageUtil.ImageToArray
+  isSpec: "True"
+  fullName: Keras.PreProcessing.Image.ImageUtil.ImageToArray
+  nameWithType: ImageUtil.ImageToArray
+- uid: Keras.PreProcessing.Image.ImageUtil.LoadImg(System.String,System.String,Keras.Shape,System.String)
+  name: LoadImg(String, String, Shape, String)
+  href: api/Keras.PreProcessing.Image.ImageUtil.html#Keras_PreProcessing_Image_ImageUtil_LoadImg_System_String_System_String_Keras_Shape_System_String_
+  commentId: M:Keras.PreProcessing.Image.ImageUtil.LoadImg(System.String,System.String,Keras.Shape,System.String)
+  fullName: Keras.PreProcessing.Image.ImageUtil.LoadImg(System.String, System.String, Keras.Shape, System.String)
+  nameWithType: ImageUtil.LoadImg(String, String, Shape, String)
+- uid: Keras.PreProcessing.Image.ImageUtil.LoadImg*
+  name: LoadImg
+  href: api/Keras.PreProcessing.Image.ImageUtil.html#Keras_PreProcessing_Image_ImageUtil_LoadImg_
+  commentId: Overload:Keras.PreProcessing.Image.ImageUtil.LoadImg
+  isSpec: "True"
+  fullName: Keras.PreProcessing.Image.ImageUtil.LoadImg
+  nameWithType: ImageUtil.LoadImg
+- uid: Keras.PreProcessing.Image.ImageUtil.PreprocessInput(Numpy.NDarray,System.String,System.String)
+  name: PreprocessInput(NDarray, String, String)
+  href: api/Keras.PreProcessing.Image.ImageUtil.html#Keras_PreProcessing_Image_ImageUtil_PreprocessInput_Numpy_NDarray_System_String_System_String_
+  commentId: M:Keras.PreProcessing.Image.ImageUtil.PreprocessInput(Numpy.NDarray,System.String,System.String)
+  fullName: Keras.PreProcessing.Image.ImageUtil.PreprocessInput(Numpy.NDarray, System.String, System.String)
+  nameWithType: ImageUtil.PreprocessInput(NDarray, String, String)
+- uid: Keras.PreProcessing.Image.ImageUtil.PreprocessInput*
+  name: PreprocessInput
+  href: api/Keras.PreProcessing.Image.ImageUtil.html#Keras_PreProcessing_Image_ImageUtil_PreprocessInput_
+  commentId: Overload:Keras.PreProcessing.Image.ImageUtil.PreprocessInput
+  isSpec: "True"
+  fullName: Keras.PreProcessing.Image.ImageUtil.PreprocessInput
+  nameWithType: ImageUtil.PreprocessInput
 - uid: Keras.PreProcessing.sequence
   name: Keras.PreProcessing.sequence
   href: api/Keras.PreProcessing.sequence.html
   commentId: N:Keras.PreProcessing.sequence
   fullName: Keras.PreProcessing.sequence
   nameWithType: Keras.PreProcessing.sequence
-- uid: Keras.PreProcessing.sequence.Sequence
-  name: Sequence
-  href: api/Keras.PreProcessing.sequence.Sequence.html
-  commentId: T:Keras.PreProcessing.sequence.Sequence
-  fullName: Keras.PreProcessing.sequence.Sequence
-  nameWithType: Sequence
-- uid: Keras.PreProcessing.sequence.Sequence.MakeSamplingTable(System.Int32,System.Single)
+- uid: Keras.PreProcessing.sequence.SequenceUtil
+  name: SequenceUtil
+  href: api/Keras.PreProcessing.sequence.SequenceUtil.html
+  commentId: T:Keras.PreProcessing.sequence.SequenceUtil
+  fullName: Keras.PreProcessing.sequence.SequenceUtil
+  nameWithType: SequenceUtil
+- uid: Keras.PreProcessing.sequence.SequenceUtil.MakeSamplingTable(System.Int32,System.Single)
   name: MakeSamplingTable(Int32, Single)
-  href: api/Keras.PreProcessing.sequence.Sequence.html#Keras_PreProcessing_sequence_Sequence_MakeSamplingTable_System_Int32_System_Single_
-  commentId: M:Keras.PreProcessing.sequence.Sequence.MakeSamplingTable(System.Int32,System.Single)
-  fullName: Keras.PreProcessing.sequence.Sequence.MakeSamplingTable(System.Int32, System.Single)
-  nameWithType: Sequence.MakeSamplingTable(Int32, Single)
-- uid: Keras.PreProcessing.sequence.Sequence.MakeSamplingTable*
+  href: api/Keras.PreProcessing.sequence.SequenceUtil.html#Keras_PreProcessing_sequence_SequenceUtil_MakeSamplingTable_System_Int32_System_Single_
+  commentId: M:Keras.PreProcessing.sequence.SequenceUtil.MakeSamplingTable(System.Int32,System.Single)
+  fullName: Keras.PreProcessing.sequence.SequenceUtil.MakeSamplingTable(System.Int32, System.Single)
+  nameWithType: SequenceUtil.MakeSamplingTable(Int32, Single)
+- uid: Keras.PreProcessing.sequence.SequenceUtil.MakeSamplingTable*
   name: MakeSamplingTable
-  href: api/Keras.PreProcessing.sequence.Sequence.html#Keras_PreProcessing_sequence_Sequence_MakeSamplingTable_
-  commentId: Overload:Keras.PreProcessing.sequence.Sequence.MakeSamplingTable
+  href: api/Keras.PreProcessing.sequence.SequenceUtil.html#Keras_PreProcessing_sequence_SequenceUtil_MakeSamplingTable_
+  commentId: Overload:Keras.PreProcessing.sequence.SequenceUtil.MakeSamplingTable
   isSpec: "True"
-  fullName: Keras.PreProcessing.sequence.Sequence.MakeSamplingTable
-  nameWithType: Sequence.MakeSamplingTable
-- uid: Keras.PreProcessing.sequence.Sequence.PadEequences(Keras.PreProcessing.sequence.Sequence[],System.Nullable{System.Int32},System.String,System.String,System.String,System.Single)
-  name: PadEequences(Sequence[], Nullable<Int32>, String, String, String, Single)
-  href: api/Keras.PreProcessing.sequence.Sequence.html#Keras_PreProcessing_sequence_Sequence_PadEequences_Keras_PreProcessing_sequence_Sequence___System_Nullable_System_Int32__System_String_System_String_System_String_System_Single_
-  commentId: M:Keras.PreProcessing.sequence.Sequence.PadEequences(Keras.PreProcessing.sequence.Sequence[],System.Nullable{System.Int32},System.String,System.String,System.String,System.Single)
-  name.vb: PadEequences(Sequence(), Nullable(Of Int32), String, String, String, Single)
-  fullName: Keras.PreProcessing.sequence.Sequence.PadEequences(Keras.PreProcessing.sequence.Sequence[], System.Nullable<System.Int32>, System.String, System.String, System.String, System.Single)
-  fullName.vb: Keras.PreProcessing.sequence.Sequence.PadEequences(Keras.PreProcessing.sequence.Sequence(), System.Nullable(Of System.Int32), System.String, System.String, System.String, System.Single)
-  nameWithType: Sequence.PadEequences(Sequence[], Nullable<Int32>, String, String, String, Single)
-  nameWithType.vb: Sequence.PadEequences(Sequence(), Nullable(Of Int32), String, String, String, Single)
-- uid: Keras.PreProcessing.sequence.Sequence.PadEequences*
-  name: PadEequences
-  href: api/Keras.PreProcessing.sequence.Sequence.html#Keras_PreProcessing_sequence_Sequence_PadEequences_
-  commentId: Overload:Keras.PreProcessing.sequence.Sequence.PadEequences
+  fullName: Keras.PreProcessing.sequence.SequenceUtil.MakeSamplingTable
+  nameWithType: SequenceUtil.MakeSamplingTable
+- uid: Keras.PreProcessing.sequence.SequenceUtil.PadSequences(Numpy.NDarray,System.Nullable{System.Int32},System.String,System.String,System.String,System.Single)
+  name: PadSequences(NDarray, Nullable<Int32>, String, String, String, Single)
+  href: api/Keras.PreProcessing.sequence.SequenceUtil.html#Keras_PreProcessing_sequence_SequenceUtil_PadSequences_Numpy_NDarray_System_Nullable_System_Int32__System_String_System_String_System_String_System_Single_
+  commentId: M:Keras.PreProcessing.sequence.SequenceUtil.PadSequences(Numpy.NDarray,System.Nullable{System.Int32},System.String,System.String,System.String,System.Single)
+  name.vb: PadSequences(NDarray, Nullable(Of Int32), String, String, String, Single)
+  fullName: Keras.PreProcessing.sequence.SequenceUtil.PadSequences(Numpy.NDarray, System.Nullable<System.Int32>, System.String, System.String, System.String, System.Single)
+  fullName.vb: Keras.PreProcessing.sequence.SequenceUtil.PadSequences(Numpy.NDarray, System.Nullable(Of System.Int32), System.String, System.String, System.String, System.Single)
+  nameWithType: SequenceUtil.PadSequences(NDarray, Nullable<Int32>, String, String, String, Single)
+  nameWithType.vb: SequenceUtil.PadSequences(NDarray, Nullable(Of Int32), String, String, String, Single)
+- uid: Keras.PreProcessing.sequence.SequenceUtil.PadSequences*
+  name: PadSequences
+  href: api/Keras.PreProcessing.sequence.SequenceUtil.html#Keras_PreProcessing_sequence_SequenceUtil_PadSequences_
+  commentId: Overload:Keras.PreProcessing.sequence.SequenceUtil.PadSequences
   isSpec: "True"
-  fullName: Keras.PreProcessing.sequence.Sequence.PadEequences
-  nameWithType: Sequence.PadEequences
-- uid: Keras.PreProcessing.sequence.Sequence.SkipGrams(Keras.PreProcessing.sequence.Sequence,System.Int32,System.Int32,System.Single,System.Boolean,System.Boolean,Numpy.NDarray,System.Nullable{System.Int32})
-  name: SkipGrams(Sequence, Int32, Int32, Single, Boolean, Boolean, NDarray, Nullable<Int32>)
-  href: api/Keras.PreProcessing.sequence.Sequence.html#Keras_PreProcessing_sequence_Sequence_SkipGrams_Keras_PreProcessing_sequence_Sequence_System_Int32_System_Int32_System_Single_System_Boolean_System_Boolean_Numpy_NDarray_System_Nullable_System_Int32__
-  commentId: M:Keras.PreProcessing.sequence.Sequence.SkipGrams(Keras.PreProcessing.sequence.Sequence,System.Int32,System.Int32,System.Single,System.Boolean,System.Boolean,Numpy.NDarray,System.Nullable{System.Int32})
-  name.vb: SkipGrams(Sequence, Int32, Int32, Single, Boolean, Boolean, NDarray, Nullable(Of Int32))
-  fullName: Keras.PreProcessing.sequence.Sequence.SkipGrams(Keras.PreProcessing.sequence.Sequence, System.Int32, System.Int32, System.Single, System.Boolean, System.Boolean, Numpy.NDarray, System.Nullable<System.Int32>)
-  fullName.vb: Keras.PreProcessing.sequence.Sequence.SkipGrams(Keras.PreProcessing.sequence.Sequence, System.Int32, System.Int32, System.Single, System.Boolean, System.Boolean, Numpy.NDarray, System.Nullable(Of System.Int32))
-  nameWithType: Sequence.SkipGrams(Sequence, Int32, Int32, Single, Boolean, Boolean, NDarray, Nullable<Int32>)
-  nameWithType.vb: Sequence.SkipGrams(Sequence, Int32, Int32, Single, Boolean, Boolean, NDarray, Nullable(Of Int32))
-- uid: Keras.PreProcessing.sequence.Sequence.SkipGrams*
+  fullName: Keras.PreProcessing.sequence.SequenceUtil.PadSequences
+  nameWithType: SequenceUtil.PadSequences
+- uid: Keras.PreProcessing.sequence.SequenceUtil.SkipGrams(Numpy.NDarray,System.Int32,System.Int32,System.Single,System.Boolean,System.Boolean,Numpy.NDarray,System.Nullable{System.Int32})
+  name: SkipGrams(NDarray, Int32, Int32, Single, Boolean, Boolean, NDarray, Nullable<Int32>)
+  href: api/Keras.PreProcessing.sequence.SequenceUtil.html#Keras_PreProcessing_sequence_SequenceUtil_SkipGrams_Numpy_NDarray_System_Int32_System_Int32_System_Single_System_Boolean_System_Boolean_Numpy_NDarray_System_Nullable_System_Int32__
+  commentId: M:Keras.PreProcessing.sequence.SequenceUtil.SkipGrams(Numpy.NDarray,System.Int32,System.Int32,System.Single,System.Boolean,System.Boolean,Numpy.NDarray,System.Nullable{System.Int32})
+  name.vb: SkipGrams(NDarray, Int32, Int32, Single, Boolean, Boolean, NDarray, Nullable(Of Int32))
+  fullName: Keras.PreProcessing.sequence.SequenceUtil.SkipGrams(Numpy.NDarray, System.Int32, System.Int32, System.Single, System.Boolean, System.Boolean, Numpy.NDarray, System.Nullable<System.Int32>)
+  fullName.vb: Keras.PreProcessing.sequence.SequenceUtil.SkipGrams(Numpy.NDarray, System.Int32, System.Int32, System.Single, System.Boolean, System.Boolean, Numpy.NDarray, System.Nullable(Of System.Int32))
+  nameWithType: SequenceUtil.SkipGrams(NDarray, Int32, Int32, Single, Boolean, Boolean, NDarray, Nullable<Int32>)
+  nameWithType.vb: SequenceUtil.SkipGrams(NDarray, Int32, Int32, Single, Boolean, Boolean, NDarray, Nullable(Of Int32))
+- uid: Keras.PreProcessing.sequence.SequenceUtil.SkipGrams*
   name: SkipGrams
-  href: api/Keras.PreProcessing.sequence.Sequence.html#Keras_PreProcessing_sequence_Sequence_SkipGrams_
-  commentId: Overload:Keras.PreProcessing.sequence.Sequence.SkipGrams
+  href: api/Keras.PreProcessing.sequence.SequenceUtil.html#Keras_PreProcessing_sequence_SequenceUtil_SkipGrams_
+  commentId: Overload:Keras.PreProcessing.sequence.SequenceUtil.SkipGrams
   isSpec: "True"
-  fullName: Keras.PreProcessing.sequence.Sequence.SkipGrams
-  nameWithType: Sequence.SkipGrams
+  fullName: Keras.PreProcessing.sequence.SequenceUtil.SkipGrams
+  nameWithType: SequenceUtil.SkipGrams
 - uid: Keras.PreProcessing.sequence.TimeseriesGenerator
   name: TimeseriesGenerator
   href: api/Keras.PreProcessing.sequence.TimeseriesGenerator.html
@@ -4482,78 +4504,78 @@ references:
   isSpec: "True"
   fullName: Keras.PreProcessing.sequence.TimeseriesGenerator.TimeseriesGenerator
   nameWithType: TimeseriesGenerator.TimeseriesGenerator
-- uid: Keras.PreProcessing.text
-  name: Keras.PreProcessing.text
-  href: api/Keras.PreProcessing.text.html
-  commentId: N:Keras.PreProcessing.text
-  fullName: Keras.PreProcessing.text
-  nameWithType: Keras.PreProcessing.text
-- uid: Keras.PreProcessing.text.Text
-  name: Text
-  href: api/Keras.PreProcessing.text.Text.html
-  commentId: T:Keras.PreProcessing.text.Text
-  fullName: Keras.PreProcessing.text.Text
-  nameWithType: Text
-- uid: Keras.PreProcessing.text.Text.HashingTrick(System.String,System.Int32,System.String,System.String,System.Boolean,System.String)
+- uid: Keras.PreProcessing.Text
+  name: Keras.PreProcessing.Text
+  href: api/Keras.PreProcessing.Text.html
+  commentId: N:Keras.PreProcessing.Text
+  fullName: Keras.PreProcessing.Text
+  nameWithType: Keras.PreProcessing.Text
+- uid: Keras.PreProcessing.Text.TextUtil
+  name: TextUtil
+  href: api/Keras.PreProcessing.Text.TextUtil.html
+  commentId: T:Keras.PreProcessing.Text.TextUtil
+  fullName: Keras.PreProcessing.Text.TextUtil
+  nameWithType: TextUtil
+- uid: Keras.PreProcessing.Text.TextUtil.HashingTrick(System.String,System.Int32,System.String,System.String,System.Boolean,System.String)
   name: HashingTrick(String, Int32, String, String, Boolean, String)
-  href: api/Keras.PreProcessing.text.Text.html#Keras_PreProcessing_text_Text_HashingTrick_System_String_System_Int32_System_String_System_String_System_Boolean_System_String_
-  commentId: M:Keras.PreProcessing.text.Text.HashingTrick(System.String,System.Int32,System.String,System.String,System.Boolean,System.String)
-  fullName: Keras.PreProcessing.text.Text.HashingTrick(System.String, System.Int32, System.String, System.String, System.Boolean, System.String)
-  nameWithType: Text.HashingTrick(String, Int32, String, String, Boolean, String)
-- uid: Keras.PreProcessing.text.Text.HashingTrick*
+  href: api/Keras.PreProcessing.Text.TextUtil.html#Keras_PreProcessing_Text_TextUtil_HashingTrick_System_String_System_Int32_System_String_System_String_System_Boolean_System_String_
+  commentId: M:Keras.PreProcessing.Text.TextUtil.HashingTrick(System.String,System.Int32,System.String,System.String,System.Boolean,System.String)
+  fullName: Keras.PreProcessing.Text.TextUtil.HashingTrick(System.String, System.Int32, System.String, System.String, System.Boolean, System.String)
+  nameWithType: TextUtil.HashingTrick(String, Int32, String, String, Boolean, String)
+- uid: Keras.PreProcessing.Text.TextUtil.HashingTrick*
   name: HashingTrick
-  href: api/Keras.PreProcessing.text.Text.html#Keras_PreProcessing_text_Text_HashingTrick_
-  commentId: Overload:Keras.PreProcessing.text.Text.HashingTrick
+  href: api/Keras.PreProcessing.Text.TextUtil.html#Keras_PreProcessing_Text_TextUtil_HashingTrick_
+  commentId: Overload:Keras.PreProcessing.Text.TextUtil.HashingTrick
   isSpec: "True"
-  fullName: Keras.PreProcessing.text.Text.HashingTrick
-  nameWithType: Text.HashingTrick
-- uid: Keras.PreProcessing.text.Text.OneHot(System.String,System.Int32,System.String,System.Boolean,System.String)
+  fullName: Keras.PreProcessing.Text.TextUtil.HashingTrick
+  nameWithType: TextUtil.HashingTrick
+- uid: Keras.PreProcessing.Text.TextUtil.OneHot(System.String,System.Int32,System.String,System.Boolean,System.String)
   name: OneHot(String, Int32, String, Boolean, String)
-  href: api/Keras.PreProcessing.text.Text.html#Keras_PreProcessing_text_Text_OneHot_System_String_System_Int32_System_String_System_Boolean_System_String_
-  commentId: M:Keras.PreProcessing.text.Text.OneHot(System.String,System.Int32,System.String,System.Boolean,System.String)
-  fullName: Keras.PreProcessing.text.Text.OneHot(System.String, System.Int32, System.String, System.Boolean, System.String)
-  nameWithType: Text.OneHot(String, Int32, String, Boolean, String)
-- uid: Keras.PreProcessing.text.Text.OneHot*
+  href: api/Keras.PreProcessing.Text.TextUtil.html#Keras_PreProcessing_Text_TextUtil_OneHot_System_String_System_Int32_System_String_System_Boolean_System_String_
+  commentId: M:Keras.PreProcessing.Text.TextUtil.OneHot(System.String,System.Int32,System.String,System.Boolean,System.String)
+  fullName: Keras.PreProcessing.Text.TextUtil.OneHot(System.String, System.Int32, System.String, System.Boolean, System.String)
+  nameWithType: TextUtil.OneHot(String, Int32, String, Boolean, String)
+- uid: Keras.PreProcessing.Text.TextUtil.OneHot*
   name: OneHot
-  href: api/Keras.PreProcessing.text.Text.html#Keras_PreProcessing_text_Text_OneHot_
-  commentId: Overload:Keras.PreProcessing.text.Text.OneHot
+  href: api/Keras.PreProcessing.Text.TextUtil.html#Keras_PreProcessing_Text_TextUtil_OneHot_
+  commentId: Overload:Keras.PreProcessing.Text.TextUtil.OneHot
   isSpec: "True"
-  fullName: Keras.PreProcessing.text.Text.OneHot
-  nameWithType: Text.OneHot
-- uid: Keras.PreProcessing.text.Text.TextToWordSequence(System.String,System.String,System.Boolean,System.String)
+  fullName: Keras.PreProcessing.Text.TextUtil.OneHot
+  nameWithType: TextUtil.OneHot
+- uid: Keras.PreProcessing.Text.TextUtil.TextToWordSequence(System.String,System.String,System.Boolean,System.String)
   name: TextToWordSequence(String, String, Boolean, String)
-  href: api/Keras.PreProcessing.text.Text.html#Keras_PreProcessing_text_Text_TextToWordSequence_System_String_System_String_System_Boolean_System_String_
-  commentId: M:Keras.PreProcessing.text.Text.TextToWordSequence(System.String,System.String,System.Boolean,System.String)
-  fullName: Keras.PreProcessing.text.Text.TextToWordSequence(System.String, System.String, System.Boolean, System.String)
-  nameWithType: Text.TextToWordSequence(String, String, Boolean, String)
-- uid: Keras.PreProcessing.text.Text.TextToWordSequence*
+  href: api/Keras.PreProcessing.Text.TextUtil.html#Keras_PreProcessing_Text_TextUtil_TextToWordSequence_System_String_System_String_System_Boolean_System_String_
+  commentId: M:Keras.PreProcessing.Text.TextUtil.TextToWordSequence(System.String,System.String,System.Boolean,System.String)
+  fullName: Keras.PreProcessing.Text.TextUtil.TextToWordSequence(System.String, System.String, System.Boolean, System.String)
+  nameWithType: TextUtil.TextToWordSequence(String, String, Boolean, String)
+- uid: Keras.PreProcessing.Text.TextUtil.TextToWordSequence*
   name: TextToWordSequence
-  href: api/Keras.PreProcessing.text.Text.html#Keras_PreProcessing_text_Text_TextToWordSequence_
-  commentId: Overload:Keras.PreProcessing.text.Text.TextToWordSequence
+  href: api/Keras.PreProcessing.Text.TextUtil.html#Keras_PreProcessing_Text_TextUtil_TextToWordSequence_
+  commentId: Overload:Keras.PreProcessing.Text.TextUtil.TextToWordSequence
   isSpec: "True"
-  fullName: Keras.PreProcessing.text.Text.TextToWordSequence
-  nameWithType: Text.TextToWordSequence
-- uid: Keras.PreProcessing.text.Tokenizer
+  fullName: Keras.PreProcessing.Text.TextUtil.TextToWordSequence
+  nameWithType: TextUtil.TextToWordSequence
+- uid: Keras.PreProcessing.Text.Tokenizer
   name: Tokenizer
-  href: api/Keras.PreProcessing.text.Tokenizer.html
-  commentId: T:Keras.PreProcessing.text.Tokenizer
-  fullName: Keras.PreProcessing.text.Tokenizer
+  href: api/Keras.PreProcessing.Text.Tokenizer.html
+  commentId: T:Keras.PreProcessing.Text.Tokenizer
+  fullName: Keras.PreProcessing.Text.Tokenizer
   nameWithType: Tokenizer
-- uid: Keras.PreProcessing.text.Tokenizer.#ctor(System.Nullable{System.Int32},System.String,System.Boolean,System.String,System.Boolean,System.Nullable{System.Int32},System.Int32)
+- uid: Keras.PreProcessing.Text.Tokenizer.#ctor(System.Nullable{System.Int32},System.String,System.Boolean,System.String,System.Boolean,System.Nullable{System.Int32},System.Int32)
   name: Tokenizer(Nullable<Int32>, String, Boolean, String, Boolean, Nullable<Int32>, Int32)
-  href: api/Keras.PreProcessing.text.Tokenizer.html#Keras_PreProcessing_text_Tokenizer__ctor_System_Nullable_System_Int32__System_String_System_Boolean_System_String_System_Boolean_System_Nullable_System_Int32__System_Int32_
-  commentId: M:Keras.PreProcessing.text.Tokenizer.#ctor(System.Nullable{System.Int32},System.String,System.Boolean,System.String,System.Boolean,System.Nullable{System.Int32},System.Int32)
+  href: api/Keras.PreProcessing.Text.Tokenizer.html#Keras_PreProcessing_Text_Tokenizer__ctor_System_Nullable_System_Int32__System_String_System_Boolean_System_String_System_Boolean_System_Nullable_System_Int32__System_Int32_
+  commentId: M:Keras.PreProcessing.Text.Tokenizer.#ctor(System.Nullable{System.Int32},System.String,System.Boolean,System.String,System.Boolean,System.Nullable{System.Int32},System.Int32)
   name.vb: Tokenizer(Nullable(Of Int32), String, Boolean, String, Boolean, Nullable(Of Int32), Int32)
-  fullName: Keras.PreProcessing.text.Tokenizer.Tokenizer(System.Nullable<System.Int32>, System.String, System.Boolean, System.String, System.Boolean, System.Nullable<System.Int32>, System.Int32)
-  fullName.vb: Keras.PreProcessing.text.Tokenizer.Tokenizer(System.Nullable(Of System.Int32), System.String, System.Boolean, System.String, System.Boolean, System.Nullable(Of System.Int32), System.Int32)
+  fullName: Keras.PreProcessing.Text.Tokenizer.Tokenizer(System.Nullable<System.Int32>, System.String, System.Boolean, System.String, System.Boolean, System.Nullable<System.Int32>, System.Int32)
+  fullName.vb: Keras.PreProcessing.Text.Tokenizer.Tokenizer(System.Nullable(Of System.Int32), System.String, System.Boolean, System.String, System.Boolean, System.Nullable(Of System.Int32), System.Int32)
   nameWithType: Tokenizer.Tokenizer(Nullable<Int32>, String, Boolean, String, Boolean, Nullable<Int32>, Int32)
   nameWithType.vb: Tokenizer.Tokenizer(Nullable(Of Int32), String, Boolean, String, Boolean, Nullable(Of Int32), Int32)
-- uid: Keras.PreProcessing.text.Tokenizer.#ctor*
+- uid: Keras.PreProcessing.Text.Tokenizer.#ctor*
   name: Tokenizer
-  href: api/Keras.PreProcessing.text.Tokenizer.html#Keras_PreProcessing_text_Tokenizer__ctor_
-  commentId: Overload:Keras.PreProcessing.text.Tokenizer.#ctor
+  href: api/Keras.PreProcessing.Text.Tokenizer.html#Keras_PreProcessing_Text_Tokenizer__ctor_
+  commentId: Overload:Keras.PreProcessing.Text.Tokenizer.#ctor
   isSpec: "True"
-  fullName: Keras.PreProcessing.text.Tokenizer.Tokenizer
+  fullName: Keras.PreProcessing.Text.Tokenizer.Tokenizer
   nameWithType: Tokenizer.Tokenizer
 - uid: Keras.Regularizers
   name: Keras.Regularizers
@@ -4946,6 +4968,15 @@ references:
   isSpec: "True"
   fullName: Keras.Utils.Sequence.Sequence
   nameWithType: Sequence.Sequence
+- uid: Keras.Utils.Sequence.op_Implicit(Numpy.NDarray)~Keras.Utils.Sequence
+  name: Implicit(NDarray to Sequence)
+  href: api/Keras.Utils.Sequence.html#Keras_Utils_Sequence_op_Implicit_Numpy_NDarray__Keras_Utils_Sequence
+  commentId: M:Keras.Utils.Sequence.op_Implicit(Numpy.NDarray)~Keras.Utils.Sequence
+  name.vb: Widening(NDarray to Sequence)
+  fullName: Keras.Utils.Sequence.Implicit(Numpy.NDarray to Keras.Utils.Sequence)
+  fullName.vb: Keras.Utils.Sequence.Widening(Numpy.NDarray to Keras.Utils.Sequence)
+  nameWithType: Sequence.Implicit(NDarray to Sequence)
+  nameWithType.vb: Sequence.Widening(NDarray to Sequence)
 - uid: Keras.Utils.Sequence.op_Implicit(Python.Runtime.PyObject)~Keras.Utils.Sequence
   name: Implicit(PyObject to Sequence)
   href: api/Keras.Utils.Sequence.html#Keras_Utils_Sequence_op_Implicit_Python_Runtime_PyObject__Keras_Utils_Sequence
