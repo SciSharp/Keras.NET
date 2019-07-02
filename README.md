@@ -15,7 +15,7 @@ Runs seamlessly on CPU and GPU.
 * [pythonnet_netstandard](https://github.com/henon/pythonnet_netstandard)
 
 ## Prerequisite
-* Python 3.6, Link: https://www.python.org/downloads/
+* Python 3.7, Link: https://www.python.org/downloads/
 * Install keras, numpy and one of the backend (Tensorflow/CNTK/Theano). Please see on how to configure: https://keras.io/backend/
 
 ## Nuget
