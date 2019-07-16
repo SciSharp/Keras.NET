@@ -139,6 +139,46 @@ namespace Keras.PreProcessing.Image
             return new KerasIterator(InvokeMethod("flow", parameters));
         }
 
+        ///// <summary>
+        ///// Flows from dataframe.
+        ///// </summary>
+        ///// <param name="directory"> string, path to the target directory. It should contain one subdirectory per class. Any PNG, JPG, BMP, PPM or TIF images inside each of the subdirectories directory tree will be included in the generator. See this script for more details.</param>
+        ///// <param name="target_size"> Tuple of integers (height, width), default: (256, 256). The dimensions to which all images found will be resized.</param>
+        ///// <param name="color_mode"> One of "grayscale", "rgb", "rgba". Default: "rgb". Whether the images will be converted to have 1, 3, or 4 channels.</param>
+        ///// <param name="classes"> Optional list of class subdirectories (e.g. ['dogs', 'cats']). Default: None. If not provided, the list of classes will be automatically inferred from the subdirectory names/structure under directory, where each subdirectory will be treated as a different class (and the order of the classes, which will map to the label indices, will be alphanumeric). The dictionary containing the mapping from class names to class indices can be obtained via the attribute class_indices.</param>
+        ///// <param name="class_mode"> One of "categorical", "binary", "sparse", "input", or None. Default: "categorical". Determines the type of label arrays that are returned:</param>
+        ///// <param name="batch_size"> Size of the batches of data (default: 32).</param>
+        ///// <param name="shuffle"> Whether to shuffle the data (default: True) If set to False, sorts the data in alphanumeric order.</param>
+        ///// <param name="seed"> Optional random seed for shuffling and transformations.</param>
+        ///// <param name="save_to_dir"> None or str (default: None). This allows you to optionally specify a directory to which to save the augmented pictures being generated (useful for visualizing what you are doing).</param>
+        ///// <param name="save_prefix"> Str. Prefix to use for filenames of saved pictures (only relevant if save_to_dir is set).</param>
+        ///// <param name="save_format"> One of "png", "jpeg" (only relevant if save_to_dir is set). Default: "png".</param>
+        ///// <param name="follow_links"> Whether to follow symlinks inside class subdirectories (default: False).</param>
+        ///// <param name="subset"> Subset of data ("training" or "validation") if validation_split is set in ImageDataGenerator.</param>
+        ///// <param name="interpolation"> Interpolation method used to resample the image if the target size is different from that of the loaded image. Supported methods are "nearest", "bilinear", and "bicubic". If PIL version 1.1.3 or newer is installed, "lanczos" is also supported. If PIL version 3.4.0 or newer is installed, "box" and "hamming" are also supported. By default, "nearest" is used.</param>
+
+        ///// <returns>A DirectoryIterator yielding tuples of (x, y) where x is a numpy array containing a batch of images with shape (batch_size, *target_size, channels) and y is a numpy array of corresponding labels.</returns>
+        //public KerasIterator FlowFromDataframe(string directory, Tuple<int, int> target_size = null, string color_mode = "rgb", string[] classes = null, string class_mode = "categorical",
+        //                                        int batch_size = 32, bool shuffle = true, int? seed = null, string save_to_dir = "", string save_prefix = "", string save_format = "png",
+        //                                        bool follow_links = false, string subset = "", string interpolation = "nearest")
+        //{
+        //    Dictionary<string, object> parameters = new Dictionary<string, object>();
+        //    parameters["directory"] = directory;
+        //    parameters["target_size"] = target_size == null ? new Shape(256, 256) : new Shape(target_size.Item1, target_size.Item2);
+        //    parameters["color_mode"] = color_mode;
+        //    parameters["classes"] = classes;
+        //    parameters["class_mode"] = class_mode;
+        //    parameters["batch_size"] = batch_size;
+        //    parameters["shuffle"] = shuffle;
+        //    parameters["save_to_dir"] = save_to_dir;
+        //    parameters["save_format"] = save_format;
+        //    parameters["follow_links"] = follow_links;
+        //    parameters["subset"] = subset;
+        //    parameters["interpolation"] = interpolation;
+
+        //    return new KerasIterator(InvokeMethod("flow_from_dataframe", parameters));
+        //}
+
         /// <summary>
         /// Flows from dataframe.
         /// </summary>
@@ -158,7 +198,7 @@ namespace Keras.PreProcessing.Image
         /// <param name="interpolation"> Interpolation method used to resample the image if the target size is different from that of the loaded image. Supported methods are "nearest", "bilinear", and "bicubic". If PIL version 1.1.3 or newer is installed, "lanczos" is also supported. If PIL version 3.4.0 or newer is installed, "box" and "hamming" are also supported. By default, "nearest" is used.</param>
 
         /// <returns>A DirectoryIterator yielding tuples of (x, y) where x is a numpy array containing a batch of images with shape (batch_size, *target_size, channels) and y is a numpy array of corresponding labels.</returns>
-        public KerasIterator FlowFromDataframe(string directory, Tuple<int, int> target_size = null, string color_mode = "rgb", string[] classes = null, string class_mode = "categorical",
+        public KerasIterator FlowFromDirectory(string directory, Tuple<int, int> target_size = null, string color_mode = "rgb", string[] classes = null, string class_mode = "categorical",
                                                 int batch_size = 32, bool shuffle = true, int? seed = null, string save_to_dir = "", string save_prefix = "", string save_format = "png",
                                                 bool follow_links = false, string subset = "", string interpolation = "nearest")
         {
@@ -176,7 +216,7 @@ namespace Keras.PreProcessing.Image
             parameters["subset"] = subset;
             parameters["interpolation"] = interpolation;
 
-            return new KerasIterator(InvokeMethod("flow_from_dataframe", parameters));
+            return new KerasIterator(InvokeMethod("flow_from_directory", parameters));
         }
     }
 
