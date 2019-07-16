@@ -118,6 +118,11 @@ namespace Keras.Callbacks
         {
             __self__ = keras.callbacks.History;
         }
+
+        public History(PyObject py)
+        {
+            __self__ = py;
+        }
     }
 
     /// <summary>

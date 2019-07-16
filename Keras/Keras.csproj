@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Keras.NET</PackageId>
-    <Version>0.6.2</Version>
+    <Version>0.6.3</Version>
     <Authors>SciSharp Team</Authors>
     <Product>Keras.NET</Product>
     <Description>Keras.NET is a high-level neural networks API, written in C# with Python Binding and capable of running on top of TensorFlow, CNTK, or Theano. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result with the least possible delay is key to doing good research.</Description>

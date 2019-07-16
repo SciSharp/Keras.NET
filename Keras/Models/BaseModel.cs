@@ -1,4 +1,5 @@
 ﻿using Keras.Callbacks;
+using Keras.Utils;
 using Numpy;
 using Python.Runtime;
 using System;
@@ -81,9 +82,9 @@ namespace Keras.Models
             args["steps_per_epoch"] = steps_per_epoch;
             args["validation_steps"] = validation_steps;
 
-            InvokeMethod("fit", args);
+            PyObject py = InvokeMethod("fit", args);
 
-            return null;
+            return new History(py);
         }
 
         /// <summary>
@@ -184,6 +185,70 @@ namespace Keras.Models
         }
 
         //ToDo: Implement Generators
+        public History FitGenerator(Sequence generator, int? steps_per_epoch = null, int epochs = 1, int verbose = 1, Callback[] callbacks = null,
+                    NDarray[] validation_data = null, int? validation_steps = null, int validation_freq = 1, Dictionary<int, float> class_weight = null,
+                    int max_queue_size = 10, int workers = 1, bool use_multiprocessing = false, bool shuffle = true, int initial_epoch = 0)
+        {
+            var args = new Dictionary<string, object>();
+            args["generator"] = generator;
+            args["steps_per_epoch"] = steps_per_epoch;
+            args["epochs"] = epochs;
+            args["verbose"] = verbose;
+            args["callbacks"] = callbacks;
+            if (validation_data != null)
+            {
+                if (validation_data.Length == 2)
+                    args["validation_data"] = new NDarray[] { validation_data[0], validation_data[1] };
+                else if (validation_data.Length == 3)
+                    args["validation_data"] = new NDarray[] { validation_data[0], validation_data[1], validation_data[2] };
+            }
+
+            args["validation_steps"] = validation_steps;
+            args["validation_freq"] = validation_freq;
+            args["class_weight"] = class_weight;
+            args["max_queue_size"] = max_queue_size;
+            args["workers"] = workers;
+            args["use_multiprocessing"] = use_multiprocessing;
+            args["shuffle"] = shuffle;
+            args["initial_epoch"] = initial_epoch;
+
+            var py = InvokeMethod("fit_generator", args);
+
+            return new History(py);
+        }
+
+        public double[] EvaluateGenerator(Sequence generator, int? steps = null, Callback[] callbacks = null, 
+                                int max_queue_size = 10, int workers = 1, bool use_multiprocessing = false, int verbose = 0)
+        {
+            var args = new Dictionary<string, object>();
+            args["generator"] = generator;
+            args["steps"] = steps;
+            args["callbacks"] = callbacks;
+            args["max_queue_size"] = max_queue_size;
+            args["workers"] = workers;
+            args["use_multiprocessing"] = use_multiprocessing;
+            args["verbose"] = verbose;
+            var py = InvokeMethod("evaluate_generator", args);
+
+            return py.As<double[]>();
+        }
+
+        public NDarray PredictGenerator(Sequence generator, int? steps = null, Callback[] callbacks = null,
+                                int max_queue_size = 10, int workers = 1, bool use_multiprocessing = false, int verbose = 0)
+        {
+            var args = new Dictionary<string, object>();
+            args["generator"] = generator;
+            args["steps"] = steps;
+            args["callbacks"] = callbacks;
+            args["max_queue_size"] = max_queue_size;
+            args["workers"] = workers;
+            args["use_multiprocessing"] = use_multiprocessing;
+            args["verbose"] = verbose;
+            var py = InvokeMethod("predict_generator", args);
+
+            return new NDarray(py);
+        }
+
 
         /// <summary>
         /// Converts the model to json.
