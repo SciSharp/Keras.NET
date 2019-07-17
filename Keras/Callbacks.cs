@@ -22,7 +22,7 @@ namespace Keras.Callbacks
         /// </summary>
         public Callback()
         {
-            __self__ = keras.callbacks.Callback();
+            __self__ = Instance.keras.callbacks.Callback();
         }
     }
 
@@ -39,7 +39,7 @@ namespace Keras.Callbacks
         public BaseLogger(params string[] stateful_metrics)
         {
             Parameters["stateful_metrics"] = stateful_metrics!=null ? stateful_metrics.ToList() : null;
-            __self__ = keras.callbacks.BaseLogger;
+            __self__ = Instance.keras.callbacks.BaseLogger;
         }
     }
 
@@ -54,7 +54,7 @@ namespace Keras.Callbacks
         /// </summary>
         public TerminateOnNaN()
         {
-            __self__ = keras.callbacks.TerminateOnNaN;
+            __self__ = Instance.keras.callbacks.TerminateOnNaN;
         }
     }
 
@@ -73,7 +73,7 @@ namespace Keras.Callbacks
         {
             Parameters["count_mode"] = count_mode;
             Parameters["stateful_metrics"] = stateful_metrics != null ? stateful_metrics.ToList() : null;
-            __self__ = keras.callbacks.ProgbarLogger;
+            __self__ = Instance.keras.callbacks.ProgbarLogger;
         }
     }
 
@@ -154,7 +154,7 @@ namespace Keras.Callbacks
             Parameters["mode"] = mode;
             Parameters["period"] = period;
 
-            __self__ = keras.callbacks.ModelCheckpoint;
+            __self__ = Instance.keras.callbacks.ModelCheckpoint;
         }
     }
 
@@ -231,7 +231,7 @@ namespace Keras.Callbacks
             Parameters["schedule"] = schedule;
             Parameters["verbose"] = verbose;
 
-            __self__ = keras.callbacks.LearningRateScheduler;
+            __self__ = Instance.keras.callbacks.LearningRateScheduler;
         }
     }
 
@@ -271,7 +271,7 @@ namespace Keras.Callbacks
             Parameters["embeddings_data"] = embeddings_data.PyObject;
             Parameters["update_freq"] = update_freq;
 
-            __self__ = keras.callbacks.TensorBoard;
+            __self__ = Instance.keras.callbacks.TensorBoard;
         }
     }
 
@@ -306,7 +306,7 @@ namespace Keras.Callbacks
             Parameters["cooldown"] = cooldown;
             Parameters["min_lr"] = min_lr;
 
-            __self__ = keras.callbacks.ReduceLROnPlateau;
+            __self__ = Instance.keras.callbacks.ReduceLROnPlateau;
         }
     }
 
@@ -329,7 +329,7 @@ namespace Keras.Callbacks
             Parameters["separator"] = separator;
             Parameters["append"] = append;
 
-            __self__ = keras.callbacks.CSVLogger;
+            __self__ = Instance.keras.callbacks.CSVLogger;
         }
     }
 }
