@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <Configurations>Debug;Release;Py3.6_WIN;Py2.7_WIN;Py3.6_OSX;Py2.7_Mono;Py3.6_Mono;Py2.7_OSX</Configurations>
   </PropertyGroup>
 
 
