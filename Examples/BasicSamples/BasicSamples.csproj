@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Keras\Keras.csproj" />
+    <ProjectReference Include="..\..\Keras\Keras.Win.Py36.csproj" />
   </ItemGroup>
 
   <ItemGroup>

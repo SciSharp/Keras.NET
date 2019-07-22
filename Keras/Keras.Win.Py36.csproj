@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Keras.NET</PackageId>
+    <Version>3.6.1.1</Version>
+    <Authors>SciSharp Team</Authors>
+    <Product>Keras.NET</Product>
+    <Description>Keras.NET is a high-level neural networks API, written in C# with Python Binding and capable of running on top of TensorFlow, CNTK, or Theano. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result with the least possible delay is key to doing good research.</Description>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://scisharp.github.io/Keras.NET/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/SciSharp/Keras.NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageIconUrl>https://avatars3.githubusercontent.com/u/44989469?s=128&amp;v=4</PackageIconUrl>
+    <PackageTags>keras, deep learning, neural network, tensorflow, cntk, plaimml</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <AssemblyName>Keras</AssemblyName>
+    <RootNamespace>Keras</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Numpy.Bare" Version="3.6.1.6" />
+  </ItemGroup>
+
+</Project>

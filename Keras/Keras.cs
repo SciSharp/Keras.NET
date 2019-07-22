@@ -24,7 +24,7 @@ namespace Keras
             }
             catch(Exception ex)
             {
-                Console.WriteLine("onnxmltools is not installed to convert keras model to h5");
+                Console.WriteLine("Warning! onnxmltools is not installed to export to onnx");
             }
 
             try
@@ -33,7 +33,7 @@ namespace Keras
             }
             catch (Exception ex)
             {
-                Console.WriteLine("tensorflowjs is not installed to convert keras model to tensorflow js format");
+                Console.WriteLine("Warning! tensorflowjs is not installed. Required to convert keras model to tensorflow js format");
             }
             
             return instance;
