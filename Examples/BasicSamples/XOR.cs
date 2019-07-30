@@ -1,6 +1,7 @@
 ﻿using Keras;
 using Keras.Layers;
 using Keras.Models;
+using Keras.Optimizers;
 using Numpy;
 using System;
 using System.Collections.Generic;
@@ -24,9 +25,9 @@ namespace BasicSamples
             model.Add(new Dense(1, activation: "sigmoid"));
 
             //Compile and train
-            model.Compile(optimizer:"sgd", loss:"binary_crossentropy", metrics: new string[] { "accuracy" });
-            model.Fit(x, y, batch_size: 2, epochs: 1000, verbose: 1);
-
+            model.Compile(optimizer: new Adam(), loss:"binary_crossentropy", metrics: new string[] { "accuracy" });
+            var history = model.Fit(x, y, batch_size: 2, epochs: 100, verbose: 1);
+            var logs = history.HistoryLogs;
             //Save model and weights
             string json = model.ToJson();
             File.WriteAllText("model.json", json);

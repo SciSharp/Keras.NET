@@ -42,6 +42,7 @@ namespace Keras
 
         private static PyObject InstallAndImport(string module)
         {
+            Console.WriteLine(module);
             if(!PythonEngine.IsInitialized)
                 PythonEngine.Initialize();
             var mod = Py.Import(module);

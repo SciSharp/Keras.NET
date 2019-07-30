@@ -103,11 +103,19 @@ namespace Keras.Callbacks
         /// <value>
         /// The history logs.
         /// </value>
-        public double[] HistoryLogs
+        public Dictionary<string, double[]> HistoryLogs
         {
             get
             {
-                return ((PyObject)__self__.history).As<double[]>();
+                PyDict dict = new PyDict(__self__.history);
+                Dictionary<string, double[]> result = new Dictionary<string, double[]>();
+                var keys = dict.Keys().As<string[]>();
+                foreach (var item in keys)
+                {
+                    result.Add(item, dict[item].As<double[]>());
+                }
+
+                return result;
             }
         }
 

@@ -13,8 +13,8 @@ namespace ReleaseBot
 {
     class Program
     {
-        private const string V = "1.4"; // <--- Keras.net version!
-        private const string PythonNetVersion = "1";
+        private const string V = "1.5"; // <--- Keras.net version!
+        private const string NumpyNetVersion = "1.6";
 
         private const string ProjectPath = "../../../Keras";
         private const string ProjectName = "Keras.csproj";
@@ -24,7 +24,7 @@ namespace ReleaseBot
 
         static void Main(string[] args)
         {
-            ProcessKeras();
+            //ProcessKeras();
             var specs = new ReleaseSpec[]
            {
                 // linux                
@@ -48,7 +48,7 @@ namespace ReleaseBot
             foreach (var spec in specs)
             {
                 spec.Version = $"{spec.CPythonVersion}.{V}";
-                spec.PythonNetVersion = $"{spec.CPythonVersion}.{PythonNetVersion}";
+                spec.PythonNetVersion = $"{spec.CPythonVersion}.{NumpyNetVersion}";
                 spec.Description = string.Format(Description, spec.Platform, spec.CPythonVersion);
                 spec.PackageTags = Tags;
                 spec.RelativeProjectPath = ProjectPath;

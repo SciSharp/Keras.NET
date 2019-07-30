@@ -9,7 +9,6 @@ namespace BasicSamples
         {
             //Run to setup keras and backend.
             //Setup.Run(SetupBackend.TensorflowGPU);
-
             Console.WriteLine("Running XOR");
             XOR.Run();
 

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29102.190
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Keras.UnitTest", "Keras.UnitTest\Keras.UnitTest.csproj", "{0B402B43-29A2-4564-BC20-20BBBE7C2C51}"
 EndProject
@@ -128,6 +128,7 @@ Global
 		{7F906C3D-4C18-4185-8235-4908FC082398}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F906C3D-4C18-4185-8235-4908FC082398}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BA3012C1-D49A-4520-A7FB-D033DA9E63ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA3012C1-D49A-4520-A7FB-D033DA9E63ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA3012C1-D49A-4520-A7FB-D033DA9E63ED}.Py2.7_Mono|Any CPU.ActiveCfg = Py2.7_Mono|Any CPU
 		{BA3012C1-D49A-4520-A7FB-D033DA9E63ED}.Py2.7_OSX|Any CPU.ActiveCfg = Py2.7_OSX|Any CPU
 		{BA3012C1-D49A-4520-A7FB-D033DA9E63ED}.Py2.7_WIN|Any CPU.ActiveCfg = Py2.7_WIN|Any CPU
@@ -136,6 +137,7 @@ Global
 		{BA3012C1-D49A-4520-A7FB-D033DA9E63ED}.Py3.6_WIN|Any CPU.ActiveCfg = Py3.6_WIN|Any CPU
 		{BA3012C1-D49A-4520-A7FB-D033DA9E63ED}.Py3.6_WIN|Any CPU.Build.0 = Py3.6_WIN|Any CPU
 		{BA3012C1-D49A-4520-A7FB-D033DA9E63ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA3012C1-D49A-4520-A7FB-D033DA9E63ED}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2BAEA60C-88A2-45DC-8044-2C9571E1B8CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2BAEA60C-88A2-45DC-8044-2C9571E1B8CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BAEA60C-88A2-45DC-8044-2C9571E1B8CF}.Py2.7_Mono|Any CPU.ActiveCfg = Release|Any CPU
