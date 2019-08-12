@@ -52,7 +52,7 @@ namespace Keras.Applications.MobileNet
             Parameters["input_tensor"] = input_tensor;
             Parameters["pooling"] = pooling;
             Parameters["classes"] = classes;
-            __self__ = caller.MobileNet;
+            PyInstance = caller.MobileNet;
             Init();
         }
     }
@@ -102,7 +102,7 @@ namespace Keras.Applications.MobileNet
             Parameters["input_tensor"] = input_tensor;
             Parameters["pooling"] = pooling;
             Parameters["classes"] = classes;
-            __self__ = caller.MobileNetV2;
+            PyInstance = caller.MobileNetV2;
             Init();
         }
     }

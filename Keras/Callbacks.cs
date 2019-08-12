@@ -22,7 +22,7 @@ namespace Keras.Callbacks
         /// </summary>
         public Callback()
         {
-            __self__ = Instance.keras.callbacks.Callback();
+            PyInstance = Instance.keras.callbacks.Callback();
         }
     }
 
@@ -39,7 +39,8 @@ namespace Keras.Callbacks
         public BaseLogger(params string[] stateful_metrics)
         {
             Parameters["stateful_metrics"] = stateful_metrics!=null ? stateful_metrics.ToList() : null;
-            __self__ = Instance.keras.callbacks.BaseLogger;
+            PyInstance = Instance.keras.callbacks.BaseLogger;
+            Init();
         }
     }
 
@@ -54,7 +55,8 @@ namespace Keras.Callbacks
         /// </summary>
         public TerminateOnNaN()
         {
-            __self__ = Instance.keras.callbacks.TerminateOnNaN;
+            PyInstance = Instance.keras.callbacks.TerminateOnNaN;
+            Init();
         }
     }
 
@@ -73,7 +75,8 @@ namespace Keras.Callbacks
         {
             Parameters["count_mode"] = count_mode;
             Parameters["stateful_metrics"] = stateful_metrics != null ? stateful_metrics.ToList() : null;
-            __self__ = Instance.keras.callbacks.ProgbarLogger;
+            PyInstance = Instance.keras.callbacks.ProgbarLogger;
+            Init();
         }
     }
 
@@ -93,7 +96,7 @@ namespace Keras.Callbacks
         {
             get
             {
-                return ((PyObject)__self__.epoch).As<int[]>();
+                return ((PyObject)PyInstance.epoch).As<int[]>();
             }
         }
 
@@ -107,7 +110,7 @@ namespace Keras.Callbacks
         {
             get
             {
-                PyDict dict = new PyDict(__self__.history);
+                PyDict dict = new PyDict(PyInstance.history);
                 Dictionary<string, double[]> result = new Dictionary<string, double[]>();
                 var keys = dict.Keys().As<string[]>();
                 foreach (var item in keys)
@@ -124,12 +127,13 @@ namespace Keras.Callbacks
         /// </summary>
         public History()
         {
-            __self__ = keras.callbacks.History;
+            PyInstance = keras.callbacks.History;
+            Init();
         }
 
         public History(PyObject py)
         {
-            __self__ = py;
+            PyInstance = py;
         }
     }
 
@@ -162,7 +166,8 @@ namespace Keras.Callbacks
             Parameters["mode"] = mode;
             Parameters["period"] = period;
 
-            __self__ = Instance.keras.callbacks.ModelCheckpoint;
+            PyInstance = Instance.keras.callbacks.ModelCheckpoint;
+            Init();
         }
     }
 
@@ -192,7 +197,8 @@ namespace Keras.Callbacks
             Parameters["baseline"] = baseline;
             Parameters["restore_best_weights"] = restore_best_weights;
 
-            __self__ = keras.callbacks.EarlyStopping;
+            PyInstance = keras.callbacks.EarlyStopping;
+            Init();
         }
     }
 
@@ -219,7 +225,8 @@ namespace Keras.Callbacks
             Parameters["headers"] = headers;
             Parameters["send_as_json"] = send_as_json;
 
-            __self__ = keras.callbacks.RemoteMonitor;
+            PyInstance = keras.callbacks.RemoteMonitor;
+            Init();
         }
     }
 
@@ -239,7 +246,8 @@ namespace Keras.Callbacks
             Parameters["schedule"] = schedule;
             Parameters["verbose"] = verbose;
 
-            __self__ = Instance.keras.callbacks.LearningRateScheduler;
+            PyInstance = Instance.keras.callbacks.LearningRateScheduler;
+            Init();
         }
     }
 
@@ -279,7 +287,8 @@ namespace Keras.Callbacks
             Parameters["embeddings_data"] = embeddings_data.PyObject;
             Parameters["update_freq"] = update_freq;
 
-            __self__ = Instance.keras.callbacks.TensorBoard;
+            PyInstance = Instance.keras.callbacks.TensorBoard;
+            Init();
         }
     }
 
@@ -314,7 +323,8 @@ namespace Keras.Callbacks
             Parameters["cooldown"] = cooldown;
             Parameters["min_lr"] = min_lr;
 
-            __self__ = Instance.keras.callbacks.ReduceLROnPlateau;
+            PyInstance = Instance.keras.callbacks.ReduceLROnPlateau;
+            Init();
         }
     }
 
@@ -337,7 +347,8 @@ namespace Keras.Callbacks
             Parameters["separator"] = separator;
             Parameters["append"] = append;
 
-            __self__ = Instance.keras.callbacks.CSVLogger;
+            PyInstance = Instance.keras.callbacks.CSVLogger;
+            Init();
         }
     }
 }

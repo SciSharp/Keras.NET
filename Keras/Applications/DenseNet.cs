@@ -47,7 +47,7 @@ namespace Keras.Applications.DenseNet
             Parameters["input_shape"] = input_shape;
             Parameters["pooling"] = pooling;
             Parameters["classes"] = classes;
-            __self__ = caller.DenseNet121;
+            PyInstance = caller.DenseNet121;
             Init();
         }
     }
@@ -92,7 +92,7 @@ namespace Keras.Applications.DenseNet
             Parameters["input_shape"] = input_shape;
             Parameters["pooling"] = pooling;
             Parameters["classes"] = classes;
-            __self__ = caller.DenseNet169;
+            PyInstance = caller.DenseNet169;
             Init();
         }
     }
@@ -137,7 +137,7 @@ namespace Keras.Applications.DenseNet
             Parameters["input_shape"] = input_shape;
             Parameters["pooling"] = pooling;
             Parameters["classes"] = classes;
-            __self__ = caller.DenseNet201;
+            PyInstance = caller.DenseNet201;
             Init();
         }
     }

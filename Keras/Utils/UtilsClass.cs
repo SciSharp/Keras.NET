@@ -19,7 +19,7 @@ namespace Keras.Utils
         /// </summary>
         public CustomObjectScope()
         {
-            __self__ = Instance.keras.utils.CustomObjectScope;
+            PyInstance = Instance.keras.utils.CustomObjectScope;
         }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace Keras.Utils
         public static implicit operator CustomObjectScope(PyObject py)
         {
             var obj = new CustomObjectScope();
-            obj.__self__ = py;
+            obj.PyInstance = py;
 
             return obj;
         }
@@ -62,7 +62,7 @@ namespace Keras.Utils
         /// <param name="normalizer">function to be called on data when retrieved</param>
         public HDF5Matrix(string datapath, string dataset, int start = 0, int? end = null, EventHandler normalizer = null)
         {
-            __self__ = Instance.keras.utils.HDF5Matrix;
+            PyInstance = Instance.keras.utils.HDF5Matrix;
         }
 
         /// <summary>
@@ -75,7 +75,7 @@ namespace Keras.Utils
         public static implicit operator HDF5Matrix(PyObject py)
         {
             var obj = new HDF5Matrix();
-            obj.__self__ = py;
+            obj.PyInstance = py;
 
             return obj;
         }
@@ -93,12 +93,13 @@ namespace Keras.Utils
         /// </summary>
         public Sequence()
         {
-            __self__ = Instance.keras.utils.Sequence;
+            PyInstance = Instance.keras.utils.Sequence;
+            Init();
         }
 
         private Sequence(PyObject py)
         {
-            __self__ = py;
+            PyInstance = py;
         }
 
         /// <summary>
@@ -111,7 +112,7 @@ namespace Keras.Utils
         public static implicit operator Sequence(PyObject py)
         {
             var obj = new Sequence();
-            obj.__self__ = py;
+            obj.PyInstance = py;
 
             return obj;
         }

@@ -28,7 +28,7 @@ namespace Keras.PreProcessing.Text
             Parameters["oov_token"] = oov_token;
             Parameters["document_count"] = document_count;
 
-            __self__ = Instance.keras.preprocessing.text.Tokenizer;
+            PyInstance = Instance.keras.preprocessing.text.Tokenizer;
         }
     }
 

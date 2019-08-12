@@ -46,7 +46,8 @@ namespace Keras.Layers
             Parameters["beta_constraint"] = beta_constraint;
             Parameters["gamma_constraint"] = gamma_constraint;
 
-            __self__ = Instance.keras.layers.BatchNormalization;
+            PyInstance = Instance.keras.layers.BatchNormalization;
+            Init();
         }
     }
 }

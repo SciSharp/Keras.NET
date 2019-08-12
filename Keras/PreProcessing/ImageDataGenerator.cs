@@ -68,7 +68,8 @@ namespace Keras.PreProcessing.Image
             Parameters["validation_split"] = validation_split;
             Parameters["dtype"] = dtype;
 
-            __self__ = Instance.keras.preprocessing.image.ImageDataGenerator;
+            PyInstance = Instance.keras.preprocessing.image.ImageDataGenerator;
+            Init();
         }
 
         /// <summary>
@@ -196,7 +197,6 @@ namespace Keras.PreProcessing.Image
         /// <param name="follow_links"> Whether to follow symlinks inside class subdirectories (default: False).</param>
         /// <param name="subset"> Subset of data ("training" or "validation") if validation_split is set in ImageDataGenerator.</param>
         /// <param name="interpolation"> Interpolation method used to resample the image if the target size is different from that of the loaded image. Supported methods are "nearest", "bilinear", and "bicubic". If PIL version 1.1.3 or newer is installed, "lanczos" is also supported. If PIL version 3.4.0 or newer is installed, "box" and "hamming" are also supported. By default, "nearest" is used.</param>
-
         /// <returns>A DirectoryIterator yielding tuples of (x, y) where x is a numpy array containing a batch of images with shape (batch_size, *target_size, channels) and y is a numpy array of corresponding labels.</returns>
         public KerasIterator FlowFromDirectory(string directory, Tuple<int, int> target_size = null, string color_mode = "rgb", string[] classes = null, string class_mode = "categorical",
                                                 int batch_size = 32, bool shuffle = true, int? seed = null, string save_to_dir = "", string save_prefix = "", string save_format = "png",

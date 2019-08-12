@@ -256,7 +256,7 @@ namespace Keras.Models
         /// <returns></returns>
         public string ToJson()
         {
-            return __self__.to_json().ToString();
+            return PyInstance.to_json().ToString();
         }
 
         /// <summary>
@@ -265,7 +265,7 @@ namespace Keras.Models
         /// <param name="path">The path of the weight to save.</param>
         public void SaveWeight(string path)
         {
-            __self__.save_weights(path);
+            PyInstance.save_weights(path);
         }
 
         /// <summary>
@@ -274,7 +274,45 @@ namespace Keras.Models
         /// <param name="path">The path with filename eg: model.h5.</param>
         public void Save(string path)
         {
-            __self__.save(path);
+            PyInstance.save(path);
+        }
+
+        /// <summary>
+        /// Retrieves the weights of the model
+        /// </summary>
+        /// <returns>A flat list of Numpy arrays</returns>
+        public List<NDarray> GetWeights()
+        {
+            var args = new Dictionary<string, object>();
+            var pyWeights = PyInstance.get_weights();
+            List<NDarray> weights = new List<NDarray>();
+            //PyList pyWeights = (PyList)InvokeMethod("get_weights", args);
+
+            foreach (PyObject weightsArray in pyWeights)
+            {
+                weights.Add(new NDarray(weightsArray));
+            }
+
+            return weights;
+        }
+
+        /// <summary>
+        /// Sets the weights of the model
+        /// </summary>
+        /// <param name="weights">A list of Numpy arrays with shapes and types matching the output of model.GetWeights()</param>
+        public void SetWeights(List<NDarray> weights)
+        {
+            //PyList pyWeights = new PyList();
+            //foreach (NDarray weightsArray in weights)
+            //{
+            //    pyWeights.Append(weightsArray.ToPython());
+            //}
+
+            //var args = new Dictionary<string, object>();
+            //args["weights"] = pyWeights;
+
+            //InvokeMethod("set_weights", args);
+            PyInstance.set_weights(weights.ToArray());
         }
 
         /// <summary>
@@ -283,7 +321,7 @@ namespace Keras.Models
         /// <param name="path">The path of of the weight file.</param>
         public void LoadWeight(string path)
         {
-            __self__.load_weights(path);
+            PyInstance.load_weights(path);
         }
 
         /// <summary>
@@ -294,7 +332,7 @@ namespace Keras.Models
         public static BaseModel LoadModel(string path)
         {
             var model = new BaseModel();
-            model.__self__ = Instance.keras.models.load_model(path);
+            model.PyInstance = Instance.keras.models.load_model(path);
 
             return model;
         }
@@ -307,7 +345,7 @@ namespace Keras.Models
         public static BaseModel ModelFromJson(string json_string)
         {
             var model = new BaseModel();
-            model.__self__ = Instance.keras.models.model_from_json(json_string: json_string);
+            model.PyInstance = Instance.keras.models.model_from_json(json_string: json_string);
 
             return model;
         }
@@ -320,7 +358,7 @@ namespace Keras.Models
         public static BaseModel ModelFromYaml(string json_string)
         {
             var model = new BaseModel();
-            model.__self__ = Instance.keras.models.model_from_yaml(json_string: json_string);
+            model.PyInstance = Instance.keras.models.model_from_yaml(json_string: json_string);
 
             return model;
         }
@@ -331,7 +369,7 @@ namespace Keras.Models
         /// <param name="filePath">The file path.</param>
         public void SaveOnnx(string filePath)
         {
-            var onnx_model = Instance.keras2onnx.convert_keras(model: (PyObject)this.__self__);
+            var onnx_model = Instance.keras2onnx.convert_keras(model: (PyObject)this.PyInstance);
             File.WriteAllText(filePath, onnx_model.ToString());
         }
 
@@ -342,7 +380,7 @@ namespace Keras.Models
         /// <param name="positions">The positions.</param>
         public void Summary(int? line_length = null, float[] positions = null)
         {
-            __self__.summary(line_length: line_length, positions: positions);
+            PyInstance.summary(line_length: line_length, positions: positions);
         }
 
         /// <summary>
@@ -352,7 +390,7 @@ namespace Keras.Models
         /// <param name="quantize">if set to <c>true</c> [quantize].</param>
         public void SaveTensorflowJSFormat(string artifacts_dir, bool quantize = false)
         {
-            Instance.tfjs.converters.save_keras_model(model: this.__self__, artifacts_dir: artifacts_dir);
+            Instance.tfjs.converters.save_keras_model(model: this.PyInstance, artifacts_dir: artifacts_dir);
         }
     }
 }

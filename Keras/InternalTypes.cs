@@ -45,7 +45,7 @@ namespace Keras
         /// </returns>
         public static implicit operator StringOrInstance(Base opt)
         {
-            return new StringOrInstance(opt.ToPython());
+            return new StringOrInstance(opt.PyInstance);
         }
     }
 

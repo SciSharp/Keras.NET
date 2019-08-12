@@ -25,7 +25,8 @@
         /// <param name="obj">The object.</param>
         internal Model(PyObject obj)
         {
-            __self__ = obj;
+            PyInstance = obj;
+            Init();
         }
 
         /// <summary>
@@ -35,20 +36,21 @@
         /// <param name="outputs">The outputs layers.</param>
         public Model(BaseLayer[] inputs, BaseLayer[] outputs)
         {
-            List<object> inputList = new List<object>();
-            List<object> outputList = new List<object>();
+            List<PyObject> inputList = new List<PyObject>();
+            List<PyObject> outputList = new List<PyObject>();
 
             foreach (var item in inputs)
             {
-                inputList.Add(item.ToPython());
+                inputList.Add(item.PyInstance);
             }
 
             foreach (var item in outputs)
             {
-                outputList.Add(item.ToPython());
+                outputList.Add(item.PyInstance);
             }
 
-            __self__ = Instance.keras.models.Model(inputs: inputs, outputs: outputs);
+            PyInstance = Instance.keras.models.Model(inputs[0], outputs);
+            Init();
         }
     }
 }

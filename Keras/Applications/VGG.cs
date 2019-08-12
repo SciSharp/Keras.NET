@@ -46,7 +46,7 @@ namespace Keras.Applications.VGG
             Parameters["pooling"] = pooling;
             Parameters["classes"] = classes;
 
-            __self__ = caller.VGG16;
+            PyInstance = caller.VGG16;
             Init();
         }
     }
@@ -90,7 +90,7 @@ namespace Keras.Applications.VGG
             Parameters["pooling"] = pooling;
             Parameters["classes"] = classes;
 
-            __self__ = caller.VGG19;
+            PyInstance = caller.VGG19;
             Init();
         }
     }

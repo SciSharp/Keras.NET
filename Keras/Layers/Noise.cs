@@ -21,7 +21,8 @@ namespace Keras.Layers
         public GaussianNoise(float stddev)
         {
             Parameters["stddev"] = stddev;
-            __self__ = Instance.keras.layers.GaussianNoise;
+            PyInstance = Instance.keras.layers.GaussianNoise;
+            Init();
         }
     }
 
@@ -39,7 +40,8 @@ namespace Keras.Layers
         public GaussianDropout(float rate)
         {
             Parameters["rate"] = rate;
-            __self__ = Instance.keras.layers.GaussianDropout;
+            PyInstance = Instance.keras.layers.GaussianDropout;
+            Init();
         }
     }
 
@@ -62,7 +64,8 @@ namespace Keras.Layers
             Parameters["rate"] = rate;
             Parameters["noise_shape"] = noise_shape;
             Parameters["seed"] = seed;
-            __self__ = Instance.keras.layers.AlphaDropout;
+            PyInstance = Instance.keras.layers.AlphaDropout;
+            Init();
         }
     }
 }

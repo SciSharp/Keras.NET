@@ -1,4 +1,6 @@
 ﻿using Keras;
+using Keras.Models;
+using Keras.PreProcessing.Image;
 using System;
 
 namespace BasicSamples
@@ -9,6 +11,8 @@ namespace BasicSamples
         {
             //Run to setup keras and backend.
             //Setup.Run(SetupBackend.TensorflowGPU);
+
+            //MergeExample.Run();
             Console.WriteLine("Running XOR");
             XOR.Run();
 

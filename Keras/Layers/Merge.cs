@@ -8,12 +8,7 @@ namespace Keras.Layers
 {
     public class Merge: BaseLayer
     {
-        internal PyObject merged = null;
-
-        public override PyObject ToPython()
-        {
-            return merged;
-        }
+        
     }
 
     public class Add : Merge
@@ -21,7 +16,16 @@ namespace Keras.Layers
         public Add(params BaseLayer[] inputs)
         {
             //Parameters["inputs"] = inputs;
-            merged = Instance.keras.layers.add(inputs: inputs.Select(x=>(x.ToPython())).ToArray());
+            PyInstance = Instance.keras.layers.add(inputs: inputs.Select(x=>(x.PyInstance)).ToArray());
+        }
+    }
+
+    public class Concatenate : Merge
+    {
+        public Concatenate(params BaseLayer[] inputs)
+        {
+            //Parameters["inputs"] = inputs;
+            PyInstance = Instance.keras.layers.concatenate(inputs.Select(x => (x.PyInstance)).ToArray());
         }
     }
 }

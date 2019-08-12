@@ -18,9 +18,14 @@
     <RootNamespace>Keras</RootNamespace>
     <Configurations>Debug;Release;Py3.6_WIN;Py2.7_WIN;Py3.6_OSX;Py2.7_Mono;Py3.6_Mono;Py2.7_OSX</Configurations>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Optimize>true</Optimize>
   </PropertyGroup>
 
@@ -36,7 +41,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Numpy.Bare" Version="3.6.1.6"></PackageReference>
+    <PackageReference Include="Numpy.Bare" Version="3.6.1.1"></PackageReference>
   </ItemGroup>
 
 </Project>

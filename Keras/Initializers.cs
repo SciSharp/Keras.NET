@@ -11,7 +11,8 @@
         /// </summary>
         public Zeros()
         {
-            __self__ = Instance.keras.initializers.Zeros;
+            PyInstance = Instance.keras.initializers.Zeros;
+            Init();
         }
     }
 
@@ -26,7 +27,8 @@
         /// </summary>
         public Ones()
         {
-            __self__ = Instance.keras.initializers.Zeros;
+            PyInstance = Instance.keras.initializers.Zeros;
+            Init();
         }
     }
 
@@ -43,7 +45,8 @@
         public Constant(float value = 0)
         {
             Parameters["value"] = value;
-            __self__ = Instance.keras.initializers.Constant;
+            PyInstance = Instance.keras.initializers.Constant;
+            Init();
         }
     }
 
@@ -64,7 +67,8 @@
             Parameters["mean"] = mean;
             Parameters["stddev"] = stddev;
             Parameters["seed"] = seed;
-            __self__ = Instance.keras.initializers.RandomNormal;
+            PyInstance = Instance.keras.initializers.RandomNormal;
+            Init();
         }
     }
 
@@ -85,7 +89,8 @@
             Parameters["minval"] = minval;
             Parameters["maxval"] = maxval;
             Parameters["seed"] = seed;
-            __self__ = Instance.keras.initializers.RandomUniform;
+            PyInstance = Instance.keras.initializers.RandomUniform;
+            Init();
         }
     }
 
@@ -107,7 +112,8 @@
             Parameters["mean"] = mean;
             Parameters["stddev"] = stddev;
             Parameters["seed"] = seed;
-            __self__ = Instance.keras.initializers.TruncatedNormal;
+            PyInstance = Instance.keras.initializers.TruncatedNormal;
+            Init();
         }
     }
 
@@ -135,7 +141,8 @@
             Parameters["mode"] = mode;
             Parameters["distribution"] = distribution;
             Parameters["seed"] = seed;
-            __self__ = Instance.keras.initializers.VarianceScaling;
+            PyInstance = Instance.keras.initializers.VarianceScaling;
+            Init();
         }
     }
 
@@ -154,7 +161,8 @@
         {
             Parameters["gain"] = gain;
             Parameters["seed"] = seed;
-            __self__ = Instance.keras.initializers.Orthogonal;
+            PyInstance = Instance.keras.initializers.Orthogonal;
+            Init();
         }
     }
 
@@ -172,7 +180,8 @@
         public Identity(float gain = 1.0f)
         {
             Parameters["gain"] = gain;
-            __self__ = Instance.keras.initializers.Identity;
+            PyInstance = Instance.keras.initializers.Identity;
+            Init();
         }
     }
 
@@ -189,7 +198,8 @@
         public LecunUniform(int? seed = null)
         {
             Parameters["seed"] = seed;
-            __self__ = Instance.keras.initializers.lecun_uniform;
+            PyInstance = Instance.keras.initializers.lecun_uniform;
+            Init();
         }
     }
 
@@ -207,7 +217,8 @@
         public GlorotNormal(int? seed = null)
         {
             Parameters["seed"] = seed;
-            __self__ = Instance.keras.initializers.glorot_normal;
+            PyInstance = Instance.keras.initializers.glorot_normal;
+            Init();
         }
     }
 
@@ -225,7 +236,8 @@
         public GlorotUniform(int? seed = null)
         {
             Parameters["seed"] = seed;
-            __self__ = Instance.keras.initializers.glorot_uniform;
+            PyInstance = Instance.keras.initializers.glorot_uniform;
+            Init();
         }
     }
 
@@ -243,7 +255,8 @@
         public HeUniform(int? seed = null)
         {
             Parameters["seed"] = seed;
-            __self__ = Instance.keras.initializers.he_uniform;
+            PyInstance = Instance.keras.initializers.he_uniform;
+            Init();
         }
     }
 
@@ -261,7 +274,8 @@
         public HeNormal(int? seed = null)
         {
             Parameters["seed"] = seed;
-            __self__ = Instance.keras.initializers.he_normal;
+            PyInstance = Instance.keras.initializers.he_normal;
+            Init();
         }
     }
 
@@ -279,7 +293,8 @@
         public LecunNormal(int? seed = null)
         {
             Parameters["seed"] = seed;
-            __self__ = Instance.keras.initializers.lecun_normal;
+            PyInstance = Instance.keras.initializers.lecun_normal;
+            Init();
         }
     }
 }

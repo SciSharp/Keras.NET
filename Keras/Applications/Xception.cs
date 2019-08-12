@@ -47,7 +47,7 @@ namespace Keras.Applications
             Parameters["pooling"] = pooling;
             Parameters["classes"] = classes;
 
-            __self__ = caller.Xception;
+            PyInstance = caller.Xception;
             Init();
         }
     }

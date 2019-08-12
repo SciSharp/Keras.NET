@@ -8,17 +8,17 @@ namespace Keras
 {
     public abstract class Base : Keras
     {
-        internal dynamic __self__;
+        internal dynamic PyInstance;
         public Dictionary<string, object> Parameters = new Dictionary<string, object>();
 
         public object None = null;
 
         public void Init()
         {
-            __self__ = ToPython();
+            PyInstance = Instantiate();
         }
 
-        public virtual PyObject ToPython()
+        public virtual PyObject Instantiate()
         {
             var pyargs = ToTuple(new object[]
             {
@@ -43,9 +43,14 @@ namespace Keras
             }
 
             if (Parameters.Count > 0)
-                return __self__.Invoke(pyargs, kwargs);
+                return PyInstance.Invoke(pyargs, kwargs);
             else
-                return __self__.Invoke(null, null);
+                return PyInstance.Invoke(null, null);
+        }
+
+        public virtual PyObject ToPython()
+        {
+            return PyInstance;
         }
 
         //public static PyObject InvokeStaticMethod(dynamic caller, string method, params object[] parameters)
@@ -113,9 +118,9 @@ namespace Keras
             }
 
             if (args.Count > 0)
-                return __self__.InvokeMethod(method, pyargs, kwargs);
+                return PyInstance.InvokeMethod(method, pyargs, kwargs);
             else
-                return __self__.InvokeMethod(method, null, null);
+                return PyInstance.InvokeMethod(method, null, null);
         }
 
         public object this[string name]

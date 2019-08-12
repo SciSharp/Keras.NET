@@ -47,7 +47,7 @@ namespace Keras.Applications.Inception
             Parameters["input_shape"] = input_shape;
             Parameters["pooling"] = pooling;
             Parameters["classes"] = classes;
-            __self__ = caller.InceptionResNetV2;
+            PyInstance = caller.InceptionResNetV2;
             Init();
         }
     }
@@ -90,7 +90,7 @@ namespace Keras.Applications.Inception
             Parameters["input_shape"] = input_shape;
             Parameters["pooling"] = pooling;
             Parameters["classes"] = classes;
-            __self__ = caller.InceptionV3;
+            PyInstance = caller.InceptionV3;
             Init();
         }
     }

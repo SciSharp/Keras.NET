@@ -29,7 +29,8 @@
             this["sparse"] = sparse;
             this["tensor"] = tensor;
 
-            __self__ = Instance.keras.layers.Input;
+            PyInstance = Instance.keras.layers.Input;
+            Init();
         }
     }
 
@@ -71,7 +72,8 @@
             this["kernel_constraint"] = kernel_constraint;
             this["bias_constraint"] = bias_constraint;
             Parameters["input_shape"] = input_shape;
-            __self__ = Instance.keras.layers.Dense;
+            PyInstance = Instance.keras.layers.Dense;
+            Init();
         }
 
     }
@@ -91,7 +93,8 @@
         {
             Parameters["activation"] = act;
             Parameters["input_shape"] = input_shape;
-            __self__ = Instance.keras.layers.Activation;
+            PyInstance = Instance.keras.layers.Activation;
+            Init();
         }
     }
 
@@ -113,7 +116,8 @@
             Parameters["rate"] = rate;
             Parameters["noise_shape"] = noise_shape;
             Parameters["seed"] = seed;
-            __self__ = Instance.keras.layers.Dropout;
+            PyInstance = Instance.keras.layers.Dropout;
+            Init();
         }
     }
 
@@ -130,7 +134,8 @@
         public Flatten(string data_format = "channels_last")
         {
             Parameters["data_format"] = data_format;
-            __self__ = Instance.keras.layers.Flatten;
+            PyInstance = Instance.keras.layers.Flatten;
+            Init();
         }
     }
 
@@ -149,7 +154,8 @@
         {
             Parameters["target_shape"] = target_shape;
             Parameters["input_shape"] = input_shape;
-            __self__ = Instance.keras.layers.Reshape;
+            PyInstance = Instance.keras.layers.Reshape;
+            Init();
         }
     }
 
@@ -168,7 +174,8 @@
         {
             Parameters["dims"] = dims;
             Parameters["input_shape"] = input_shape;
-            __self__ = Instance.keras.layers.Permute;
+            PyInstance = Instance.keras.layers.Permute;
+            Init();
         }
     }
 
@@ -187,7 +194,8 @@
         {
             Parameters["n"] = n;
             Parameters["input_shape"] = input_shape;
-            __self__ = Instance.keras.layers.RepeatVector;
+            PyInstance = Instance.keras.layers.RepeatVector;
+            Init();
         }
     }
 
@@ -213,7 +221,8 @@
             Parameters["arguments"] = arguments;
             Parameters["input_shape"] = input_shape;
 
-            __self__ = Instance.keras.layers.Lambda;
+            PyInstance = Instance.keras.layers.Lambda;
+            Init();
         }
     }
 
@@ -234,7 +243,8 @@
             Parameters["l1"] = l1;
             Parameters["l2"] = l2;
             Parameters["input_shape"] = input_shape;
-            __self__ = Instance.keras.layers.ActivityRegularization;
+            PyInstance = Instance.keras.layers.ActivityRegularization;
+            Init();
         }
     }
 
@@ -253,7 +263,8 @@
         public Masking(float mask_value = 0.0f)
         {
             Parameters["mask_value"] = mask_value;
-            __self__ = Instance.keras.layers.Masking;
+            PyInstance = Instance.keras.layers.Masking;
+            Init();
         }
     }
 
@@ -273,7 +284,8 @@
         {
             Parameters["rate"] = rate;
             Parameters["input_shape"] = input_shape;
-            __self__ = Instance.keras.layers.SpatialDropout1D;
+            PyInstance = Instance.keras.layers.SpatialDropout1D;
+            Init();
         }
     }
 
@@ -295,7 +307,8 @@
             Parameters["rate"] = rate;
             Parameters["input_shape"] = data_format;
             Parameters["input_shape"] = input_shape;
-            __self__ = Instance.keras.layers.SpatialDropout2D;
+            PyInstance = Instance.keras.layers.SpatialDropout2D;
+            Init();
         }
     }
 
@@ -317,7 +330,8 @@
             Parameters["rate"] = rate;
             Parameters["input_shape"] = data_format;
             Parameters["input_shape"] = input_shape;
-            __self__ = Instance.keras.layers.SpatialDropout3D;
+            PyInstance = Instance.keras.layers.SpatialDropout3D;
+            Init();
         }
     }
 }

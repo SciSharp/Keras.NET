@@ -47,13 +47,14 @@ namespace Keras.Layers
         /// <param name="input_shape">3D tensor with shape (batch_size, timesteps, input_dim).</param>
         public RNN(RNN cell, bool return_sequences = false, bool return_state = false, bool go_backwards = false, bool stateful = false, bool unroll = false, int? input_dim = null, int? input_length = null, Shape input_shape = null)
         {
-            Parameters["cell"] = cell.ToPython();
+            Parameters["cell"] = cell.PyInstance;
             Parameters["return_sequences"] = return_sequences;
             Parameters["return_state"] = return_state;
             Parameters["go_backwards"] = go_backwards;
             Parameters["stateful"] = stateful;
             Parameters["unroll"] = unroll;
-            __self__ = Instance.keras.layers.RNN;
+            PyInstance = Instance.keras.layers.RNN;
+            Init();
         }
     }
 
@@ -111,7 +112,8 @@ namespace Keras.Layers
             Parameters["go_backwards"] = go_backwards;
             Parameters["stateful"] = stateful;
             Parameters["unroll"] = unroll;
-            __self__ = Instance.keras.layers.SimpleRNN;
+            PyInstance = Instance.keras.layers.SimpleRNN;
+            Init();
         }
     }
 
@@ -159,7 +161,8 @@ namespace Keras.Layers
             Parameters["bias_constraint"] = bias_constraint;
             Parameters["dropout"] = dropout;
             Parameters["recurrent_dropout"] = recurrent_dropout;
-            __self__ = Instance.keras.layers.SimpleRNNCell;
+            PyInstance = Instance.keras.layers.SimpleRNNCell;
+            Init();
         }
     }
 
@@ -225,7 +228,8 @@ namespace Keras.Layers
             Parameters["stateful"] = stateful;
             Parameters["unroll"] = unroll;
             Parameters["reset_after"] = reset_after;
-            __self__ = Instance.keras.layers.GRU;
+            PyInstance = Instance.keras.layers.GRU;
+            Init();
         }
     }
 
@@ -270,7 +274,8 @@ namespace Keras.Layers
             Parameters["return_sequences"] = return_sequences;
             Parameters["return_state"] = return_state;
             Parameters["stateful"] = stateful;
-            __self__ = Instance.keras.layers.CuDNNGRU;
+            PyInstance = Instance.keras.layers.CuDNNGRU;
+            Init();
         }
     }
 
@@ -324,7 +329,8 @@ namespace Keras.Layers
             Parameters["recurrent_dropout"] = recurrent_dropout;
             Parameters["implementation"] = implementation;
             Parameters["reset_after"] = reset_after;
-            __self__ = Instance.keras.layers.GRUCell;
+            PyInstance = Instance.keras.layers.GRUCell;
+            Init();
         }
     }
 
@@ -388,7 +394,8 @@ namespace Keras.Layers
             Parameters["go_backwards"] = go_backwards;
             Parameters["stateful"] = stateful;
             Parameters["unroll"] = unroll;
-            __self__ = Instance.keras.layers.LSTM;
+            PyInstance = Instance.keras.layers.LSTM;
+            Init();
         }
     }
 
@@ -431,7 +438,8 @@ namespace Keras.Layers
             Parameters["return_sequences"] = return_sequences;
             Parameters["return_state"] = return_state;
             Parameters["stateful"] = stateful;
-            __self__ = Instance.keras.layers.CuDNNLSTM;
+            PyInstance = Instance.keras.layers.CuDNNLSTM;
+            Init();
         }
     }
 
@@ -485,7 +493,8 @@ namespace Keras.Layers
             Parameters["dropout"] = dropout;
             Parameters["recurrent_dropout"] = recurrent_dropout;
             Parameters["implementation"] = implementation;
-            __self__ = Instance.keras.layers.LSTMCell;
+            PyInstance = Instance.keras.layers.LSTMCell;
+            Init();
         }
     }
 
@@ -559,7 +568,8 @@ namespace Keras.Layers
             Parameters["recurrent_dropout"] = recurrent_dropout;
             Parameters["input_shape"] = input_shape;
 
-            __self__ = Instance.keras.layers.ConvLSTM2D;
+            PyInstance = Instance.keras.layers.ConvLSTM2D;
+            Init();
         }
     }
 
@@ -627,7 +637,8 @@ namespace Keras.Layers
             Parameters["recurrent_dropout"] = recurrent_dropout;
             Parameters["input_shape"] = input_shape;
 
-            __self__ = Instance.keras.layers.ConvLSTM2DCell;
+            PyInstance = Instance.keras.layers.ConvLSTM2DCell;
+            Init();
         }
     }
 }

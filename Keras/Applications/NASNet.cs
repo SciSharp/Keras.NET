@@ -45,7 +45,7 @@ namespace Keras.Applications.NASNet
             Parameters["pooling"] = pooling;
             Parameters["classes"] = classes;
 
-            __self__ = caller.NASNetLarge;
+            PyInstance = caller.NASNetLarge;
             Init();
         }
     }
@@ -88,7 +88,7 @@ namespace Keras.Applications.NASNet
             Parameters["pooling"] = pooling;
             Parameters["classes"] = classes;
 
-            __self__ = caller.NASNetMobile;
+            PyInstance = caller.NASNetMobile;
             Init();
         }
     }

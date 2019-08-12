@@ -17,7 +17,7 @@ namespace Keras.Models
         /// </summary>
         internal Sequential(PyObject obj)
         {
-            __self__ = obj;
+            PyInstance = obj;
         }
 
         /// <summary>
@@ -25,7 +25,8 @@ namespace Keras.Models
         /// </summary>
         public Sequential()
         {
-            __self__ = Instance.keras.models.Sequential();
+            PyInstance = Instance.keras.models.Sequential();
+            //Init();
         }
 
         /// <summary>
@@ -36,7 +37,7 @@ namespace Keras.Models
         {
             foreach (var item in layers)
             {
-                Add(item);
+                Add(item.PyInstance);
             }
         }
 
@@ -46,7 +47,7 @@ namespace Keras.Models
         /// <param name="layer">The layer.</param>
         public void Add(BaseLayer layer)
         {
-            __self__.add(layer: layer.ToPython());
+            PyInstance.add(layer: layer.PyInstance);
         }
     }
 }

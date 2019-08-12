@@ -21,9 +21,10 @@ namespace Keras.Layers
         /// <param name="layer">The layer instance.</param>
         public TimeDistributed(BaseLayer layer)
         {
-            Parameters["layer"] = layer.ToPython();
+            Parameters["layer"] = layer.PyInstance;
 
-            __self__ = Instance.keras.layers.TimeDistributed;
+            PyInstance = Instance.keras.layers.TimeDistributed;
+            Init();
         }
     }
 
@@ -41,9 +42,10 @@ namespace Keras.Layers
         /// <param name="weights">Initial weights to load in the Bidirectional model.</param>
         public Bidirectional(BaseLayer layer, string merge_mode= "concat", NDarray weights= null)
         {
-            Parameters["layer"] = layer.ToPython();
+            Parameters["layer"] = layer.PyInstance;
 
-            __self__ = Instance.keras.layers.Bidirectional;
+            PyInstance = Instance.keras.layers.Bidirectional;
+            Init();
         }
     }
 }

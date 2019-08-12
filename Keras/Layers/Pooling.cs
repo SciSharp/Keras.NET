@@ -21,7 +21,8 @@
             Parameters["strides"] = strides;
             Parameters["padding"] = padding;
             Parameters["data_format"] = data_format;
-            __self__ = Instance.keras.layers.MaxPooling1D;
+            PyInstance = Instance.keras.layers.MaxPooling1D;
+            Init();
         }
     }
 
@@ -47,7 +48,8 @@
 
             Parameters["padding"] = padding;
             Parameters["data_format"] = data_format;
-            __self__ = Instance.keras.layers.MaxPooling2D;
+            PyInstance = Instance.keras.layers.MaxPooling2D;
+            Init();
         }
     }
 
@@ -72,7 +74,8 @@
 
             Parameters["padding"] = padding;
             Parameters["data_format"] = data_format;
-            __self__ = Instance.keras.layers.MaxPooling3D;
+            PyInstance = Instance.keras.layers.MaxPooling3D;
+            Init();
         }
     }
 
@@ -95,7 +98,8 @@
             Parameters["strides"] = strides;
             Parameters["padding"] = padding;
             Parameters["data_format"] = data_format;
-            __self__ = Instance.keras.layers.AveragePooling1D;
+            PyInstance = Instance.keras.layers.AveragePooling1D;
+            Init();
         }
     }
 
@@ -120,7 +124,8 @@
 
             Parameters["padding"] = padding;
             Parameters["data_format"] = data_format;
-            __self__ = Instance.keras.layers.AveragePooling2D;
+            PyInstance = Instance.keras.layers.AveragePooling2D;
+            Init();
         }
     }
 
@@ -145,7 +150,8 @@
 
             Parameters["padding"] = padding;
             Parameters["data_format"] = data_format;
-            __self__ = Instance.keras.layers.AveragePooling3D;
+            PyInstance = Instance.keras.layers.AveragePooling3D;
+            Init();
         }
     }
 
@@ -162,7 +168,8 @@
         public GlobalMaxPooling1D(string data_format = "channels_last")
         {
             Parameters["data_format"] = data_format;
-            __self__ = Instance.keras.layers.GlobalMaxPooling1D;
+            PyInstance = Instance.keras.layers.GlobalMaxPooling1D;
+            Init();
         }
     }
 
@@ -179,7 +186,8 @@
         public GlobalAveragePooling1D(string data_format = "channels_last")
         {
             Parameters["data_format"] = data_format;
-            __self__ = Instance.keras.layers.GlobalAveragePooling1D;
+            PyInstance = Instance.keras.layers.GlobalAveragePooling1D;
+            Init();
         }
     }
 
@@ -196,7 +204,8 @@
         public GlobalMaxPooling2D(string data_format = "channels_last")
         {
             Parameters["data_format"] = data_format;
-            __self__ = Instance.keras.layers.GlobalMaxPooling2D;
+            PyInstance = Instance.keras.layers.GlobalMaxPooling2D;
+            Init();
         }
     }
 
@@ -213,7 +222,8 @@
         public GlobalAveragePooling2D(string data_format = "channels_last")
         {
             Parameters["data_format"] = data_format;
-            __self__ = Instance.keras.layers.GlobalAveragePooling2D;
+            PyInstance = Instance.keras.layers.GlobalAveragePooling2D;
+            Init();
         }
     }
 
@@ -230,7 +240,8 @@
         public GlobalMaxPooling3D(string data_format = "channels_last")
         {
             Parameters["data_format"] = data_format;
-            __self__ = Instance.keras.layers.GlobalMaxPooling3D;
+            PyInstance = Instance.keras.layers.GlobalMaxPooling3D;
+            Init();
         }
     }
 
@@ -247,7 +258,8 @@
         public GlobalAveragePooling3D(string data_format = "channels_last")
         {
             Parameters["data_format"] = data_format;
-            __self__ = Instance.keras.layers.GlobalAveragePooling3D;
+            PyInstance = Instance.keras.layers.GlobalAveragePooling3D;
+            Init();
         }
     }
 }

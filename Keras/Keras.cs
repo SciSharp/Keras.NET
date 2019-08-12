@@ -88,10 +88,10 @@ namespace Keras
                 case Slice o: return o.ToPython();
                 case PythonObject o: return o.PyObject;
                 case PyObject o: return o;
-                case Sequence o: return o.ToPython();
+                case Sequence o: return o.PyInstance;
                 case StringOrInstance o: return o.PyObject;
                 case KerasFunction o: return o.PyObject;
-                case Base o: return o.ToPython();
+                case Base o: return o.PyInstance;
                 default: throw new NotImplementedException($"Type is not yet supported: { obj.GetType().Name}. Add it to 'ToPythonConversions'");
             }
         }

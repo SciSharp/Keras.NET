@@ -32,7 +32,8 @@
             Parameters["input_length"] = input_length;
             Parameters["input_shape"] = input_shape;
 
-            __self__ = Instance.keras.layers.Embedding;
+            PyInstance = Instance.keras.layers.Embedding;
+            Init();
         }
     }
 }

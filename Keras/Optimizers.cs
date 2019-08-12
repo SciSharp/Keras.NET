@@ -24,7 +24,8 @@ namespace Keras.Optimizers
             Parameters["decay"] = decay;
             Parameters["nesterov"] = nesterov;
 
-            __self__ = Instance.keras.optimizers.SGD;
+            PyInstance = Instance.keras.optimizers.SGD;
+            Init();
         }
     }
 
@@ -49,7 +50,8 @@ namespace Keras.Optimizers
             Parameters["epsilon"] = epsilon;
             Parameters["decay"] = decay;
 
-            __self__ = Instance.keras.optimizers.RMSprop;
+            PyInstance = Instance.keras.optimizers.RMSprop;
+            Init();
         }
     }
 
@@ -71,7 +73,8 @@ namespace Keras.Optimizers
             Parameters["epsilon"] = epsilon;
             Parameters["decay"] = lr;
 
-            __self__ = Instance.keras.optimizers.Adagrad;
+            PyInstance = Instance.keras.optimizers.Adagrad;
+            Init();
         }
     }
 
@@ -95,7 +98,8 @@ namespace Keras.Optimizers
             Parameters["epsilon"] = epsilon;
             Parameters["decay"] = decay;
 
-            __self__ = Instance.keras.optimizers.Adadelta;
+            PyInstance = Instance.keras.optimizers.Adadelta;
+            Init();
         }
     }
 
@@ -123,7 +127,8 @@ namespace Keras.Optimizers
             Parameters["decay"] = decay;
             Parameters["amsgrad"] = amsgrad;
 
-            __self__ = Instance.keras.optimizers.Adam;
+            PyInstance = Instance.keras.optimizers.Adam;
+            Init();
         }
     }
 
@@ -149,7 +154,8 @@ namespace Keras.Optimizers
             Parameters["epsilon"] = epsilon;
             Parameters["decay"] = decay;
 
-            __self__ = Instance.keras.optimizers.Adamax;
+            PyInstance = Instance.keras.optimizers.Adamax;
+            Init();
         }
     }
 
@@ -176,7 +182,8 @@ namespace Keras.Optimizers
             Parameters["epsilon"] = epsilon;
             Parameters["schedule_decay"] = schedule_decay;
 
-            __self__ = Instance.keras.optimizers.Adamax;
+            PyInstance = Instance.keras.optimizers.Adamax;
+            Init();
         }
     }
 }

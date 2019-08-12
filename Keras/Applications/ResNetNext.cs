@@ -44,7 +44,7 @@ namespace Keras.Applications.ResNext
             Parameters["pooling"] = pooling;
             Parameters["classes"] = classes;
 
-            __self__ = caller.ResNeXt50;
+            PyInstance = caller.ResNeXt50;
             Init();
         }
     }
@@ -86,7 +86,7 @@ namespace Keras.Applications.ResNext
             Parameters["pooling"] = pooling;
             Parameters["classes"] = classes;
 
-            __self__ = caller.ResNeXt101;
+            PyInstance = caller.ResNeXt101;
             Init();
         }
     }
