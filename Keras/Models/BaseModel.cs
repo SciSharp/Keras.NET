@@ -286,11 +286,11 @@ namespace Keras.Models
             var args = new Dictionary<string, object>();
             var pyWeights = PyInstance.get_weights();
             List<NDarray> weights = new List<NDarray>();
-            //PyList pyWeights = (PyList)InvokeMethod("get_weights", args);
 
             foreach (PyObject weightsArray in pyWeights)
             {
-                weights.Add(new NDarray(weightsArray));
+                var n = np.array(new NDarray(weightsArray));
+                weights.Add(n);
             }
 
             return weights;
@@ -302,17 +302,13 @@ namespace Keras.Models
         /// <param name="weights">A list of Numpy arrays with shapes and types matching the output of model.GetWeights()</param>
         public void SetWeights(List<NDarray> weights)
         {
-            //PyList pyWeights = new PyList();
-            //foreach (NDarray weightsArray in weights)
-            //{
-            //    pyWeights.Append(weightsArray.ToPython());
-            //}
+            PyList list = new PyList();
+            foreach (var item in weights)
+            {
+                list.Append(item.PyObject);
+            }
 
-            //var args = new Dictionary<string, object>();
-            //args["weights"] = pyWeights;
-
-            //InvokeMethod("set_weights", args);
-            PyInstance.set_weights(weights.ToArray());
+            PyInstance.set_weights(list);
         }
 
         /// <summary>
