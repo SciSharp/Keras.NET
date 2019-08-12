@@ -25,7 +25,7 @@ namespace BasicSamples
             model.Add(new Dense(1, activation: "sigmoid"));
 
             //Compile and train
-            model.Compile(optimizer: new Adam(), loss:"binary_crossentropy", metrics: new string[] { "accuracy" });
+            model.Compile(optimizer: new Adam(), loss: "binary_crossentropy", metrics: new string[] { "accuracy" });
             var history = model.Fit(x, y, batch_size: 2, epochs: 10, verbose: 1);
             var weights = model.GetWeights();
             model.SetWeights(weights);
