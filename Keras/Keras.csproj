@@ -41,7 +41,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Numpy.Bare" Version="3.6.1.1"></PackageReference>
+    <PackageReference Include="Numpy.Bare" Version="3.6.1.9"></PackageReference>
   </ItemGroup>
 
 </Project>
