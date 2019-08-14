@@ -27,6 +27,25 @@
         }
 
         /// <summary>
+        /// Replicates a model on different GPUs.    Specifically, this function implements single-machine multi-GPU data parallelism.It works in the following way:
+        ///  Divide the model's input(s) into multiple sub-batches. Apply a model copy on each sub-batch.Every model copy is executed on a dedicated GPU.
+        /// Concatenate the results(on CPU) into one big batch.
+        ///E.g. if your batch_size is 64 and you use gpus = 2, then we will divide the input into 2 sub-batches of 32 samples, process each sub-batch on one GPU, then return the full batch of 64 processed samples.
+        ///This induces quasi-linear speedup on up to 8 GPUs. This function is only available with the TensorFlow backend for the time being.
+        /// </summary>
+        /// <param name="model">A Keras model instance. To avoid OOM errors, this model could have been built on CPU, for instance.</param>
+        /// <param name="gpus"> Integer >= 2 or list of integers, number of GPUs or list of GPU IDs on which to create model replicas.</param>
+        /// <param name="cpu_merge"> Integer >= 2 or list of integers, number of GPUs or list of GPU IDs on which to create model replicas.</param>
+        /// <param name="cpu_relocation">A boolean value to identify whether to create the model's weights under the scope of the CPU. If the model is not defined under any preceding device scope, you can still rescue it by activating this option.</param>
+        /// <returns>A Keras Model instance which can be used just like the initial model argument, but which distributes its workload on multiple GPUs.</returns>
+        public static BaseModel MultiGPUModel(BaseModel model, int gpus, bool cpu_merge = true, bool cpu_relocation = false)
+        {
+            BaseModel result = new BaseModel();
+            result.PyInstance = (PyObject)Instance.keras.utils.multi_gpu_model(model: model.PyInstance, gpus: gpus, cpu_merge: cpu_merge, cpu_relocation: cpu_relocation);
+            return result;
+        }
+
+        /// <summary>
         /// Converts a class vector (integers) to binary class matrix. E.g. for use with categorical_crossentropy.
         /// </summary>
         /// <param name="y">class vector to be converted into a matrix (integers from 0 to num_classes).</param>
