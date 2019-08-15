@@ -199,9 +199,8 @@ namespace Keras.Models
             return new NDarray(InvokeMethod("train_on_batch", args));
         }
 
-        //ToDo: Implement Generators
         public History FitGenerator(Sequence generator, int? steps_per_epoch = null, int epochs = 1, int verbose = 1, Callback[] callbacks = null,
-                    NDarray[] validation_data = null, int? validation_steps = null, int validation_freq = 1, Dictionary<int, float> class_weight = null,
+                    Sequence validation_data = null, int? validation_steps = null, int validation_freq = 1, Dictionary<int, float> class_weight = null,
                     int max_queue_size = 10, int workers = 1, bool use_multiprocessing = false, bool shuffle = true, int initial_epoch = 0)
         {
             var args = new Dictionary<string, object>();
@@ -211,15 +210,16 @@ namespace Keras.Models
             args["verbose"] = verbose;
             args["callbacks"] = callbacks;
             if (validation_data != null)
-            {
-                if (validation_data.Length == 2)
-                    args["validation_data"] = new NDarray[] { validation_data[0], validation_data[1] };
-                else if (validation_data.Length == 3)
-                    args["validation_data"] = new NDarray[] { validation_data[0], validation_data[1], validation_data[2] };
+            { 
+                args["validation_data"] = validation_data;
+                //if (validation_data.Length == 2)
+                //    args["validation_data"] = new NDarray[] { validation_data[0], validation_data[1] };
+                //else if (validation_data.Length == 3)
+                //    args["validation_data"] = new NDarray[] { validation_data[0], validation_data[1], validation_data[2] };
             }
 
             args["validation_steps"] = validation_steps;
-            args["validation_freq"] = validation_freq;
+            //args["validation_freq"] = validation_freq;
             args["class_weight"] = class_weight;
             args["max_queue_size"] = max_queue_size;
             args["workers"] = workers;

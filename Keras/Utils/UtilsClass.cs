@@ -94,7 +94,7 @@ namespace Keras.Utils
         public Sequence()
         {
             PyInstance = Instance.keras.utils.Sequence;
-            Init();
+            //Init();
         }
 
         private Sequence(PyObject py)
@@ -120,6 +120,14 @@ namespace Keras.Utils
         public static implicit operator Sequence(NDarray x)
         {
             return new Sequence(x.PyObject);
+        }
+
+        public static implicit operator Sequence(KerasIterator py)
+        {
+            var obj = new Sequence();
+            obj.PyInstance = py.PyObject;
+
+            return obj;
         }
     }
 }
