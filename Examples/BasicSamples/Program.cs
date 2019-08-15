@@ -13,11 +13,13 @@ namespace BasicSamples
             //Setup.Run(SetupBackend.TensorflowGPU);
 
             //MergeExample.Run();
+            ImplementCallback.Run();
+
             Console.WriteLine("Running XOR");
-            XOR.Run();
+            //XOR.Run();
 
             Console.WriteLine("Running PrimaIndiansDiabetics");
-            PrimaIndiansDiabetics.Run();
+            //PrimaIndiansDiabetics.Run();
 
             Console.ReadLine();
         }

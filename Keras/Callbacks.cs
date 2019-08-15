@@ -5,6 +5,7 @@ using System.Text;
 using System.Linq;
 using Python.Runtime;
 using Numpy;
+using System.IO;
 
 namespace Keras.Callbacks
 {
@@ -24,6 +25,34 @@ namespace Keras.Callbacks
         {
             PyInstance = Instance.keras.callbacks.Callback();
         }
+
+        public Callback(PyObject py)
+        {
+            PyInstance = py;
+        }
+
+        public static Callback Custom(string name, string fileOrcode, bool isFile = true)
+        {
+            string code = "";
+            if(isFile)
+            {
+                code = File.ReadAllText(fileOrcode);
+            }
+            else
+            {
+                code = fileOrcode;
+            }
+
+            PyObject py = PythonEngine.ModuleFromString(name, code);
+            py = py.InvokeMethod(name);
+            return new Callback(py);
+        }
+
+        public T Get<T>(string property)
+        {
+            return ((PyObject)PyInstance).GetAttr(property).As<T>();
+        }
+
     }
 
     /// <summary>

@@ -13,8 +13,8 @@ namespace ReleaseBot
 {
     class Program
     {
-        private const string V = "1.5"; // <--- Keras.net version!
-        private const string NumpyNetVersion = "1.6";
+        private const string V = "1.6"; // <--- Keras.net version!
+        private const string NumpyNetVersion = "1.9";
 
         private const string ProjectPath = "../../../Keras";
         private const string ProjectName = "Keras.csproj";
