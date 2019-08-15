@@ -27,14 +27,13 @@ namespace BasicSamples
             //Compile and train
             model.Compile(optimizer: new Adam(), loss: "binary_crossentropy", metrics: new string[] { "accuracy" });
             var history = model.Fit(x, y, batch_size: 2, epochs: 10, verbose: 1);
-            var weights = model.GetWeights();
-            model.SetWeights(weights);
+            //var weights = model.GetWeights();
+            //model.SetWeights(weights);
             var logs = history.HistoryLogs;
             //Save model and weights
             string json = model.ToJson();
             File.WriteAllText("model.json", json);
             model.SaveWeight("model.h5");
-
             //Load model and weight
             var loaded_model = Sequential.ModelFromJson(File.ReadAllText("model.json"));
             loaded_model.LoadWeight("model.h5");

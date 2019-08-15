@@ -287,9 +287,9 @@ namespace Keras.Models
         /// Save the model to h5 file
         /// </summary>
         /// <param name="path">The path with filename eg: model.h5.</param>
-        public void Save(string path)
+        public void Save(string filepath, bool overwrite = true, bool include_optimizer = true)
         {
-            PyInstance.save(path);
+            PyInstance.save(filepath: filepath, overwrite: overwrite, include_optimizer: include_optimizer);
         }
 
         /// <summary>
@@ -340,10 +340,20 @@ namespace Keras.Models
         /// </summary>
         /// <param name="path">The path.</param>
         /// <returns></returns>
-        public static BaseModel LoadModel(string path)
+        public static BaseModel LoadModel(string filepath, Dictionary<string, string> custom_objects = null, bool compile = true)
         {
             var model = new BaseModel();
-            model.PyInstance = Instance.keras.models.load_model(path);
+            PyDict dict = null;
+            if (custom_objects != null)
+            {
+                dict = new PyDict();
+                foreach (var item in custom_objects)
+                {
+                    dict[item.Key] = item.Value.ToPython();
+                }
+            }
+
+            model.PyInstance = Instance.keras.models.load_model(filepath: filepath, custom_objects: dict, compile: compile);
 
             return model;
         }
