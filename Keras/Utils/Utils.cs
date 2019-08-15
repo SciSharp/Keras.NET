@@ -86,5 +86,31 @@
             Instance.keras.utils.plot_model(model: model.PyInstance, to_file: to_file, show_shapes: show_shapes, show_layer_names: show_layer_names,
                 rankdir: rankdir, expand_nested: expand_nested, dpi: dpi);
         }
+        
+        /// <summary>
+        /// Set TensorFlow Backend Session configuration parameters
+        /// </summary>
+        /// <param name="intra_op_parallelism_threads">The execution of an individual op (for some op types) can be parallelized on a pool of intra_op_parallelism_threads. 0 means the system picks an appropriate number.</param>
+        /// <param name="inter_op_parallelism_threads">Nodes that perform blocking operations are enqueued on a pool of inter_op_parallelism_threads available in each process. 0 means the system picks an appropriate number.</param>
+        /// <param name="allow_soft_placement">Whether soft placement is allowed. If allow_soft_placement is true, an op will be placed on CPU if 1. there's no GPU implementation for the OP or 2. no GPU devices are known or registered or 3. need to co-locate with reftype input(s) which are from CPU.</param>
+        /// <param name="cpu_device_count">Maximum number of CPU devices of that type to use.</param>
+        /// <param name="gpu_device_count">Maximum number of GPU devices of that type to use.</param>
+        public static void ConfigTensorFlowBackend( int intra_op_parallelism_threads, int inter_op_parallelism_threads, bool allow_soft_placement, int cpu_device_count, int gpu_device_count )
+        {
+            dynamic tf = Py.Import( "tensorflow" );
+            dynamic kb = Py.Import( "keras.backend" );
+
+            PyDict deviceCount = new PyDict();
+            deviceCount["CPU"] = new PyInt( cpu_device_count );
+            deviceCount["GPU"] = new PyInt( gpu_device_count );
+            dynamic config = tf.ConfigProto(
+                intra_op_parallelism_threads: intra_op_parallelism_threads,
+                inter_op_parallelism_threads: inter_op_parallelism_threads,
+                allow_soft_placement: allow_soft_placement,
+                device_count: deviceCount
+            );
+            dynamic session = tf.Session( config: config );
+            kb.set_session( session );
+        }
     }
 }
