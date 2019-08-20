@@ -95,9 +95,9 @@ x_train = x_train.astype(np.float32);
 x_test = x_test.astype(np.float32);
 x_train /= 255;
 x_test /= 255;
-Console.WriteLine("x_train shape: " + x_train.shape);
-Console.WriteLine(x_train.shape[0] + " train samples");
-Console.WriteLine(x_test.shape[0] + " test samples");
+Console.WriteLine($"x_train shape: {x_train.shape}");
+Console.WriteLine($"{x_train.shape[0]} train samples");
+Console.WriteLine($"{x_test.shape[0]} test samples");
 
 // convert class vectors to binary class matrices
 y_train = Util.ToCategorical(y_train, num_classes);
@@ -125,8 +125,8 @@ model.Fit(x_train, y_train,
             verbose: 1,
             validation_data: new NDarray[] { x_test, y_test });
 var score = model.Evaluate(x_test, y_test, verbose: 0);
-Console.WriteLine("Test loss:", score[0]);
-Console.WriteLine("Test accuracy:", score[1]);
+Console.WriteLine($"Test loss: {score[0]}");
+Console.WriteLine($"Test accuracy: {score[1]}");
 ```
 
 **Output**
