@@ -78,7 +78,7 @@ Shape input_shape = null;
 // the data, split between train and test sets
 var ((x_train, y_train), (x_test, y_test)) = MNIST.LoadData();
 
-if(K.ImageDataFormat() == "channels_first")
+if(Backend.ImageDataFormat() == "channels_first")
 {
     x_train = x_train.reshape(x_train.shape[0], 1, img_rows, img_cols);
     x_test = x_test.reshape(x_test.shape[0], 1, img_rows, img_cols);
@@ -100,8 +100,8 @@ Console.WriteLine(x_train.shape[0] + " train samples");
 Console.WriteLine(x_test.shape[0] + " test samples");
 
 // convert class vectors to binary class matrices
-y_train = Utils.ToCategorical(y_train, num_classes);
-y_test = Utils.ToCategorical(y_test, num_classes);
+y_train = Util.ToCategorical(y_train, num_classes);
+y_test = Util.ToCategorical(y_test, num_classes);
 
 // Build CNN model
 var model = new Sequential();
