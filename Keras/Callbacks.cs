@@ -313,7 +313,7 @@ namespace Keras.Callbacks
             Parameters["embeddings_freq"] = embeddings_freq;
             Parameters["embeddings_layer_names"] = embeddings_layer_names;
             Parameters["embeddings_metadata"] = embeddings_metadata;
-            Parameters["embeddings_data"] = embeddings_data.PyObject;
+            Parameters["embeddings_data"] = embeddings_data?.PyObject;
             Parameters["update_freq"] = update_freq;
 
             PyInstance = Instance.keras.callbacks.TensorBoard;
