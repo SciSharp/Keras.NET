@@ -1,4 +1,6 @@
-﻿using Numpy;
+﻿using Keras.Utils;
+using Numpy;
+using Numpy.Models;
 using Python.Runtime;
 using System;
 using System.Collections.Generic;
@@ -29,6 +31,55 @@ namespace Keras.PreProcessing.Text
             Parameters["document_count"] = document_count;
 
             PyInstance = Instance.keras.preprocessing.text.Tokenizer;
+        }
+
+        public void FitOnTexts(string[] texts)
+        {
+            Dictionary<string, object> parameters = new Dictionary<string, object>();
+            parameters["texts"] = texts;
+
+            InvokeMethod("fit_on_texts", parameters);
+        }
+
+        public void FitOnSequences(Sequence[] sequences)
+        {
+            Dictionary<string, object> parameters = new Dictionary<string, object>();
+            parameters["sequences"] = sequences;
+
+            InvokeMethod("fit_on_sequences", parameters);
+        }
+
+        public Sequence[] TextsToSequences(string[] texts)
+        {
+            Dictionary<string, object> parameters = new Dictionary<string, object>();
+            parameters["texts"] = texts;
+
+            PyList pyList = new PyList(InvokeMethod("texts_to_sequences", parameters));
+            List<Sequence> result = new List<Sequence>();
+            foreach (PyObject item in pyList)
+            {
+                result.Add(new Sequence(item));
+            }
+
+            return result.ToArray();
+        }
+
+        public string[] SequencesToTexts(Sequence[] sequences)
+        {
+            Dictionary<string, object> parameters = new Dictionary<string, object>();
+            parameters["sequences"] = sequences;
+            PyObject py = InvokeMethod("texts_to_sequences", parameters);
+            return py.As<string[]>();
+        }
+
+        public Matrix TextsToMatrix(string[] texts, string mode = "binary")
+        {
+            Dictionary<string, object> parameters = new Dictionary<string, object>();
+            parameters["texts"] = texts;
+            parameters["mode"] = mode;
+
+            PyObject py = InvokeMethod("texts_to_matrix", parameters);
+            return new Matrix(py);
         }
     }
 

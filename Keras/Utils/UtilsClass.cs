@@ -97,7 +97,7 @@ namespace Keras.Utils
             //Init();
         }
 
-        private Sequence(PyObject py)
+        internal Sequence(PyObject py)
         {
             PyInstance = py;
         }
