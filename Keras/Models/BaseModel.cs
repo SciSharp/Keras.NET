@@ -210,7 +210,7 @@ namespace Keras.Models
             args["verbose"] = verbose;
             args["callbacks"] = callbacks;
             if (validation_data != null)
-            { 
+            {
                 args["validation_data"] = validation_data;
                 //if (validation_data.Length == 2)
                 //    args["validation_data"] = new NDarray[] { validation_data[0], validation_data[1] };
@@ -232,7 +232,7 @@ namespace Keras.Models
             return new History(py);
         }
 
-        public double[] EvaluateGenerator(Sequence generator, int? steps = null, Callback[] callbacks = null, 
+        public double[] EvaluateGenerator(Sequence generator, int? steps = null, Callback[] callbacks = null,
                                 int max_queue_size = 10, int workers = 1, bool use_multiprocessing = false, int verbose = 0)
         {
             var args = new Dictionary<string, object>();
@@ -353,7 +353,7 @@ namespace Keras.Models
                 }
             }
 
-            model.PyInstance = Instance.keras.models.load_model(filepath: filepath, custom_objects: dict, compile: compile);
+            model.PyInstance = Instance.tensorflow.keras.models.load_model(filepath: filepath, custom_objects: dict, compile: compile);
 
             return model;
         }
