@@ -18,11 +18,21 @@ namespace Keras
         {
             var instance = new Keras();
             instance.keras = InstallAndImport("keras");
+
+            try
+            {
+                instance.tensorflow = InstallAndImport("tensorflow");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Warning! tensorflow is not installed. Required to load models");
+            }
+
             try
             {
                 instance.keras2onnx = InstallAndImport("onnxmltools");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine("Warning! onnxmltools is not installed to export to onnx");
             }
@@ -35,7 +45,7 @@ namespace Keras
             {
                 Console.WriteLine("Warning! tensorflowjs is not installed. Required to convert keras model to tensorflow js format");
             }
-            
+
             return instance;
         }
         );
@@ -50,6 +60,8 @@ namespace Keras
         }
 
         public dynamic keras = null;
+
+        public dynamic tensorflow = null;
 
         public dynamic keras2onnx = null;
 
