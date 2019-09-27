@@ -183,7 +183,7 @@ namespace Keras.Models
             args["y"] = y;
             args["sample_weight"] = sample_weight;
 
-            return InvokeMethod("train_on_batch", args)?.As<double[]>(); ; ;
+            return InvokeMethod("test_on_batch", args)?.As<double[]>(); ; ;
         }
 
         /// <summary>

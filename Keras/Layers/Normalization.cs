@@ -27,27 +27,27 @@ namespace Keras.Layers
         /// <param name="gamma_regularizer"> Optional regularizer for the gamma weight.</param>
         /// <param name="beta_constraint"> Optional constraint for the beta weight.</param>
         /// <param name="gamma_constraint"> Optional constraint for the gamma weight</param>
-        public BatchNormalization(int axis= -1, float momentum= 0.99f, float epsilon= 0.001f, bool center= true, bool scale= true, string beta_initializer= "zeros",
+        public BatchNormalization(int axis= -1, float momentum= 0.99f, float epsilon= 0.001f, bool center = true, bool scale= true, string beta_initializer= "zeros",
                                 string gamma_initializer= "ones", string moving_mean_initializer= "zeros", string moving_variance_initializer= "ones",
-                                string beta_regularizer= "", string gamma_regularizer= "", string beta_constraint= "", string gamma_constraint= "")
+                                string beta_regularizer= null, string gamma_regularizer= null, string beta_constraint= null, string gamma_constraint= null, Shape input_shape = null)
 
         {
-            Parameters["axis"] = axis;
-            Parameters["momentum"] = momentum;
-            Parameters["epsilon"] = epsilon;
-            Parameters["center"] = center;
-            Parameters["scale"] = scale;
-            Parameters["beta_initializer"] = beta_initializer;
-            Parameters["gamma_initializer"] = gamma_initializer;
-            Parameters["moving_mean_initializer"] = moving_mean_initializer;
-            Parameters["moving_variance_initializer"] = moving_variance_initializer;
-            Parameters["beta_regularizer"] = beta_regularizer;
-            Parameters["gamma_regularizer"] = gamma_regularizer;
-            Parameters["beta_constraint"] = beta_constraint;
-            Parameters["gamma_constraint"] = gamma_constraint;
-
-            PyInstance = Instance.keras.layers.BatchNormalization;
-            Init();
+            if (input_shape != null)
+            {
+                PyInstance = Instance.keras.layers.BatchNormalization(axis: axis, momentum: momentum, epsilon: epsilon, center: center,
+                                                        scale: scale, beta_initializer: beta_initializer, gamma_initializer: gamma_initializer,
+                                                        moving_mean_initializer: moving_mean_initializer, moving_variance_initializer: moving_variance_initializer,
+                                                        beta_regularizer: beta_regularizer, gamma_regularizer: gamma_regularizer, beta_constraint: beta_constraint,
+                                                        gamma_constraint: gamma_constraint, input_shape: input_shape);
+            }
+            else
+            {
+                PyInstance = Instance.keras.layers.BatchNormalization(axis: axis, momentum: momentum, epsilon: epsilon, center: center,
+                                                       scale: scale, beta_initializer: beta_initializer, gamma_initializer: gamma_initializer,
+                                                       moving_mean_initializer: moving_mean_initializer, moving_variance_initializer: moving_variance_initializer,
+                                                       beta_regularizer: beta_regularizer, gamma_regularizer: gamma_regularizer, beta_constraint: beta_constraint,
+                                                       gamma_constraint: gamma_constraint);
+            }
         }
     }
 }

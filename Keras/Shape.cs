@@ -61,6 +61,7 @@ namespace Keras
         /// </returns>
         public static bool operator !=(Shape a, Shape b)
         {
+            if (b is null) return false;
             return !(a == b);
         }
 
