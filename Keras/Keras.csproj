@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <PackageId>Keras.NET</PackageId>
-    <Version>3.6.1.9</Version>
+    <Version>3.6.1.10</Version>
     <Authors>SciSharp Team</Authors>
     <Product>Keras.NET</Product>
     <Description>C# bindings for Keras on Win64 - Keras.NET is a high-level neural networks API, capable of running on top of TensorFlow, CNTK, or Theano. </Description>
