@@ -12,7 +12,7 @@ namespace ImageExamples
         {
             //ImageRecognitionApplication.Run();
 
-            //MNIST_CNN.Run();
+            MNIST_CNN.Run();
 
             Cifar10_CNN.Run();
             var cifar_pred  = Cifar10_CNN.Predict("./img/cifar_test2.jpg");

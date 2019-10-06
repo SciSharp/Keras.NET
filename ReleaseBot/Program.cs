@@ -71,7 +71,7 @@ namespace ReleaseBot
                 spec.Process();
             }
 
-            var key = File.ReadAllText("../../nuget.key").Trim();
+            var key = File.ReadAllText(@"C:\Users\deepa\Dropbox\Personal\nuget.key").Trim();
             foreach (var nuget in Directory.GetFiles(Path.Combine(ProjectPath, "bin", "Release"), "*.nupkg"))
             {
                 Console.WriteLine("Push " + nuget);
