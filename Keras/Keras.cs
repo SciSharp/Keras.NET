@@ -95,6 +95,9 @@ namespace Keras
                 case Array o: return ToList(o);
                 // special types from 'ToPythonConversions'
                 case Shape o: return ToTuple(o.Dimensions);
+                case ValueTuple<int> o: return ToTuple(o);
+                case ValueTuple<int, int> o: return ToTuple(o);
+                case ValueTuple<int, int, int> o: return ToTuple(o);
                 case Slice o: return o.ToPython();
                 case PythonObject o: return o.PyObject;
                 case PyObject o: return o;
@@ -113,6 +116,33 @@ namespace Keras
             {
                 array[i] = ToPython(input.GetValue(i));
             }
+
+            return new PyTuple(array);
+        }
+
+        protected static PyTuple ToTuple(ValueTuple<int> input)
+        {
+            var array = new PyObject[1];
+            array[0] = ToPython(input.Item1);
+
+            return new PyTuple(array);
+        }
+
+        protected static PyTuple ToTuple(ValueTuple<int, int> input)
+        {
+            var array = new PyObject[2];
+            array[0] = ToPython(input.Item1);
+            array[1] = ToPython(input.Item2);
+
+            return new PyTuple(array);
+        }
+
+        protected static PyTuple ToTuple(ValueTuple<int, int, int> input)
+        {
+            var array = new PyObject[3];
+            array[0] = ToPython(input.Item1);
+            array[1] = ToPython(input.Item2);
+            array[2] = ToPython(input.Item3);
 
             return new PyTuple(array);
         }
