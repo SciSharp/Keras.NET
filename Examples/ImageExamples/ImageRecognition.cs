@@ -14,7 +14,7 @@ namespace ImageExamples
         {
             var model = new Xception(weights: "imagenet");
             string img_path = "./img/elephant.jpg";
-            var img = ImageUtil.LoadImg(img_path, target_size: (224, 224));
+            var img = ImageUtil.LoadImg(img_path, target_size: (299, 299));
             var x = ImageUtil.ImageToArray(img);
             x = np.expand_dims(x, axis: 0);
             x = model.PreprocessInput(x);
