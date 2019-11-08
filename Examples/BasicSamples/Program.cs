@@ -11,7 +11,7 @@ namespace BasicSamples
         {
             //Run to setup keras and backend.
             //Setup.Run(SetupBackend.TensorflowGPU);
-
+            //Setup.UseTfKeras();
             //MergeExample.Run();
             //ImplementCallback.Run();
 

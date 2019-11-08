@@ -138,5 +138,10 @@ namespace Keras
         {
             return new NDarray(caller.to_dense(tensor: tensor).ToPython());
         }
+
+        public static PyObject Cast(PyObject x, string dtype = "float32")
+        {
+            return (PyObject)caller.cast(x: x, dtype: dtype);
+        }
     }
 }

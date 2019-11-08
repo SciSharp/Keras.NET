@@ -49,8 +49,8 @@
                 outputList.Add(item.PyInstance);
             }
 
-            PyInstance = Instance.keras.models.Model(inputs[0], outputs);
-            Init();
+            PyInstance = Instance.keras.models.Model(inputList, outputList[0]);
+            //Init();
         }
     }
 }
