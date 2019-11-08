@@ -13,7 +13,7 @@ namespace ReleaseBot
 {
     class Program
     {
-        private const string V = "1.11"; // <--- Keras.net version!
+        private const string V = "1.12"; // <--- Keras.net version!
         private const string NumpyNetVersion = "1.9";
 
         private const string ProjectPath = "../../../Keras";
@@ -71,7 +71,7 @@ namespace ReleaseBot
                 spec.Process();
             }
 
-            var key = File.ReadAllText(@"C:\Users\deepa\Dropbox\Personal\nuget.key").Trim();
+            var key = File.ReadAllText(@"C:\dump\nuget.key").Trim();
             foreach (var nuget in Directory.GetFiles(Path.Combine(ProjectPath, "bin", "Release"), "*.nupkg"))
             {
                 Console.WriteLine("Push " + nuget);
