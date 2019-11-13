@@ -21,7 +21,11 @@ namespace Keras.Layers
         public BaseLayer Set(params BaseLayer[] inputs)
         {
             if (inputs.Length == 1)
-                return new BaseLayer(inputs[0].ToPython());
+            {
+                Dictionary<string, object> d = new Dictionary<string, object>();
+                d.Add("inputs", inputs[0].ToPython());
+                return new BaseLayer(InvokeMethod("__call__", d));
+            }
             else
             {
                 var t = inputs[0].PyInstance; // Backend.Cast(inputs[0].PyInstance);

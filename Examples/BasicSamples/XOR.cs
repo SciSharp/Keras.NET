@@ -18,11 +18,12 @@ namespace BasicSamples
             NDarray x = np.array(new float[,] { { 0, 0 }, { 0, 1 }, { 1, 0 }, { 1, 1 } });
             NDarray y = np.array(new float[] { 0, 1, 1, 0 });
 
-            //Build sequential model
-            var model = new Sequential();
-            model.Add(new Dense(32, activation: "relu", input_shape: new Shape(2)));
-            model.Add(new Dense(64, activation: "relu"));
-            model.Add(new Dense(1, activation: "sigmoid"));
+            //Build functional model
+            var input = new Input(shape: new Keras.Shape(2));
+            var hidden1 = new Dense(32, activation: "relu").Set(input);
+            var hidden2 = new Dense(64, activation: "relu").Set(hidden1);
+            var output = new Dense(1, activation: "sigmoid").Set(hidden2);
+            var model = new Keras.Models.Model(new Input[] { input }, new BaseLayer[] { output });
 
             //Compile and train
             model.Compile(optimizer: new Adam(), loss: "binary_crossentropy", metrics: new string[] { "accuracy" });
