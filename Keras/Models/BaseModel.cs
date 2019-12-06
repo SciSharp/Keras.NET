@@ -23,7 +23,7 @@ namespace Keras.Models
         /// <param name="weighted_metrics"> List of metrics to be evaluated and weighted by sample_weight or class_weight during training and testing.</param>
         /// <param name="target_tensors"> By default, Keras will create placeholders for the model's target, which will be fed with the target data during training. If instead you would like to use your own target tensors (in turn, Keras will not expect external Numpy data for these targets at training time), you can specify them via the target_tensors argument. It can be a single tensor (for a single-output model), a list of tensors, or a dict mapping output names to target tensors.</param>
         public void Compile(StringOrInstance optimizer, string loss, string[] metrics = null, float[] loss_weights = null,
-                       string sample_weight_mode = "None", string[] weighted_metrics = null, NDarray[] target_tensors = null)
+                       string sample_weight_mode = null, string[] weighted_metrics = null, NDarray[] target_tensors = null)
         {
             var args = new Dictionary<string, object>();
             args["optimizer"] = optimizer;
