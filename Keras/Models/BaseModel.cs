@@ -37,21 +37,6 @@ namespace Keras.Models
             InvokeMethod("compile", args);
         }
 
-        public void Compile(StringOrInstance optimizer, string[] loss, string[] metrics = null, float[] loss_weights = null,
-                       string sample_weight_mode = "None", string[] weighted_metrics = null, NDarray[] target_tensors = null)
-        {
-            var args = new Dictionary<string, object>();
-            args["optimizer"] = optimizer;
-            args["loss"] = loss;
-            args["metrics"] = metrics;
-            args["loss_weights"] = loss_weights;
-            args["sample_weight_mode"] = sample_weight_mode;
-            args["weighted_metrics"] = weighted_metrics;
-            args["target_tensors"] = target_tensors;
-
-            InvokeMethod("compile", args);
-        }
-
         /// <summary>
         /// Trains the model for a given number of epochs (iterations on a dataset).
         /// </summary>
