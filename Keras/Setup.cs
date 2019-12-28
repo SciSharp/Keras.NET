@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Python.Runtime;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -202,6 +203,15 @@ namespace Keras
                 throw new Exception(error);
 
             return process.StandardOutput.ReadToEnd();
+        }
+
+        public static void SetPythonPath(string path)
+        {
+            Environment.SetEnvironmentVariable("PYTHON_PATH", path);
+            Environment.SetEnvironmentVariable("PYTHON_HOME", path);
+
+            Python.Runtime.PythonEngine.PythonHome = path;
+            Python.Runtime.PythonEngine.Initialize();
         }
     }
 }

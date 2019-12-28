@@ -8,11 +8,18 @@ using System.Collections.Generic;
 using System.Text;
 using static Python.Runtime.Py;
 
+
 namespace Keras
 {
     public class Keras : IDisposable
     {
         public static Keras Instance => _instance.Value;
+
+        private static dynamic sys;
+
+        public static bool DisablePySysConsoleLog { get; set; } = false;
+
+        private static bool alreadyDisabled = false;
 
         private static Lazy<Keras> _instance = new Lazy<Keras>(() =>
         {
@@ -50,9 +57,24 @@ namespace Keras
 
         private static PyObject InstallAndImport(string module)
         {
-            Console.WriteLine(module);
             if(!PythonEngine.IsInitialized)
                 PythonEngine.Initialize();
+
+            sys = Py.Import("sys");
+            if(DisablePySysConsoleLog && !alreadyDisabled)
+            {
+                string codeToRedirectOutput =
+                "import sys\n" +
+                "from io import StringIO\n" +
+                "sys.stdout = mystdout = StringIO()\n" +
+                "sys.stdout.flush()\n" +
+                "sys.stderr = mystderr = StringIO()\n" +
+                "sys.stderr.flush()\n";
+
+                PythonEngine.RunSimpleString(codeToRedirectOutput);
+                alreadyDisabled = true;
+            }
+
             var mod = Py.Import(module);
             return mod;
         }
@@ -168,6 +190,18 @@ namespace Keras
             }
 
             return dict;
+        }
+
+        public static string GetStdOut()
+        {
+            string data = sys.stdout.getvalue().ToString();
+            return data.Replace("\n", "\r\n");
+        }
+
+        public static string GetStdError()
+        {
+            string data = sys.stderr.getvalue().ToString();
+            return data.Replace("\n", "\r\n");
         }
     }
 }
