@@ -50,7 +50,23 @@
             }
 
             PyInstance = Instance.keras.models.Model(inputList, outputList[0]);
-            //Init();
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Model"/> class.
+        /// </summary>
+        /// <param name="inputs">The inputs layers.</param>
+        /// <param name="outputs">The outputs layers.</param>
+        public Model(params BaseLayer[] inputs)
+        {
+            List<PyObject> inputList = new List<PyObject>();
+            foreach (var item in inputs)
+            {
+                inputList.Add(item.PyInstance);
+            }
+
+
+            PyInstance = Instance.keras.models.Model(inputList);
         }
     }
 }
