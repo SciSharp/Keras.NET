@@ -5,6 +5,7 @@ using Python.Runtime;
 using System;
 using System.Collections.Generic;
 using System.Dynamic;
+using System.Globalization;
 using System.Text;
 
 namespace Keras.Applications
@@ -47,7 +48,7 @@ namespace Keras.Applications
                 {
                     WordID = list[i].ToString(),
                     Word = list[i + 1].ToString(),
-                    PredictedValue = Convert.ToSingle(list[i + 2].ToString()),
+                    PredictedValue = Convert.ToSingle(list[i + 2].ToString(),CultureInfo.InvariantCulture),
                 };
 
                 i = i + 3;

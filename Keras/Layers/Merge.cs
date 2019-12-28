@@ -16,7 +16,7 @@ namespace Keras.Layers
         public Add(params BaseLayer[] inputs)
         {
             //Parameters["inputs"] = inputs;
-            PyInstance = Instance.keras.layers.add(inputs: inputs.Select(x=>(x.PyInstance)).ToArray());
+            PyInstance = Instance.keras.layers.add(inputs: inputs.Select(x=>(x.PyInstance)).ToList());
         }
     }
 
@@ -25,7 +25,7 @@ namespace Keras.Layers
         public Concatenate(params BaseLayer[] inputs)
         {
             //Parameters["inputs"] = inputs;
-            PyInstance = Instance.keras.layers.concatenate(inputs.Select(x => (x.PyInstance)).ToArray());
+            PyInstance = Instance.keras.layers.concatenate(inputs.Select(x => (x.ToPython())).ToList());
         }
     }
 }
