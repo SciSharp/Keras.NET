@@ -166,7 +166,15 @@ namespace Keras.Models
             args["sample_weight"] = sample_weight;
             args["class_weight"] = class_weight;
 
-            return InvokeMethod("train_on_batch", args)?.As<double[]>(); ;
+            var pyresult = InvokeMethod("train_on_batch", args);
+            if (pyresult == null) return default;
+            double[] result;
+            if (!pyresult.IsIterable())
+                result = new double[] { pyresult.As<double>() };
+            else
+                result = pyresult.As<double[]>();
+            pyresult.Dispose();
+            return result;
         }
 
         /// <summary>
@@ -183,7 +191,16 @@ namespace Keras.Models
             args["y"] = y;
             args["sample_weight"] = sample_weight;
 
-            return InvokeMethod("test_on_batch", args)?.As<double[]>(); ; ;
+            //return InvokeMethod("test_on_batch", args)?.As<double[]>();
+            var pyresult = InvokeMethod("test_on_batch", args);
+            if (pyresult == null) return default;
+            double[] result;
+            if (!pyresult.IsIterable())
+                result = new double[] { pyresult.As<double>() };
+            else
+                result = pyresult.As<double[]>();
+            pyresult.Dispose();
+            return result;
         }
 
         /// <summary>
@@ -243,9 +260,15 @@ namespace Keras.Models
             args["workers"] = workers;
             args["use_multiprocessing"] = use_multiprocessing;
             args["verbose"] = verbose;
-            var py = InvokeMethod("evaluate_generator", args);
-
-            return py.As<double[]>();
+            var pyresult = InvokeMethod("evaluate_generator", args);
+            if (pyresult == null) return default;
+            double[] result;
+            if (!pyresult.IsIterable())
+                result = new double[] { pyresult.As<double>() };
+            else
+                result = pyresult.As<double[]>();
+            pyresult.Dispose();
+            return result;
         }
 
         public NDarray PredictGenerator(Sequence generator, int? steps = null, Callback[] callbacks = null,

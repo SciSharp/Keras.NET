@@ -22,6 +22,7 @@ namespace BasicSamples
             var model = new Sequential();
             model.Add(new Dense(32, activation: "relu", input_shape: new Shape(2)));
             model.Add(new Dense(64, activation: "relu"));
+            model.Add(new Flatten());
             model.Add(new Dense(1, activation: "sigmoid"));
 
             //Compile and train
