@@ -226,7 +226,7 @@ namespace Keras.Callbacks
             Parameters["baseline"] = baseline;
             Parameters["restore_best_weights"] = restore_best_weights;
 
-            PyInstance = keras.callbacks.EarlyStopping;
+            PyInstance = Instance.keras.callbacks.EarlyStopping;
             Init();
         }
     }
@@ -254,7 +254,7 @@ namespace Keras.Callbacks
             Parameters["headers"] = headers;
             Parameters["send_as_json"] = send_as_json;
 
-            PyInstance = keras.callbacks.RemoteMonitor;
+            PyInstance = Instance.keras.callbacks.RemoteMonitor;
             Init();
         }
     }
