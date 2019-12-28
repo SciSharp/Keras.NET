@@ -76,7 +76,8 @@ namespace Keras.Models
             }
 
             args["shuffle"] = shuffle;
-            args["class_weight"] = class_weight;
+            if (class_weight != null)
+                args["class_weight"] = ToDict(class_weight);
             args["sample_weight"] = sample_weight;
             args["initial_epoch"] = initial_epoch;
             args["steps_per_epoch"] = steps_per_epoch;

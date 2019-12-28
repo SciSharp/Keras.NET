@@ -3,6 +3,7 @@ using Keras.Layers;
 using Keras.Models;
 using Keras.PreProcessing.Image;
 using System;
+using System.Collections.Generic;
 
 namespace ImageExamples
 {
@@ -11,7 +12,7 @@ namespace ImageExamples
         static void Main(string[] args)
         {
             //ImageRecognitionApplication.Run();
-
+            
             MNIST_CNN.Run();
 
             Cifar10_CNN.Run();

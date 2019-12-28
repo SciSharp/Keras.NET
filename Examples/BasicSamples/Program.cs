@@ -16,8 +16,8 @@ namespace BasicSamples
             //ImplementCallback.Run();
 
             Console.WriteLine("Running XOR");
-            //XOR.Run();
-            MNIST_CNN.Run();
+            XOR.Run();
+            //MNIST_CNN.Run();
             Console.WriteLine("Running PrimaIndiansDiabetics");
             //PrimaIndiansDiabetics.Run();
 

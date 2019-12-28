@@ -158,5 +158,16 @@ namespace Keras
             return new PyList(array);
         }
 
+        protected static PyDict ToDict(Dictionary<int, float> input)
+        {
+            PyDict dict = new PyDict();
+
+            foreach (var item in input)
+            {
+                dict[item.Key.ToPython()] = item.Value.ToPython();
+            }
+
+            return dict;
+        }
     }
 }
