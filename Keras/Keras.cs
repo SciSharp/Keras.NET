@@ -41,6 +41,7 @@ namespace Keras
             }
             catch (Exception ex)
             {
+                Console.WriteLine("Warning! onnxmltools is not installed");
             }
 
             try
@@ -49,6 +50,7 @@ namespace Keras
             }
             catch (Exception ex)
             {
+                Console.WriteLine("Warning! tensorflowjs is not installed");
             }
 
             return instance;
@@ -78,6 +80,7 @@ namespace Keras
             var mod = Py.Import(module);
             return mod;
         }
+
 
         public dynamic keras = null;
 
