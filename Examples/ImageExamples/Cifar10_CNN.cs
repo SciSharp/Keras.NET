@@ -34,6 +34,7 @@ namespace ImageExamples
             y_train = Util.ToCategorical(y_train, num_classes);
             y_test = Util.ToCategorical(y_test, num_classes);
 
+
             // Build CNN model
             var model = new Sequential();
             model.Add(new Conv2D(32, kernel_size: (3, 3).ToTuple(),
@@ -77,10 +78,10 @@ namespace ImageExamples
 
             //Save model and weights
             //string model_path = "./model.json";
-            //string weight_path = "./weights.h5";
+            //string weight_path = "weights.h5";
             //string json = model.ToJson();
             //File.WriteAllText(model_path, json);
-            //model.SaveWeight(weight_path);
+            model.SaveWeight("weights.h5");
             model.Save("model.h5");
             model.SaveTensorflowJSFormat("./");
 
@@ -90,17 +91,32 @@ namespace ImageExamples
             Console.WriteLine("Test accuracy:" + score[1]);
         }
 
-        public static string Predict(string imagePath)
+        public static string Predict(string path)
         {
-            var img = ImageUtil.LoadImg(imagePath, target_size: new Shape(32, 32));
-            NDarray x = ImageUtil.ImageToArray(img);
-            x = x.reshape(1, x.shape[0], x.shape[1], x.shape[2]);
-            var model = Sequential.LoadModel("model.h5");
-            model.LoadWeight("weights.h5");
-            var y = model.Predict(x);
-            y = y.argmax();
-            int index = y.asscalar<int>();
-            return labels[index];
+            string rv = "";
+
+            string imagePath = Path.GetFullPath(path);
+            string modelPath = Path.GetFullPath("model.h5");
+            string weightsPath = Path.GetFullPath("weights.h5");
+
+            if (File.Exists(imagePath))
+            {
+                var img = ImageUtil.LoadImg(path, target_size: new Shape(32, 32));
+                NDarray x = ImageUtil.ImageToArray(img);
+                x = x.reshape(1, x.shape[0], x.shape[1], x.shape[2]);
+                var model = Sequential.LoadModel(modelPath);
+                model.LoadWeight(weightsPath);
+                var y = model.Predict(x);
+                y = y.argmax();
+                int index = y.asscalar<int>();
+                rv = labels[index];
+            }
+            else
+            {
+                throw (new Exception("No Image found at: " + imagePath));
+            }
+
+            return rv;
         }
     }
 }
