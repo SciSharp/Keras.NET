@@ -83,6 +83,16 @@ namespace Keras
         }
 
         /// <summary>
+        /// Turns off Tensorflow Eager Execution for TF 1.15
+        /// </summary>
+        /// <returns></returns>
+        public static void DisableEager()
+        {
+
+            Instance.tensorflow.compat.v1.disable_eager_execution();
+        }
+
+        /// <summary>
         /// Sets the image data format.
         /// </summary>
         /// <param name="data_format">data_format: string. 'channels_first' or 'channels_last'.</param>
