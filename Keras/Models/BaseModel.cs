@@ -135,6 +135,46 @@ namespace Keras.Models
             return new NDarray(InvokeMethod("predict", args));
         }
 
+
+
+        /// <summary>
+        /// Generates output predictions for the list of inputs given samples.
+        /// Computation is done in batches.
+        /// </summary>
+        /// <param name="x">The List of input data, as a Numpy array (or list of Numpy arrays if the model has multiple inputs).</param>
+        /// <param name="batch_size">Integer. If unspecified, it will default to 32.</param>
+        /// <param name="verbose">Verbosity mode, 0 or 1.</param>
+        /// <param name="steps">Total number of steps (batches of samples) before declaring the prediction round finished. Ignored with the default value of None.</param>
+        /// <param name="callbacks">List of keras.callbacks.Callback instances. List of callbacks to apply during prediction. See callbacks.</param>
+        /// <returns>Numpy array(s) of predictions.</returns>
+        public NDarray Predict(List<NDarray> x, int? batch_size = null, int verbose = 1, int? steps = null, Callback[] callbacks = null)
+        {
+
+            var args = new Dictionary<string, object>();
+
+            PyObject[] items = new PyObject[x.Count];
+            for (int i = 0; i < x.Count; i++)
+            {
+                items[i] = x[i].PyObject;
+            }
+            PyTuple x_tuple = new PyTuple(items);
+
+            args["x"] = x_tuple;
+            args["batch_size"] = batch_size;
+            args["verbose"] = verbose;
+            args["steps"] = steps;
+            args["callbacks"] = callbacks != null ? callbacks : null;
+
+            return new NDarray(InvokeMethod("predict", args));
+        }
+
+
+
+
+
+
+
+
         /// <summary>
         /// Runs a single gradient update on a single batch of data.
         /// </summary>
