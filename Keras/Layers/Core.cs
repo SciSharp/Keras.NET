@@ -66,7 +66,7 @@
             this["use_bias"] = use_bias;
             this["kernel_initializer"] = kernel_initializer ?? "glorot_uniform";
             this["bias_initializer"] = bias_initializer;
-            this["kernel_regularizer"] = kernel_regularizer ?? "";
+            this["kernel_regularizer"] = kernel_regularizer;
             this["bias_regularizer"] = bias_regularizer;
             this["activity_regularizer"] = activity_regularizer;
             this["kernel_constraint"] = kernel_constraint;
