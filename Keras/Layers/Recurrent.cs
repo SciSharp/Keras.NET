@@ -366,7 +366,6 @@ namespace Keras.Layers
         /// <param name="stateful">Boolean (default False). If True, the last state for each sample at index i in a batch will be used as initial state for the sample of index i in the following batch.</param>
         /// <param name="unroll">Boolean (default False). If True, the network will be unrolled, else a symbolic loop will be used. Unrolling can speed-up a RNN, although it tends to be more memory-intensive. Unrolling is only suitable for short sequences.</param>
         /// <param name="batch_input_shape">Optional input batch size (integer or None).</param>
-
         public LSTM(int units, string activation = "tanh", string recurrent_activation = "hard_sigmoid", bool use_bias = true, StringOrInstance kernel_initializer = null
             , StringOrInstance recurrent_initializer = null, string bias_initializer = "zeros", bool unit_forget_bias = true, string kernel_regularizer = "",
             string recurrent_regularizer = "", string bias_regularizer = "", string activity_regularizer = "", string kernel_constraint = "", string recurrent_constraint = "",
