@@ -239,7 +239,7 @@ namespace Keras.Models
             var args = new Dictionary<string, object>();
             args["x"] = x;
 
-            return new NDarray(InvokeMethod("train_on_batch", args));
+            return new NDarray(InvokeMethod("predict_on_batch", args));
         }
 
         public History FitGenerator(Sequence generator, int? steps_per_epoch = null, int epochs = 1, int verbose = 1, Callback[] callbacks = null,
