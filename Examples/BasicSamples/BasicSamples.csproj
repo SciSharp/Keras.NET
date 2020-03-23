@@ -12,6 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="AccHistory.py">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="LossHistory.py">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

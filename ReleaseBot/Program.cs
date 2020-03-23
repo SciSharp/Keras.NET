@@ -13,8 +13,8 @@ namespace ReleaseBot
 {
     class Program
     {
-        private const string V = "2.4"; // <--- Keras.net version!
-        private const string NumpyNetVersion = "1.10";
+        private const string V = "4.1"; // <--- Keras.net version!
+        private const string NumpyNetVersion = "1.11";
 
         private const string ProjectPath = "../../../Keras";
         private const string ProjectName = "Keras.csproj";
@@ -31,17 +31,17 @@ namespace ReleaseBot
                 new ReleaseSpec() { CPythonVersion = "2.7", Platform="Linux",   },
                 new ReleaseSpec() { CPythonVersion = "3.5", Platform="Linux",   },
                 new ReleaseSpec() { CPythonVersion = "3.6", Platform="Linux",   },
-                //new ReleaseSpec() { CPythonVersion = "3.7", Platform="Linux",   },
+                new ReleaseSpec() { CPythonVersion = "3.7", Platform="Linux",   },
                 // mac
                 new ReleaseSpec() { CPythonVersion = "2.7", Platform="OSX",  },
                 new ReleaseSpec() { CPythonVersion = "3.5", Platform="OSX",  },
                 new ReleaseSpec() { CPythonVersion = "3.6", Platform="OSX",  },
-                //new ReleaseSpec() { CPythonVersion = "3.7", Platform="OSX",  },
+                new ReleaseSpec() { CPythonVersion = "3.7", Platform="OSX",  },
                 // win
                 new ReleaseSpec() { CPythonVersion = "2.7", Platform="Win64",   },
                 new ReleaseSpec() { CPythonVersion = "3.5", Platform="Win64",   },
                 new ReleaseSpec() { CPythonVersion = "3.6", Platform="Win64",   },
-                //new ReleaseSpec() { CPythonVersion = "3.7", Platform="Win64",   },
+                new ReleaseSpec() { CPythonVersion = "3.7", Platform="Win64",   },
 
            };
 
