@@ -389,7 +389,7 @@ namespace Keras.Models
         /// </summary>
         /// <param name="path">The path.</param>
         /// <returns></returns>
-        public static BaseModel LoadModel(string filepath, Dictionary<string, string> custom_objects = null, bool compile = true)
+        public static BaseModel LoadModel(string filepath, Dictionary<string, PyObject> custom_objects = null, bool compile = true)
         {
             var model = new BaseModel();
             PyDict dict = null;
@@ -402,7 +402,7 @@ namespace Keras.Models
                 }
             }
 
-            model.PyInstance = Instance.tensorflow.keras.models.load_model(filepath: filepath, custom_objects: dict, compile: compile);
+            model.PyInstance = Instance.keras.models.load_model(filepath, custom_objects: dict, compile: compile);
 
             return model;
         }

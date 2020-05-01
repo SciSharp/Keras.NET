@@ -34,7 +34,9 @@ namespace BasicSamples
             var logs = history.HistoryLogs;
             //Save model and weights
             string json = model.ToJson();
+            
             File.WriteAllText("model.json", json);
+          
             model.SaveWeight("model.h5");
             //Load model and weight
             var loaded_model = Sequential.ModelFromJson(File.ReadAllText("model.json"));
