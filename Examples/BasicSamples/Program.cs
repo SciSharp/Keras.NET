@@ -14,7 +14,6 @@ namespace BasicSamples
             //Setup.UseTfKeras();
             //MergeExample.Run();
             //ImplementCallback.Run();
-
             Console.WriteLine("Running XOR");
             XOR.Run();
             //MNIST_CNN.Run();
