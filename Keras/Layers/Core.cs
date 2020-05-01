@@ -56,15 +56,15 @@
         /// <param name="kernel_constraint"> Constraint function applied to the kernel weights matrix (see constraints).</param>
         /// <param name="bias_constraint"> Constraint function applied to the bias vector (see constraints).</param>
         /// <param name="input_shape">nD tensor with shape: (batch_size, ..., input_dim). The most common situation would be a 2D input with shape (batch_size, input_dim).</param>
-        public Dense(int units, int? input_dim = null, string activation= "", bool use_bias= true, string kernel_initializer= "glorot_uniform", 
-                    string bias_initializer= "zeros", string kernel_regularizer= "", string bias_regularizer= "", 
+        public Dense(int units, int? input_dim = null, string activation= "", bool use_bias= true, StringOrInstance kernel_initializer= null, 
+                    string bias_initializer= "zeros", StringOrInstance kernel_regularizer= null, string bias_regularizer= "", 
                     string activity_regularizer= "", string kernel_constraint= "", string bias_constraint= "", Shape input_shape = null)
         {
             this["units"] = units;
             this["input_dim"] = input_dim;
             this["activation"] = activation;
             this["use_bias"] = use_bias;
-            this["kernel_initializer"] = kernel_initializer;
+            this["kernel_initializer"] = kernel_initializer ?? "glorot_uniform";
             this["bias_initializer"] = bias_initializer;
             this["kernel_regularizer"] = kernel_regularizer;
             this["bias_regularizer"] = bias_regularizer;

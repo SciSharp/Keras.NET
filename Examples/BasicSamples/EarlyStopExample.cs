@@ -11,7 +11,7 @@ using System.Text;
 
 namespace BasicSamples
 {
-    public class ImplementCallback
+    public class EarlyStopExample
     {
         public static void Run()
         {
@@ -21,17 +21,14 @@ namespace BasicSamples
 
             //Build sequential model
             var model = new Sequential();
-            model.Add(new Dense(32, activation: "relu", input_shape: new Shape(2)));
-            model.Add(new Dense(64, activation: "relu"));
-            model.Add(new Dense(1, activation: "sigmoid"));
+            model.Add(new Dense(4, activation: "relu", input_shape: new Shape(2)));
+            model.Add(new Dense(1));
 
-            var lossHistory = Callback.Custom("AccHistory", "LossHistory.py");
+            var stoploss = Callback.Custom("AccHistory", "AccHistory.py");
 
             //Compile and train
             model.Compile(optimizer: new SGD(), loss: "binary_crossentropy", metrics: new string[] { "accuracy" });
-            var history = model.Fit(x, y, batch_size: 2, epochs: 10, verbose: 1, callbacks: new Callback[] { lossHistory });
-
-            var customLosses = lossHistory.Get<double[]>("losses");
+            var history = model.Fit(x, y, batch_size: 2, epochs: 10, verbose: 1, callbacks: new Callback[] { stoploss });
         }
     }
 }
