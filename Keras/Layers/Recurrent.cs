@@ -370,7 +370,7 @@ namespace Keras.Layers
             , StringOrInstance recurrent_initializer = null, string bias_initializer = "zeros", bool unit_forget_bias = true, string kernel_regularizer = "",
             string recurrent_regularizer = "", string bias_regularizer = "", string activity_regularizer = "", string kernel_constraint = "", string recurrent_constraint = "",
             string bias_constraint = "", float dropout = 0.0f, float recurrent_dropout = 0.0f, int implementation = 1, bool return_sequences = false, bool return_state = false,
-            bool go_backwards = false, bool stateful = false, bool unroll = false, Shape batch_input_shape = null)
+            bool go_backwards = false, bool stateful = false, bool unroll = false, Shape batch_input_shape = null, Shape input_shape = null)
         {
             Parameters["units"] = units;
             Parameters["activation"] = activation;
@@ -395,7 +395,16 @@ namespace Keras.Layers
             Parameters["go_backwards"] = go_backwards;
             Parameters["stateful"] = stateful;
             Parameters["unroll"] = unroll;
-            Parameters["batch_input_shape"] = batch_input_shape;
+
+            if (batch_input_shape != null)
+            {
+                Parameters["batch_input_shape"] = batch_input_shape;
+            }
+            else if (input_shape != null)
+            {
+                Parameters["input_shape"] = input_shape;
+            }
+
             PyInstance = Instance.keras.layers.LSTM;
             Init();
         }

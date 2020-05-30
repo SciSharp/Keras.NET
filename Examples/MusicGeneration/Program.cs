@@ -13,46 +13,22 @@ namespace MusicGeneration
         static void Main(string[] args)
         {
             WavenetMusicGeneration.PrepData();
-            //WavenetMusicGeneration.Train();
-            var notes = WavenetMusicGeneration.GenerateNewMusic(100);
+            //WavenetMusicGeneration.BuildAndTrain();
+            var notes = WavenetMusicGeneration.GenerateNewMusic(20);
+            Console.WriteLine("\n\nPlaying auto generated music....\n");
             PlayNotes(notes);
         }
 
         private static void PlayNotes(List<int> notes)
         {
             List<List<MidiEvent>> musicNotes = new List<List<MidiEvent>>();
+            var playbackDevice = OutputDevice.GetAll().FirstOrDefault();
             foreach (var note in notes)
             {
-                OutputDevice.GetAll().FirstOrDefault().SendEvent(new NoteOffEvent(SevenBitNumber.Parse(note.ToString()), SevenBitNumber.MaxValue));
-                //List<MidiEvent> events = new List<MidiEvent>();
-                //events.Add(new NoteOnEvent(SevenBitNumber.Parse(note.ToString()), SevenBitNumber.MaxValue));
-                //Playback playback = new Playback(events, TempoMap.Default);
-                //playback.OutputDevice = OutputDevice.GetAll().FirstOrDefault();
-                //playback.Play();
-                //playback.Stop();
+                Note n = new Note(SevenBitNumber.Parse(note.ToString()));
+                Console.Write(n + " ");
+                //playbackDevice.SendEvent(new NoteOnEvent(SevenBitNumber.Parse(note.ToString()), SevenBitNumber.MaxValue));
             }
-
-            //var midiFile = new MidiFile();
-            //var tempoMap = midiFile.GetTempoMap();
-
-            //var trackChunk = new TrackChunk();
-            //using (var notesManager = trackChunk.ManageNotes())
-            //{
-            //    var length = LengthConverter.ConvertFrom(2 * MusicalTimeSpan.Eighth.Triplet(),
-            //                                             0,
-            //                                             tempoMap);
-            //    foreach (var note in notes)
-            //    {
-            //        notesManager.Notes.Add(new Note(SevenBitNumber.Parse(note.ToString())));
-            //    }
-            //}
-
-            //midiFile.Chunks.Add(trackChunk);
-            //midiFile.Write("Single note great song.mid");
-            //midiFile.Play();
-            
-
-
         }
     }
 }

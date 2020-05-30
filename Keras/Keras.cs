@@ -41,7 +41,7 @@ namespace Keras
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Warning! onnxmltools is not installed");
+                //Console.WriteLine("Warning! onnxmltools is not installed");
             }
 
             try
@@ -50,7 +50,7 @@ namespace Keras
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Warning! tensorflowjs is not installed");
+                //Console.WriteLine("Warning! tensorflowjs is not installed");
             }
 
             return instance;

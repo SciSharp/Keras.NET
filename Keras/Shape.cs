@@ -38,34 +38,6 @@ namespace Keras
         #region Equality
 
         /// <summary>
-        /// Implements the operator ==.
-        /// </summary>
-        /// <param name="a">a.</param>
-        /// <param name="b">The b.</param>
-        /// <returns>
-        /// The result of the operator.
-        /// </returns>
-        public static bool operator ==(Shape a, Shape b)
-        {
-            if (b is null) return false;
-            return Enumerable.SequenceEqual(a.Dimensions, b?.Dimensions);
-        }
-
-        /// <summary>
-        /// Implements the operator !=.
-        /// </summary>
-        /// <param name="a">a.</param>
-        /// <param name="b">The b.</param>
-        /// <returns>
-        /// The result of the operator.
-        /// </returns>
-        public static bool operator !=(Shape a, Shape b)
-        {
-            if (b is null) return false;
-            return !(a == b);
-        }
-
-        /// <summary>
         /// Determines whether the specified <see cref="System.Object" />, is equal to this instance.
         /// </summary>
         /// <param name="obj">The <see cref="System.Object" /> to compare with this instance.</param>
