@@ -70,9 +70,9 @@ namespace Keras.Models
             if (validation_data != null)
             {
                 if (validation_data.Length == 2)
-                    args["validation_data"] = new NDarray[] { validation_data[0], validation_data[1] };
+                    args["validation_data"] = new PyTuple (new PyObject[] { validation_data[0].PyObject, validation_data[1].PyObject });
                 else if (validation_data.Length == 3)
-                    args["validation_data"] = new NDarray[] { validation_data[0], validation_data[1], validation_data[2] };
+                    args["validation_data"] = new PyTuple (new PyObject[] { validation_data[0].PyObject, validation_data[1].PyObject, validation_data[2].PyObject });
             }
 
             args["shuffle"] = shuffle;
