@@ -1,0 +1,27 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "description": "Keras.NET is a high-level neural networks API, written in C# with Python Binding and capable of running on top of TensorFlow, CNTK, or Theano",
+  "name": "Keras.NET",
+  "codeRepository": "https://github.com/SciSharp/Keras.NET",
+  "issueTracker": "https://github.com/SciSharp/Keras.NET/issues",
+  "license": "https://github.com/SciSharp/Keras.NET/blob/master/LICENSE",
+  "version": "3.7.4.2",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Deepak",
+      "familyName": "Battini",
+      "email": "deepakkumar1984@gmail.com",
+      "@id": "https://orcid.org/0000-0003-1719-3091"
+    }
+  ],
+  "developmentStatus": "active",
+  "keywords": [
+    "GitHub",
+    "metadata",
+    "software"
+  ],
+  "maintainer": "https://orcid.org/0000-0003-1719-3091",
+  "programmingLanguage": "C#"
+}
