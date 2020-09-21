@@ -33,6 +33,15 @@ dotnet add package Keras.NET
 ## Example with XOR sample
 
 ```csharp
+using Keras;
+using Keras.Layers;
+using Keras.Models;
+using Numpy;
+using System;
+using System.IO;
+
+// ...
+
 //Load train data
 NDarray x = np.array(new float[,] { { 0, 0 }, { 0, 1 }, { 1, 0 }, { 1, 1 } });
 NDarray y = np.array(new float[] { 0, 1, 1, 0 });
