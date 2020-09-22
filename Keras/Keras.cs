@@ -102,19 +102,16 @@ namespace Keras
 
         internal static PyObject ToPython(object obj)
         {
-            if (obj == null) return Runtime.GetPyNone();
+            if (obj == null) return Runtime.None;
             switch (obj)
             {
                 // basic types
                 case int o: return new PyInt(o);
                 case float o: return new PyFloat(o);
+                case long o: return new PyLong(o);
                 case double o: return new PyFloat(o);
                 case string o: return new PyString(o);
-                case bool o:
-                    if (o)
-                        return new PyObject(Runtime.PyTrue);
-                    else
-                        return new PyObject(Runtime.PyFalse);
+                case bool o: return ConverterExtension.ToPython(o);
 
                 // sequence types
                 case Array o: return ToList(o);

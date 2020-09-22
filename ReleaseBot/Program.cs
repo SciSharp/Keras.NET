@@ -13,8 +13,8 @@ namespace ReleaseBot
 {
     class Program
     {
-        private const string V = "4.3"; // <--- Keras.net version!
-        private const string NumpyNetVersion = "1.11";
+        private const string V = "4.4"; // <--- Keras.net version!
+        private const string NumpyNetVersion = "1.22";
 
         private const string ProjectPath = "../../../Keras";
         private const string ProjectName = "Keras.csproj";
@@ -29,20 +29,16 @@ namespace ReleaseBot
            {
                 // linux                
                 new ReleaseSpec() { CPythonVersion = "2.7", Platform="Linux",   },
-                new ReleaseSpec() { CPythonVersion = "3.5", Platform="Linux",   },
-                new ReleaseSpec() { CPythonVersion = "3.6", Platform="Linux",   },
                 new ReleaseSpec() { CPythonVersion = "3.7", Platform="Linux",   },
+                new ReleaseSpec() { CPythonVersion = "3.8", Platform="Linux",   },
                 // mac
                 new ReleaseSpec() { CPythonVersion = "2.7", Platform="OSX",  },
-                new ReleaseSpec() { CPythonVersion = "3.5", Platform="OSX",  },
-                new ReleaseSpec() { CPythonVersion = "3.6", Platform="OSX",  },
                 new ReleaseSpec() { CPythonVersion = "3.7", Platform="OSX",  },
+                new ReleaseSpec() { CPythonVersion = "3.8", Platform="OSX",  },
                 // win
                 new ReleaseSpec() { CPythonVersion = "2.7", Platform="Win64",   },
-                new ReleaseSpec() { CPythonVersion = "3.5", Platform="Win64",   },
-                new ReleaseSpec() { CPythonVersion = "3.6", Platform="Win64",   },
                 new ReleaseSpec() { CPythonVersion = "3.7", Platform="Win64",   },
-
+                new ReleaseSpec() { CPythonVersion = "3.8", Platform="Win64",   },
            };
 
             foreach (var spec in specs)
@@ -71,7 +67,7 @@ namespace ReleaseBot
                 spec.Process();
             }
 
-            var key = File.ReadAllText(@"C:\Users\deepa\Dropbox\Personal\nuget.key").Trim();
+            var key = File.ReadAllText(@"C:\Tools\nuget.key").Trim();
             foreach (var nuget in Directory.GetFiles(Path.Combine(ProjectPath, "bin", "Release"), "*.nupkg"))
             {
                 Console.WriteLine("Push " + nuget);
@@ -89,7 +85,7 @@ namespace ReleaseBot
         {
             var spec = new ReleaseSpec()
             {
-                Version = $"3.6.{V}",
+                Version = $"3.8.{V}",
                 ProjectName = ProjectName,
                 RelativeProjectPath = ProjectPath,
                 PackageId = "Keras.NET",
