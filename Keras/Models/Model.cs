@@ -49,7 +49,7 @@
                 outputList.Add(item.PyInstance);
             }
 
-            PyInstance = Instance.keras.models.Model(inputList, outputList[0]);
+            PyInstance = Instance.keras.models.Model(inputList, outputList);
         }
 
         /// <summary>
