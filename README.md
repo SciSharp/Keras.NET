@@ -1,29 +1,30 @@
 ![Logo](Images/keras.net_long.svg)<a href="http://scisharpstack.org"><img src="https://github.com/SciSharp/SciSharp/blob/master/art/scisharp_badge.png" width="200" height="200" align="right" /></a>
 
-**Keras.NET** is a high-level neural networks API for C# and F# with Python Binding and capable of running on top of TensorFlow, CNTK, or Theano. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result with the least possible delay is key to doing good research.
+**Keras.NET** is a high-level neural networks API for C# and F# via a Python binding and capable of running on top of TensorFlow, CNTK, or Theano. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result with the least possible delay is key to doing good research.
 
 Use Keras if you need a deep learning library that:
 
-Allows for easy and fast prototyping (through user friendliness, modularity, and extensibility).
-Supports both convolutional networks and recurrent networks, as well as combinations of the two.
-Runs seamlessly on CPU and GPU.
+* Allows for easy and fast prototyping (through user friendliness, modularity, and extensibility).
+
+* Supports both convolutional networks and recurrent networks, as well as combinations of the two.
+
+* Runs seamlessly on CPU and GPU.
 
 ## Keras.NET is using:
 
 * [Numpy.NET](https://github.com/SciSharp/Numpy.NET)
+
 * [pythonnet_netstandard](https://github.com/henon/pythonnet_netstandard)
 
 ## Prerequisite
+
 * Python 2.7 - 3.7, Link: https://www.python.org/downloads/
+
 * Install keras, numpy and one of the backend (Tensorflow/CNTK/Theano). Please see on how to configure: https://keras.io/backend/
 
 ## Nuget
 
 Install from nuget: https://www.nuget.org/packages/Keras.NET
-
-```
-Install-Package Keras.NET
-```
 
 ```
 dotnet add package Keras.NET
@@ -136,6 +137,7 @@ Reached 98% accuracy within 3 epoches.
 ![](https://raw.githubusercontent.com/SciSharp/Keras.NET/master/Images/MNIST_Output.PNG)
 
 # Documentation
+
 https://scisharp.github.io/Keras.NET/
 
 ![SciSharp](https://avatars3.githubusercontent.com/u/44989469)
