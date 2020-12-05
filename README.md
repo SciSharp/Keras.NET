@@ -20,7 +20,7 @@ Use Keras if you need a deep learning library that:
 
 * Python 2.7 - 3.7, Link: https://www.python.org/downloads/
 
-* Install keras, numpy and one of the backend (Tensorflow/CNTK/Theano). Please see on how to configure: https://keras.io/backend/
+* Install keras, [numpy](https://numpy.org/install/) and one of the backends (Tensorflow/CNTK/Theano). Keras is now bundled with Tensorflow 2.0, so the easiest way to install Keras and Tensorflow at the same time is to simply install [Tensorflow 2.0](https://www.tensorflow.org/install).
 
 ## Nuget
 
