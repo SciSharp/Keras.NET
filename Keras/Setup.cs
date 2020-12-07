@@ -44,11 +44,16 @@ namespace Keras
         private static string pythonCommand = "python";
         private static string pipCommand = "pip";
 
-        public static string KerasModule { get; set; } = "keras";
+        public static string KerasModule { get; set; } = "tensorflow.keras";
 
         public static void UseTfKeras()
         {
             KerasModule = "tensorflow.keras";
+        }
+
+        public static void UseOldKeras()
+        {
+            KerasModule = "keras";
         }
 
         public static void Run(SetupBackend backend = SetupBackend.TensorflowCPU)

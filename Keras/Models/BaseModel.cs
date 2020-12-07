@@ -169,12 +169,6 @@ namespace Keras.Models
         }
 
 
-
-
-
-
-
-
         /// <summary>
         /// Runs a single gradient update on a single batch of data.
         /// </summary>
@@ -185,6 +179,25 @@ namespace Keras.Models
         /// <returns>Scalar training loss (if the model has a single output and no metrics) or list of scalars (if the model has multiple outputs and/or metrics). The attribute model.metrics_names will give you the display labels for the scalar outputs.</returns>
 
         public double[] TrainOnBatch(NDarray x, NDarray y, NDarray sample_weight = null, Dictionary<int, float> class_weight = null)
+        {
+            var args = new Dictionary<string, object>();
+            args["x"] = x;
+            args["y"] = y;
+            args["sample_weight"] = sample_weight;
+            args["class_weight"] = class_weight;
+
+            var pyresult = InvokeMethod("train_on_batch", args);
+            if (pyresult == null) return default;
+            double[] result;
+            if (!pyresult.IsIterable())
+                result = new double[] { pyresult.As<double>() };
+            else
+                result = pyresult.As<double[]>();
+            pyresult.Dispose();
+            return result;
+        }
+
+        public double[] TrainOnBatch(NDarray[] x, NDarray y, NDarray sample_weight = null, Dictionary<int, float> class_weight = null)
         {
             var args = new Dictionary<string, object>();
             args["x"] = x;
@@ -229,12 +242,39 @@ namespace Keras.Models
             return result;
         }
 
+        public double[] TestOnBatch(NDarray[] x, NDarray y, NDarray sample_weight = null)
+        {
+            var args = new Dictionary<string, object>();
+            args["x"] = x;
+            args["y"] = y;
+            args["sample_weight"] = sample_weight;
+
+            //return InvokeMethod("test_on_batch", args)?.As<double[]>();
+            var pyresult = InvokeMethod("test_on_batch", args);
+            if (pyresult == null) return default;
+            double[] result;
+            if (!pyresult.IsIterable())
+                result = new double[] { pyresult.As<double>() };
+            else
+                result = pyresult.As<double[]>();
+            pyresult.Dispose();
+            return result;
+        }
+
         /// <summary>
         /// Returns predictions for a single batch of samples.
         /// </summary>
         /// <param name="x">Input samples, as a Numpy array.</param>
         /// <returns>Numpy array(s) of predictions.</returns>
         public NDarray PredictOnBatch(NDarray x)
+        {
+            var args = new Dictionary<string, object>();
+            args["x"] = x;
+
+            return new NDarray(InvokeMethod("predict_on_batch", args));
+        }
+
+        public NDarray PredictOnBatch(NDarray[] x)
         {
             var args = new Dictionary<string, object>();
             args["x"] = x;

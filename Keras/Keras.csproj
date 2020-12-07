@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Keras.NET</PackageId>
-    <Version>3.8.4.4</Version>
+    <Version>3.8.5.0</Version>
     <Authors>SciSharp Team</Authors>
     <Product>Keras.NET</Product>
     <Description>C# bindings for Keras on Win64 - Keras.NET is a high-level neural networks API, capable of running on top of TensorFlow, CNTK, or Theano. </Description>
@@ -19,6 +19,7 @@
     <Configurations>Debug;Release;Py3.6_WIN;Py2.7_WIN;Py3.6_OSX;Py2.7_Mono;Py3.6_Mono;Py2.7_OSX</Configurations>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Platforms>AnyCPU;x64</Platforms>
+    <Company>SciSharp</Company>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -41,7 +42,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Numpy.Bare" Version="3.8.1.22"></PackageReference>
+    <PackageReference Include="Numpy.Bare" Version="3.8.1.25"></PackageReference>
   </ItemGroup>
 
 </Project>
