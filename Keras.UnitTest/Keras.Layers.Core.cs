@@ -33,12 +33,17 @@ namespace Keras.UnitTest
             var modelAsJson = JsonConvert.DeserializeObject<dynamic>(model.ToJson());
 
             Assert.AreEqual("Sequential",modelAsJson.class_name.Value);
-            Assert.AreEqual(100, modelAsJson.config.layers[0].config.kernel_initializer.config.value.Value);
-            Assert.AreEqual("Constant", modelAsJson.config.layers[0].config.kernel_initializer.class_name.Value);
+            int i = 0;
+            while (modelAsJson.config.layers[i].config.kernel_initializer == null && i < 3)
+            {
+                i++; 
+            }
+            Assert.AreEqual(100, modelAsJson.config.layers[i].config.kernel_initializer.config.value.Value);
+            Assert.AreEqual("Constant", modelAsJson.config.layers[i].config.kernel_initializer.class_name.Value);
 
-            Assert.AreEqual("L1L2", modelAsJson.config.layers[0].config.kernel_regularizer.class_name.Value);
-            Assert.AreEqual(1000, modelAsJson.config.layers[0].config.kernel_regularizer.config.l1.Value);
-            Assert.AreEqual(2000, modelAsJson.config.layers[0].config.kernel_regularizer.config.l2.Value);
+            Assert.AreEqual("L1L2", modelAsJson.config.layers[i].config.kernel_regularizer.class_name.Value);
+            Assert.AreEqual(1000, modelAsJson.config.layers[i].config.kernel_regularizer.config.l1.Value);
+            Assert.AreEqual(2000, modelAsJson.config.layers[i].config.kernel_regularizer.config.l2.Value);
 
             // Compile and train
             model.Compile(optimizer: new Adam(lr: 0.001F), loss: "binary_crossentropy", metrics: new string[] { "accuracy" });
