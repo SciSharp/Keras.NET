@@ -38,6 +38,31 @@ namespace Keras.Models
         }
 
         /// <summary>
+        ///Configures the model for training.
+        /// </summary>
+        /// <param name="optimizer"> String (name of optimizer) or optimizer instance. See optimizers.</param>
+        /// <param name="loss"> String (name of objective function) or objective function. See losses. If the model has multiple outputs, you can use a different loss on each output by passing a dictionary or a list of losses. The loss value that will be minimized by the model will then be the sum of all individual losses.</param>
+        /// <param name="metrics"> List of metrics to be evaluated by the model during training and testing. Typically you will use metrics=['accuracy']. To specify different metrics for different outputs of a multi-output model, you could also pass a dictionary, such as metrics={'output_a': 'accuracy'}.</param>
+        /// <param name="loss_weights"> Optional list or dictionary specifying scalar coefficients (Python floats) to weight the loss contributions of different model outputs. The loss value that will be minimized by the model will then be the weighted sum of all individual losses, weighted by the loss_weightscoefficients. If a list, it is expected to have a 1:1 mapping to the model's outputs. If a tensor, it is expected to map output names (strings) to scalar coefficients.</param>
+        /// <param name="sample_weight_mode"> If you need to do timestep-wise sample weighting (2D weights), set this to "temporal". None defaults to sample-wise weights (1D). If the model has multiple outputs, you can use a different sample_weight_mode on each output by passing a dictionary or a list of modes.</param>
+        /// <param name="weighted_metrics"> List of metrics to be evaluated and weighted by sample_weight or class_weight during training and testing.</param>
+        /// <param name="target_tensors"> By default, Keras will create placeholders for the model's target, which will be fed with the target data during training. If instead you would like to use your own target tensors (in turn, Keras will not expect external Numpy data for these targets at training time), you can specify them via the target_tensors argument. It can be a single tensor (for a single-output model), a list of tensors, or a dict mapping output names to target tensors.</param>
+        public void Compile(StringOrInstance optimizer, string[] loss, string[] metrics = null, float[] loss_weights = null,
+                       string sample_weight_mode = null, string[] weighted_metrics = null, NDarray[] target_tensors = null)
+        {
+            var args = new Dictionary<string, object>();
+            args["optimizer"] = optimizer;
+            args["loss"] = loss;
+            args["metrics"] = metrics;
+            args["loss_weights"] = loss_weights;
+            args["sample_weight_mode"] = sample_weight_mode;
+            args["weighted_metrics"] = weighted_metrics;
+            args["target_tensors"] = target_tensors;
+
+            InvokeMethod("compile", args);
+        }
+
+        /// <summary>
         /// Trains the model for a given number of epochs (iterations on a dataset).
         /// </summary>
         /// <param name="x">Numpy array of training data (if the model has a single input), or list of Numpy arrays (if the model has multiple inputs). If input layers in the model are named, you can also pass a dictionary mapping input names to Numpy arrays. x can be None (default) if feeding from framework-native tensors (e.g. TensorFlow data tensors).</param>
