@@ -28,15 +28,15 @@ namespace ReleaseBot
             var specs = new ReleaseSpec[]
            {
                 // linux                
-                new ReleaseSpec() { CPythonVersion = "2.7", Platform="Linux",   },
+                //new ReleaseSpec() { CPythonVersion = "2.7", Platform="Linux",   },
                 new ReleaseSpec() { CPythonVersion = "3.7", Platform="Linux",   },
                 new ReleaseSpec() { CPythonVersion = "3.8", Platform="Linux",   },
                 // mac
-                new ReleaseSpec() { CPythonVersion = "2.7", Platform="OSX",  },
+                //new ReleaseSpec() { CPythonVersion = "2.7", Platform="OSX",  },
                 new ReleaseSpec() { CPythonVersion = "3.7", Platform="OSX",  },
                 new ReleaseSpec() { CPythonVersion = "3.8", Platform="OSX",  },
                 // win
-                new ReleaseSpec() { CPythonVersion = "2.7", Platform="Win64",   },
+                //new ReleaseSpec() { CPythonVersion = "2.7", Platform="Win64",   },
                 new ReleaseSpec() { CPythonVersion = "3.7", Platform="Win64",   },
                 new ReleaseSpec() { CPythonVersion = "3.8", Platform="Win64",   },
            };
