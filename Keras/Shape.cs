@@ -14,13 +14,13 @@ namespace Keras
         /// <value>
         /// The dimensions.
         /// </value>
-        public int[] Dimensions { get; }
+        public int?[] Dimensions { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Shape"/> class.
         /// </summary>
         /// <param name="shape">The shape.</param>
-        public Shape(params int[] shape)
+        public Shape(params int?[] shape)
         {
             this.Dimensions = shape;
         }
@@ -33,7 +33,7 @@ namespace Keras
         /// </value>
         /// <param name="n">The n.</param>
         /// <returns></returns>
-        public int this[int n] => Dimensions[n];
+        public int? this[int n] => Dimensions[n];
 
         #region Equality
 
@@ -59,7 +59,7 @@ namespace Keras
         /// </returns>
         public override int GetHashCode()
         {
-            return (Dimensions ?? new int[0]).GetHashCode();
+            return (Dimensions ?? Array.Empty<int?>()).GetHashCode();
         }
 
         /// <summary>
@@ -70,7 +70,7 @@ namespace Keras
         /// </returns>
         public override string ToString()
         {
-            return $"({string.Join(", ", Dimensions ?? new int[0])})";
+            return $"({string.Join(", ", Dimensions ?? Array.Empty<int?>())})";
         }
 
         /// <summary>
