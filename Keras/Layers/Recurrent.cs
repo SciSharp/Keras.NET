@@ -203,7 +203,7 @@ namespace Keras.Layers
             , string recurrent_initializer = "orthogonal", string bias_initializer = "zeros", string kernel_regularizer = "", string recurrent_regularizer = "",
             string bias_regularizer = "", string activity_regularizer = "", string kernel_constraint = "", string recurrent_constraint = "", string bias_constraint = "",
             float dropout = 0.0f, float recurrent_dropout = 0.0f, int implementation = 1, bool return_sequences = false, bool return_state = false, bool go_backwards = false,
-            bool stateful = false, bool unroll = false, bool reset_after = false)
+            bool stateful = false, bool unroll = false, bool reset_after = false, Shape input_shape = null)
         {
             Parameters["units"] = units;
             Parameters["activation"] = activation;
@@ -228,6 +228,12 @@ namespace Keras.Layers
             Parameters["stateful"] = stateful;
             Parameters["unroll"] = unroll;
             Parameters["reset_after"] = reset_after;
+            
+            if (input_shape != null)
+            {
+                Parameters["input_shape"] = input_shape;
+            }
+            
             PyInstance = Instance.keras.layers.GRU;
             Init();
         }
