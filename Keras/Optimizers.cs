@@ -184,4 +184,37 @@ namespace Keras.Optimizers
             Init();
         }
     }
+
+
+    /// <summary>
+    /// "Follow The Regularized Leader" (FTRL) is an optimization algorithm developed at Google for click-through rate prediction in the early 2010s.  
+    /// It is most suitable for shallow models with large and sparse feature spaces.
+    /// </summary>
+    /// <seealso cref="Keras.Base" />
+    public class Ftrl : Base
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Nadam"/> class.
+        /// </summary>
+        /// <param name="lr">float >= 0. Learning rate.</param>
+        /// <param name="lrp">float >= 0. Learning rate Power.</param>
+        /// <param name="iav">float <= 0. Initial Accumulator Value.</param>
+        /// <param name="l1rs">float <= 0. Lambda 1 Regularization Strength.</param>
+        /// <param name="l2rs">float <= 0. Lambda 2 Regularization Strength.</param>
+        /// <param name="l2srs">float <= 0. Lambda 2 Shrinkage Regularization Strength.</param>
+        /// <param name="beta">floats, 0 < beta < 1. Generally close to 1.</param>
+        public Nadam(float lr = 0.001f,float lrp = -0.5, float iav = 0.1f, float l1rs = 0.0f, float l2rs = 0.0f, float l2srs = 0.0f, float beta = 0.0f)
+        {
+            Parameters["learning_rate"] = lr;
+            Parameters["learning_rate_power"] = lrp;
+            Parameters["initial_accumulator_value"] = iav;
+            Parameters["l1_regularization_strength"] = l1rs;
+            Parameters["l2_regularization_strength"] = l2rs;
+            Parameters["l2_shrinkage_regularization_strength"] = l2srs;
+            Parameters["beta"] = beta;
+
+            PyInstance = Instance.keras.optimizers.Ftrl;
+            Init();
+        }
+    }
 }
