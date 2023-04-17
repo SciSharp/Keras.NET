@@ -203,7 +203,7 @@ namespace Keras.Optimizers
         /// <param name="l2rs">float <= 0. Lambda 2 Regularization Strength.</param>
         /// <param name="l2srs">float <= 0. Lambda 2 Shrinkage Regularization Strength.</param>
         /// <param name="beta">floats, 0 < beta < 1. Generally close to 1.</param>
-        public Nadam(float lr = 0.001f,float lrp = -0.5, float iav = 0.1f, float l1rs = 0.0f, float l2rs = 0.0f, float l2srs = 0.0f, float beta = 0.0f)
+        public Ftrl(float lr = 0.001f,float lrp = -0.5f, float iav = 0.1f, float l1rs = 0.0f, float l2rs = 0.0f, float l2srs = 0.0f, float beta = 0.0f)
         {
             Parameters["learning_rate"] = lr;
             Parameters["learning_rate_power"] = lrp;

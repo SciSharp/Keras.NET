@@ -43,7 +43,7 @@ namespace Keras.Callbacks
                 code = fileOrcode;
             }
 
-            PyObject py = PythonEngine.ModuleFromString(name, code);
+            PyObject py = PyModule.FromString(name, code);
             py = py.InvokeMethod(name);
             return new Callback(py);
         }

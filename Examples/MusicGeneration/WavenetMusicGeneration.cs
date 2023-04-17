@@ -3,7 +3,6 @@ using Keras.Layers;
 using Keras.Models;
 using Keras.Optimizers;
 using Melanchall.DryWetMidi.Core;
-using Melanchall.DryWetMidi.Devices;
 using Melanchall.DryWetMidi.Interaction;
 using Numpy;
 using System;

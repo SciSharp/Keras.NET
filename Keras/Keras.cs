@@ -2,10 +2,12 @@
 using Keras.Utils;
 using Numpy;
 using Numpy.Models;
+using Python.Deployment;
 using Python.Runtime;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using static Numpy.np;
 using static Python.Runtime.Py;
 
 
@@ -25,7 +27,6 @@ namespace Keras
         {
             var instance = new Keras();
             instance.keras = InstallAndImport(Setup.KerasModule);
-
             try
             {
                 instance.tensorflow = InstallAndImport("tensorflow");
@@ -108,7 +109,6 @@ namespace Keras
                 // basic types
                 case int o: return new PyInt(o);
                 case float o: return new PyFloat(o);
-                case long o: return new PyLong(o);
                 case double o: return new PyFloat(o);
                 case string o: return new PyString(o);
                 case bool o: return ConverterExtension.ToPython(o);

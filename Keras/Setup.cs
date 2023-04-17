@@ -40,7 +40,7 @@ namespace Keras
     public class Setup
     {
         private static string[] modules = new string[] { "keras", "numpy" };
-        private static string[] backendmodules = new string[] { "tensorflow", "tensorflow-gpu", "cntk", "cntk-gpu", "plaidml-keras" };
+        private static string[] backendmodules = new string[] { "tensorflow", "tensorflow-gpu" };
         private static string pythonCommand = "python";
         private static string pipCommand = "pip";
 
