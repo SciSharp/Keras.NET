@@ -34,7 +34,8 @@
         /// </summary>
         /// <param name="inputs">The inputs layers.</param>
         /// <param name="outputs">The outputs layers.</param>
-        public Model(BaseLayer[] inputs, BaseLayer[] outputs)
+        /// <param name="name">The layer name.</param>
+        public Model(BaseLayer[] inputs, BaseLayer[] outputs, string name = null)
         {
             List<PyObject> inputList = new List<PyObject>();
             List<PyObject> outputList = new List<PyObject>();
@@ -49,7 +50,7 @@
                 outputList.Add(item.PyInstance);
             }
 
-            PyInstance = Instance.keras.models.Model(inputList, outputList);
+            PyInstance = Instance.keras.models.Model(inputList, outputList, name);
         }
 
         /// <summary>

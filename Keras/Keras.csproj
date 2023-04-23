@@ -38,6 +38,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="tf\" />
     <Folder Include="Properties\"></Folder>
   </ItemGroup>
 

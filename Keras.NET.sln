@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29123.88
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Keras.UnitTest", "Keras.UnitTest\Keras.UnitTest.csproj", "{0B402B43-29A2-4564-BC20-20BBBE7C2C51}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KerasExampleWinApp", "Examples\KerasExampleWinApp\KerasExampleWinApp.csproj", "{0C0B0830-4871-4979-8675-93F980F5EBE2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicGeneration", "Examples\MusicGeneration\MusicGeneration.csproj", "{108C3326-58D2-4C26-9D78-5F045D620A26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tensorflow", "Tensorflow\Tensorflow.csproj", "{27230C96-FCB4-406C-8AAD-450020F9074D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -317,6 +319,38 @@ Global
 		{108C3326-58D2-4C26-9D78-5F045D620A26}.Release|Any CPU.Build.0 = Release|Any CPU
 		{108C3326-58D2-4C26-9D78-5F045D620A26}.Release|x64.ActiveCfg = Release|Any CPU
 		{108C3326-58D2-4C26-9D78-5F045D620A26}.Release|x64.Build.0 = Release|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Debug|x64.Build.0 = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py2.7_Mono|Any CPU.ActiveCfg = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py2.7_Mono|Any CPU.Build.0 = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py2.7_Mono|x64.ActiveCfg = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py2.7_Mono|x64.Build.0 = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py2.7_OSX|Any CPU.ActiveCfg = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py2.7_OSX|Any CPU.Build.0 = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py2.7_OSX|x64.ActiveCfg = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py2.7_OSX|x64.Build.0 = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py2.7_WIN|Any CPU.ActiveCfg = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py2.7_WIN|Any CPU.Build.0 = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py2.7_WIN|x64.ActiveCfg = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py2.7_WIN|x64.Build.0 = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py3.6_Mono|Any CPU.ActiveCfg = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py3.6_Mono|Any CPU.Build.0 = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py3.6_Mono|x64.ActiveCfg = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py3.6_Mono|x64.Build.0 = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py3.6_OSX|Any CPU.ActiveCfg = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py3.6_OSX|Any CPU.Build.0 = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py3.6_OSX|x64.ActiveCfg = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py3.6_OSX|x64.Build.0 = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py3.6_WIN|Any CPU.ActiveCfg = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py3.6_WIN|Any CPU.Build.0 = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py3.6_WIN|x64.ActiveCfg = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Py3.6_WIN|x64.Build.0 = Debug|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Release|x64.ActiveCfg = Release|Any CPU
+		{27230C96-FCB4-406C-8AAD-450020F9074D}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
