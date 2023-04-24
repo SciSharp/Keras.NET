@@ -8,7 +8,7 @@ namespace Keras
 {
     public abstract class Base : Keras
     {
-        internal dynamic PyInstance;
+        public dynamic PyInstance;
         public Dictionary<string, object> Parameters = new Dictionary<string, object>();
 
         public object None = null;

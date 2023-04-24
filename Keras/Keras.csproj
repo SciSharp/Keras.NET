@@ -43,7 +43,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Numpy.Bare" Version="3.11.1.33" />
+    <ProjectReference Include="..\Tensorflow\Tensorflow.csproj" />
   </ItemGroup>
 
 </Project>

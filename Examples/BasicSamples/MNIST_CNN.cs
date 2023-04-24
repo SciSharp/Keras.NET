@@ -9,6 +9,7 @@ using Keras.Models;
 using Keras.Layers;
 using Keras.Utils;
 using Keras.Optimizers;
+using Keras.Optimizers.Legacy;
 
 namespace BasicSamples
 {

@@ -157,5 +157,43 @@ namespace Keras
             parameters["x"] = x;
             return new NDarray(InvokeStaticMethod(caller, "linear", parameters));
         }
+
+        /// <summary>
+        /// Gaussian error linear unit (GELU) computes x * P(X <= x), where P(X) ~ N(0, 1). The (GELU) nonlinearity weights inputs by their value, rather than gates inputs by their sign as in ReLU.
+        /// </summary>
+        /// <param name="x">Input tensor.</param>
+        /// <param name="approximate">A bool, whether to enable approximation.</param>
+        /// <returns></returns>
+        public static NDarray Gelu(NDarray x, bool approximate = false)
+        {
+            Dictionary<string, object> parameters = new Dictionary<string, object>();
+            parameters["x"] = x;
+            parameters["approximate"] = approximate;
+            return new NDarray(InvokeStaticMethod(caller, "gelu", parameters));
+        }
+
+        /// <summary>
+        /// Mish activation function.
+        /// </summary>
+        /// <param name="x">Input tensor.</param>
+        /// <returns>Output tensor</returns>
+        public static NDarray Mish(NDarray x)
+        {
+            Dictionary<string, object> parameters = new Dictionary<string, object>();
+            parameters["x"] = x;
+            return new NDarray(InvokeStaticMethod(caller, "mish", parameters));
+        }
+
+        /// <summary>
+        /// Swish activation function, swish(x) = x * sigmoid(x).
+        /// </summary>
+        /// <param name="x">Input tensor.</param>
+        /// <returns>Output tensor</returns>
+        public static NDarray Swish(NDarray x)
+        {
+            Dictionary<string, object> parameters = new Dictionary<string, object>();
+            parameters["x"] = x;
+            return new NDarray(InvokeStaticMethod(caller, "swish", parameters));
+        }
     }
 }

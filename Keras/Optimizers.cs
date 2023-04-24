@@ -1,8 +1,97 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Text;
 
 namespace Keras.Optimizers
+{
+    /// <summary>
+    /// Adam optimizer. Default parameters follow those provided in the original paper.
+    /// </summary>
+    /// <seealso cref="Keras.Base" />
+    public class Adam : Base
+    {
+        public Adam(float learning_rate = 0.001f, float beta_1= 0.9f, float beta_2= 0.999f, float epsilon = 1e-07f, bool amsgrad = false, float? weight_decay = null,
+            bool? clipnorm = null, bool? clipvalue = null, float? global_clipnorm = null, bool use_ema = false, float ema_momentum = 0.99f, 
+            int? ema_overwrite_frequency = null, bool jit_compile = true)
+        {
+            Parameters["learning_rate"] = learning_rate;
+            Parameters["beta_1"] = beta_1;
+            Parameters["beta_2"] = beta_2;
+            Parameters["epsilon"] = epsilon;
+            Parameters["amsgrad"] = amsgrad;
+            Parameters["weight_decay"] = weight_decay;
+            Parameters["clipnorm"] = clipnorm;
+            Parameters["clipvalue"] = clipvalue;
+            Parameters["global_clipnorm"] = global_clipnorm;
+            Parameters["use_ema"] = use_ema;
+            Parameters["ema_momentum"] = ema_momentum;
+            Parameters["ema_overwrite_frequency"] = ema_overwrite_frequency;
+            Parameters["jit_compile"] = jit_compile;
+
+            PyInstance = Instance.keras.optimizers.Adam;
+            Init();
+        }
+    }
+
+    /// <summary>
+    /// Optimizer that implements the Adafactor algorithm.
+    /// </summary>
+    /// <seealso cref="Keras.Base" />
+    public class Adafactor : Base
+    {
+        public Adafactor(float learning_rate = 0.001f, float beta_2_decay = -0.8f, float epsilon_1 = 1e-30f, float epsilon_2 = 1e-3f, float clip_threshold = 1, 
+            bool relative_step = true, string name = null, float? weight_decay = null, bool? clipnorm = null, bool? clipvalue = null, 
+            float? global_clipnorm = null, bool use_ema = false, float ema_momentum = 0.99f, int? ema_overwrite_frequency = null, bool jit_compile = true)
+        {
+            Parameters["learning_rate"] = learning_rate;
+            Parameters["beta_2_decay"] = beta_2_decay;
+            Parameters["epsilon_1"] = epsilon_1;
+            Parameters["epsilon_2"] = epsilon_2;
+            Parameters["clip_threshold"] = clip_threshold;
+            Parameters["relative_step"] = relative_step;
+            Parameters["name"] = name;
+            Parameters["weight_decay"] = weight_decay;
+            Parameters["clipnorm"] = clipnorm;
+            Parameters["clipvalue"] = clipvalue;
+            Parameters["global_clipnorm"] = global_clipnorm;
+            Parameters["use_ema"] = use_ema;
+            Parameters["ema_momentum"] = ema_momentum;
+            Parameters["ema_overwrite_frequency"] = ema_overwrite_frequency;
+            Parameters["jit_compile"] = jit_compile;
+
+            PyInstance = Instance.keras.optimizers.Adafactor;
+            Init();
+        }
+    }
+
+    public class AdamW : Base
+    {
+        public AdamW(float learning_rate = 0.001f, float weight_decay = 0.004f, float beta_1 = 0.9f, float beta_2 = 0.999f, float epsilon = 1e-07f, bool amsgrad = false, 
+            bool? clipnorm = null, bool? clipvalue = null, float? global_clipnorm = null, bool use_ema = false, float ema_momentum = 0.99f,
+            int? ema_overwrite_frequency = null, bool jit_compile = true)
+        {
+            Parameters["learning_rate"] = learning_rate;
+            Parameters["weight_decay"] = weight_decay;
+            Parameters["beta_1"] = beta_1;
+            Parameters["beta_2"] = beta_2;
+            Parameters["epsilon"] = epsilon;
+            Parameters["amsgrad"] = amsgrad;
+            Parameters["clipnorm"] = clipnorm;
+            Parameters["clipvalue"] = clipvalue;
+            Parameters["global_clipnorm"] = global_clipnorm;
+            Parameters["use_ema"] = use_ema;
+            Parameters["ema_momentum"] = ema_momentum;
+            Parameters["ema_overwrite_frequency"] = ema_overwrite_frequency;
+            Parameters["jit_compile"] = jit_compile;
+
+            PyInstance = Instance.keras.optimizers.AdamW;
+            Init();
+        }
+    }
+}
+
+namespace Keras.Optimizers.Legacy
 {
     /// <summary>
     /// Stochastic gradient descent optimizer.    Includes support for momentum, learning rate decay, and Nesterov momentum.
@@ -24,7 +113,7 @@ namespace Keras.Optimizers
             Parameters["decay"] = decay;
             Parameters["nesterov"] = nesterov;
 
-            PyInstance = Instance.keras.optimizers.SGD;
+            PyInstance = Instance.keras.optimizers.legacy.SGD;
             Init();
         }
     }
@@ -50,7 +139,7 @@ namespace Keras.Optimizers
             Parameters["epsilon"] = epsilon;
             Parameters["decay"] = decay;
 
-            PyInstance = Instance.keras.optimizers.RMSprop;
+            PyInstance = Instance.keras.optimizers.legacy.RMSprop;
             Init();
         }
     }
@@ -73,7 +162,7 @@ namespace Keras.Optimizers
             Parameters["epsilon"] = epsilon;
             Parameters["decay"] = lr;
 
-            PyInstance = Instance.keras.optimizers.Adagrad;
+            PyInstance = Instance.keras.optimizers.legacy.Adagrad;
             Init();
         }
     }
@@ -98,7 +187,7 @@ namespace Keras.Optimizers
             Parameters["epsilon"] = epsilon;
             Parameters["decay"] = decay;
 
-            PyInstance = Instance.keras.optimizers.Adadelta;
+            PyInstance = Instance.keras.optimizers.legacy.Adadelta;
             Init();
         }
     }
@@ -118,7 +207,7 @@ namespace Keras.Optimizers
         /// <param name="epsilon">The epsilon.</param>
         /// <param name="decay">The decay.</param>
         /// <param name="amsgrad">boolean. Whether to apply the AMSGrad variant of this algorithm from the paper "On the Convergence of Adam and Beyond".</param>
-        public Adam(float lr = 0.001f, float beta_1= 0.9f, float beta_2= 0.999f, float? epsilon = null, float decay = 0.0f, bool amsgrad = false)
+        public Adam(float lr = 0.001f, float beta_1 = 0.9f, float beta_2 = 0.999f, float? epsilon = null, float decay = 0.0f, bool amsgrad = false)
         {
             Parameters["lr"] = lr;
             Parameters["beta_1"] = beta_1;
@@ -127,7 +216,7 @@ namespace Keras.Optimizers
             Parameters["decay"] = decay;
             Parameters["amsgrad"] = amsgrad;
 
-            PyInstance = Instance.keras.optimizers.Adam;
+            PyInstance = Instance.keras.optimizers.legacy.Adam;
             Init();
         }
     }
@@ -154,7 +243,7 @@ namespace Keras.Optimizers
             Parameters["epsilon"] = epsilon;
             Parameters["decay"] = decay;
 
-            PyInstance = Instance.keras.optimizers.Adamax;
+            PyInstance = Instance.keras.optimizers.legacy.Adamax;
             Init();
         }
     }
@@ -180,7 +269,7 @@ namespace Keras.Optimizers
             Parameters["beta_1"] = beta_1;
             Parameters["beta_2"] = beta_2;
 
-            PyInstance = Instance.keras.optimizers.Adamax;
+            PyInstance = Instance.keras.optimizers.legacy.Nadam;
             Init();
         }
     }
@@ -203,7 +292,7 @@ namespace Keras.Optimizers
         /// <param name="l2rs">float <= 0. Lambda 2 Regularization Strength.</param>
         /// <param name="l2srs">float <= 0. Lambda 2 Shrinkage Regularization Strength.</param>
         /// <param name="beta">floats, 0 < beta < 1. Generally close to 1.</param>
-        public Ftrl(float lr = 0.001f,float lrp = -0.5f, float iav = 0.1f, float l1rs = 0.0f, float l2rs = 0.0f, float l2srs = 0.0f, float beta = 0.0f)
+        public Ftrl(float lr = 0.001f, float lrp = -0.5f, float iav = 0.1f, float l1rs = 0.0f, float l2rs = 0.0f, float l2srs = 0.0f, float beta = 0.0f)
         {
             Parameters["learning_rate"] = lr;
             Parameters["learning_rate_power"] = lrp;
@@ -213,7 +302,7 @@ namespace Keras.Optimizers
             Parameters["l2_shrinkage_regularization_strength"] = l2srs;
             Parameters["beta"] = beta;
 
-            PyInstance = Instance.keras.optimizers.Ftrl;
+            PyInstance = Instance.keras.optimizers.legacy.Ftrl;
             Init();
         }
     }

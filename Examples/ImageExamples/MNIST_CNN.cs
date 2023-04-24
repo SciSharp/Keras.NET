@@ -10,6 +10,7 @@ using Keras.Layers;
 using Keras.Utils;
 using Keras.Optimizers;
 using System.IO;
+using Keras.Optimizers.Legacy;
 
 namespace ImageExamples
 {

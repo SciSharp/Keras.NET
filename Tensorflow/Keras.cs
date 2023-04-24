@@ -1,6 +1,4 @@
-﻿using Keras.Layers;
-using Keras.Utils;
-using Numpy;
+﻿using Numpy;
 using Numpy.Models;
 using Python.Runtime;
 using System;
@@ -22,7 +20,7 @@ namespace Keras
 
         private static bool alreadyDisabled = false;
 
-        private static Lazy<Keras> _instance = new Lazy<Keras>(() =>
+        public static Lazy<Keras> _instance = new Lazy<Keras>(() =>
         {
             var instance = new Keras();
             instance.keras = InstallAndImport(Setup.KerasModule);
@@ -92,7 +90,7 @@ namespace Keras
 
         private bool IsInitialized => keras != null;
 
-        internal Keras() { }
+        public Keras() { }
 
         public void Dispose()
         {
@@ -100,7 +98,7 @@ namespace Keras
             PythonEngine.Shutdown();
         }
 
-        internal static PyObject ToPython(object obj)
+        public static PyObject ToPython(object obj)
         {
             if (obj == null) return Runtime.None;
             switch (obj)
@@ -122,7 +120,7 @@ namespace Keras
                 case Slice o: return o.ToPython();
                 case PythonObject o: return o.PyObject;
                 case PyObject o: return o;
-                case Sequence o: return o.PyInstance;
+                //case Sequence o: return o.PyInstance;
                 case StringOrInstance o: return o.PyObject;
                 case KerasFunction o: return o.PyObject;
                 case Base o: return o.PyInstance;

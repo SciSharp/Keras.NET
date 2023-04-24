@@ -11,6 +11,7 @@ using Keras.Utils;
 using Keras.Optimizers;
 using Keras.PreProcessing.Image;
 using System.IO;
+using Keras.Optimizers.Legacy;
 
 namespace ImageExamples
 {

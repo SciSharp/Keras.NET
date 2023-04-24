@@ -6,6 +6,8 @@ using System.Linq;
 using Python.Runtime;
 using Numpy;
 using System.IO;
+using static System.Net.WebRequestMethods;
+using Keras.Models;
 
 namespace Keras.Callbacks
 {
@@ -36,7 +38,7 @@ namespace Keras.Callbacks
             string code = "";
             if(isFile)
             {
-                code = File.ReadAllText(fileOrcode);
+                code = System.IO.File.ReadAllText(fileOrcode);
             }
             else
             {
@@ -183,9 +185,9 @@ namespace Keras.Callbacks
         /// <param name="save_best_only">if save_best_only=True, the latest best model according to the quantity monitored will not be overwritten.</param>
         /// <param name="save_weights_only"> if True, then only the model's weights will be saved (model.save_weights(filepath)), else the full model is saved (model.save(filepath)).</param>
         /// <param name="mode">one of {auto, min, max}. If save_best_only=True, the decision to overwrite the current save file is made based on either the maximization or the minimization of the monitored quantity. For  val_acc, this should be max, for val_loss this should be min, etc. In auto mode, the direction is automatically inferred from the name of the monitored quantity.</param>
-        /// <param name="period">Interval (number of epochs) between checkpoints.</param>
-        public ModelCheckpoint(string filepath, string monitor = "val_loss", int verbose = 0, bool save_best_only = true
-                    , bool save_weights_only = false, string mode = "auto", int period = 1)
+        /// <param name="save_freq">'epoch' or integer. When using 'epoch', the callback saves the model after each epoch. When using integer, the callback saves the model at end of this many batches.</param>
+        public ModelCheckpoint(string filepath, string monitor = "val_loss", int verbose = 0, bool save_best_only = false
+                    , bool save_weights_only = false, string mode = "auto", string save_freq= "epoch")
         {
             Parameters["filepath"] = filepath;
             Parameters["monitor"] = monitor;
@@ -193,8 +195,8 @@ namespace Keras.Callbacks
             Parameters["save_best_only"] = save_best_only;
             Parameters["save_weights_only"] = save_weights_only;
             Parameters["mode"] = mode;
-            Parameters["period"] = period;
-
+            Parameters["save_freq"] = save_freq;
+            //ToDo: extend options parameter
             PyInstance = Instance.keras.callbacks.ModelCheckpoint;
             Init();
         }
@@ -216,7 +218,9 @@ namespace Keras.Callbacks
         /// <param name="mode">one of {auto, min, max}. In min mode, training will stop when the quantity monitored has stopped decreasing; in max mode it will stop when the quantity monitored has stopped increasing; in auto mode, the direction is automatically inferred from the name of the monitored quantity.</param>
         /// <param name="baseline"> Baseline value for the monitored quantity to reach. Training will stop if the model doesn't show improvement over the baseline.</param>
         /// <param name="restore_best_weights"> whether to restore model weights from the epoch with the best value of the monitored quantity. If False, the model weights obtained at the last step of training are used.</param>
-        public EarlyStopping(string monitor = "val_loss", float min_delta = 0, int patience = 0, int verbose = 0, string mode = "auto", float? baseline = null, bool restore_best_weights = false)
+        /// <param name="start_from_epoch"> Number of epochs to wait before starting to monitor improvement. This allows for a warm-up period in which no improvement is expected and thus training will not be stopped.</param>
+        public EarlyStopping(string monitor = "val_loss", float min_delta = 0, int patience = 0, int verbose = 0, string mode = "auto", 
+            float? baseline = null, bool restore_best_weights = false, int start_from_epoch = 0)
         {
             Parameters["monitor"] = monitor;
             Parameters["min_delta"] = min_delta;
@@ -225,6 +229,7 @@ namespace Keras.Callbacks
             Parameters["mode"] = mode;
             Parameters["baseline"] = baseline;
             Parameters["restore_best_weights"] = restore_best_weights;
+            Parameters["start_from_epoch"] = start_from_epoch;
 
             PyInstance = Instance.keras.callbacks.EarlyStopping;
             Init();
@@ -294,28 +299,24 @@ namespace Keras.Callbacks
         /// </summary>
         /// <param name="log_dir"> the path of the directory where to save the log files to be parsed by TensorBoard.</param>
         /// <param name="histogram_freq"> frequency (in epochs) at which to compute activation and weight histograms for the layers of the model. If set to 0, histograms won't be computed. Validation data (or split) must be specified for histogram visualizations.</param>
-        /// <param name="batch_size"> size of batch of inputs to feed to the network for histograms computation.</param>
         /// <param name="write_graph"> whether to visualize the graph in TensorBoard. The log file can become quite large when write_graph is set to True.</param>
-        /// <param name="write_grads"> whether to visualize gradient histograms in TensorBoard. histogram_freq must be greater than 0.</param>
         /// <param name="write_images"> whether to write model weights to visualize as image in TensorBoard.</param>
+        /// <param name="write_steps_per_second"> whether to log the training steps per second into TensorBoard. This supports both epoch and batch frequency logging.</param>
+        /// <param name="update_freq"> 'batch' or 'epoch' or integer. When using 'epoch', writes the losses and metrics to TensorBoard after every epoch. </param>
         /// <param name="embeddings_freq"> frequency (in epochs) at which selected embedding layers will be saved. If set to 0, embeddings won't be computed. Data to be visualized in TensorBoard's Embedding tab must be passed as embeddings_data.</param>
-        /// <param name="embeddings_layer_names"> a list of names of layers to keep eye on. If None or empty list all the embedding layer will be watched.</param>
         /// <param name="embeddings_metadata"> a dictionary which maps layer name to a file name in which metadata for this embedding layer is saved. See the details about metadata files format. In case if the same metadata file is used for all embedding layers, string can be passed.</param>
-        /// <param name="embeddings_data"> data to be embedded at layers specified in embeddings_layer_names. Numpy array (if the model has a single input) or list of Numpy arrays (if the model has multiple inputs). Learn more about embeddings.</param>
-        public TensorBoard(string log_dir= "./logs", int histogram_freq= 0, int batch_size= 32, bool write_graph= true, bool write_grads= false, 
-                    bool write_images= false, int embeddings_freq= 0, string[] embeddings_layer_names= null, Dictionary<string, string> embeddings_metadata= null, 
-                    NDarray embeddings_data= null, string update_freq= "epoch")
+        public TensorBoard(string log_dir= "./logs", int histogram_freq= 0, bool write_graph= true, bool write_images= false, int? write_steps_per_second = null,
+                    string update_freq = "epoch", int embeddings_freq= 0, Dictionary<string, string> embeddings_metadata= null)
         {
             Parameters["log_dir"] = log_dir;
             Parameters["histogram_freq"] = histogram_freq;
-            Parameters["batch_size"] = batch_size;
             Parameters["write_graph"] = write_graph;
-            Parameters["embeddings_freq"] = embeddings_freq;
-            Parameters["embeddings_layer_names"] = embeddings_layer_names;
-            Parameters["embeddings_metadata"] = embeddings_metadata;
-            Parameters["embeddings_data"] = embeddings_data?.PyObject;
+            Parameters["write_images"] = write_images;
+            Parameters["write_steps_per_second"] = write_steps_per_second;
             Parameters["update_freq"] = update_freq;
-
+            Parameters["embeddings_freq"] = embeddings_freq;
+            Parameters["embeddings_metadata"] = embeddings_metadata;
+            
             PyInstance = Instance.keras.callbacks.TensorBoard;
             Init();
         }
@@ -377,6 +378,55 @@ namespace Keras.Callbacks
             Parameters["append"] = append;
 
             PyInstance = Instance.keras.callbacks.CSVLogger;
+            Init();
+        }
+    }
+
+    /// <summary>
+    /// BackupAndRestore callback is intended to recover training from an interruption that has happened in the middle of a Model.fit execution, 
+    /// by backing up the training states in a temporary checkpoint file (with the help of a tf.train.CheckpointManager), at the end of each epoch. 
+    /// </summary>
+    public class BackupAndRestore : Callback
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BackupAndRestore" /> class.
+        /// </summary>
+        /// <param name="backup_dir">String, path to store the checkpoint. e.g. backup_dir = os.path.join(working_dir, 'backup')</param>
+        /// <param name="save_freq">'epoch', integer, or False. When set to 'epoch' the callback saves the checkpoint at the end of each epoch</param>
+        /// <param name="delete_checkpoint">Boolean, default to True. This BackupAndRestore callback works by saving a checkpoint to back up the training state</param>
+        /// <param name="save_before_preemption">A boolean value instructing whether to turn on the automatic checkpoint saving for preemption/maintenance events. </param>
+        public BackupAndRestore(string backup_dir, string save_freq = "epoch", bool delete_checkpoint = true, bool save_before_preemption = false)
+        {
+            Parameters["backup_dir"] = backup_dir;
+            Parameters["save_freq"] = save_freq;
+            Parameters["delete_checkpoint"] = delete_checkpoint;
+            Parameters["save_before_preemption"] = save_before_preemption;
+
+            PyInstance = Instance.keras.callbacks.BackupAndRestore;
+            Init();
+        }
+    }
+
+    /// <summary>
+    /// Container abstracting a list of callbacks.
+    /// </summary>
+    public class CallbackList : Callback
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CallbackList" /> class.
+        /// </summary>
+        /// <param name="callbacks">List of Callback instances.</param>
+        /// <param name="add_history">Whether a History callback should be added, if one does not already exist in the callbacks list.</param>
+        /// <param name="add_progbar">Whether a ProgbarLogger callback should be added, if one does not already exist in the callbacks list.</param>
+        /// <param name="model">The Model these callbacks are used with.</param>
+        public CallbackList(List<Callback> callbacks, bool add_history = false, bool add_progbar = false, BaseModel model = null)
+        {
+            Parameters["callbacks"] = callbacks;
+            Parameters["add_history"] = add_history;
+            Parameters["add_progbar"] = add_progbar;
+            Parameters["model"] = model.ToPython();
+
+            PyInstance = Instance.keras.callbacks.CallbackList;
             Init();
         }
     }

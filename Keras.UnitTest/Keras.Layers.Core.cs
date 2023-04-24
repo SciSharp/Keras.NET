@@ -46,7 +46,7 @@ namespace Keras.UnitTest
             Assert.AreEqual(2000, modelAsJson.config.layers[i].config.kernel_regularizer.config.l2.Value);
 
             // Compile and train
-            model.Compile(optimizer: new Adam(lr: 0.001F), loss: "binary_crossentropy", metrics: new string[] { "accuracy" });
+            model.Compile(optimizer: new Adam(learning_rate: 0.001F), loss: "binary_crossentropy", metrics: new string[] { "accuracy" });
             model.Fit(x, y, batch_size: x.shape[0], epochs: 100, verbose: 0);
             Assert.AreEqual(2, model.GetWeights().Count);
         }

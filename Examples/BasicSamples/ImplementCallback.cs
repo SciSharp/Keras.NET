@@ -3,6 +3,7 @@ using Keras.Callbacks;
 using Keras.Layers;
 using Keras.Models;
 using Keras.Optimizers;
+using Keras.Optimizers.Legacy;
 using Numpy;
 using System;
 using System.Collections.Generic;
